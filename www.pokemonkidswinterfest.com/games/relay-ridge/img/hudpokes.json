@@ -1,0 +1,1358 @@
+{"frames": {
+
+"playablepokes/001_Bulbasaur_CA-4_1000pixel-2.png":
+{
+	"frame": {"x":1,"y":671,"w":132,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/001_Bulbasaur_CA-4_1000pixel.png":
+{
+	"frame": {"x":1,"y":1,"w":132,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/002_Ivysaur_CA-1_1000pixel.png":
+{
+	"frame": {"x":134,"y":671,"w":132,"h":128},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":128},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/004_Charmander_CA-2_1000pixel.png":
+{
+	"frame": {"x":805,"y":1207,"w":105,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":9,"w":105,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/007_Squirtle_CA-2_1000pixel.png":
+{
+	"frame": {"x":395,"y":1,"w":132,"h":125},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":132,"h":125},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/008_Wartortle_CA-1_1000pixel.png":
+{
+	"frame": {"x":1,"y":1073,"w":132,"h":130},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":132,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/025_Pikachu_CA-17_1000pixel.png":
+{
+	"frame": {"x":521,"y":403,"w":132,"h":121},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":14,"w":132,"h":121},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/026_Raichu_CA-1_1000pixel.png":
+{
+	"frame": {"x":883,"y":537,"w":132,"h":114},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":18,"w":132,"h":114},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/030_Nidorina_CA_1000pixel.png":
+{
+	"frame": {"x":265,"y":1073,"w":125,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":125,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/037_Vulpix_CA-1_1000pixel.png":
+{
+	"frame": {"x":1001,"y":269,"w":132,"h":113},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":18,"w":132,"h":113},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/048_Venonat_CA_1000pixel.png":
+{
+	"frame": {"x":1219,"y":400,"w":114,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":114,"h":117},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/054_Psyduck_CA-1_1000pixel.png":
+{
+	"frame": {"x":1116,"y":135,"w":101,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":9,"w":101,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/056_Mankey_CA_1000pixel.png":
+{
+	"frame": {"x":645,"y":135,"w":132,"h":118},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":132,"h":118},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/074_Geodude_CA-3_1000pixel.png":
+{
+	"frame": {"x":1872,"y":135,"w":131,"h":64},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":42,"w":131,"h":64},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/075_Graveler_CA-2.png":
+{
+	"frame": {"x":1754,"y":950,"w":132,"h":74},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":38,"w":132,"h":74},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/084_Doduo_CA_1000pixel.png":
+{
+	"frame": {"x":1116,"y":269,"w":101,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":9,"w":101,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/085_Dodrio_CA_1000pixel.png":
+{
+	"frame": {"x":1116,"y":1,"w":103,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":103,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/086_Seel_CA_1000pixel.png":
+{
+	"frame": {"x":1,"y":1207,"w":132,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":21,"w":132,"h":107},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/096_Drowzee_CA_1000pixel.png":
+{
+	"frame": {"x":1213,"y":646,"w":120,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":9,"w":120,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/100_Voltorb_CA_1000pixel.png":
+{
+	"frame": {"x":1,"y":135,"w":132,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/102_Exeggcute_CA-1_1000pixel.png":
+{
+	"frame": {"x":392,"y":1073,"w":123,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":123,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/114_Tangela_CA_1000pixel.png":
+{
+	"frame": {"x":1605,"y":1114,"w":131,"h":122},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":13,"w":131,"h":122},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/125_Electabuzz_CA_1000pixel.png":
+{
+	"frame": {"x":939,"y":1207,"w":105,"h":130},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":10,"w":105,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/129_Magikarp_CA-1_1000pixel.png":
+{
+	"frame": {"x":1397,"y":848,"w":132,"h":90},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":30,"w":132,"h":90},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/131_Lapras_CA-5.png":
+{
+	"frame": {"x":765,"y":805,"w":132,"h":120},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":15,"w":132,"h":120},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/132_Ditto_CA_1000pixel.png":
+{
+	"frame": {"x":1336,"y":422,"w":132,"h":97},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":26,"w":132,"h":97},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/134_Vaporeon_CA-4.png":
+{
+	"frame": {"x":1336,"y":113,"w":102,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":9,"w":102,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/135_Jolteon_CA-1_1000pixel.png":
+{
+	"frame": {"x":395,"y":135,"w":132,"h":125},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":132,"h":125},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/136_Flareon_CA-1_1000pixel.png":
+{
+	"frame": {"x":264,"y":671,"w":126,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":126,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/138_Omanyte_CA_1000pixel.png":
+{
+	"frame": {"x":999,"y":403,"w":113,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":9,"w":113,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/140_Kabuto_CA_1000pixel.png":
+{
+	"frame": {"x":1604,"y":522,"w":132,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":27,"w":132,"h":95},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/152_Chikorita_CA-1.png":
+{
+	"frame": {"x":392,"y":671,"w":125,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":125,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/155_Cyndaquil_CA-2_1000pixel.png":
+{
+	"frame": {"x":521,"y":537,"w":132,"h":121},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":14,"w":132,"h":121},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/158_Totodile_CA-2_1000pixel.png":
+{
+	"frame": {"x":519,"y":671,"w":122,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":122,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/159_Croconaw_CA-3_1000pixel.png":
+{
+	"frame": {"x":1114,"y":902,"w":93,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":9,"w":93,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/172_Pichu_CA-1_1000pixel.png":
+{
+	"frame": {"x":1225,"y":1,"w":109,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":9,"w":109,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/179_Mareep_CA_1000pixel.png":
+{
+	"frame": {"x":264,"y":939,"w":132,"h":126},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":132,"h":126},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/182_Bellossom_CA_1000pixel.png":
+{
+	"frame": {"x":643,"y":805,"w":120,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":9,"w":120,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/194_Wooper_CA.png":
+{
+	"frame": {"x":265,"y":403,"w":127,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":9,"w":127,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/196_Espeon_CA-1.png":
+{
+	"frame": {"x":394,"y":403,"w":125,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":125,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/197_Umbreon_CA-1.png":
+{
+	"frame": {"x":1114,"y":634,"w":97,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":97,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/204_Pineco_CA_1000pixel.png":
+{
+	"frame": {"x":883,"y":403,"w":114,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":9,"w":114,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/213_Shuckle_CA_1000pixel.png":
+{
+	"frame": {"x":264,"y":805,"w":126,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":126,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/216_Teddiursa_CA_1000pixel.png":
+{
+	"frame": {"x":1304,"y":898,"w":91,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":9,"w":91,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/220_Swinub_CA-1_1000pixel.png":
+{
+	"frame": {"x":1336,"y":321,"w":132,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":25,"w":132,"h":99},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/226_Mantine_CA-1_1000pixel.png":
+{
+	"frame": {"x":1503,"y":982,"w":132,"h":87},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":31,"w":132,"h":87},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/228_Houndour_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":417,"w":97,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":97,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/239_Elekid_CA_1000pixel.png":
+{
+	"frame": {"x":394,"y":537,"w":125,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":9,"w":125,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/252_Treecko_CA-6_1000pixel.png":
+{
+	"frame": {"x":884,"y":671,"w":132,"h":114},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":18,"w":132,"h":114},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/255_Torchic_CA-2.png":
+{
+	"frame": {"x":1872,"y":1,"w":68,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":9,"w":68,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/258_Mudkip_CA-5_1000pixel.png":
+{
+	"frame": {"x":403,"y":1207,"w":106,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":9,"w":106,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/259_Marshtomp_CA-1_1000pixel.png":
+{
+	"frame": {"x":395,"y":269,"w":124,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":124,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/296_Makuhita_CA_1000pixel.png":
+{
+	"frame": {"x":134,"y":403,"w":129,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":9,"w":129,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/298_Azurill_CA_1000pixel.png":
+{
+	"frame": {"x":1604,"y":1,"w":132,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":21,"w":132,"h":108},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/299_Nosepass_CA_1000pixel.png":
+{
+	"frame": {"x":1210,"y":779,"w":117,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":117,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/302_Sableye_CA-2_1000pixel.png":
+{
+	"frame": {"x":766,"y":1073,"w":132,"h":119},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":15,"w":132,"h":119},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/309_Electrike_CA_1000pixel.png":
+{
+	"frame": {"x":517,"y":1073,"w":123,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":123,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/311_Plusle_CA-6.png":
+{
+	"frame": {"x":1470,"y":112,"w":108,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":9,"w":108,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/312_Minun_CA-6.png":
+{
+	"frame": {"x":1470,"y":523,"w":94,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":9,"w":94,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/320_Wailmer_CA-1_1000pixel.png":
+{
+	"frame": {"x":1580,"y":846,"w":132,"h":87},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":31,"w":132,"h":87},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/327_Spinda_CA.png":
+{
+	"frame": {"x":1336,"y":618,"w":94,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":9,"w":94,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/335_Zangoose_CA_1000pixel.png":
+{
+	"frame": {"x":1336,"y":521,"w":95,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":9,"w":95,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/361_Snorunt_CA-1_1000pixel.png":
+{
+	"frame": {"x":999,"y":537,"w":113,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":9,"w":113,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/363_Spheal1_CA_1000pixel.png":
+{
+	"frame": {"x":1343,"y":714,"w":132,"h":91},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":29,"w":132,"h":91},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/363_Spheal2_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":1,"w":132,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":21,"w":132,"h":108},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/364_Sealeo_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":317,"w":132,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":26,"w":132,"h":98},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/370_Luvdisc_CA_1000pixel.png":
+{
+	"frame": {"x":766,"y":671,"w":116,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":9,"w":116,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/387_Turtwig_CA-2_1000pixel.png":
+{
+	"frame": {"x":1604,"y":423,"w":97,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":97,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/390_Chimchar_CA-12.png":
+{
+	"frame": {"x":135,"y":1207,"w":107,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":9,"w":107,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/391_Monferno_CA-1_1000pixel.png":
+{
+	"frame": {"x":764,"y":269,"w":117,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":9,"w":117,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/393_Piplup_CA-3_1000pixel.png":
+{
+	"frame": {"x":1604,"y":323,"w":98,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":98,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/394_Prinplup_CA-1_1000pixel.png":
+{
+	"frame": {"x":1001,"y":805,"w":111,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":111,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/403_Shinx_CA_1000pixel.png":
+{
+	"frame": {"x":392,"y":939,"w":132,"h":124},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":13,"w":132,"h":124},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/404_Luxio_CA.png":
+{
+	"frame": {"x":135,"y":1,"w":129,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":9,"w":129,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/410_Shieldon_CA.png":
+{
+	"frame": {"x":134,"y":537,"w":128,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":9,"w":128,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/417_Pachirisu_CA-4_1000pixel.png":
+{
+	"frame": {"x":133,"y":1073,"w":132,"h":130},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":132,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/419_Floatzel_CA_1000pixel.png":
+{
+	"frame": {"x":1470,"y":619,"w":91,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":10,"w":91,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/421_Cherrim_Overcast_Form_CA-1_1000pixel.png":
+{
+	"frame": {"x":1470,"y":324,"w":98,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":98,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/438_Bonsly_CA-1_1000pixel.png":
+{
+	"frame": {"x":1705,"y":710,"w":81,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":9,"w":81,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/445_Garchomp_CA-1_1000pixel.png":
+{
+	"frame": {"x":135,"y":135,"w":129,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":9,"w":129,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/446_Munchlax_CA-1_1000pixel.png":
+{
+	"frame": {"x":518,"y":939,"w":122,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":122,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/459_Snover_CA-1.png":
+{
+	"frame": {"x":1821,"y":1157,"w":126,"h":110},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":20,"w":126,"h":110},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/470_Leafeon_CA-1_1000pixel.png":
+{
+	"frame": {"x":644,"y":269,"w":118,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":118,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/471_Glaceon_CA-1.png":
+{
+	"frame": {"x":1001,"y":1073,"w":110,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":9,"w":110,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/495_Snivy_CA-3.png":
+{
+	"frame": {"x":1215,"y":519,"w":125,"h":119},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":15,"w":125,"h":119},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/498_Tepig_CA-1.png":
+{
+	"frame": {"x":642,"y":939,"w":122,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":122,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/501_Oshawott_CA-1_1000pixel.png":
+{
+	"frame": {"x":887,"y":805,"w":112,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":112,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/502_Dewott_CA-1_1000pixel.png":
+{
+	"frame": {"x":1592,"y":980,"w":84,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":9,"w":84,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/515_Panpour_CA_1000pixel.png":
+{
+	"frame": {"x":537,"y":1207,"w":106,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":9,"w":106,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/524_Roggenrola_CA_1000pixel.png":
+{
+	"frame": {"x":1527,"y":712,"w":88,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":9,"w":88,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/525_Boldore_CA_1000pixel.png":
+{
+	"frame": {"x":1205,"y":1207,"w":129,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":23,"w":129,"h":104},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/535_Tympole_CA_1000pixel.png":
+{
+	"frame": {"x":134,"y":805,"w":132,"h":128},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":128},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/540_Sewaddle_CA_1000pixel.png":
+{
+	"frame": {"x":1,"y":403,"w":131,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":131,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/548_Petilil_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":516,"w":97,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":97,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/554_Darumaka_CA-1_1000pixel.png":
+{
+	"frame": {"x":1219,"y":267,"w":114,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":9,"w":114,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/557_Dwebble_CA_1000pixel.png":
+{
+	"frame": {"x":269,"y":1207,"w":132,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":22,"w":132,"h":106},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/564_Tirtouga_CA_1000pixel.png":
+{
+	"frame": {"x":1872,"y":268,"w":132,"h":63},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":43,"w":132,"h":63},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/565_Carracosta_CA_1000pixel.png":
+{
+	"frame": {"x":134,"y":939,"w":132,"h":128},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":128},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/566_Archen_CA_1000pixel.png":
+{
+	"frame": {"x":1788,"y":710,"w":132,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":34,"w":132,"h":81},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/580_Ducklett_CA_1000pixel.png":
+{
+	"frame": {"x":1604,"y":221,"w":100,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":9,"w":100,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/581_Swanna_CA_1000pixel.png":
+{
+	"frame": {"x":1470,"y":222,"w":100,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":100,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/583_Vanillish_CA_1000pixel.png":
+{
+	"frame": {"x":1209,"y":902,"w":93,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":9,"w":93,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/584_Vanilluxe_CA_1000pixel.png":
+{
+	"frame": {"x":1225,"y":135,"w":108,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":108,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/587_Emolga_CA-1_1000pixel.png":
+{
+	"frame": {"x":264,"y":537,"w":132,"h":128},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":128},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/596_Galvantula_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":215,"w":132,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":25,"w":132,"h":100},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/619_Mienfoo_CA_wc.png":
+{
+	"frame": {"x":884,"y":1,"w":115,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":9,"w":115,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/622_Golett_CA_1000pixel.png":
+{
+	"frame": {"x":135,"y":269,"w":132,"h":129},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":10,"w":132,"h":129},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/626_Bouffalant_CA_1000pixel.png":
+{
+	"frame": {"x":883,"y":269,"w":132,"h":116},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":17,"w":132,"h":116},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/632_Durant_CA_1000pixel.png":
+{
+	"frame": {"x":1738,"y":1157,"w":131,"h":81},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":34,"w":131,"h":81},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/634_Zweilous_CA_1000pixel.png":
+{
+	"frame": {"x":266,"y":135,"w":132,"h":127},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":127},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/650_Chespin_CA-4_1000pixel.png":
+{
+	"frame": {"x":1001,"y":1,"w":113,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":9,"w":113,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/653_Fennekin_CA-4_1000pixel.png":
+{
+	"frame": {"x":1000,"y":671,"w":112,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":112,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/656_Froakie_CA-5_1000pixel.png":
+{
+	"frame": {"x":887,"y":939,"w":112,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":112,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/657_Frogadier_CA.png":
+{
+	"frame": {"x":518,"y":805,"w":132,"h":123},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":13,"w":132,"h":123},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/659_Bunnelby_CA_1000pixel.png":
+{
+	"frame": {"x":1319,"y":1032,"w":91,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":9,"w":91,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/664_Scatterbug_CA-2.png":
+{
+	"frame": {"x":1788,"y":793,"w":77,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":9,"w":77,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/685_Slurpuff_CA_1000pixel.png":
+{
+	"frame": {"x":521,"y":269,"w":121,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":121,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/691_Dragalge_CA_1000pixel.png":
+{
+	"frame": {"x":392,"y":805,"w":124,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":9,"w":124,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/696_Tyrunt_CA_1000pixel.png":
+{
+	"frame": {"x":1,"y":537,"w":131,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":131,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/698_Amaura_CA_1000pixel.png":
+{
+	"frame": {"x":1114,"y":768,"w":94,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":9,"w":94,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/702_Dedenne2_CA-6_1000pixel.png":
+{
+	"frame": {"x":887,"y":1073,"w":132,"h":112},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":19,"w":132,"h":112},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/703_Carbink_CA_1000pixel.png":
+{
+	"frame": {"x":642,"y":1073,"w":132,"h":122},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":14,"w":132,"h":122},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/712_Bergmite_CA_1000pixel.png":
+{
+	"frame": {"x":766,"y":939,"w":119,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":9,"w":119,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/714_Noibat_CA-2_1000pixel.png":
+{
+	"frame": {"x":645,"y":1,"w":118,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":118,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/722_Rowlet_CA-6_1000pixel.png":
+{
+	"frame": {"x":1754,"y":872,"w":132,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":37,"w":132,"h":76},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/725_Litten_CA-2_1000pixel.png":
+{
+	"frame": {"x":522,"y":1,"w":121,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":121,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/728_Popplio_CA-2_1000pixel.png":
+{
+	"frame": {"x":644,"y":403,"w":132,"h":118},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":132,"h":118},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/728_Popplio_CA-4_1000pixel.png":
+{
+	"frame": {"x":1071,"y":1207,"w":132,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":23,"w":132,"h":104},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/728_Popplio_CA-5_1000pixel.png":
+{
+	"frame": {"x":643,"y":671,"w":132,"h":121},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":14,"w":132,"h":121},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/728_Popplio_CA-6_1000pixel.png":
+{
+	"frame": {"x":1470,"y":1,"w":132,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":20,"w":132,"h":109},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/729_Brionne_CA_1000pixel.png":
+{
+	"frame": {"x":1113,"y":1073,"w":132,"h":110},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":20,"w":132,"h":110},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/737_Charjabug_CA_1000pixel.png":
+{
+	"frame": {"x":1603,"y":619,"w":132,"h":89},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":30,"w":132,"h":89},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/746_Wishiwashi_Solo_Form_CA_1000pixel.png":
+{
+	"frame": {"x":1489,"y":848,"w":132,"h":89},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":30,"w":132,"h":89},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/759_Stufful_CA_1000pixel.png":
+{
+	"frame": {"x":644,"y":537,"w":132,"h":118},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":132,"h":118},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/771_Pyukumuku_CA-1_1000pixel.png":
+{
+	"frame": {"x":1114,"y":403,"w":132,"h":99},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":25,"w":132,"h":99},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/774_Minior_Meteor_Form_CA-1_1000pixel.png":
+{
+	"frame": {"x":1,"y":269,"w":132,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/777_Togedemaru_CA-1_1000pixel.png":
+{
+	"frame": {"x":266,"y":1,"w":127,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":9,"w":127,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/783_Hakamo-o_CA_1000pixel.png":
+{
+	"frame": {"x":1470,"y":424,"w":97,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":9,"w":97,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/810_Grookey1_CA-3_1000pixel.png":
+{
+	"frame": {"x":1001,"y":135,"w":113,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":9,"w":113,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/813_Scorbunny_CA-2_1000pixel.png":
+{
+	"frame": {"x":1436,"y":714,"w":89,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":9,"w":89,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/816_Sobble_CA-5_1000pixel.png":
+{
+	"frame": {"x":1225,"y":1036,"w":92,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":9,"w":92,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/817_Drizzile_CA-5_1000pixel.png":
+{
+	"frame": {"x":1412,"y":982,"w":89,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":9,"w":89,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/819_Skwovet_CA-2.png":
+{
+	"frame": {"x":522,"y":135,"w":121,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":9,"w":121,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/820_Greedent_CA-1_1000pixel.png":
+{
+	"frame": {"x":1114,"y":537,"w":99,"h":95},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":27,"w":99,"h":95},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/831_Wooloo_CA-3_1000pixel.png":
+{
+	"frame": {"x":1,"y":805,"w":132,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/832_Dubwool_CA-3_1000pixel.png":
+{
+	"frame": {"x":765,"y":1,"w":117,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":117,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/835_Yamper4_CA_1000pixel.png":
+{
+	"frame": {"x":266,"y":269,"w":132,"h":127},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":11,"w":132,"h":127},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/836_Boltund_CA-1_1000pixel.png":
+{
+	"frame": {"x":765,"y":135,"w":117,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":9,"w":117,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/837_Rolycoly1_CA_1000pixel.png":
+{
+	"frame": {"x":1336,"y":1,"w":132,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":20,"w":132,"h":110},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/837_Rolycoly2_CA_1000pixel.png":
+{
+	"frame": {"x":884,"y":135,"w":132,"h":115},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":17,"w":132,"h":115},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/838_Carkol_CA-1_1000pixel.png":
+{
+	"frame": {"x":1336,"y":1166,"w":91,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":9,"w":91,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/841_Flapple_CA-1_1000pixel.png":
+{
+	"frame": {"x":1,"y":939,"w":132,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":132,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/845_Cramorant_CA-2_1000pixel.png":
+{
+	"frame": {"x":1001,"y":939,"w":111,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":111,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/846_Arrokuda_CA-1.png":
+{
+	"frame": {"x":1336,"y":217,"w":102,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":9,"w":102,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/847_Barraskewda_CA-1_1000pixel.png":
+{
+	"frame": {"x":1872,"y":536,"w":132,"h":57},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":46,"w":132,"h":57},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/848_Toxel_CA-1.png":
+{
+	"frame": {"x":671,"y":1207,"w":106,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":9,"w":106,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/849_Toxtricity(Amped_Form)_CA-2_1000pixel.png":
+{
+	"frame": {"x":1678,"y":978,"w":73,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":9,"w":73,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/863_Perrserker_CA-5_1000pixel.png":
+{
+	"frame": {"x":764,"y":403,"w":117,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":9,"w":117,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/870_Falinks_CA-3_1000pixel.png":
+{
+	"frame": {"x":1872,"y":402,"w":132,"h":58},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":46,"w":132,"h":58},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/871_Pincurchin1_CA-1_1000pixel.png":
+{
+	"frame": {"x":1604,"y":111,"w":132,"h":108},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":21,"w":132,"h":108},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/872_Snom1_CA-1_1000pixel.png":
+{
+	"frame": {"x":1738,"y":615,"w":132,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":28,"w":132,"h":93},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/875_Eiscue_CA-1_1000pixel.png":
+{
+	"frame": {"x":1429,"y":1116,"w":87,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":9,"w":87,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/875_Eiscue_Ice_Face_CA-1_1000pixel.png":
+{
+	"frame": {"x":1617,"y":710,"w":86,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":9,"w":86,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/875_Eiscue_Noice_Face_CA-2_1000pixel.png":
+{
+	"frame": {"x":1738,"y":111,"w":102,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":9,"w":102,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/877_Morpeko_Full_Belly_Mode_CA-2_1000pixel.png":
+{
+	"frame": {"x":1669,"y":844,"w":83,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":9,"w":83,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/877_Morpeko_Hangry_Mode_CA-5_1000pixel.png":
+{
+	"frame": {"x":1518,"y":1116,"w":85,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":9,"w":85,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/885_Dreepy_CA-2_1000pixel.png":
+{
+	"frame": {"x":764,"y":537,"w":132,"h":117},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":16,"w":132,"h":117},
+	"sourceSize": {"w":150,"h":150}
+},
+"playablepokes/voltorb_hud.png":
+{
+	"frame": {"x":1753,"y":1026,"w":131,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":11,"w":131,"h":129},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hudpokes.png",
+	"format": "RGBA8888",
+	"size": {"w":1941,"h":1315},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:988cad49c06afa34f2a7ab27b22c15d7:578fbc55104161b741f2b286c1ad92e0:fc11bba611f94e86b313e6c0572fac79$"
+}
+}

@@ -1,0 +1,105 @@
+{"frames": {
+
+"fire.png":
+{
+	"frame": {"x":1,"y":1,"w":1387,"h":765},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":765},
+	"sourceSize": {"w":1387,"h":765}
+},
+"ice1.png":
+{
+	"frame": {"x":1047,"y":1535,"w":478,"h":510},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":478,"h":510},
+	"sourceSize": {"w":478,"h":510}
+},
+"ice2.png":
+{
+	"frame": {"x":1390,"y":1,"w":745,"h":586},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":745,"h":586},
+	"sourceSize": {"w":745,"h":586}
+},
+"ice4.png":
+{
+	"frame": {"x":1,"y":1535,"w":516,"h":508},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":516,"h":508},
+	"sourceSize": {"w":516,"h":508}
+},
+"ice6.png":
+{
+	"frame": {"x":519,"y":1535,"w":507,"h":526},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":507,"h":526},
+	"sourceSize": {"w":507,"h":526}
+},
+"mud1.png":
+{
+	"frame": {"x":1390,"y":748,"w":575,"h":402},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":575,"h":402},
+	"sourceSize": {"w":575,"h":402}
+},
+"mud2.png":
+{
+	"frame": {"x":1782,"y":1497,"w":237,"h":189},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":237,"h":189},
+	"sourceSize": {"w":237,"h":189}
+},
+"mud7.png":
+{
+	"frame": {"x":1559,"y":1523,"w":509,"h":221},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":509,"h":221},
+	"sourceSize": {"w":509,"h":221}
+},
+"rain_fade.png":
+{
+	"frame": {"x":1,"y":768,"w":1387,"h":765},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":765},
+	"sourceSize": {"w":1387,"h":765}
+},
+"rock3.png":
+{
+	"frame": {"x":1390,"y":1152,"w":369,"h":321},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":369,"h":321},
+	"sourceSize": {"w":369,"h":321}
+},
+"smoke2.png":
+{
+	"frame": {"x":1713,"y":1152,"w":343,"h":325},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":343,"h":325},
+	"sourceSize": {"w":343,"h":325}
+}},
+"animations": {
+	"ice": ["ice1.png","ice2.png","ice4.png","ice6.png"],
+	"mud": ["mud1.png","mud2.png","mud7.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards1.png",
+	"format": "RGBA8888",
+	"size": {"w":2039,"h":2044},
+	"scale": "0.5",
+	"related_multi_packs": [ "hazards0.json", "hazards2.json", "hazards3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f657531bd2a37c36c6aa0576504f6ce6:a784d9f2c457d7998a281e4aeef1662a:03e6c212c87a16b3d0491340487a4220$"
+}
+}

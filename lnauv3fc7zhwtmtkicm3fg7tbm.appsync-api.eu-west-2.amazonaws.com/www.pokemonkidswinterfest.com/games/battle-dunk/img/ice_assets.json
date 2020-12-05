@@ -1,0 +1,103 @@
+{"frames": {
+
+"icefloat1.png":
+{
+	"frame": {"x":1254,"y":941,"w":382,"h":447},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":382,"h":447},
+	"sourceSize": {"w":382,"h":447}
+},
+"icefloat2.png":
+{
+	"frame": {"x":2,"y":1742,"w":371,"h":238},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":371,"h":238},
+	"sourceSize": {"w":371,"h":238}
+},
+"icefloat3.png":
+{
+	"frame": {"x":1692,"y":1368,"w":425,"h":301},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":425,"h":301},
+	"sourceSize": {"w":425,"h":301}
+},
+"icefloat4.png":
+{
+	"frame": {"x":377,"y":1742,"w":373,"h":221},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":373,"h":221},
+	"sourceSize": {"w":373,"h":221}
+},
+"icefloat5.png":
+{
+	"frame": {"x":1735,"y":603,"w":373,"h":294},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":373,"h":294},
+	"sourceSize": {"w":373,"h":294}
+},
+"icefloat6.png":
+{
+	"frame": {"x":1254,"y":2,"w":597,"h":761},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":597,"h":761},
+	"sourceSize": {"w":597,"h":761}
+},
+"islandBottomLeft_.png":
+{
+	"frame": {"x":1705,"y":980,"w":384,"h":309},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":384,"h":309},
+	"sourceSize": {"w":384,"h":309}
+},
+"islandBottomRight_.png":
+{
+	"frame": {"x":1254,"y":1638,"w":414,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":414,"h":300},
+	"sourceSize": {"w":414,"h":300}
+},
+"islandTopLeft_.png":
+{
+	"frame": {"x":1254,"y":603,"w":477,"h":334},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":477,"h":334},
+	"sourceSize": {"w":477,"h":334}
+},
+"islandTopRight_.png":
+{
+	"frame": {"x":1254,"y":1327,"w":434,"h":307},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":434,"h":307},
+	"sourceSize": {"w":434,"h":307}
+},
+"main_arena.png":
+{
+	"frame": {"x":2,"y":2,"w":1736,"h":1248},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1736,"h":1248},
+	"sourceSize": {"w":1736,"h":1248}
+}},
+"animations": {
+	"icefloat": ["icefloat1.png","icefloat2.png","icefloat3.png","icefloat4.png","icefloat5.png","icefloat6.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ice_assets.png",
+	"format": "RGBA8888",
+	"size": {"w":2031,"h":1982},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9a8a7670252fb9c52ca6d7e2cd4520b2:bc19b4cfdc75c0e2db88f763fc6de7c8:3cd997a23c3595c08741e8f5ccee9e29$"
+}
+}

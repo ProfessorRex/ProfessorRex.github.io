@@ -1,0 +1,557 @@
+{
+    "backgrounds": [
+        {
+            "name": "bg1",
+            "id": "./img/bgitems/scbg_1.jpg",
+            "wk": "0",
+            "label": "1 Battle Dunk"
+        },
+        {
+            "name": "bg2",
+            "id": "./img/bgitems/scbg_2.jpg",
+            "wk": "0",
+            "label": "2 Woods River"
+        },
+        {
+            "name": "bg3",
+            "id": "./img/bgitems/scbg_3.jpg",
+            "wk": "0",
+            "label": "3 Sea"
+        },
+        {
+            "name": "bg4",
+            "id": "./img/bgitems/scbg_4.jpg",
+            "wk": "0",
+            "label": "4 Ice Cliffs"
+        },
+        {
+            "name": "bg5",
+            "id": "./img/bgitems/scbg_5.jpg",
+            "wk": "0",
+            "label": "5 Night Cave"
+        },
+        {
+            "name": "bg6",
+            "id": "./img/bgitems/scbg_6.jpg",
+            "wk": "1",
+            "label": "6 Ship Deck"
+        },
+        {
+            "name": "bg7",
+            "id": "./img/bgitems/scbg_7.jpg",
+            "wk": "2",
+            "label": "7 Woods Fence"
+        },
+        {
+            "name": "bg8",
+            "id": "./img/bgitems/scbg_8.jpg",
+            "wk": "3",
+            "label": "8 Town Fountain"
+        },
+        {
+            "name": "bg9",
+            "id": "./img/bgitems/scbg_9.jpg",
+            "wk": "4",
+            "label": "9 Waterfall"
+        }
+    ],
+    "items": [
+        {
+            "name": "item1",
+            "id": "./img/items/crate1.png"
+        },
+        {
+            "name": "item2",
+            "id": "./img/items/crate2.png"
+        },
+        {
+            "name": "item3",
+            "id": "./img/items/crate3.png"
+        },
+        {
+            "name": "item4",
+            "id": "./img/items/flag1.png"
+        },
+        {
+            "name": "item5",
+            "id": "./img/items/flag2.png"
+        },
+        {
+            "name": "item6",
+            "id": "./img/items/flag3.png"
+        },
+        {
+            "name": "item7",
+            "id": "./img/items/flag4.png"
+        },
+        {
+            "name": "item8",
+            "id": "./img/items/grass1.png"
+        },
+        {
+            "name": "item9",
+            "id": "./img/items/grass2.png"
+        },
+        {
+            "name": "item10",
+            "id": "./img/items/ice1.png"
+        },
+        {
+            "name": "item11",
+            "id": "./img/items/ice2.png"
+        },
+        {
+            "name": "item12",
+            "id": "./img/items/ice3.png"
+        },
+        {
+            "name": "item13",
+            "id": "./img/items/ice4.png"
+        },
+        {
+            "name": "item14",
+            "id": "./img/items/ice5.png"
+        },
+        {
+            "name": "item15",
+            "id": "./img/items/lantern1.png"
+        },
+        {
+            "name": "item16",
+            "id": "./img/items/lantern2.png"
+        },
+        {
+            "name": "item17",
+            "id": "./img/items/lantern3.png"
+        },
+        {
+            "name": "item18",
+            "id": "./img/items/lantern4.png"
+        },
+        {
+            "name": "item19",
+            "id": "./img/items/lantern5.png"
+        },
+        {
+            "name": "item20",
+            "id": "./img/items/logs1.png"
+        },
+        {
+            "name": "item21",
+            "id": "./img/items/logs2.png"
+        },
+        {
+            "name": "item22",
+            "id": "./img/items/plant1.png"
+        },
+        {
+            "name": "item23",
+            "id": "./img/items/plant2.png"
+        },
+        {
+            "name": "item24",
+            "id": "./img/items/plant3.png"
+        },
+        {
+            "name": "item25",
+            "id": "./img/items/rock1.png"
+        },
+        {
+            "name": "item26",
+            "id": "./img/items/rock2.png"
+        },
+        {
+            "name": "item27",
+            "id": "./img/items/rock3.png"
+        },
+        {
+            "name": "item28",
+            "id": "./img/items/rock4.png"
+        },
+        {
+            "name": "item29",
+            "id": "./img/items/rock5.png"
+        },
+        {
+            "name": "item30",
+            "id": "./img/items/sceneasset_balloon1.png"
+        },
+        {
+            "name": "item31",
+            "id": "./img/items/sceneasset_balloon2.png"
+        },
+        {
+            "name": "item32",
+            "id": "./img/items/sceneasset_balloon3.png"
+        },
+        {
+            "name": "item33",
+            "id": "./img/items/sceneasset_balloon4.png"
+        },
+        {
+            "name": "item34",
+            "id": "./img/items/sceneasset_balloon5.png"
+        },
+        {
+            "name": "item35",
+            "id": "./img/items/sceneasset_balloon6.png"
+        },
+        {
+            "name": "item36",
+            "id": "./img/items/sceneasset_candy1.png"
+        },
+        {
+            "name": "item37",
+            "id": "./img/items/sceneasset_candy2.png"
+        },
+        {
+            "name": "item38",
+            "id": "./img/items/sceneasset_candy3.png"
+        },
+        {
+            "name": "item39",
+            "id": "./img/items/sceneasset_candy4.png"
+        },
+        {
+            "name": "item40",
+            "id": "./img/items/sceneasset_candy5.png"
+        },
+        {
+            "name": "item41",
+            "id": "./img/items/sceneasset_candy6.png"
+        },
+        {
+            "name": "item42",
+            "id": "./img/items/sceneasset_snowflake1.png"
+        },
+        {
+            "name": "item43",
+            "id": "./img/items/sceneasset_snowflake2.png"
+        },
+        {
+            "name": "item44",
+            "id": "./img/items/sceneasset_snowflake3.png"
+        },
+        {
+            "name": "item45",
+            "id": "./img/items/sceneasset_snowflake4.png"
+        },
+        {
+            "name": "item46",
+            "id": "./img/items/sceneasset_snowflake5.png"
+        },
+        {
+            "name": "item47",
+            "id": "./img/items/sceneasset_snowflake6.png"
+        },
+        {
+            "name": "item48",
+            "id": "./img/items/shrub1.png"
+        },
+        {
+            "name": "item49",
+            "id": "./img/items/shrub2.png"
+        },
+        {
+            "name": "item50",
+            "id": "./img/items/shrub3.png"
+        },
+        {
+            "name": "item51",
+            "id": "./img/items/teamflag_electric.png",
+            "isElectricFlag": "true"
+        },
+        {
+            "name": "item52",
+            "id": "./img/items/teamflag_fire.png",
+            "isFireFlag": "true"
+        },
+        {
+            "name": "item53",
+            "id": "./img/items/teamflag_grass.png",
+            "isGrassFlag": "true"
+        },
+        {
+            "name": "item54",
+            "id": "./img/items/teamflag_water.png",
+            "isWaterFlag": "true"
+        },
+        {
+            "name": "item55",
+            "id": "./img/items/tree1.png"
+        },
+        {
+            "name": "item56",
+            "id": "./img/items/tree2.png"
+        }
+    ],
+    "pokemon": [
+        {
+            "name": "p2",
+            "id": "./img/pokemon/001_Bulbasaur_CA-4.png",
+            "wk": "0",
+            "type": "grass",
+            "isHero1": "true"
+        },
+        {
+            "name": "p3",
+            "id": "./img/pokemon/004_Charmander_CA-4.png",
+            "wk": "0",
+            "type": "fire",
+            "isHero2": "true"
+        },
+        {
+            "name": "p4",
+            "id": "./img/pokemon/006_Charizard_CA-10.png",
+            "wk": "0",
+            "type": "fire"
+        },
+        {
+            "name": "p5",
+            "id": "./img/pokemon/007_Squirtle_CA-2.png",
+            "wk": "0",
+            "type": "water",
+            "isHero3": "true"
+        },
+        {
+            "name": "p6",
+            "id": "./img/pokemon/025_Pikachu_CA-3.png",
+            "wk": "0",
+            "type": "electric",
+            "isHero4": "true"
+        },
+        {
+            "name": "p7",
+            "id": "./img/pokemon/039_Jigglypuff_CA-3.png",
+            "wk": "0",
+            "type": ""
+        },
+        {
+            "name": "p8",
+            "id": "./img/pokemon/129_Magikarp_CA-1.png",
+            "wk": "0",
+            "type": "water"
+        },
+        {
+            "name": "p9",
+            "id": "./img/pokemon/133_Eevee_CA-2.png",
+            "wk": "0",
+            "type": ""
+        },
+        {
+            "name": "p10",
+            "id": "./img/pokemon/143_Snorlax_CA-4.png",
+            "wk": "0",
+            "type": ""
+        },
+        {
+            "name": "p11",
+            "id": "./img/pokemon/152_Chikorita_CA-5.png",
+            "wk": "0",
+            "type": "grass"
+        },
+        {
+            "name": "p12",
+            "id": "./img/pokemon/155_Cyndaquil_CA-2.png",
+            "wk": "0",
+            "type": "fire"
+        },
+        {
+            "name": "p13",
+            "id": "./img/pokemon/158_Totodile_CA-1.png",
+            "wk": "0",
+            "type": "water"
+        },
+        {
+            "name": "p14",
+            "id": "./img/pokemon/172_Pichu_CA-1.png",
+            "wk": "0",
+            "type": "electric"
+        },
+        {
+            "name": "p15",
+            "id": "./img/pokemon/174_Igglybuff_CA.png",
+            "wk": "0",
+            "type": ""
+        },
+        {
+            "name": "p16",
+            "id": "./img/pokemon/252_Treecko_CA-6.png",
+            "wk": "0",
+            "type": "grass"
+        },
+        {
+            "name": "p17",
+            "id": "./img/pokemon/255_Torchic_CA-2.png",
+            "wk": "0",
+            "type": "fire"
+        },
+        {
+            "name": "p18",
+            "id": "./img/pokemon/258_Mudkip_CA-5.png",
+            "wk": "0",
+            "type": "water"
+        },
+        {
+            "name": "p19",
+            "id": "./img/pokemon/387_Turtwig_CA-2.png",
+            "wk": "0",
+            "type": "grass"
+        },
+        {
+            "name": "p20",
+            "id": "./img/pokemon/390_Chimchar_CA-6.png",
+            "wk": "0",
+            "type": "fire"
+        },
+        {
+            "name": "p21",
+            "id": "./img/pokemon/393_Piplup_CA-3.png",
+            "wk": "0",
+            "type": "isWaterFlag"
+        },
+        {
+            "name": "p22",
+            "id": "./img/pokemon/448_Lucario_CA-1.png",
+            "wk": "0",
+            "type": ""
+        },
+        {
+            "name": "p23",
+            "id": "./img/pokemon/495_Snivy_CA-1.png",
+            "wk": "0"
+        },
+        {
+            "name": "p24",
+            "id": "./img/pokemon/498_Tepig_CA-4.png",
+            "wk": "0",
+            "type": "fire"
+        },
+        {
+            "name": "p25",
+            "id": "./img/pokemon/501_Oshawott_CA-1.png",
+            "wk": "0",
+            "type": "water"
+        },
+        {
+            "name": "p26",
+            "id": "./img/pokemon/587_Emolga_CA-3.png",
+            "wk": "1",
+            "type": "electric"
+        },
+        {
+            "name": "p27",
+            "id": "./img/pokemon/650_Chespin_CA-4.png",
+            "wk": "1",
+            "type": "grass"
+        },
+        {
+            "name": "p28",
+            "id": "./img/pokemon/653_Fennekin_CA-4.png",
+            "wk": "1",
+            "type": "fire"
+        },
+        {
+            "name": "p29",
+            "id": "./img/pokemon/656_Froakie_CA-5.png",
+            "wk": "1",
+            "type": "water"
+        },
+        {
+            "name": "p30",
+            "id": "./img/pokemon/658_Greninja_CA-1.png",
+            "wk": "1",
+            "type": "water"
+        },
+        {
+            "name": "p31",
+            "id": "./img/pokemon/674_Pancham1_CA.png",
+            "wk": "2",
+            "type": ""
+        },
+        {
+            "name": "p32",
+            "id": "./img/pokemon/722_Rowlet_CA-2.png",
+            "wk": "2",
+            "type": "grass"
+        },
+        {
+            "name": "p33",
+            "id": "./img/pokemon/725_Litten_CA-2.png",
+            "wk": "2",
+            "type": "fire"
+        },
+        {
+            "name": "p34",
+            "id": "./img/pokemon/728_Popplio_CA-5.png",
+            "wk": "2",
+            "type": "water"
+        },
+        {
+            "name": "p35",
+            "id": "./img/pokemon/225_Delibird_CA-1.png",
+            "wk": "2",
+            "type": "ice"
+        },
+        {
+            "name": "p36",
+            "id": "./img/pokemon/810_Grookey_CA-3.png",
+            "wk": "3",
+            "type": "grass"
+        },
+        {
+            "name": "p37",
+            "id": "./img/pokemon/813_Scorbunny_CA-2.png",
+            "wk": "3",
+            "type": "fire"
+        },
+        {
+            "name": "p38",
+            "id": "./img/pokemon/816_Sobble2_CA-6-2.png",
+            "wk": "3",
+            "type": "water"
+        },
+        {
+            "name": "p39",
+            "id": "./img/pokemon/831_Wooloo_CA-4-2.png",
+            "wk": "3",
+            "type": ""
+        },
+        {
+            "name": "p40",
+            "id": "./img/pokemon/835_Yamper4_CA.png",
+            "wk": "3",
+            "type": "electric"
+        },
+        {
+            "name": "p41",
+            "id": "./img/pokemon/865_Sirfetch'd_CA-3.png",
+            "wk": "4",
+            "type": ""
+        },
+        {
+            "name": "p42",
+            "id": "./img/pokemon/866_Mr_Rime_CA-7.png",
+            "wk": "4",
+            "type": "ice"
+        },
+        {
+            "name": "p43",
+            "id": "./img/pokemon/869_Alcremie(Vanilla_Cream)_CA-2.png",
+            "wk": "4",
+            "type": ""
+        },
+        {
+            "name": "p44",
+            "id": "./img/pokemon/875_Eiscue_Ice_Face_CA-1.png",
+            "wk": "4",
+            "type": "ice"
+        },
+        {
+            "name": "p45",
+            "id": "./img/pokemon/877_Morpeko_Full_Belly_Mode_CA-2.png",
+            "wk": "4",
+            "type": "electric"
+        }
+    ]
+}

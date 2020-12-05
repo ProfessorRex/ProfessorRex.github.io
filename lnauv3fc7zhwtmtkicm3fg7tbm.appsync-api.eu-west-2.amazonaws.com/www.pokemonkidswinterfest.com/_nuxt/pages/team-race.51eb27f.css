@@ -1,0 +1,869 @@
+.time-bar[data-v-e818355e] {
+    width: 34vw;
+    height: 2rem;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    bottom: 1.3rem;
+    right: -3rem;
+    transition: all .7s cubic-bezier(.47, 1.64, .41, .7);
+    transition-delay: .3s;
+    transform: translateX(110vw);
+    display: flex;
+    align-items: center
+}
+
+.time-bar .the-bar[data-v-e818355e] {
+    background-color: #064d81;
+    width: 100%;
+    height: 100%;
+    transform: skew(-24deg);
+    position: absolute;
+    box-shadow: 0 .3vw 0 rgba(6, 77, 129, .4)
+}
+
+.time-bar .time-text[data-v-e818355e] {
+    color: #fff;
+    font-family: Kanit, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: .9rem;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-left: 2.4vw;
+    text-transform: uppercase
+}
+
+.time-bar .time-text small[data-v-e818355e] {
+    color: #6ccae9;
+    font-size: .6rem
+}
+
+.time-bar.active[data-v-e818355e] {
+    transform: translateX(0)
+}
+
+.team-race-flag[data-v-14951eb0] {
+    width: 18vw;
+    height: 21vh
+}
+
+.team-race-flag .flag-main[data-v-14951eb0] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: ice-bobbing-data-v-14951eb0 10s cubic-bezier(.31, -.05, .62, 1.08) infinite;
+    animation: ice-bobbing-data-v-14951eb0 10s cubic-bezier(.31, -.05, .62, 1.08) infinite
+}
+
+.team-race-flag .flag-main .flag-base[data-v-14951eb0] {
+    width: 7vw;
+    height: 5vw;
+    background-image: url(/flags/ice.png)
+}
+
+.team-race-flag .flag-main .flag-base[data-v-14951eb0],
+.team-race-flag .flag-main .the-flag[data-v-14951eb0] {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.team-race-flag .flag-main .the-flag[data-v-14951eb0] {
+    width: 6vw;
+    height: 8.5vw;
+    position: absolute;
+    bottom: 2.5vw;
+    right: 1vw;
+    transform-origin: bottom center;
+    -webkit-animation: flag-wobble-data-v-14951eb0 8s cubic-bezier(.56, 0, .44, 1) infinite;
+    animation: flag-wobble-data-v-14951eb0 8s cubic-bezier(.56, 0, .44, 1) infinite
+}
+
+.team-race-flag .flag-main .the-flag.fire[data-v-14951eb0] {
+    background-image: url(/flags/flag-fire.png)
+}
+
+.team-race-flag .flag-main .the-flag.water[data-v-14951eb0] {
+    background-image: url(/flags/flag-water.png)
+}
+
+.team-race-flag .flag-main .the-flag.electric[data-v-14951eb0] {
+    background-image: url(/flags/flag-electric.png)
+}
+
+.team-race-flag .flag-main .the-flag.grass[data-v-14951eb0] {
+    background-image: url(/flags/flag-grass.png)
+}
+
+.team-race-flag .flag-main .position[data-v-14951eb0] {
+    position: absolute;
+    left: 5vw;
+    top: -1vw
+}
+
+.team-race-flag .flag-main .score-flag-pole[data-v-14951eb0] {
+    position: absolute;
+    width: 3.7vw;
+    height: 5vw;
+    bottom: 2.3vw;
+    right: 3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/flags/score-flag-pole.png)
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag[data-v-14951eb0] {
+    min-width: 10vw;
+    width: auto;
+    height: 2.75vw;
+    position: absolute;
+    right: 3.5vw;
+    top: .5vw;
+    padding-left: 1.2vw;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-end
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag .score-flag-inner[data-v-14951eb0] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag[data-v-14951eb0]:before {
+    content: "";
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    background-color: #fff;
+    bottom: 50%;
+    left: 1.2vw;
+    transform-origin: bottom left;
+    transform: rotate(-40deg)
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag[data-v-14951eb0]:after {
+    content: "";
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 1.2vw;
+    transform-origin: top left;
+    transform: rotate(40deg)
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag .score[data-v-14951eb0] {
+    color: #2fa7d8;
+    font-family: Kanit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 2.7vw;
+    padding-right: 1vw
+}
+
+.team-race-flag .flag-main .score-flag-pole .score-flag .razzberry[data-v-14951eb0] {
+    position: absolute;
+    top: 0;
+    left: 1.5vw;
+    bottom: 0;
+    width: 1.7vw;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/icons/razzberry.png)
+}
+
+@-webkit-keyframes flag-wobble-data-v-14951eb0 {
+    0% {
+        transform: rotate(0deg)
+    }
+    35% {
+        transform: rotate(-2deg)
+    }
+    50% {
+        transform: rotate(-1deg)
+    }
+    80% {
+        transform: rotate(2deg)
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes flag-wobble-data-v-14951eb0 {
+    0% {
+        transform: rotate(0deg)
+    }
+    35% {
+        transform: rotate(-2deg)
+    }
+    50% {
+        transform: rotate(-1deg)
+    }
+    80% {
+        transform: rotate(2deg)
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+@-webkit-keyframes ice-bobbing-data-v-14951eb0 {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0)
+    }
+    15% {
+        transform: translateY(.1vw)
+    }
+    30% {
+        transform: rotate(2deg) translateX(-.15vw) translateY(-.15vw)
+    }
+    50% {
+        transform: rotate(2deg) translateY(.15vw)
+    }
+    60% {
+        transform: translateX(.1vw) translateY(-.15vw)
+    }
+    80% {
+        transform: translateY(.1vw)
+    }
+    to {
+        transform: rotate(0deg) translateX(0) translateY(0)
+    }
+}
+
+@keyframes ice-bobbing-data-v-14951eb0 {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0)
+    }
+    15% {
+        transform: translateY(.1vw)
+    }
+    30% {
+        transform: rotate(2deg) translateX(-.15vw) translateY(-.15vw)
+    }
+    50% {
+        transform: rotate(2deg) translateY(.15vw)
+    }
+    60% {
+        transform: translateX(.1vw) translateY(-.15vw)
+    }
+    80% {
+        transform: translateY(.1vw)
+    }
+    to {
+        transform: rotate(0deg) translateX(0) translateY(0)
+    }
+}
+
+.team-race-graphic[data-v-726cc542] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.team-race-graphic .background[data-v-726cc542] {
+    position: absolute;
+    top: 0;
+    left: -1vw;
+    right: -1vw;
+    bottom: 0;
+    background-image: url(/bg/bg-water.jpg);
+    background-color: #71cceb;
+    background-size: contain;
+    background-position: 50%;
+    opacity: .7
+}
+
+.team-race-graphic .inner-track[data-v-726cc542] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1000vw
+}
+
+.team-race-graphic .top-path[data-v-726cc542] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25vh;
+    background-image: url(/bg/bg-top-ice-path.jpg);
+    background-size: auto 120%;
+    background-position: bottom;
+    background-repeat: repeat-x
+}
+
+.team-race-graphic .bottom-path[data-v-726cc542] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 22vh;
+    background-image: url(/bg/bg-bottom-ice-path.png);
+    background-size: auto 160%;
+    background-position: top;
+    background-repeat: repeat-x;
+    z-index: 3
+}
+
+.team-race-graphic .prize-bag-track[data-v-726cc542] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25vh;
+    z-index: 4
+}
+
+.team-race-graphic .prize-bag-track .prize[data-v-726cc542] {
+    width: 14vw;
+    height: 25vh;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.team-race-graphic .prize-bag-track .prize .pouch[data-v-726cc542] {
+    width: 10vw;
+    height: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top
+}
+
+.team-race-graphic .prize-bag-track .prize .pouch.common[data-v-726cc542] {
+    background-image: url(/icons/pouch1-small.png)
+}
+
+.team-race-graphic .prize-bag-track .prize .pouch.rare[data-v-726cc542] {
+    background-image: url(/icons/pouch2-small.png)
+}
+
+.team-race-graphic .prize-bag-track .prize .pouch.epic[data-v-726cc542] {
+    background-image: url(/icons/pouch3-small.png)
+}
+
+.team-race-graphic .prize-bag-track .prize .pouch.legendary[data-v-726cc542] {
+    background-image: url(/icons/pouch4-small.png)
+}
+
+.team-race-graphic .prize-bag-track .prize .score-label[data-v-726cc542] {
+    width: auto;
+    height: 2.6vw;
+    background-color: #fff;
+    border-radius: 1.3vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 .3vw .02vw #2fa7d8;
+    top: 6vw
+}
+
+.team-race-graphic .prize-bag-track .prize .score-label .razzberry[data-v-726cc542] {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    bottom: 0;
+    width: 1.7vw;
+    z-index: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/icons/razzberry.png)
+}
+
+.team-race-graphic .prize-bag-track .prize .score-label .score[data-v-726cc542] {
+    color: #2fa7d8;
+    font-family: Kanit;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 3.5vw;
+    padding-right: 1.4vw
+}
+
+.team-race-graphic .foreground-trees[data-v-726cc542] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 22vh;
+    z-index: 5
+}
+
+.team-race-graphic .foreground-trees .tree[data-v-726cc542] {
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/bg/bg-tree.png);
+    position: absolute
+}
+
+.team-race-graphic .foreground-trees .tree.size1[data-v-726cc542] {
+    width: 18vw;
+    height: 20vw
+}
+
+.team-race-graphic .foreground-trees .tree.size2[data-v-726cc542] {
+    width: 15vw;
+    height: 18vw;
+    top: 2vw
+}
+
+.team-race-graphic .foreground-trees .tree.size3[data-v-726cc542] {
+    width: 12vw;
+    height: 15vw;
+    top: 4vw
+}
+
+.team-race-graphic .lanes[data-v-726cc542] {
+    position: absolute;
+    bottom: 22vh;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2
+}
+
+.team-race-graphic .lanes .divider-lane[data-v-726cc542] {
+    position: absolute;
+    height: .6vw;
+    width: 100%;
+    background-image: url(/bg/lane-divider.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: repeat-x;
+    z-index: 2
+}
+
+.team-race-graphic .lanes .divider-lane.lane1[data-v-726cc542] {
+    top: 22%
+}
+
+.team-race-graphic .lanes .divider-lane.lane2[data-v-726cc542] {
+    top: 50%;
+    background-position: 0
+}
+
+.team-race-graphic .lanes .divider-lane.lane3[data-v-726cc542] {
+    top: 78%;
+    background-position: 100%
+}
+
+.team-race-graphic .lanes .start-line[data-v-726cc542] {
+    background-color: rgba(6, 77, 129, .7);
+    width: .8vw;
+    height: 110%;
+    position: absolute;
+    left: 29vw;
+    display: flex;
+    transform: skew(-25deg);
+    z-index: 1
+}
+
+.team-race-graphic .lanes .finish-line[data-v-726cc542] {
+    left: 950vw
+}
+
+.team-race-graphic .lanes .finish-line[data-v-726cc542],
+.team-race-graphic .lanes .prize-line[data-v-726cc542] {
+    background-color: rgba(6, 77, 129, .7);
+    width: .6vw;
+    height: 110%;
+    position: absolute;
+    display: flex;
+    transform: skew(-25deg);
+    z-index: 1
+}
+
+.team-race-graphic .lanes .team-race-flag[data-v-726cc542] {
+    position: absolute;
+    z-index: 4;
+    transition: all 1s
+}
+
+.team-race-graphic .lanes .team-race-flag.team-fire[data-v-726cc542] {
+    top: -22%;
+    left: 50%
+}
+
+.team-race-graphic .lanes .team-race-flag.team-grass[data-v-726cc542] {
+    top: 4%;
+    left: 40%
+}
+
+.team-race-graphic .lanes .team-race-flag.team-electric[data-v-726cc542] {
+    top: 33%;
+    left: 30%
+}
+
+.team-race-graphic .lanes .team-race-flag.team-water[data-v-726cc542] {
+    top: 60%;
+    left: 20%
+}
+
+.team-race-graphic .lanes .team-flag[data-v-726cc542] {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 18vw;
+    height: 11vw;
+    z-index: 4;
+    transition: all 1s;
+    left: -20%
+}
+
+.team-race-graphic .lanes .team-flag.team-fire[data-v-726cc542] {
+    background-image: url(/flags/team-races-fire-flag.png);
+    top: -19%;
+    left: 50%
+}
+
+.team-race-graphic .lanes .team-flag.team-grass[data-v-726cc542] {
+    background-image: url(/flags/team-races-grass-flag.png);
+    top: 7%;
+    left: 40%
+}
+
+.team-race-graphic .lanes .team-flag.team-electric[data-v-726cc542] {
+    background-image: url(/flags/team-races-electric-flag.png);
+    top: 37%;
+    left: 30%
+}
+
+.team-race-graphic .lanes .team-flag.team-water[data-v-726cc542] {
+    background-image: url(/flags/team-races-water-flag.png);
+    top: 63%;
+    left: 20%
+}
+
+.team-race-graphic .ui-overlay[data-v-726cc542] {
+    position: absolute;
+    bottom: 25vh;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 6
+}
+
+.team-race-graphic .ui-overlay .dir-button[data-v-726cc542] {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 50%;
+    transition: all 1.2s cubic-bezier(.47, 1.64, .41, .7);
+    cursor: pointer
+}
+
+.team-race-graphic .ui-overlay .dir-button.button-left[data-v-726cc542] {
+    left: -30vw;
+    background-image: url(/icons/large-arrow-right.png);
+    transform: rotate(180deg)
+}
+
+.team-race-graphic .ui-overlay .dir-button.button-right[data-v-726cc542] {
+    right: -30vw;
+    background-image: url(/icons/large-arrow-right.png)
+}
+
+.team-race-graphic .ui-overlay.show .dir-button.button-left[data-v-726cc542] {
+    left: 4.5vw;
+    transition-delay: .3s
+}
+
+.team-race-graphic .ui-overlay.show .dir-button.button-right[data-v-726cc542] {
+    right: 4.5vw;
+    transition-delay: .6s
+}
+
+.tutorial-bubble-container[data-v-7b8710f2] {
+    z-index: 9999999999;
+    opacity: 0;
+    transition: all .4s
+}
+
+.tutorial-bubble-container.animate[data-v-7b8710f2] {
+    opacity: 1
+}
+
+.tutorial-bubble-container .tutorial-bubble[data-v-7b8710f2] {
+    background-color: #fff;
+    border-radius: 1.5vw;
+    padding: 2vw 2.2vw;
+    position: fixed;
+    width: 42vw;
+    text-align: center;
+    filter: drop-shadow(0 0 .9vw rgba(0, 0, 0, .4))
+}
+
+.tutorial-bubble-container .tutorial-bubble.left[data-v-7b8710f2]:before {
+    left: -1.2vw
+}
+
+.tutorial-bubble-container .tutorial-bubble.left[data-v-7b8710f2]:before,
+.tutorial-bubble-container .tutorial-bubble.right[data-v-7b8710f2]:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.2vw;
+    width: 2.6vw;
+    height: 2vw;
+    transform: rotate(154deg) skew(40deg)
+}
+
+.tutorial-bubble-container .tutorial-bubble.right[data-v-7b8710f2]:before {
+    right: -1.2vw
+}
+
+.tutorial-bubble-container .tutorial-bubble.bottom[data-v-7b8710f2]:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -1vw;
+    margin-left: -1.2vw;
+    width: 2.6vw;
+    height: 2vw;
+    transform: rotate(244deg) skew(40deg)
+}
+
+.tutorial-bubble-container .tutorial-bubble .title[data-v-7b8710f2] {
+    color: #064d81;
+    padding: 0 0 1vw;
+    font-family: Poppins;
+    font-size: 2vw;
+    font-weight: 700
+}
+
+.tutorial-bubble-container .tutorial-bubble .text[data-v-7b8710f2] {
+    color: #064d81;
+    padding: 0 0 1vw;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.2
+}
+
+.tutorial-bubble-container .tutorial-bubble .button-container[data-v-7b8710f2] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3.5vw;
+    display: flex;
+    justify-content: center
+}
+
+.team-race[data-v-5078aec4] {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #71cceb
+}
+
+.team-race .team-race-inner[data-v-5078aec4] {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .3s
+}
+
+.team-race .team-race-inner.faded[data-v-5078aec4] {
+    opacity: .3
+}
+
+.team-race .tutorials[data-v-5078aec4] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999
+}
+
+.team-race .time-left[data-v-5078aec4] {
+    bottom: 24vh;
+    z-index: 99
+}
+
+.team-race .white-block[data-v-5078aec4] {
+    width: 45vw;
+    height: 190vh;
+    background-color: hsla(0, 0%, 100%, .5);
+    position: absolute;
+    top: -40vh;
+    left: 50%;
+    margin-left: -4vw;
+    transform: rotate(24deg) translateX(100vw);
+    opacity: 0;
+    transition: all .7s cubic-bezier(.47, 1.64, .41, .7)
+}
+
+.team-race .white-block.active[data-v-5078aec4] {
+    opacity: 1;
+    transform: rotate(24deg) translateX(0)
+}
+
+.team-race .white-block .white-block-inner[data-v-5078aec4] {
+    background-color: hsla(0, 0%, 100%, .7);
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 0;
+    bottom: 0
+}
+
+.team-race .content-container[data-v-5078aec4] {
+    width: 75vw;
+    height: 93%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media (max-aspect-ratio:4/3) {
+    .team-race .content-container[data-v-5078aec4] {
+        width: 85vw
+    }
+}
+
+.team-race .title-bar[data-v-5078aec4] {
+    width: 50vw;
+    height: 2.6rem;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    top: 3rem;
+    right: -3rem;
+    transition: all .7s cubic-bezier(.47, 1.64, .41, .7);
+    transform: translateX(110vw)
+}
+
+.team-race .title-bar .the-bar[data-v-5078aec4] {
+    background-color: #064d81;
+    width: 100%;
+    height: 100%;
+    transform: skew(-24deg);
+    position: absolute;
+    box-shadow: 0 .3vw 0 rgba(6, 77, 129, .4)
+}
+
+.team-race .title-bar .title-text[data-v-5078aec4] {
+    color: #fff;
+    font-family: Kanit, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.7rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    padding-left: 4vw
+}
+
+.team-race .title-bar .title-text em[data-v-5078aec4] {
+    color: #6ccae9;
+    margin-left: .6vw
+}
+
+.team-race .title-bar.active[data-v-5078aec4] {
+    transform: translateX(0);
+    transition-delay: .3s
+}
+
+.team-race .content-container[data-v-5078aec4] {
+    height: 75%;
+    justify-content: space-between
+}
+
+.team-race .content-container .left-panel-container[data-v-5078aec4] {
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(10vw);
+    transition: all .4s;
+    z-index: 5
+}
+
+.team-race .content-container .left-panel-container.active[data-v-5078aec4] {
+    opacity: 1;
+    transition-delay: .3s;
+    transform: translateX(0)
+}
+
+.team-race .content-container .right-panel-container[data-v-5078aec4] {
+    width: 42%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateX(10vw);
+    transition: all .4s;
+    z-index: 5
+}
+
+.team-race .content-container .right-panel-container.active[data-v-5078aec4] {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.team-race .content-container .right-panel-container .badge[data-v-5078aec4] {
+    position: relative
+}
+
+.team-race .content-container .right-panel-container .badge img[data-v-5078aec4] {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.team-race .content-container .right-panel-container .badge .pokemon[data-v-5078aec4] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 55%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%
+}

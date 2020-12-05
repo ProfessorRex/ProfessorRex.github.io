@@ -1,0 +1,415 @@
+{"frames": {
+
+"002_Ivysaur_CA-1.png":
+{
+	"frame": {"x":2,"y":554,"w":276,"h":267},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":6,"w":276,"h":267},
+	"sourceSize": {"w":279,"h":279}
+},
+"004_Charmander_CA-4.png":
+{
+	"frame": {"x":1401,"y":976,"w":244,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":2,"w":244,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"005_Charmeleon_CA-1.png":
+{
+	"frame": {"x":1111,"y":1204,"w":232,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":1,"w":232,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"016_Pidgey_CA-2.png":
+{
+	"frame": {"x":567,"y":283,"w":255,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":2,"w":255,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"019_Rattata_CA-1.png":
+{
+	"frame": {"x":567,"y":542,"w":212,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":2,"w":212,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"025_Pikachu_CA-3.png":
+{
+	"frame": {"x":846,"y":553,"w":201,"h":272},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":2,"w":201,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"035_Clefairy_CA.png":
+{
+	"frame": {"x":285,"y":2,"w":278,"h":267},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":278,"h":267},
+	"sourceSize": {"w":279,"h":279}
+},
+"036_Clefable_CA.png":
+{
+	"frame": {"x":2,"y":1105,"w":277,"h":256},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":11,"w":277,"h":256},
+	"sourceSize": {"w":279,"h":279}
+},
+"042_Golbat_CA.png":
+{
+	"frame": {"x":270,"y":935,"w":279,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":39,"w":279,"h":201},
+	"sourceSize": {"w":279,"h":279}
+},
+"054_Psyduck_CA-1.png":
+{
+	"frame": {"x":1392,"y":1224,"w":212,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":0,"w":212,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"063_Abra_CA.png":
+{
+	"frame": {"x":848,"y":758,"w":277,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":40,"w":277,"h":200},
+	"sourceSize": {"w":279,"h":279}
+},
+"067_Machoke_CA.png":
+{
+	"frame": {"x":826,"y":1427,"w":227,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":0,"w":227,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"113_Chansey_CA-1.png":
+{
+	"frame": {"x":1391,"y":2,"w":253,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":253,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"122_Mr._Mime_CA-3.png":
+{
+	"frame": {"x":1516,"y":259,"w":244,"h":277},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":2,"w":244,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"130_Gyarados_CA-1.png":
+{
+	"frame": {"x":2,"y":2,"w":279,"h":277},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":279,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"131_Lapras_CA-10.png":
+{
+	"frame": {"x":1109,"y":2,"w":278,"h":254},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":12,"w":278,"h":254},
+	"sourceSize": {"w":279,"h":279}
+},
+"144_Articuno_CA-1.png":
+{
+	"frame": {"x":565,"y":758,"w":200,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":40,"y":0,"w":200,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"148_Dragonair_CA.png":
+{
+	"frame": {"x":1681,"y":1158,"w":173,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":1,"w":173,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"150_Mewtwo_CA-6.png":
+{
+	"frame": {"x":285,"y":273,"w":278,"h":264},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":7,"w":278,"h":264},
+	"sourceSize": {"w":279,"h":279}
+},
+"155_Cyndaquil_CA-2.png":
+{
+	"frame": {"x":846,"y":273,"w":276,"h":255},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":276,"h":255},
+	"sourceSize": {"w":279,"h":279}
+},
+"203_Girafarig_CA.png":
+{
+	"frame": {"x":262,"y":1140,"w":242,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":0,"w":242,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"212_Scizor_CA-1.png":
+{
+	"frame": {"x":260,"y":1386,"w":244,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":0,"w":244,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"213_Shuckle_CA.png":
+{
+	"frame": {"x":2,"y":825,"w":264,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":2,"w":264,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"226_Mantine_CA-1.png":
+{
+	"frame": {"x":1687,"y":975,"w":274,"h":179},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":50,"w":274,"h":179},
+	"sourceSize": {"w":279,"h":279}
+},
+"227_Skarmory_CA.png":
+{
+	"frame": {"x":828,"y":1180,"w":279,"h":243},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":18,"w":279,"h":243},
+	"sourceSize": {"w":279,"h":279}
+},
+"263_Zigzagoon_CA-1.png":
+{
+	"frame": {"x":1105,"y":273,"w":276,"h":176},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":52,"w":276,"h":176},
+	"sourceSize": {"w":279,"h":279}
+},
+"271_Lombre_CA.png":
+{
+	"frame": {"x":1407,"y":741,"w":231,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":1,"w":231,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"328_Trapinch_CA.png":
+{
+	"frame": {"x":1108,"y":1440,"w":276,"h":216},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":31,"w":276,"h":216},
+	"sourceSize": {"w":279,"h":279}
+},
+"371_Bagon_CA.png":
+{
+	"frame": {"x":1667,"y":1518,"w":182,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":2,"w":182,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"394_Prinplup_CA-1.png":
+{
+	"frame": {"x":543,"y":1409,"w":231,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":0,"w":231,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"417_Pachirisu_CA-4.png":
+{
+	"frame": {"x":836,"y":2,"w":269,"h":267},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":6,"w":269,"h":267},
+	"sourceSize": {"w":279,"h":279}
+},
+"443_Gible_CA.png":
+{
+	"frame": {"x":1119,"y":972,"w":228,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":1,"w":228,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"524_Roggenrola_CA.png":
+{
+	"frame": {"x":1687,"y":788,"w":183,"h":274},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":47,"y":2,"w":183,"h":274},
+	"sourceSize": {"w":279,"h":279}
+},
+"543_Venipede_CA.png":
+{
+	"frame": {"x":1388,"y":1440,"w":275,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":18,"w":275,"h":244},
+	"sourceSize": {"w":279,"h":279}
+},
+"610_Axew_CA.png":
+{
+	"frame": {"x":1122,"y":553,"w":198,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":2,"w":198,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"674_Pancham1_CA.png":
+{
+	"frame": {"x":1764,"y":259,"w":197,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":2,"w":197,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"675_Pangoro_CA.png":
+{
+	"frame": {"x":2,"y":1386,"w":277,"h":254},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":13,"w":277,"h":254},
+	"sourceSize": {"w":279,"h":279}
+},
+"704_Goomy_CA.png":
+{
+	"frame": {"x":567,"y":2,"w":265,"h":277},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":2,"w":265,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"749_Mudbray_CA.png":
+{
+	"frame": {"x":553,"y":962,"w":212,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":0,"w":212,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"764_Comfey_CA.png":
+{
+	"frame": {"x":1672,"y":2,"w":253,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":2,"w":253,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"792_Lunala_CA-1.png":
+{
+	"frame": {"x":836,"y":962,"w":279,"h":214},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":32,"w":279,"h":214},
+	"sourceSize": {"w":279,"h":279}
+},
+"819_Skwovet_CA-1.png":
+{
+	"frame": {"x":1285,"y":260,"w":227,"h":278},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":1,"w":227,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"822_Corvisquire_CA-2.png":
+{
+	"frame": {"x":285,"y":541,"w":212,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":1,"w":212,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"825_Dottler_CA-2.png":
+{
+	"frame": {"x":1129,"y":755,"w":274,"h":213},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":34,"w":274,"h":213},
+	"sourceSize": {"w":279,"h":279}
+},
+"827_Nickit_CA-2.png":
+{
+	"frame": {"x":545,"y":1178,"w":227,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":0,"w":227,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"854_Sinistea_CA-1.png":
+{
+	"frame": {"x":1687,"y":540,"w":274,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":17,"w":274,"h":244},
+	"sourceSize": {"w":279,"h":279}
+},
+"855_Polteageist_CA-1.png":
+{
+	"frame": {"x":2,"y":283,"w":279,"h":267},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":279,"h":267},
+	"sourceSize": {"w":279,"h":279}
+},
+"872_Snom1_CA-1.png":
+{
+	"frame": {"x":1401,"y":542,"w":275,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":42,"w":275,"h":195},
+	"sourceSize": {"w":279,"h":279}
+},
+"873_Frosmoth_CA-1.png":
+{
+	"frame": {"x":282,"y":757,"w":279,"h":174},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":52,"w":279,"h":174},
+	"sourceSize": {"w":279,"h":279}
+},
+"875_Eiscue_Ice_Face_CA-1.png":
+{
+	"frame": {"x":1673,"y":1335,"w":179,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":0,"w":179,"h":277},
+	"sourceSize": {"w":279,"h":279}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pokes-2.png",
+	"format": "RGBA8888",
+	"size": {"w":1963,"h":1702},
+	"scale": "0.6",
+	"related_multi_packs": [ "pokes-0.json", "pokes-1.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f542ef0c1b134fb3eeb13a355cdf4eb3:f8b8af1797dfaff6a813506e5474e776:a928ac08804542088536c8f3bf67fb55$"
+}
+}

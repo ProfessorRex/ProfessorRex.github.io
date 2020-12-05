@@ -1,0 +1,44 @@
+{"frames": {
+
+"goldenRazz.png":
+{
+	"frame": {"x":2,"y":2,"w":97,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":6,"w":97,"h":132},
+	"sourceSize": {"w":108,"h":138}
+},
+"RelayRidge_energyicon.png":
+{
+	"frame": {"x":2,"y":273,"w":94,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":105},
+	"sourceSize": {"w":94,"h":105}
+},
+"RelayRidge_razz.png":
+{
+	"frame": {"x":2,"y":138,"w":97,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":7,"w":97,"h":131},
+	"sourceSize": {"w":108,"h":138}
+},
+"snowflake.png":
+{
+	"frame": {"x":2,"y":382,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "gameAssets0.png",
+	"format": "RGBA8888",
+	"size": {"w":101,"h":400},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e90f7c19ae8ec66feefd3760092a6b51:0bb71b17ceb69ad87085e1824a49f32f:0af6c78ddaad1d89cff3ffb680e68be8$"
+}
+}

@@ -1,0 +1,47 @@
+{"frames": {
+
+"bush1.png":
+{
+	"frame": {"x":110,"y":267,"w":122,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":97},
+	"sourceSize": {"w":122,"h":97}
+},
+"bush2.png":
+{
+	"frame": {"x":2,"y":157,"w":195,"h":104},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":104},
+	"sourceSize": {"w":195,"h":104}
+},
+"bush3.png":
+{
+	"frame": {"x":110,"y":157,"w":106,"h":115},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":106,"h":115},
+	"sourceSize": {"w":106,"h":115}
+},
+"tree1_big.png":
+{
+	"frame": {"x":2,"y":2,"w":151,"h":176},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":151,"h":176},
+	"sourceSize": {"w":151,"h":176}
+}},
+"animations": {
+	"bush": ["bush1.png","bush2.png","bush3.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "green_tiles.png",
+	"format": "RGBA8888",
+	"size": {"w":234,"h":366},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:dc12c0e0038cafe68dfb97008d6c20ec:f3ae1a33d7757a37666b354d2a062fc8:7b7c53725fb3b043ee5a9684131493c1$"
+}
+}

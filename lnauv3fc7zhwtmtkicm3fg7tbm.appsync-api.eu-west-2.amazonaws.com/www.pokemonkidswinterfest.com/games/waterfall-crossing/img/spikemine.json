@@ -1,0 +1,175 @@
+{"frames": {
+
+"goldenRazz_noshad.png":
+{
+	"frame": {"x":457,"y":923,"w":96,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":10,"w":96,"h":127},
+	"sourceSize": {"w":108,"h":142}
+},
+"razz_noshad.png":
+{
+	"frame": {"x":557,"y":883,"w":99,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":6,"w":99,"h":126},
+	"sourceSize": {"w":108,"h":137}
+},
+"small_shad.png":
+{
+	"frame": {"x":328,"y":883,"w":100,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":24},
+	"sourceSize": {"w":100,"h":24}
+},
+"SpikeMine_0001.png":
+{
+	"frame": {"x":562,"y":1232,"w":125,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":124,"y":87,"w":125,"h":126},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0002.png":
+{
+	"frame": {"x":302,"y":1111,"w":256,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":22,"w":256,"h":256},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0003.png":
+{
+	"frame": {"x":2,"y":1111,"w":296,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":22,"w":296,"h":256},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0004.png":
+{
+	"frame": {"x":2,"y":851,"w":322,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":22,"w":322,"h":256},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0005.png":
+{
+	"frame": {"x":708,"y":2,"w":342,"h":256},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":22,"w":342,"h":256},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0006.png":
+{
+	"frame": {"x":2,"y":2,"w":356,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":22,"w":356,"h":256},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0007.png":
+{
+	"frame": {"x":660,"y":658,"w":298,"h":261},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":17,"w":298,"h":261},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0008.png":
+{
+	"frame": {"x":684,"y":348,"w":306,"h":268},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":10,"w":306,"h":268},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0009.png":
+{
+	"frame": {"x":660,"y":923,"w":305,"h":268},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":10,"w":305,"h":268},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0010.png":
+{
+	"frame": {"x":2,"y":562,"w":325,"h":285},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":4,"w":325,"h":285},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0011.png":
+{
+	"frame": {"x":331,"y":594,"w":325,"h":285},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":4,"w":325,"h":285},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0012.png":
+{
+	"frame": {"x":2,"y":262,"w":337,"h":296},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":0,"w":337,"h":296},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0013.png":
+{
+	"frame": {"x":343,"y":294,"w":337,"h":296},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":0,"w":337,"h":296},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0014.png":
+{
+	"frame": {"x":362,"y":2,"w":342,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":0,"w":342,"h":288},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0015.png":
+{
+	"frame": {"x":362,"y":2,"w":342,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":0,"w":342,"h":288},
+	"sourceSize": {"w":370,"h":300}
+},
+"SpikeMine_0016.png":
+{
+	"frame": {"x":343,"y":262,"w":3,"h":3},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+	"sourceSize": {"w":370,"h":300}
+},
+"spikemine_shad.png":
+{
+	"frame": {"x":328,"y":923,"w":125,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":124,"y":87,"w":125,"h":135},
+	"sourceSize": {"w":370,"h":300}
+}},
+"animations": {
+	"SpikeMine": ["SpikeMine_0001.png","SpikeMine_0002.png","SpikeMine_0003.png","SpikeMine_0004.png","SpikeMine_0005.png","SpikeMine_0006.png","SpikeMine_0007.png","SpikeMine_0008.png","SpikeMine_0009.png","SpikeMine_0010.png","SpikeMine_0011.png","SpikeMine_0012.png","SpikeMine_0013.png","SpikeMine_0014.png","SpikeMine_0015.png","SpikeMine_0016.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "spikemine.png",
+	"format": "RGBA8888",
+	"size": {"w":966,"h":1369},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ec0ad08b635f7ec35f2bb266ef29d94f:f0532746fd00d4904045745f6be9f58e:ec65858cddc41b4ed4fc22711ff66bed$"
+}
+}

@@ -1,0 +1,115 @@
+{"frames": {
+
+"gunk_bubble.png":
+{
+	"frame": {"x":1267,"y":1735,"w":102,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":102},
+	"sourceSize": {"w":102,"h":102}
+},
+"gunkshot.png":
+{
+	"frame": {"x":1,"y":1,"w":1387,"h":865},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":865},
+	"sourceSize": {"w":1387,"h":865}
+},
+"ice3.png":
+{
+	"frame": {"x":1390,"y":1109,"w":559,"h":593},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":559,"h":593},
+	"sourceSize": {"w":559,"h":593}
+},
+"ice5.png":
+{
+	"frame": {"x":1390,"y":1670,"w":593,"h":371},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":593,"h":371},
+	"sourceSize": {"w":593,"h":371}
+},
+"mud3.png":
+{
+	"frame": {"x":1390,"y":841,"w":611,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":611,"h":266},
+	"sourceSize": {"w":611,"h":266}
+},
+"mud4.png":
+{
+	"frame": {"x":1390,"y":1,"w":838,"h":632},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":838,"h":632},
+	"sourceSize": {"w":838,"h":632}
+},
+"rock5.png":
+{
+	"frame": {"x":669,"y":1735,"w":290,"h":226},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":290,"h":226},
+	"sourceSize": {"w":290,"h":226}
+},
+"rock6.png":
+{
+	"frame": {"x":278,"y":1735,"w":389,"h":296},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":389,"h":296},
+	"sourceSize": {"w":389,"h":296}
+},
+"smoke3.png":
+{
+	"frame": {"x":1,"y":1735,"w":300,"h":275},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":275},
+	"sourceSize": {"w":300,"h":275}
+},
+"smoke4.png":
+{
+	"frame": {"x":897,"y":1735,"w":368,"h":289},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":368,"h":289},
+	"sourceSize": {"w":368,"h":289}
+},
+"venom.png":
+{
+	"frame": {"x":1,"y":868,"w":1387,"h":865},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":865},
+	"sourceSize": {"w":1387,"h":865}
+},
+"venom_bubble.png":
+{
+	"frame": {"x":1267,"y":1839,"w":102,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":102},
+	"sourceSize": {"w":102,"h":102}
+}},
+"animations": {
+	"ice": ["ice3.png","ice5.png"],
+	"mud": ["mud3.png","mud4.png"],
+	"rock": ["rock5.png","rock6.png"],
+	"smoke": ["smoke3.png","smoke4.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards0.png",
+	"format": "RGBA8888",
+	"size": {"w":2023,"h":2042},
+	"scale": "0.5",
+	"related_multi_packs": [ "hazards1.json", "hazards2.json", "hazards3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f657531bd2a37c36c6aa0576504f6ce6:a784d9f2c457d7998a281e4aeef1662a:03e6c212c87a16b3d0491340487a4220$"
+}
+}

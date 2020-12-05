@@ -1,0 +1,105 @@
+{"frames": {
+
+"BurstYellow_0001.png":
+{
+	"frame": {"x":1557,"y":1664,"w":302,"h":302},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":124,"y":124,"w":302,"h":302},
+	"sourceSize": {"w":550,"h":550}
+},
+"BurstYellow_0002.png":
+{
+	"frame": {"x":1227,"y":1664,"w":326,"h":326},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":112,"y":112,"w":326,"h":326},
+	"sourceSize": {"w":550,"h":550}
+},
+"BurstYellow_0012.png":
+{
+	"frame": {"x":1268,"y":2,"w":550,"h":550},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":550},
+	"sourceSize": {"w":550,"h":550}
+},
+"BurstYellow_0013.png":
+{
+	"frame": {"x":673,"y":1410,"w":550,"h":550},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":550},
+	"sourceSize": {"w":550,"h":550}
+},
+"BurstYellow_0014.png":
+{
+	"frame": {"x":1268,"y":556,"w":550,"h":550},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":550},
+	"sourceSize": {"w":550,"h":550}
+},
+"BurstYellow_0015.png":
+{
+	"frame": {"x":1227,"y":1110,"w":550,"h":550},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":550},
+	"sourceSize": {"w":550,"h":550}
+},
+"jigglypuff_1.png":
+{
+	"frame": {"x":2,"y":706,"w":603,"h":700},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":603,"h":700},
+	"sourceSize": {"w":603,"h":700}
+},
+"jigglypuff_2.png":
+{
+	"frame": {"x":609,"y":706,"w":552,"h":700},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":552,"h":700},
+	"sourceSize": {"w":552,"h":700}
+},
+"jigglypuff_3.png":
+{
+	"frame": {"x":2,"y":1410,"w":527,"h":667},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":16,"w":527,"h":667},
+	"sourceSize": {"w":584,"h":700}
+},
+"jigglypuff_4.png":
+{
+	"frame": {"x":2,"y":2,"w":679,"h":700},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":679,"h":700},
+	"sourceSize": {"w":679,"h":700}
+},
+"jigglypuff_5.png":
+{
+	"frame": {"x":685,"y":2,"w":579,"h":700},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":579,"h":700},
+	"sourceSize": {"w":579,"h":700}
+}},
+"animations": {
+	"BurstYellow": ["BurstYellow_0001.png","BurstYellow_0002.png","BurstYellow_0012.png","BurstYellow_0013.png","BurstYellow_0014.png","BurstYellow_0015.png"],
+	"jigglypuff": ["jigglypuff_1.png","jigglypuff_2.png","jigglypuff_3.png","jigglypuff_4.png","jigglypuff_5.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "jigglypuff0.png",
+	"format": "RGBA8888",
+	"size": {"w":1861,"h":1992},
+	"scale": "1",
+	"related_multi_packs": [ "jigglypuff1.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e422621d11b69f60e71b6d2b117398de:efd17f8c8004ab280b3ac7d87387e0ee:34aa3b33fd536def617746287173a24f$"
+}
+}

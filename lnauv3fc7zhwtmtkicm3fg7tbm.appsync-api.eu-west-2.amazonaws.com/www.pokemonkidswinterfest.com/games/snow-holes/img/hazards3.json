@@ -1,0 +1,31 @@
+{"frames": {
+
+"rain_loop.png":
+{
+	"frame": {"x":1,"y":1,"w":1370,"h":765},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1370,"h":765},
+	"sourceSize": {"w":1370,"h":765}
+},
+"rock2.png":
+{
+	"frame": {"x":1373,"y":1,"w":324,"h":317},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":324,"h":317},
+	"sourceSize": {"w":324,"h":317}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards3.png",
+	"format": "RGBA8888",
+	"size": {"w":1691,"h":767},
+	"scale": "0.5",
+	"related_multi_packs": [ "hazards0.json", "hazards1.json", "hazards2.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f657531bd2a37c36c6aa0576504f6ce6:a784d9f2c457d7998a281e4aeef1662a:03e6c212c87a16b3d0491340487a4220$"
+}
+}

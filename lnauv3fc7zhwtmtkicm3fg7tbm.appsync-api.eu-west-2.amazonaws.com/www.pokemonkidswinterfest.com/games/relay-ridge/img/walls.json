@@ -1,0 +1,460 @@
+{"frames": {
+
+"down/Wall_Move_1TileDown_0001.png":
+{
+	"frame": {"x":1159,"y":2,"w":37,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":37,"h":41},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0002.png":
+{
+	"frame": {"x":1160,"y":47,"w":37,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":37,"h":41},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0003.png":
+{
+	"frame": {"x":1201,"y":46,"w":36,"h":39},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":36,"h":39},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0004.png":
+{
+	"frame": {"x":1241,"y":42,"w":35,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":6,"w":35,"h":35},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0005.png":
+{
+	"frame": {"x":1160,"y":92,"w":35,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0006.png":
+{
+	"frame": {"x":1199,"y":92,"w":35,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0007.png":
+{
+	"frame": {"x":1280,"y":2,"w":35,"h":33},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0008.png":
+{
+	"frame": {"x":1199,"y":92,"w":35,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_1TileDown_0009.png":
+{
+	"frame": {"x":1160,"y":92,"w":35,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"down/Wall_Move_3TileDown_0001.png":
+{
+	"frame": {"x":2,"y":2,"w":56,"h":124},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":124},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0002.png":
+{
+	"frame": {"x":62,"y":2,"w":55,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":1,"w":55,"h":123},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0003.png":
+{
+	"frame": {"x":180,"y":2,"w":54,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":4,"w":54,"h":120},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0004.png":
+{
+	"frame": {"x":351,"y":2,"w":52,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":10,"w":52,"h":114},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0005.png":
+{
+	"frame": {"x":407,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0006.png":
+{
+	"frame": {"x":463,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0007.png":
+{
+	"frame": {"x":519,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0008.png":
+{
+	"frame": {"x":463,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_3TileDown_0009.png":
+{
+	"frame": {"x":407,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"down/Wall_Move_SingleDown_0001.png":
+{
+	"frame": {"x":825,"y":2,"w":56,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":61},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0002.png":
+{
+	"frame": {"x":885,"y":2,"w":55,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":1,"w":55,"h":60},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0003.png":
+{
+	"frame": {"x":884,"y":67,"w":54,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":4,"w":54,"h":57},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0004.png":
+{
+	"frame": {"x":999,"y":59,"w":52,"h":51},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":10,"w":52,"h":51},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0005.png":
+{
+	"frame": {"x":1000,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0006.png":
+{
+	"frame": {"x":1053,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0007.png":
+{
+	"frame": {"x":1054,"y":58,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0008.png":
+{
+	"frame": {"x":1053,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"down/Wall_Move_SingleDown_0009.png":
+{
+	"frame": {"x":1000,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"flag1.png":
+{
+	"frame": {"x":687,"y":2,"w":103,"h":134},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":34,"w":103,"h":134},
+	"sourceSize": {"w":168,"h":168}
+},
+"up/Wall_Move_1TileUp_0001.png":
+{
+	"frame": {"x":1160,"y":92,"w":35,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0002.png":
+{
+	"frame": {"x":1280,"y":41,"w":35,"h":33},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0003.png":
+{
+	"frame": {"x":1281,"y":80,"w":35,"h":33},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":8,"w":35,"h":33},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0004.png":
+{
+	"frame": {"x":1241,"y":2,"w":35,"h":36},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":5,"w":35,"h":36},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0005.png":
+{
+	"frame": {"x":1159,"y":2,"w":37,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":37,"h":41},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0006.png":
+{
+	"frame": {"x":1200,"y":2,"w":37,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":37,"h":40},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0007.png":
+{
+	"frame": {"x":1238,"y":89,"w":36,"h":39},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":2,"w":36,"h":39},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0008.png":
+{
+	"frame": {"x":1200,"y":2,"w":37,"h":40},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":1,"w":37,"h":40},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_1TileUp_0009.png":
+{
+	"frame": {"x":1159,"y":2,"w":37,"h":41},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":37,"h":41},
+	"sourceSize": {"w":42,"h":42}
+},
+"up/Wall_Move_3TileUp_0001.png":
+{
+	"frame": {"x":407,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0002.png":
+{
+	"frame": {"x":575,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0003.png":
+{
+	"frame": {"x":631,"y":2,"w":52,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":112},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0004.png":
+{
+	"frame": {"x":295,"y":2,"w":52,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":8,"w":52,"h":116},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0005.png":
+{
+	"frame": {"x":2,"y":2,"w":56,"h":124},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":124},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0006.png":
+{
+	"frame": {"x":121,"y":2,"w":55,"h":122},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":55,"h":122},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0007.png":
+{
+	"frame": {"x":238,"y":2,"w":53,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":53,"h":119},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0008.png":
+{
+	"frame": {"x":121,"y":2,"w":55,"h":122},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":55,"h":122},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_3TileUp_0009.png":
+{
+	"frame": {"x":2,"y":2,"w":56,"h":124},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":124},
+	"sourceSize": {"w":63,"h":131}
+},
+"up/Wall_Move_SingleUp_0001.png":
+{
+	"frame": {"x":1000,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0002.png":
+{
+	"frame": {"x":1106,"y":2,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0003.png":
+{
+	"frame": {"x":1107,"y":58,"w":52,"h":49},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":12,"w":52,"h":49},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0004.png":
+{
+	"frame": {"x":944,"y":2,"w":52,"h":53},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":8,"w":52,"h":53},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0005.png":
+{
+	"frame": {"x":825,"y":2,"w":56,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":61},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0006.png":
+{
+	"frame": {"x":825,"y":67,"w":55,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":55,"h":59},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0007.png":
+{
+	"frame": {"x":942,"y":66,"w":53,"h":56},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":53,"h":56},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0008.png":
+{
+	"frame": {"x":825,"y":67,"w":55,"h":59},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":55,"h":59},
+	"sourceSize": {"w":63,"h":68}
+},
+"up/Wall_Move_SingleUp_0009.png":
+{
+	"frame": {"x":825,"y":2,"w":56,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":56,"h":61},
+	"sourceSize": {"w":63,"h":68}
+}},
+"animations": {
+	"down/Wall_Move_1TileDown": ["down/Wall_Move_1TileDown_0001.png","down/Wall_Move_1TileDown_0002.png","down/Wall_Move_1TileDown_0003.png","down/Wall_Move_1TileDown_0004.png","down/Wall_Move_1TileDown_0005.png","down/Wall_Move_1TileDown_0006.png","down/Wall_Move_1TileDown_0007.png","down/Wall_Move_1TileDown_0008.png","down/Wall_Move_1TileDown_0009.png"],
+	"down/Wall_Move_3TileDown": ["down/Wall_Move_3TileDown_0001.png","down/Wall_Move_3TileDown_0002.png","down/Wall_Move_3TileDown_0003.png","down/Wall_Move_3TileDown_0004.png","down/Wall_Move_3TileDown_0005.png","down/Wall_Move_3TileDown_0006.png","down/Wall_Move_3TileDown_0007.png","down/Wall_Move_3TileDown_0008.png","down/Wall_Move_3TileDown_0009.png"],
+	"down/Wall_Move_SingleDown": ["down/Wall_Move_SingleDown_0001.png","down/Wall_Move_SingleDown_0002.png","down/Wall_Move_SingleDown_0003.png","down/Wall_Move_SingleDown_0004.png","down/Wall_Move_SingleDown_0005.png","down/Wall_Move_SingleDown_0006.png","down/Wall_Move_SingleDown_0007.png","down/Wall_Move_SingleDown_0008.png","down/Wall_Move_SingleDown_0009.png"],
+	"up/Wall_Move_1TileUp": ["up/Wall_Move_1TileUp_0001.png","up/Wall_Move_1TileUp_0002.png","up/Wall_Move_1TileUp_0003.png","up/Wall_Move_1TileUp_0004.png","up/Wall_Move_1TileUp_0005.png","up/Wall_Move_1TileUp_0006.png","up/Wall_Move_1TileUp_0007.png","up/Wall_Move_1TileUp_0008.png","up/Wall_Move_1TileUp_0009.png"],
+	"up/Wall_Move_3TileUp": ["up/Wall_Move_3TileUp_0001.png","up/Wall_Move_3TileUp_0002.png","up/Wall_Move_3TileUp_0003.png","up/Wall_Move_3TileUp_0004.png","up/Wall_Move_3TileUp_0005.png","up/Wall_Move_3TileUp_0006.png","up/Wall_Move_3TileUp_0007.png","up/Wall_Move_3TileUp_0008.png","up/Wall_Move_3TileUp_0009.png"],
+	"up/Wall_Move_SingleUp": ["up/Wall_Move_SingleUp_0001.png","up/Wall_Move_SingleUp_0002.png","up/Wall_Move_SingleUp_0003.png","up/Wall_Move_SingleUp_0004.png","up/Wall_Move_SingleUp_0005.png","up/Wall_Move_SingleUp_0006.png","up/Wall_Move_SingleUp_0007.png","up/Wall_Move_SingleUp_0008.png","up/Wall_Move_SingleUp_0009.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "walls.png",
+	"format": "RGBA8888",
+	"size": {"w":1316,"h":128},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:46a96fb4890f269d2a83ac73a91a4c5b:30a271a449abcd45d68f4b1eb8f3ced1:5c2f5c663ae0680c530bc1f885567038$"
+}
+}

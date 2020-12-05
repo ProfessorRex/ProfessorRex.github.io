@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- GAME FILES -->
+    <script>
+        var kokodebug = false;
+    </script>
+    <script src="bin/waterfallcrossing.min.js"></script>​
+
+    <script>
+        /**********************************************************************
+        			WEBSITE INTEGRATION CODE
+        			********************************************************************/
+        //Vue will pass all the necessary values to these variables
+
+        // Utility functions
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                vars[key] = value;
+            });
+            console.log('QUERY: ', vars);
+            return vars;
+        }
+
+        function getUrlParam(parameter, defaultvalue) {
+            var urlparameter = defaultvalue;
+            if (window.location.search.indexOf(parameter) > -1) {
+                urlparameter = getUrlVars()[parameter];
+            }
+            return urlparameter;
+        }
+        // IMPORTANT BITS
+        // document.addEventListener("DOMContentLoaded", function () {
+        // document.querySelector('#pokemon-id').innerHTML = getUrlParam('pokemon', 1); // take the pokemon id from the url. Vue will pass in the selected pokemon like this as a get variable.
+        // document.querySelector('#game').innerHTML = getUrlParam('game', 'not set');
+        // });
+        // this is how you would end the game, call this function and give it razzberries.
+        function sendRazzberries(amount, pokemonSaved, sleepBroken, quit) {
+            var payload = {
+                razzberries: amount,
+                pokemon: pokemonSaved,
+                wakeUp: sleepBroken,
+                endgame: true, // if endgame is true then Vue will close the game and goto post-game sequence
+                quitGame: quit,
+            }
+            console.log("PAYLOAD:", payload);
+            var event = new CustomEvent('gamedata', {
+                detail: payload
+            });
+            window.parent.dispatchEvent(event);
+            console.log("END GAME")
+        }
+    </script>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            position: fixed;
+        }
+
+        canvas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- DEBUG_DATA_CONTAINER
+		<div class="container">
+			<div class="data">
+					Pokemon ID: <span id="pokemon-id"></span><br/>
+					Game: <span id="game"></span>
+			</div>
+			<button onclick="sendRazzberries(30)">End with 30 razzberries</>
+			<button onclick="sendRazzberries(60)">End with 60 razzberries</button>
+			<button onclick="sendRazzberries(150)">End with 150 razzberries</button>
+		</div>-->
+
+    <script>
+        //POKEMON GAME INSTANTIATION CODE
+        window.deviceWidth = window.innerWidth;
+        window.deviceHeight = window.innerHeight;
+
+        app.guiSize = {
+            width: 2774,
+            height: 1530
+        };
+        app.minSize = {
+            width: 2040,
+            height: 1186
+        };
+        app.bgColor = 0xdddddd;
+        app.anti_alias = true;
+        app.retina = true;
+        app.roundPixels = true;
+        app.forceFXAA = false;
+        app.autoDensity = true;
+        app.init();
+        app.setupComplete = function() {
+            main.init();
+            app.resize();
+        }
+        window.addEventListener("load", app.loaded, false);
+    </script>
+</body>
+
+</html>

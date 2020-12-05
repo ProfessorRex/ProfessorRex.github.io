@@ -1,0 +1,44 @@
+{"frames": {
+
+"hazard_target.png":
+{
+	"frame": {"x":66,"y":296,"w":179,"h":156},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":179,"h":156},
+	"sourceSize": {"w":179,"h":156}
+},
+"spinner_arm_long.png":
+{
+	"frame": {"x":2,"y":2,"w":60,"h":490},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":490},
+	"sourceSize": {"w":60,"h":490}
+},
+"spinner_arm_short.png":
+{
+	"frame": {"x":66,"y":2,"w":60,"h":290},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":290},
+	"sourceSize": {"w":60,"h":290}
+},
+"wallTile.png":
+{
+	"frame": {"x":130,"y":2,"w":104,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":130},
+	"sourceSize": {"w":104,"h":130}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards_1.png",
+	"format": "RGBA8888",
+	"size": {"w":236,"h":494},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7b08e848f3d4de0de4a5838bcf3de875:e3f0b2e9180a556d2da5303467136d04:774978ea3305ebbb048b242c028b6404$"
+}
+}

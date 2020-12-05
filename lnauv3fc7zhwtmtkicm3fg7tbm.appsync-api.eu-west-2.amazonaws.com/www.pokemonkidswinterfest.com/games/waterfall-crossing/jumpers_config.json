@@ -1,0 +1,314 @@
+[
+    {
+        "spriteName": "007_Squirtle_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "134_Vaporeon_CA-4.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "135_Jolteon_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "136_Flareon_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "156_Quilava_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "158_Totodile_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "159_Croconaw_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "197_Umbreon_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "236_Tyrogue_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "246_Larvitar_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "256_Combusken_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "259_Marshtomp_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "417_Pachirisu_CA-4.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "418_Buizel_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "431_Glameow_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "447_Riolu_CA 2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "453_Croagunk_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "470_Leafeon_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "471_Glaceon_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "511_Pansage_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "513_Pansear_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "515_Panpour_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "585_Deerling_CA_Autumn-2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "585_Deerling_CA_Spring-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "585_Deerling_CA_Summer-1.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "585_Deerling_CA_Winter-2.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "610_Axew_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "619_Mienfoo_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "654_Braixen_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "695_Heliolisk_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "700_Sylveon_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "734_Yungoos_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "782_Jangmo-o_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "820_Greedent_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "827_Nickit_CA-2.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "831_Wooloo_CA-3.png",
+        "airResistance": 1,
+        "jumpYPower": 18,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "860_Morgrem_CA-1.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "863_Perrserker_CA-5.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    },
+    {
+        "spriteName": "S2_622_Golett_CA.png",
+        "airResistance": 1,
+        "jumpYPower": 15,
+        "jumpXPower": 10,
+        "jumpPowerVariation": 2,
+        "elasticity": 0.95
+    }
+]

@@ -1,0 +1,28 @@
+{"frames": {
+
+"spinner_hub_bottom.png":
+{
+	"frame": {"x":2,"y":2,"w":92,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":102},
+	"sourceSize": {"w":92,"h":102}
+},
+"spinner_hub_top.png":
+{
+	"frame": {"x":98,"y":2,"w":92,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":92,"h":102},
+	"sourceSize": {"w":92,"h":102}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards_2.png",
+	"format": "RGBA8888",
+	"size": {"w":192,"h":106},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:880c0a3f51bd54f59d7dadebff8c3f14:94bf277af52d62e19062a35f8dbcfeb1:77065b7f1606d18ca46e7e70e9f0a142$"
+}
+}

@@ -1,0 +1,468 @@
+{"frames": {
+
+"arrow-carousel-left.png":
+{
+	"frame": {"x":1859,"y":942,"w":101,"h":95},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":1,"w":101,"h":95},
+	"sourceSize": {"w":119,"h":100}
+},
+"arrow-carousel-right.png":
+{
+	"frame": {"x":1859,"y":1047,"w":101,"h":95},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":1,"w":101,"h":95},
+	"sourceSize": {"w":119,"h":100}
+},
+"carouselGrad.png":
+{
+	"frame": {"x":1835,"y":942,"w":20,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":500},
+	"sourceSize": {"w":20,"h":500}
+},
+"downloadBtn.png":
+{
+	"frame": {"x":1835,"y":1446,"w":365,"h":104},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":365,"h":104},
+	"sourceSize": {"w":365,"h":104}
+},
+"homeBtn.png":
+{
+	"frame": {"x":1835,"y":1815,"w":130,"h":112},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":130,"h":112},
+	"sourceSize": {"w":130,"h":112}
+},
+"panel-bg.png":
+{
+	"frame": {"x":2,"y":2,"w":1948,"h":936},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1948,"h":936},
+	"sourceSize": {"w":1948,"h":936}
+},
+"selection-cross.png":
+{
+	"frame": {"x":1859,"y":1152,"w":90,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":90},
+	"sourceSize": {"w":90,"h":90}
+},
+"selection-rotate.png":
+{
+	"frame": {"x":1859,"y":1246,"w":90,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":90},
+	"sourceSize": {"w":90,"h":90}
+},
+"snowflake.png":
+{
+	"frame": {"x":1565,"y":1984,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"tabActive_items.png":
+{
+	"frame": {"x":2,"y":942,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_br.png":
+{
+	"frame": {"x":2,"y":1077,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_de.png":
+{
+	"frame": {"x":523,"y":942,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_en.png":
+{
+	"frame": {"x":2,"y":942,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_es.png":
+{
+	"frame": {"x":2,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_fr.png":
+{
+	"frame": {"x":523,"y":1077,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_it.png":
+{
+	"frame": {"x":1044,"y":942,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_items_latam.png":
+{
+	"frame": {"x":2,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon.png":
+{
+	"frame": {"x":2,"y":1347,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_br.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_de.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_en.png":
+{
+	"frame": {"x":2,"y":1347,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_es.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_fr.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_it.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_pokemon_latam.png":
+{
+	"frame": {"x":523,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes.png":
+{
+	"frame": {"x":1044,"y":1077,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_br.png":
+{
+	"frame": {"x":2,"y":1482,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_de.png":
+{
+	"frame": {"x":523,"y":1347,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_en.png":
+{
+	"frame": {"x":1044,"y":1077,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_es.png":
+{
+	"frame": {"x":1044,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_fr.png":
+{
+	"frame": {"x":2,"y":1617,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_it.png":
+{
+	"frame": {"x":523,"y":1482,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabActive_scenes_latam.png":
+{
+	"frame": {"x":1044,"y":1212,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items.png":
+{
+	"frame": {"x":1044,"y":1347,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_br.png":
+{
+	"frame": {"x":1565,"y":942,"w":517,"h":131},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_de.png":
+{
+	"frame": {"x":2,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_en.png":
+{
+	"frame": {"x":1044,"y":1347,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_es.png":
+{
+	"frame": {"x":523,"y":1617,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_fr.png":
+{
+	"frame": {"x":1044,"y":1482,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_it.png":
+{
+	"frame": {"x":1700,"y":942,"w":517,"h":131},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_items_latam.png":
+{
+	"frame": {"x":523,"y":1617,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon.png":
+{
+	"frame": {"x":2,"y":1887,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_br.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_de.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_en.png":
+{
+	"frame": {"x":2,"y":1887,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_es.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_fr.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_it.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_pokemon_latam.png":
+{
+	"frame": {"x":523,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes.png":
+{
+	"frame": {"x":1044,"y":1617,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_br.png":
+{
+	"frame": {"x":523,"y":1887,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_de.png":
+{
+	"frame": {"x":1044,"y":1752,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_en.png":
+{
+	"frame": {"x":1044,"y":1617,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_es.png":
+{
+	"frame": {"x":1044,"y":1887,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_fr.png":
+{
+	"frame": {"x":1565,"y":1463,"w":517,"h":131},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_it.png":
+{
+	"frame": {"x":1700,"y":1463,"w":517,"h":131},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+},
+"tabInactive_scenes_latam.png":
+{
+	"frame": {"x":1044,"y":1887,"w":517,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":131},
+	"sourceSize": {"w":517,"h":131}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "menu_assets_2.png",
+	"format": "RGBA8888",
+	"size": {"w":1956,"h":2020},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f691c9809171e800736602294afaa55e:be88cd7c5ba2905073d02e90fd4d3975:7aeade919daf2e8ab9b37340c009db0b$"
+}
+}

@@ -1,0 +1,199 @@
+{"frames": {
+
+"VFX_POKEBALL_0001.png":
+{
+	"frame": {"x":461,"y":767,"w":22,"h":32},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":79,"w":22,"h":32},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0002.png":
+{
+	"frame": {"x":283,"y":845,"w":40,"h":65},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":55,"w":40,"h":65},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0003.png":
+{
+	"frame": {"x":2,"y":845,"w":54,"h":92},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":35,"w":54,"h":92},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0004.png":
+{
+	"frame": {"x":379,"y":371,"w":68,"h":114},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":20,"w":68,"h":114},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0005.png":
+{
+	"frame": {"x":60,"y":845,"w":89,"h":130},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":9,"w":89,"h":130},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0006.png":
+{
+	"frame": {"x":379,"y":443,"w":109,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":2,"w":109,"h":148},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0007.png":
+{
+	"frame": {"x":2,"y":695,"w":124,"h":161},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":0,"w":124,"h":161},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0008.png":
+{
+	"frame": {"x":357,"y":595,"w":136,"h":168},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":136,"h":168},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0009.png":
+{
+	"frame": {"x":181,"y":523,"w":155,"h":172},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":0,"w":155,"h":172},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0010.png":
+{
+	"frame": {"x":2,"y":521,"w":170,"h":175},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":0,"w":170,"h":175},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0011.png":
+{
+	"frame": {"x":193,"y":343,"w":182,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":182,"h":176},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0012.png":
+{
+	"frame": {"x":2,"y":341,"w":187,"h":176},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":187,"h":176},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0013.png":
+{
+	"frame": {"x":198,"y":164,"w":191,"h":175},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":191,"h":175},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0014.png":
+{
+	"frame": {"x":2,"y":2,"w":192,"h":172},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":6,"w":192,"h":172},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0015.png":
+{
+	"frame": {"x":198,"y":2,"w":192,"h":158},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":20,"w":192,"h":158},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0016.png":
+{
+	"frame": {"x":2,"y":178,"w":191,"h":159},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":20,"w":191,"h":159},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0017.png":
+{
+	"frame": {"x":181,"y":682,"w":171,"h":159},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":20,"w":171,"h":159},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0018.png":
+{
+	"frame": {"x":356,"y":767,"w":169,"h":101},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":75,"w":169,"h":101},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0019.png":
+{
+	"frame": {"x":393,"y":199,"w":168,"h":100},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":76,"w":168,"h":100},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0020.png":
+{
+	"frame": {"x":394,"y":2,"w":97,"h":97},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":79,"w":97,"h":97},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0021.png":
+{
+	"frame": {"x":394,"y":103,"w":93,"h":92},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":83,"w":93,"h":92},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0022.png":
+{
+	"frame": {"x":194,"y":845,"w":86,"h":85},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":88,"w":86,"h":85},
+	"sourceSize": {"w":200,"h":200}
+},
+"VFX_POKEBALL_0023.png":
+{
+	"frame": {"x":357,"y":523,"w":15,"h":15},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":93,"w":15,"h":15},
+	"sourceSize": {"w":200,"h":200}
+}},
+"animations": {
+	"VFX_POKEBALL": ["VFX_POKEBALL_0001.png","VFX_POKEBALL_0002.png","VFX_POKEBALL_0003.png","VFX_POKEBALL_0004.png","VFX_POKEBALL_0005.png","VFX_POKEBALL_0006.png","VFX_POKEBALL_0007.png","VFX_POKEBALL_0008.png","VFX_POKEBALL_0009.png","VFX_POKEBALL_0010.png","VFX_POKEBALL_0011.png","VFX_POKEBALL_0012.png","VFX_POKEBALL_0013.png","VFX_POKEBALL_0014.png","VFX_POKEBALL_0015.png","VFX_POKEBALL_0016.png","VFX_POKEBALL_0017.png","VFX_POKEBALL_0018.png","VFX_POKEBALL_0019.png","VFX_POKEBALL_0020.png","VFX_POKEBALL_0021.png","VFX_POKEBALL_0022.png","VFX_POKEBALL_0023.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pokeball_explode.png",
+	"format": "RGBA8888",
+	"size": {"w":495,"h":939},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:1e8b26e522e399b87e1ccc7ff49ba646:e5f5ce424e69132d662ffbd9ff21bbc2:f22bbff3b9068e4d9c4fb6766d31f291$"
+}
+}

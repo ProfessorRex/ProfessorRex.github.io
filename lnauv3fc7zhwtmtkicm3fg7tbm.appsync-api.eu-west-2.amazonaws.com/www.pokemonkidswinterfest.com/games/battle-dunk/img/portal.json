@@ -1,0 +1,239 @@
+{"frames": {
+
+"BattleDunk_portal/PortalEntry_0001.png":
+{
+	"frame": {"x":2,"y":2,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0002.png":
+{
+	"frame": {"x":231,"y":2,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0003.png":
+{
+	"frame": {"x":460,"y":2,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0004.png":
+{
+	"frame": {"x":689,"y":2,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0005.png":
+{
+	"frame": {"x":2,"y":231,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0006.png":
+{
+	"frame": {"x":231,"y":231,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0007.png":
+{
+	"frame": {"x":460,"y":231,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0008.png":
+{
+	"frame": {"x":689,"y":231,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0009.png":
+{
+	"frame": {"x":2,"y":460,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0010.png":
+{
+	"frame": {"x":2,"y":689,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0011.png":
+{
+	"frame": {"x":2,"y":918,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0012.png":
+{
+	"frame": {"x":2,"y":1147,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0013.png":
+{
+	"frame": {"x":231,"y":460,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0014.png":
+{
+	"frame": {"x":460,"y":460,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0015.png":
+{
+	"frame": {"x":689,"y":460,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0016.png":
+{
+	"frame": {"x":231,"y":689,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0017.png":
+{
+	"frame": {"x":231,"y":918,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0018.png":
+{
+	"frame": {"x":231,"y":1147,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0019.png":
+{
+	"frame": {"x":460,"y":689,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0020.png":
+{
+	"frame": {"x":689,"y":689,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0021.png":
+{
+	"frame": {"x":460,"y":918,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0022.png":
+{
+	"frame": {"x":460,"y":1147,"w":225,"h":225},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":225,"h":225},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0023.png":
+{
+	"frame": {"x":689,"y":1232,"w":91,"h":91},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":67,"w":91,"h":91},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0024.png":
+{
+	"frame": {"x":689,"y":1135,"w":108,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":66,"w":108,"h":93},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0025.png":
+{
+	"frame": {"x":689,"y":1038,"w":140,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":66,"w":140,"h":93},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0026.png":
+{
+	"frame": {"x":801,"y":1135,"w":93,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":66,"w":93,"h":93},
+	"sourceSize": {"w":225,"h":225}
+},
+"BattleDunk_portal/PortalEntry_0027.png":
+{
+	"frame": {"x":867,"y":918,"w":6,"h":6},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":110,"y":110,"w":6,"h":6},
+	"sourceSize": {"w":225,"h":225}
+},
+"ring_shadow.png":
+{
+	"frame": {"x":689,"y":918,"w":174,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":174,"h":116},
+	"sourceSize": {"w":174,"h":116}
+}},
+"animations": {
+	"BattleDunk_portal/PortalEntry": ["BattleDunk_portal/PortalEntry_0001.png","BattleDunk_portal/PortalEntry_0002.png","BattleDunk_portal/PortalEntry_0003.png","BattleDunk_portal/PortalEntry_0004.png","BattleDunk_portal/PortalEntry_0005.png","BattleDunk_portal/PortalEntry_0006.png","BattleDunk_portal/PortalEntry_0007.png","BattleDunk_portal/PortalEntry_0008.png","BattleDunk_portal/PortalEntry_0009.png","BattleDunk_portal/PortalEntry_0010.png","BattleDunk_portal/PortalEntry_0011.png","BattleDunk_portal/PortalEntry_0012.png","BattleDunk_portal/PortalEntry_0013.png","BattleDunk_portal/PortalEntry_0014.png","BattleDunk_portal/PortalEntry_0015.png","BattleDunk_portal/PortalEntry_0016.png","BattleDunk_portal/PortalEntry_0017.png","BattleDunk_portal/PortalEntry_0018.png","BattleDunk_portal/PortalEntry_0019.png","BattleDunk_portal/PortalEntry_0020.png","BattleDunk_portal/PortalEntry_0021.png","BattleDunk_portal/PortalEntry_0022.png","BattleDunk_portal/PortalEntry_0023.png","BattleDunk_portal/PortalEntry_0024.png","BattleDunk_portal/PortalEntry_0025.png","BattleDunk_portal/PortalEntry_0026.png","BattleDunk_portal/PortalEntry_0027.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "portal.png",
+	"format": "RGBA8888",
+	"size": {"w":916,"h":1374},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:b7f9403c80fab5858c33a3e6d437e258:ceeae5e1fdf187f9cd8e7a9ef3b05233:3b79c46182e6baa2a6b599ce58bd77b1$"
+}
+}

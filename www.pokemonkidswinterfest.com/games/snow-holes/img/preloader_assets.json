@@ -1,0 +1,28 @@
+{"frames": {
+
+"loadingbar.png":
+{
+	"frame": {"x":1,"y":1,"w":580,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":580,"h":88},
+	"sourceSize": {"w":584,"h":92}
+},
+"pokeball_sillhouette.png":
+{
+	"frame": {"x":583,"y":1,"w":231,"h":232},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":231,"h":232},
+	"sourceSize": {"w":231,"h":232}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "preloader_assets.png",
+	"format": "RGBA8888",
+	"size": {"w":816,"h":233},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5aa8aa67ef6efa49054c581a5da1c3d2:ee51f4087af41b44e154dcd9438f46db:3946bbcc2377d65a5da5ba03653e92b5$"
+}
+}

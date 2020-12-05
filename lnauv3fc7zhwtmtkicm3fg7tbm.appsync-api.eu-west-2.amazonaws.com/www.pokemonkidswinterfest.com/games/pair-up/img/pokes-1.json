@@ -1,0 +1,463 @@
+{"frames": {
+
+"001_Bulbasaur_CA-4.png":
+{
+	"frame": {"x":564,"y":1577,"w":275,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":275,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"007_Squirtle_CA-2.png":
+{
+	"frame": {"x":1128,"y":1321,"w":276,"h":262},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":276,"h":262},
+	"sourceSize": {"w":279,"h":279}
+},
+"017_Pidgeotto_CA-1.png":
+{
+	"frame": {"x":283,"y":810,"w":239,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":0,"w":239,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"023_Ekans_CA.png":
+{
+	"frame": {"x":555,"y":582,"w":224,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":2,"w":224,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"026_Raichu_CA-1.png":
+{
+	"frame": {"x":1127,"y":821,"w":278,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":278,"h":240},
+	"sourceSize": {"w":279,"h":279}
+},
+"041_Zubat_CA.png":
+{
+	"frame": {"x":1408,"y":177,"w":279,"h":195},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":42,"w":279,"h":195},
+	"sourceSize": {"w":279,"h":279}
+},
+"052_Meowth_CA-5.png":
+{
+	"frame": {"x":1396,"y":591,"w":226,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":2,"w":226,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"053_Persian_CA-1.png":
+{
+	"frame": {"x":561,"y":175,"w":279,"h":193},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":43,"w":279,"h":193},
+	"sourceSize": {"w":279,"h":279}
+},
+"055_Golduck_CA.png":
+{
+	"frame": {"x":1691,"y":822,"w":275,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":18,"w":275,"h":242},
+	"sourceSize": {"w":279,"h":279}
+},
+"064_Kadabra_CA.png":
+{
+	"frame": {"x":1676,"y":592,"w":226,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":0,"w":226,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"066_Machop_CA.png":
+{
+	"frame": {"x":1397,"y":2,"w":171,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":2,"w":171,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"089_Muk_CA-2.png":
+{
+	"frame": {"x":2,"y":170,"w":272,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":44,"w":272,"h":192},
+	"sourceSize": {"w":279,"h":279}
+},
+"093_Haunter_CA.png":
+{
+	"frame": {"x":834,"y":584,"w":277,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":28,"w":277,"h":225},
+	"sourceSize": {"w":279,"h":279}
+},
+"094_Gengar_CA-2.png":
+{
+	"frame": {"x":1408,"y":1323,"w":262,"h":274},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":3,"w":262,"h":274},
+	"sourceSize": {"w":279,"h":279}
+},
+"100_Voltorb_CA.png":
+{
+	"frame": {"x":1127,"y":1587,"w":277,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":277,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"101_Electrode_CA.png":
+{
+	"frame": {"x":2,"y":1567,"w":275,"h":272},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":4,"w":275,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"104_Cubone2_CA.png":
+{
+	"frame": {"x":556,"y":2,"w":167,"h":274},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":0,"w":167,"h":274},
+	"sourceSize": {"w":279,"h":279}
+},
+"133_Eevee_CA-2.png":
+{
+	"frame": {"x":279,"y":577,"w":226,"h":272},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":26,"y":5,"w":226,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"146_Moltres_CA-2.png":
+{
+	"frame": {"x":1683,"y":376,"w":275,"h":212},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":35,"w":275,"h":212},
+	"sourceSize": {"w":279,"h":279}
+},
+"147_Dratini_CA.png":
+{
+	"frame": {"x":2,"y":1304,"w":277,"h":259},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":9,"w":277,"h":259},
+	"sourceSize": {"w":279,"h":279}
+},
+"149_Dragonite_CA-6.png":
+{
+	"frame": {"x":1690,"y":1590,"w":276,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":276,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"176_Togetic_CA.png":
+{
+	"frame": {"x":834,"y":2,"w":169,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":0,"w":169,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"200_Misdreavus_CA.png":
+{
+	"frame": {"x":1413,"y":1068,"w":251,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":251,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"211_Qwilfish_CA.png":
+{
+	"frame": {"x":844,"y":175,"w":278,"h":193},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":43,"w":278,"h":193},
+	"sourceSize": {"w":279,"h":279}
+},
+"230_Kingdra_CA.png":
+{
+	"frame": {"x":1126,"y":177,"w":193,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":1,"w":193,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"259_Marshtomp_CA-1.png":
+{
+	"frame": {"x":283,"y":1305,"w":260,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":1,"w":260,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"302_Sableye_CA-2.png":
+{
+	"frame": {"x":1131,"y":1067,"w":278,"h":250},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":15,"w":278,"h":250},
+	"sourceSize": {"w":279,"h":279}
+},
+"330_Flygon_CA-1.png":
+{
+	"frame": {"x":838,"y":372,"w":279,"h":208},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":36,"w":279,"h":208},
+	"sourceSize": {"w":279,"h":279}
+},
+"336_Seviper_CA.png":
+{
+	"frame": {"x":1408,"y":1590,"w":278,"h":275},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":2,"w":278,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"359_Absol_CA.png":
+{
+	"frame": {"x":2,"y":1049,"w":251,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":1,"w":251,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"391_Monferno_CA-1.png":
+{
+	"frame": {"x":566,"y":1060,"w":249,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":249,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"406_Budew_CA.png":
+{
+	"frame": {"x":280,"y":2,"w":166,"h":272},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":5,"w":166,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"412_Burmy_Plant_Cloak_CA.png":
+{
+	"frame": {"x":1116,"y":2,"w":169,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":1,"w":169,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"423_Gastrodon_East_Sea_CA.png":
+{
+	"frame": {"x":556,"y":372,"w":206,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":1,"w":206,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"442_Spiritomb_CA.png":
+{
+	"frame": {"x":565,"y":1313,"w":260,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":260,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"449_Hippopotas_CA.png":
+{
+	"frame": {"x":1115,"y":588,"w":277,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":27,"w":277,"h":225},
+	"sourceSize": {"w":279,"h":279}
+},
+"453_Croagunk_CA-1.png":
+{
+	"frame": {"x":566,"y":813,"w":239,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":0,"w":239,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"460_Abomasnow_CA.png":
+{
+	"frame": {"x":275,"y":369,"w":277,"h":204},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":38,"w":277,"h":204},
+	"sourceSize": {"w":279,"h":279}
+},
+"470_Leafeon_CA-3.png":
+{
+	"frame": {"x":1121,"y":374,"w":210,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":0,"w":210,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"536_Palpitoad_CA.png":
+{
+	"frame": {"x":1409,"y":822,"w":241,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":1,"w":241,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"559_Scraggy_CA-1.png":
+{
+	"frame": {"x":846,"y":817,"w":239,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":2,"w":239,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"589_Escavalier_CA.png":
+{
+	"frame": {"x":848,"y":1065,"w":249,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":0,"w":249,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"691_Dragalge_CA.png":
+{
+	"frame": {"x":846,"y":1318,"w":261,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":261,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"750_Mudsdale_CA.png":
+{
+	"frame": {"x":1686,"y":1323,"w":279,"h":263},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":279,"h":263},
+	"sourceSize": {"w":279,"h":279}
+},
+"760_Bewear_CA.png":
+{
+	"frame": {"x":1691,"y":177,"w":195,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":0,"w":195,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"765_Oranguru_CA.png":
+{
+	"frame": {"x":1696,"y":1068,"w":278,"h":251},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":14,"w":278,"h":251},
+	"sourceSize": {"w":279,"h":279}
+},
+"811_Thwackey_CA-2.png":
+{
+	"frame": {"x":2,"y":2,"w":164,"h":274},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":2,"w":164,"h":274},
+	"sourceSize": {"w":279,"h":279}
+},
+"820_Greedent_CA-1.png":
+{
+	"frame": {"x":844,"y":1583,"w":279,"h":272},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":279,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"821_Rookidee_CA-1.png":
+{
+	"frame": {"x":2,"y":577,"w":273,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":26,"w":273,"h":223},
+	"sourceSize": {"w":279,"h":279}
+},
+"834_-Drednaw_CA-1.png":
+{
+	"frame": {"x":1676,"y":2,"w":278,"h":171},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":54,"w":278,"h":171},
+	"sourceSize": {"w":279,"h":279}
+},
+"838_Carkol_CA-1.png":
+{
+	"frame": {"x":278,"y":173,"w":192,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":0,"w":192,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"840_Applin_CA-1.png":
+{
+	"frame": {"x":2,"y":807,"w":238,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":1,"w":238,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"853_Grapploct_CA-1.png":
+{
+	"frame": {"x":281,"y":1569,"w":279,"h":271},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":279,"h":271},
+	"sourceSize": {"w":279,"h":279}
+},
+"856_Hatenna_CA-1.png":
+{
+	"frame": {"x":283,"y":1053,"w":279,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":15,"w":279,"h":248},
+	"sourceSize": {"w":279,"h":279}
+},
+"868_Milcery_CA-1.png":
+{
+	"frame": {"x":1403,"y":376,"w":276,"h":211},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":33,"w":276,"h":211},
+	"sourceSize": {"w":279,"h":279}
+},
+"869_Alcremie(Vanilla_Cream)_CA-2.png":
+{
+	"frame": {"x":2,"y":366,"w":204,"h":269},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":5,"w":204,"h":269},
+	"sourceSize": {"w":279,"h":279}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pokes-1.png",
+	"format": "RGBA8888",
+	"size": {"w":1976,"h":1868},
+	"scale": "0.6",
+	"related_multi_packs": [ "pokes-0.json", "pokes-2.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f542ef0c1b134fb3eeb13a355cdf4eb3:f8b8af1797dfaff6a813506e5474e776:a928ac08804542088536c8f3bf67fb55$"
+}
+}

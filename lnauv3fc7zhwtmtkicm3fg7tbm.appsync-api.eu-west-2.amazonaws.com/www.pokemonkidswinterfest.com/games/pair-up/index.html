@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- meta data -->
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+
+    <script>
+        var kokodebug = false;
+    </script>
+    <script src="bin/pairs.min.js"></script>
+
+    <script>
+        /**********************************************************************
+                WEBSITE INTEGRATION CODE
+                ********************************************************************/
+        //Vue will pass all the necessary values to these variables
+
+        // Utility functions
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        function getUrlParam(parameter, defaultvalue) {
+            var urlparameter = defaultvalue;
+            if (window.location.search.indexOf(parameter) > -1) {
+                urlparameter = getUrlVars()[parameter];
+            }
+            return urlparameter;
+        }
+        // IMPORTANT BITS
+        document.addEventListener("DOMContentLoaded", function() {
+            // document.querySelector('#pokemon-id').innerHTML = getUrlParam('pokemon', 1); // take the pokemon id from the url. Vue will pass in the selected pokemon like this as a get variable.
+            // document.querySelector('#game').innerHTML = getUrlParam('game', 'not set');
+        });
+        // this is how you would end the game, call this function and give it razzberries.
+        function sendRazzberries(amount, mode, electricPaired, playTime, quit) {
+            var payload = {
+                razzberries: amount,
+                modePlayed: mode,
+                electric: electricPaired,
+                quitGame: quit,
+                timePlayed: playTime,
+                endgame: true // if endgame is true then Vue will close the game and goto post-game sequence
+            }
+            console.log('sending score', payload);
+            var event = new CustomEvent('gamedata', {
+                detail: payload
+            });
+            window.parent.dispatchEvent(event);
+        }
+    </script>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            position: fixed;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 2vw;
+        }
+    </style>
+</head>
+
+<body style="touch-action: none;">
+    <!-- application initialisation -->
+    <script>
+        window.deviceWidth = window.innerWidth;
+        window.deviceHeight = window.innerHeight;
+
+        app.guiSize = {
+            width: 2774,
+            height: 1530
+        };
+        app.minSize = {
+            width: 2040,
+            height: 1186
+        };
+        app.bgColor = 0xdddddd;
+        app.anti_alias = true;
+        app.retina = true;
+        app.roundPixels = true;
+        app.forceFXAA = false;
+        app.autoDensity = true;
+
+        app.init();
+        app.setupComplete = function() {
+            main.init();
+            app.resize();
+        }
+
+        window.addEventListener("load", app.loaded, false);
+    </script>
+    <!--
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        // ga('create', 'UA-73577357-1-DEBUG', 'auto');
+        // ga('send', 'pageview');
+
+    </script>
+    -->
+    <div id="mobile-push-header"></div>
+</body>
+
+</html>

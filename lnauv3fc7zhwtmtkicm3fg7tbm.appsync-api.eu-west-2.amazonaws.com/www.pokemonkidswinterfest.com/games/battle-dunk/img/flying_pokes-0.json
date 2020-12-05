@@ -1,0 +1,894 @@
+{"frames": {
+
+"1/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":2,"w":377,"h":269},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":377,"h":269},
+	"sourceSize": {"w":378,"h":269}
+},
+"1/092_Gastly_CA.png":
+{
+	"frame": {"x":722,"y":756,"w":183,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":170},
+	"sourceSize": {"w":183,"h":170}
+},
+"1/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":2,"y":275,"w":307,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":310},
+	"sourceSize": {"w":308,"h":310}
+},
+"1/430_Honchkrow_CA.png":
+{
+	"frame": {"x":563,"y":227,"w":247,"h":169},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":169},
+	"sourceSize": {"w":247,"h":169}
+},
+"1/469_Yanmega_CA.png":
+{
+	"frame": {"x":313,"y":527,"w":240,"h":172},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":172},
+	"sourceSize": {"w":240,"h":172}
+},
+"1/520_Tranquill_CA.png":
+{
+	"frame": {"x":870,"y":930,"w":122,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":103},
+	"sourceSize": {"w":122,"h":103}
+},
+"1/528_Swoobat_CA.png":
+{
+	"frame": {"x":613,"y":1425,"w":145,"h":136},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":145,"h":136},
+	"sourceSize": {"w":145,"h":137}
+},
+"1/567_Archeops_CA.png":
+{
+	"frame": {"x":702,"y":2,"w":299,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":299,"h":217},
+	"sourceSize": {"w":300,"h":218}
+},
+"1/628_Braviary_CA-1.png":
+{
+	"frame": {"x":2,"y":589,"w":301,"h":283},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":301,"h":283},
+	"sourceSize": {"w":301,"h":284}
+},
+"1/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":383,"y":2,"w":315,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":315,"h":221},
+	"sourceSize": {"w":316,"h":221}
+},
+"1/733_Toucannon_CA.png":
+{
+	"frame": {"x":2,"y":1459,"w":197,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":179},
+	"sourceSize": {"w":197,"h":179}
+},
+"2/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":2,"w":377,"h":269},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":377,"h":269},
+	"sourceSize": {"w":378,"h":269}
+},
+"2/092_Gastly_CA.png":
+{
+	"frame": {"x":722,"y":756,"w":183,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":170},
+	"sourceSize": {"w":183,"h":170}
+},
+"2/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":2,"y":275,"w":307,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":310},
+	"sourceSize": {"w":308,"h":310}
+},
+"2/430_Honchkrow_CA.png":
+{
+	"frame": {"x":563,"y":227,"w":247,"h":169},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":169},
+	"sourceSize": {"w":247,"h":169}
+},
+"2/469_Yanmega_CA.png":
+{
+	"frame": {"x":313,"y":527,"w":240,"h":172},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":172},
+	"sourceSize": {"w":240,"h":172}
+},
+"2/520_Tranquill_CA.png":
+{
+	"frame": {"x":870,"y":930,"w":122,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":103},
+	"sourceSize": {"w":122,"h":103}
+},
+"2/528_Swoobat_CA.png":
+{
+	"frame": {"x":613,"y":1425,"w":145,"h":136},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":145,"h":136},
+	"sourceSize": {"w":145,"h":137}
+},
+"2/567_Archeops_CA.png":
+{
+	"frame": {"x":702,"y":2,"w":299,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":299,"h":217},
+	"sourceSize": {"w":300,"h":218}
+},
+"2/628_Braviary_CA-1.png":
+{
+	"frame": {"x":2,"y":589,"w":301,"h":283},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":301,"h":283},
+	"sourceSize": {"w":301,"h":284}
+},
+"2/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":383,"y":2,"w":315,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":315,"h":221},
+	"sourceSize": {"w":316,"h":221}
+},
+"2/733_Toucannon_CA.png":
+{
+	"frame": {"x":2,"y":1459,"w":197,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":179},
+	"sourceSize": {"w":197,"h":179}
+},
+"3/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":876,"w":303,"h":215},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":215},
+	"sourceSize": {"w":303,"h":215}
+},
+"3/092_Gastly_CA.png":
+{
+	"frame": {"x":586,"y":478,"w":146,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":136},
+	"sourceSize": {"w":146,"h":136}
+},
+"3/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":313,"y":275,"w":246,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":248},
+	"sourceSize": {"w":247,"h":248}
+},
+"3/430_Honchkrow_CA.png":
+{
+	"frame": {"x":741,"y":617,"w":198,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":135},
+	"sourceSize": {"w":198,"h":135}
+},
+"3/469_Yanmega_CA.png":
+{
+	"frame": {"x":580,"y":858,"w":192,"h":138},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":138},
+	"sourceSize": {"w":192,"h":138}
+},
+"3/520_Tranquill_CA.png":
+{
+	"frame": {"x":909,"y":756,"w":97,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":83},
+	"sourceSize": {"w":97,"h":83}
+},
+"3/528_Swoobat_CA.png":
+{
+	"frame": {"x":896,"y":1328,"w":116,"h":109},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":109},
+	"sourceSize": {"w":116,"h":109}
+},
+"3/567_Archeops_CA.png":
+{
+	"frame": {"x":402,"y":868,"w":240,"h":174},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":174},
+	"sourceSize": {"w":240,"h":174}
+},
+"3/628_Braviary_CA-1.png":
+{
+	"frame": {"x":736,"y":223,"w":241,"h":227},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":241,"h":227},
+	"sourceSize": {"w":241,"h":227}
+},
+"3/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":221,"y":876,"w":253,"h":177},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":177},
+	"sourceSize": {"w":253,"h":177}
+},
+"3/733_Toucannon_CA.png":
+{
+	"frame": {"x":735,"y":1222,"w":157,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":144},
+	"sourceSize": {"w":157,"h":144}
+},
+"4/042_Golbat_CA.png":
+{
+	"frame": {"x":307,"y":703,"w":227,"h":161},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":161},
+	"sourceSize": {"w":227,"h":161}
+},
+"4/092_Gastly_CA.png":
+{
+	"frame": {"x":896,"y":1222,"w":110,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":102},
+	"sourceSize": {"w":110,"h":102}
+},
+"4/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":424,"y":1457,"w":185,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":186},
+	"sourceSize": {"w":185,"h":186}
+},
+"4/430_Honchkrow_CA.png":
+{
+	"frame": {"x":538,"y":753,"w":148,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":148,"h":101},
+	"sourceSize": {"w":148,"h":101}
+},
+"4/469_Yanmega_CA.png":
+{
+	"frame": {"x":722,"y":930,"w":144,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":103},
+	"sourceSize": {"w":144,"h":103}
+},
+"4/520_Tranquill_CA.png":
+{
+	"frame": {"x":613,"y":1574,"w":73,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":62},
+	"sourceSize": {"w":73,"h":62}
+},
+"4/528_Swoobat_CA.png":
+{
+	"frame": {"x":909,"y":843,"w":87,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":82},
+	"sourceSize": {"w":87,"h":82}
+},
+"4/567_Archeops_CA.png":
+{
+	"frame": {"x":557,"y":618,"w":180,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":131},
+	"sourceSize": {"w":180,"h":131}
+},
+"4/628_Braviary_CA-1.png":
+{
+	"frame": {"x":723,"y":1037,"w":181,"h":171},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":171},
+	"sourceSize": {"w":181,"h":171}
+},
+"4/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":586,"y":1054,"w":190,"h":133},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":133},
+	"sourceSize": {"w":190,"h":133}
+},
+"4/733_Toucannon_CA.png":
+{
+	"frame": {"x":898,"y":1037,"w":118,"h":108},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":118,"h":108},
+	"sourceSize": {"w":118,"h":108}
+},
+"5/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":876,"w":303,"h":215},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":215},
+	"sourceSize": {"w":303,"h":215}
+},
+"5/092_Gastly_CA.png":
+{
+	"frame": {"x":586,"y":478,"w":146,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":136},
+	"sourceSize": {"w":146,"h":136}
+},
+"5/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":313,"y":275,"w":246,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":248},
+	"sourceSize": {"w":247,"h":248}
+},
+"5/430_Honchkrow_CA.png":
+{
+	"frame": {"x":741,"y":617,"w":198,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":135},
+	"sourceSize": {"w":198,"h":135}
+},
+"5/469_Yanmega_CA.png":
+{
+	"frame": {"x":580,"y":858,"w":192,"h":138},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":138},
+	"sourceSize": {"w":192,"h":138}
+},
+"5/520_Tranquill_CA.png":
+{
+	"frame": {"x":909,"y":756,"w":97,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":83},
+	"sourceSize": {"w":97,"h":83}
+},
+"5/528_Swoobat_CA.png":
+{
+	"frame": {"x":896,"y":1328,"w":116,"h":109},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":109},
+	"sourceSize": {"w":116,"h":109}
+},
+"5/567_Archeops_CA.png":
+{
+	"frame": {"x":402,"y":868,"w":240,"h":174},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":174},
+	"sourceSize": {"w":240,"h":174}
+},
+"5/628_Braviary_CA-1.png":
+{
+	"frame": {"x":736,"y":223,"w":241,"h":227},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":241,"h":227},
+	"sourceSize": {"w":241,"h":227}
+},
+"5/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":221,"y":876,"w":253,"h":177},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":177},
+	"sourceSize": {"w":253,"h":177}
+},
+"5/733_Toucannon_CA.png":
+{
+	"frame": {"x":735,"y":1222,"w":157,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":144},
+	"sourceSize": {"w":157,"h":144}
+},
+"6/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":2,"w":377,"h":269},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":377,"h":269},
+	"sourceSize": {"w":378,"h":269}
+},
+"6/092_Gastly_CA.png":
+{
+	"frame": {"x":722,"y":756,"w":183,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":170},
+	"sourceSize": {"w":183,"h":170}
+},
+"6/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":2,"y":275,"w":307,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":310},
+	"sourceSize": {"w":308,"h":310}
+},
+"6/430_Honchkrow_CA.png":
+{
+	"frame": {"x":563,"y":227,"w":247,"h":169},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":247,"h":169},
+	"sourceSize": {"w":247,"h":169}
+},
+"6/469_Yanmega_CA.png":
+{
+	"frame": {"x":313,"y":527,"w":240,"h":172},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":172},
+	"sourceSize": {"w":240,"h":172}
+},
+"6/520_Tranquill_CA.png":
+{
+	"frame": {"x":870,"y":930,"w":122,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":103},
+	"sourceSize": {"w":122,"h":103}
+},
+"6/528_Swoobat_CA.png":
+{
+	"frame": {"x":613,"y":1425,"w":145,"h":136},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":145,"h":136},
+	"sourceSize": {"w":145,"h":137}
+},
+"6/567_Archeops_CA.png":
+{
+	"frame": {"x":702,"y":2,"w":299,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":299,"h":217},
+	"sourceSize": {"w":300,"h":218}
+},
+"6/628_Braviary_CA-1.png":
+{
+	"frame": {"x":2,"y":589,"w":301,"h":283},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":301,"h":283},
+	"sourceSize": {"w":301,"h":284}
+},
+"6/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":383,"y":2,"w":315,"h":221},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":315,"h":221},
+	"sourceSize": {"w":316,"h":221}
+},
+"6/733_Toucannon_CA.png":
+{
+	"frame": {"x":2,"y":1459,"w":197,"h":179},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":197,"h":179},
+	"sourceSize": {"w":197,"h":179}
+},
+"7/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":876,"w":303,"h":215},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":303,"h":215},
+	"sourceSize": {"w":303,"h":215}
+},
+"7/092_Gastly_CA.png":
+{
+	"frame": {"x":586,"y":478,"w":146,"h":136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":136},
+	"sourceSize": {"w":146,"h":136}
+},
+"7/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":313,"y":275,"w":246,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":248},
+	"sourceSize": {"w":247,"h":248}
+},
+"7/430_Honchkrow_CA.png":
+{
+	"frame": {"x":741,"y":617,"w":198,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":135},
+	"sourceSize": {"w":198,"h":135}
+},
+"7/469_Yanmega_CA.png":
+{
+	"frame": {"x":580,"y":858,"w":192,"h":138},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":138},
+	"sourceSize": {"w":192,"h":138}
+},
+"7/520_Tranquill_CA.png":
+{
+	"frame": {"x":909,"y":756,"w":97,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":97,"h":83},
+	"sourceSize": {"w":97,"h":83}
+},
+"7/528_Swoobat_CA.png":
+{
+	"frame": {"x":896,"y":1328,"w":116,"h":109},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":109},
+	"sourceSize": {"w":116,"h":109}
+},
+"7/567_Archeops_CA.png":
+{
+	"frame": {"x":402,"y":868,"w":240,"h":174},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":174},
+	"sourceSize": {"w":240,"h":174}
+},
+"7/628_Braviary_CA-1.png":
+{
+	"frame": {"x":736,"y":223,"w":241,"h":227},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":241,"h":227},
+	"sourceSize": {"w":241,"h":227}
+},
+"7/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":221,"y":876,"w":253,"h":177},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":253,"h":177},
+	"sourceSize": {"w":253,"h":177}
+},
+"7/733_Toucannon_CA.png":
+{
+	"frame": {"x":735,"y":1222,"w":157,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":157,"h":144},
+	"sourceSize": {"w":157,"h":144}
+},
+"8/042_Golbat_CA.png":
+{
+	"frame": {"x":307,"y":703,"w":227,"h":161},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":161},
+	"sourceSize": {"w":227,"h":161}
+},
+"8/092_Gastly_CA.png":
+{
+	"frame": {"x":896,"y":1222,"w":110,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":102},
+	"sourceSize": {"w":110,"h":102}
+},
+"8/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":424,"y":1457,"w":185,"h":186},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":186},
+	"sourceSize": {"w":185,"h":186}
+},
+"8/430_Honchkrow_CA.png":
+{
+	"frame": {"x":538,"y":753,"w":148,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":148,"h":101},
+	"sourceSize": {"w":148,"h":101}
+},
+"8/469_Yanmega_CA.png":
+{
+	"frame": {"x":722,"y":930,"w":144,"h":103},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":103},
+	"sourceSize": {"w":144,"h":103}
+},
+"8/520_Tranquill_CA.png":
+{
+	"frame": {"x":613,"y":1574,"w":73,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":73,"h":62},
+	"sourceSize": {"w":73,"h":62}
+},
+"8/528_Swoobat_CA.png":
+{
+	"frame": {"x":909,"y":843,"w":87,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":82},
+	"sourceSize": {"w":87,"h":82}
+},
+"8/567_Archeops_CA.png":
+{
+	"frame": {"x":557,"y":618,"w":180,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":131},
+	"sourceSize": {"w":180,"h":131}
+},
+"8/628_Braviary_CA-1.png":
+{
+	"frame": {"x":723,"y":1037,"w":181,"h":171},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":181,"h":171},
+	"sourceSize": {"w":181,"h":171}
+},
+"8/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":586,"y":1054,"w":190,"h":133},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":133},
+	"sourceSize": {"w":190,"h":133}
+},
+"8/733_Toucannon_CA.png":
+{
+	"frame": {"x":898,"y":1037,"w":118,"h":108},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":118,"h":108},
+	"sourceSize": {"w":118,"h":108}
+},
+"9/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":1183,"w":272,"h":193},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":272,"h":193},
+	"sourceSize": {"w":272,"h":193}
+},
+"9/092_Gastly_CA.png":
+{
+	"frame": {"x":753,"y":1516,"w":132,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":123},
+	"sourceSize": {"w":132,"h":123}
+},
+"9/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":199,"y":1183,"w":222,"h":223},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":223},
+	"sourceSize": {"w":222,"h":223}
+},
+"9/430_Honchkrow_CA.png":
+{
+	"frame": {"x":425,"y":1332,"w":178,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":121},
+	"sourceSize": {"w":178,"h":121}
+},
+"9/469_Yanmega_CA.png":
+{
+	"frame": {"x":607,"y":1248,"w":173,"h":124},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":173,"h":124},
+	"sourceSize": {"w":173,"h":124}
+},
+"9/520_Tranquill_CA.png":
+{
+	"frame": {"x":889,"y":1550,"w":88,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":88,"h":75},
+	"sourceSize": {"w":88,"h":75}
+},
+"9/528_Swoobat_CA.png":
+{
+	"frame": {"x":889,"y":1448,"w":104,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":98},
+	"sourceSize": {"w":104,"h":98}
+},
+"9/567_Archeops_CA.png":
+{
+	"frame": {"x":425,"y":1112,"w":216,"h":157},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":157},
+	"sourceSize": {"w":216,"h":157}
+},
+"9/628_Braviary_CA-1.png":
+{
+	"frame": {"x":203,"y":1410,"w":217,"h":205},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":205},
+	"sourceSize": {"w":217,"h":205}
+},
+"9/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":736,"y":454,"w":228,"h":159},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":159},
+	"sourceSize": {"w":228,"h":159}
+},
+"9/733_Toucannon_CA.png":
+{
+	"frame": {"x":753,"y":1370,"w":142,"h":129},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":129},
+	"sourceSize": {"w":142,"h":129}
+},
+"10/042_Golbat_CA.png":
+{
+	"frame": {"x":2,"y":1183,"w":272,"h":193},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":272,"h":193},
+	"sourceSize": {"w":272,"h":193}
+},
+"10/092_Gastly_CA.png":
+{
+	"frame": {"x":753,"y":1516,"w":132,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":123},
+	"sourceSize": {"w":132,"h":123}
+},
+"10/149_Dragonite_CA-6.png":
+{
+	"frame": {"x":199,"y":1183,"w":222,"h":223},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":223},
+	"sourceSize": {"w":222,"h":223}
+},
+"10/430_Honchkrow_CA.png":
+{
+	"frame": {"x":425,"y":1332,"w":178,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":121},
+	"sourceSize": {"w":178,"h":121}
+},
+"10/469_Yanmega_CA.png":
+{
+	"frame": {"x":607,"y":1248,"w":173,"h":124},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":173,"h":124},
+	"sourceSize": {"w":173,"h":124}
+},
+"10/520_Tranquill_CA.png":
+{
+	"frame": {"x":889,"y":1550,"w":88,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":88,"h":75},
+	"sourceSize": {"w":88,"h":75}
+},
+"10/528_Swoobat_CA.png":
+{
+	"frame": {"x":889,"y":1448,"w":104,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":98},
+	"sourceSize": {"w":104,"h":98}
+},
+"10/567_Archeops_CA.png":
+{
+	"frame": {"x":425,"y":1112,"w":216,"h":157},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":157},
+	"sourceSize": {"w":216,"h":157}
+},
+"10/628_Braviary_CA-1.png":
+{
+	"frame": {"x":203,"y":1410,"w":217,"h":205},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":217,"h":205},
+	"sourceSize": {"w":217,"h":205}
+},
+"10/663_Talonflame_CA-1.png":
+{
+	"frame": {"x":736,"y":454,"w":228,"h":159},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":159},
+	"sourceSize": {"w":228,"h":159}
+},
+"10/733_Toucannon_CA.png":
+{
+	"frame": {"x":753,"y":1370,"w":142,"h":129},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":129},
+	"sourceSize": {"w":142,"h":129}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "flying_pokes-0.png",
+	"format": "RGBA8888",
+	"size": {"w":1008,"h":1645},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:27a39e949345fa7e762cbc3606981b39:4e5bec0991bb72b13dcb04766ac2def0:9bcb6d5c6c0570dc56a589cea15740af$"
+}
+}

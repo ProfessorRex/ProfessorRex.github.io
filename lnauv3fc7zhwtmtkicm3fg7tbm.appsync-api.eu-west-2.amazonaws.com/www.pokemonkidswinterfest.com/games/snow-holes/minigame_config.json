@@ -1,0 +1,821 @@
+[
+    {
+        "spriteName": "002_Ivysaur_CA-1_1000pixel.png",
+        "type": "grass,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "004_Charmander_CA-4_wc.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "005_Charmeleon_CA-1_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "007_Squirtle_CA-2_wc.png",
+        "type": "water",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "011_Metapod_CA_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 130
+    },
+    {
+        "spriteName": "013_Weedle_CA_1000pixel.png",
+        "type": "bug,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "025_Pikachu_CA-3_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "026_Raichu_CA-1_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "027_Sandshrew_CA-1_1000pixel.png",
+        "type": "ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "029_Nidoran♀_CA_1000pixel.png",
+        "type": "poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "030_Nidorina_CA_1000pixel.png",
+        "type": "poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "037_Vulpix_CA-1_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "039_Jigglypuff_CA-3_1000pixel.png",
+        "type": "normal,fairy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "043_Oddish_CA_1000pixel.png",
+        "type": "grass,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "052_Meowth_CA-5_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "056_Mankey_CA_1000pixel.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "067_Machoke_CA_1000pixel.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "084_Doduo_CA_1000pixel.png",
+        "type": "normal,flying",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "088_Grimer_CA-2_1000pixel.png",
+        "type": "poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "096_Drowzee_CA_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "100_Voltorb_CA_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "107_Hitmonchan_CA_1000pixel.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "132_Ditto_CA_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "152_Chikorita_CA-5_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "155_Cyndaquil_CA-2_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "156_Quilava_CA-3_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "158_Totodile_CA-1_1000pixel.png",
+        "type": "water",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "167_Spinarak_CA_1000pixel.png",
+        "type": "bug,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "172_Pichu_CA-1 2.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "173_Cleffa_CA_1000pixel.png",
+        "type": "fairy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "175_Togepi_CA-1_1000pixel.png",
+        "type": "fairy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "181_Ampharos_CA-1_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "182_Bellossom_CA_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "196_Espeon_CA-2_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "200_Misdreavus_CA_1000pixel.png",
+        "type": "ghost",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "204_Pineco_CA_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "213_Shuckle_CA_1000pixel.png",
+        "type": "bug,rock",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "231_Phanpy_CA-1_1000pixel.png",
+        "type": "ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "235_Smeargle_CA_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "236_Tyrogue_CA-2_1000pixel.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "246_Larvitar_CA_1000pixel.png",
+        "type": "rock,ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "256_Combusken_CA-3_1000pixel.png",
+        "type": "fire,fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "259_Marshtomp_CA-1_1000pixel.png",
+        "type": "water,ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "261_Poochyena_CA_1000pixel.png",
+        "type": "dark",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "263_Zigzagoon_CA-1_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "265_Wurmple_CA_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "293_Whismur_CA_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "302_Sableye_CA-2_1000pixel.png",
+        "type": "dark,ghost",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "311_Plusle_CA-6.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "315_Roselia_CA-2_1000pixel.png",
+        "type": "grass,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "327_Spinda_CA.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "328_Trapinch_CA_1000pixel.png",
+        "type": "ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "361_Snorunt_CA-1_1000pixel.png",
+        "type": "ice",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "391_Monferno_CA-1_1000pixel.png",
+        "type": "fire,fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "393_Piplup_CA-22_1000pixel.png",
+        "type": "water",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "401_Kricketot_CA_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "404_Luxio_CA_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "425_Drifloon_CA_1000pixel.png",
+        "type": "ghost,flying",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "433_Chingling_CA_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "443_Gible_CA_1000pixel.png",
+        "type": "dragon,ground",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "448_Lucario_CA-1_1000pixel.png",
+        "type": "fighting,steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "470_Leafeon_CA-3_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "471_Glaceon_CA-2_1000pixel.png",
+        "type": "ice",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "479_Rotom_CA_1000pixel.png",
+        "type": "electric,ghost",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "499_Pignite_CA-1_1000pixel.png",
+        "type": "fire,fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "505_Watchog_CA_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "524_Roggenrola_CA_1000pixel.png",
+        "type": "rock",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "529_Drilbur_CA_1000pixel.png",
+        "type": "rock",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "540_Sewaddle_CA_1000pixel.png",
+        "type": "bug,grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "543_Venipede_CA_wc.png",
+        "type": "bug,poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "548_Petilil_CA_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "552_Krokorok_CA_1000pixel.png",
+        "type": "ground,dark",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "554_Darumaka_CA-1_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "560_Scrafty_CA_1000pixel.png",
+        "type": "dark,fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "568_Trubbish_CA_1000pixel.png",
+        "type": "poison",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "583_Vanillish_CA_1000pixel.png",
+        "type": "ice",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "587_Emolga_CA-3_1000pixel.png",
+        "type": "electric,flying",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "597_Ferroseed_CA-1_1000pixel.png",
+        "type": "grass,steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "605_Elgyem_CA_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "607_Litwick_CA_1000pixel.png",
+        "type": "ghost,fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "610_Axew_CA_wc.png",
+        "type": "dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "619_Mienfoo_CA_wc.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "625_Bisharp_CA-1_1000pixel.png",
+        "type": "dark,steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "632_Durant_CA_1000pixel.png",
+        "type": "bug,steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "633_Deino_CA_1000pixel.png",
+        "type": "dark,dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "654_Braixen_CA_1000pixel.png",
+        "type": "fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "664_Scatterbug_CA_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "674_Pancham1_CA_1000pixel.png",
+        "type": "fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "678_Meowstic_Female_CA_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "678_Meowstic_Male_CA_1000pixel.png",
+        "type": "psychic",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "694_Helioptile_CA_1000pixel.png",
+        "type": "electric,normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "695_Heliolisk_CA_1000pixel.png",
+        "type": "electric,normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "696_Tyrunt_CA_1000pixel.png",
+        "type": "rock,dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "703_Carbink_CA_1000pixel.png",
+        "type": "rock,fairy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "712_Bergmite_CA_1000pixel.png",
+        "type": "ice",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "735_Gumshoos_CA_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "757_Salandit_CA_1000pixel.png",
+        "type": "poison,fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "758_Salazzle_CA_1000pixel.png",
+        "type": "poison,fire",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "761_Bounsweet_CA_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "778_Mimikyu_CA-1_1000pixel.png",
+        "type": "ghost,fairy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "782_Jangmo-o_CA_1000pixel.png",
+        "type": "dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "783_Hakamo-o_CA_1000pixel.png",
+        "type": "dragon,fighting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "810_Grookey1_CA-3_1000pixel.png",
+        "type": "grass",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "816_Sobble_CA-6_1000pixel.png",
+        "type": "water",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "820_Greedent_CA-1_1000pixel.png",
+        "type": "normal",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "824_Blipbug_CA-1_1000pixel.png",
+        "type": "bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "836_Boltund_CA-1_1000pixel.png",
+        "type": "electric",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "840_Applin_CA-1.png",
+        "type": "grass,dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "850_Sizzlipede_CA-2_wc.png",
+        "type": "fire,bug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "863_Perrserker_CA-5_1000pixel.png",
+        "type": "steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "875_Eiscue_Ice_Face_CA-1_1000pixel.png",
+        "type": "ice",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 160
+    },
+    {
+        "spriteName": "877_Morpeko_Full_Belly_Mode_CA-2_1000pixel.png",
+        "type": "electric,dark",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "877_Morpeko_Hangry_Mode_CA-6_1000pixel.png",
+        "type": "electric,dark",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "885_Dreepy_CA-2_1000pixel.png",
+        "type": "dragon,ghost",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "S1_081_Magnemite_CA-1_1000pixel.png",
+        "type": "electric,steel",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "S2_371_Bagon_CA_1000pixel.png",
+        "type": "dragon",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    },
+    {
+        "spriteName": "S2_622_Golett_CA_1000pixel.png",
+        "type": "ground,ghost",
+        "offsetX": 0,
+        "offsetY": 0,
+        "popupHeight": 100
+    }
+]

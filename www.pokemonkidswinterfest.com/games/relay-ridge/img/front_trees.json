@@ -1,0 +1,31 @@
+{"frames": {
+
+"parallax_tree1.png":
+{
+	"frame": {"x":2,"y":2,"w":499,"h":343},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":499,"h":343},
+	"sourceSize": {"w":499,"h":343}
+},
+"parallax_tree2.png":
+{
+	"frame": {"x":349,"y":2,"w":538,"h":331},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":538,"h":331},
+	"sourceSize": {"w":538,"h":331}
+}},
+"animations": {
+	"parallax_tree": ["parallax_tree1.png","parallax_tree2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "front_trees.png",
+	"format": "RGBA8888",
+	"size": {"w":889,"h":503},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:0ea03d48195554a42fe90c35a5036ac9:4e1d8afa0ba4bdea910a63060c5370dd:9b811f80574034fe76b6402acb0fe122$"
+}
+}

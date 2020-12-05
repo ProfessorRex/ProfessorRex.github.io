@@ -1,0 +1,463 @@
+{"frames": {
+
+"008_Wartortle_CA-1.png":
+{
+	"frame": {"x":281,"y":1507,"w":274,"h":268},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":274,"h":268},
+	"sourceSize": {"w":279,"h":279}
+},
+"010_Caterpie_CA.png":
+{
+	"frame": {"x":559,"y":1510,"w":269,"h":271},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":269,"h":271},
+	"sourceSize": {"w":279,"h":279}
+},
+"011_Metapod_CA.png":
+{
+	"frame": {"x":1131,"y":2,"w":276,"h":154},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":62,"w":276,"h":154},
+	"sourceSize": {"w":279,"h":279}
+},
+"021_Spearow_CA.png":
+{
+	"frame": {"x":1400,"y":1286,"w":258,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":2,"w":258,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"022_Fearow_CA.png":
+{
+	"frame": {"x":285,"y":2,"w":279,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":76,"w":279,"h":126},
+	"sourceSize": {"w":279,"h":279}
+},
+"050_Diglett_CA.png":
+{
+	"frame": {"x":843,"y":535,"w":275,"h":220},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":29,"w":275,"h":220},
+	"sourceSize": {"w":279,"h":279}
+},
+"065_Alakazam_CA-1.png":
+{
+	"frame": {"x":1682,"y":796,"w":276,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":20,"w":276,"h":238},
+	"sourceSize": {"w":279,"h":279}
+},
+"074_Geodude_CA-3.png":
+{
+	"frame": {"x":568,"y":2,"w":276,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":75,"w":276,"h":130},
+	"sourceSize": {"w":279,"h":279}
+},
+"081_Magnemite_CA-1.png":
+{
+	"frame": {"x":2,"y":129,"w":276,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":48,"w":276,"h":184},
+	"sourceSize": {"w":279,"h":279}
+},
+"092_Gastly_CA.png":
+{
+	"frame": {"x":1403,"y":1028,"w":274,"h":254},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":12,"w":274,"h":254},
+	"sourceSize": {"w":279,"h":279}
+},
+"096_Drowzee_CA.png":
+{
+	"frame": {"x":840,"y":999,"w":250,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":2,"w":250,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"105_Marowak_CA.png":
+{
+	"frame": {"x":1396,"y":1548,"w":277,"h":270},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":277,"h":270},
+	"sourceSize": {"w":279,"h":279}
+},
+"129_Magikarp_CA-1.png":
+{
+	"frame": {"x":1409,"y":162,"w":275,"h":188},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":45,"w":275,"h":188},
+	"sourceSize": {"w":279,"h":279}
+},
+"145_Zapdos_CA-2.png":
+{
+	"frame": {"x":1683,"y":569,"w":279,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":28,"w":279,"h":223},
+	"sourceSize": {"w":279,"h":279}
+},
+"151_Mew_CA-1.png":
+{
+	"frame": {"x":1119,"y":1278,"w":257,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":2,"w":257,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"152_Chikorita_CA-5.png":
+{
+	"frame": {"x":1122,"y":557,"w":222,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":1,"w":222,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"174_Igglybuff_CA.png":
+{
+	"frame": {"x":841,"y":759,"w":236,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":2,"w":236,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"175_Togepi_CA-1.png":
+{
+	"frame": {"x":1117,"y":1539,"w":275,"h":269},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":5,"w":275,"h":269},
+	"sourceSize": {"w":279,"h":279}
+},
+"197_Umbreon_CA-1 2.png":
+{
+	"frame": {"x":560,"y":1248,"w":258,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":258,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"207_Gligar_CA-2.png":
+{
+	"frame": {"x":1677,"y":1551,"w":274,"h":271},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":274,"h":271},
+	"sourceSize": {"w":279,"h":279}
+},
+"209_Snubbull_CA.png":
+{
+	"frame": {"x":840,"y":1253,"w":275,"h":261},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":10,"w":275,"h":261},
+	"sourceSize": {"w":279,"h":279}
+},
+"228_Houndour_CA.png":
+{
+	"frame": {"x":282,"y":321,"w":202,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":2,"w":202,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"229_Houndoom_CA-2.png":
+{
+	"frame": {"x":834,"y":1518,"w":267,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":0,"w":267,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"258_Mudkip_CA-5.png":
+{
+	"frame": {"x":1403,"y":562,"w":222,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":1,"w":222,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"270_Lotad_CA.png":
+{
+	"frame": {"x":1693,"y":2,"w":278,"h":161},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":59,"w":278,"h":161},
+	"sourceSize": {"w":279,"h":279}
+},
+"299_Nosepass_CA.png":
+{
+	"frame": {"x":281,"y":993,"w":247,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":2,"w":247,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"353_Shuppet_CA.png":
+{
+	"frame": {"x":282,"y":132,"w":185,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":48,"y":2,"w":185,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"361_Snorunt_CA-1.png":
+{
+	"frame": {"x":563,"y":755,"w":235,"h":274},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":3,"w":235,"h":274},
+	"sourceSize": {"w":279,"h":279}
+},
+"372_Shelgon_CA.png":
+{
+	"frame": {"x":2,"y":1230,"w":256,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":2,"w":256,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"390_Chimchar_CA-6.png":
+{
+	"frame": {"x":1688,"y":167,"w":191,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":3,"w":191,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"393_Piplup_CA-3.png":
+{
+	"frame": {"x":1409,"y":354,"w":204,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":2,"w":204,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"444_Gabite_CA.png":
+{
+	"frame": {"x":560,"y":994,"w":276,"h":250},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":15,"w":276,"h":250},
+	"sourceSize": {"w":279,"h":279}
+},
+"459_Snover_CA-1.png":
+{
+	"frame": {"x":1120,"y":783,"w":236,"h":276},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":1,"w":236,"h":276},
+	"sourceSize": {"w":279,"h":279}
+},
+"461_Weavile_CA.png":
+{
+	"frame": {"x":1126,"y":351,"w":202,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":0,"w":202,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"527_Woobat_CA.png":
+{
+	"frame": {"x":278,"y":527,"w":278,"h":215},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":32,"w":278,"h":215},
+	"sourceSize": {"w":279,"h":279}
+},
+"544_Whirlipede_CA.png":
+{
+	"frame": {"x":560,"y":532,"w":279,"h":219},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":30,"w":279,"h":219},
+	"sourceSize": {"w":279,"h":279}
+},
+"564_Tirtouga_CA.png":
+{
+	"frame": {"x":848,"y":2,"w":279,"h":133},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":73,"w":279,"h":133},
+	"sourceSize": {"w":279,"h":279}
+},
+"599_Klink_CA.png":
+{
+	"frame": {"x":1681,"y":1289,"w":279,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":10,"w":279,"h":258},
+	"sourceSize": {"w":279,"h":279}
+},
+"631_Heatmor_CA-1.png":
+{
+	"frame": {"x":2,"y":1490,"w":267,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":2,"w":267,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"647_Keldeo_Ordinary_Form_CA-1.png":
+{
+	"frame": {"x":2,"y":746,"w":232,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":0,"w":232,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"656_Froakie_CA-5.png":
+{
+	"frame": {"x":1400,"y":788,"w":236,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":0,"w":236,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"657_Frogadier_CA.png":
+{
+	"frame": {"x":281,"y":1244,"w":275,"h":259},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":9,"w":275,"h":259},
+	"sourceSize": {"w":279,"h":279}
+},
+"664_Scatterbug_CA.png":
+{
+	"frame": {"x":1411,"y":2,"w":156,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":1,"w":156,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"702_Dedenne_CA-2.png":
+{
+	"frame": {"x":1120,"y":1028,"w":279,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":17,"w":279,"h":246},
+	"sourceSize": {"w":279,"h":279}
+},
+"810_Grookey1_CA-3.png":
+{
+	"frame": {"x":284,"y":755,"w":234,"h":275},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":2,"w":234,"h":275},
+	"sourceSize": {"w":279,"h":279}
+},
+"813_Scorbunny_CA-2.png":
+{
+	"frame": {"x":2,"y":522,"w":217,"h":272},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":2,"w":217,"h":272},
+	"sourceSize": {"w":279,"h":279}
+},
+"814_Raboot_CA-3.png":
+{
+	"frame": {"x":561,"y":327,"w":201,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":0,"w":201,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"816_Sobble_CA-6.png":
+{
+	"frame": {"x":1126,"y":160,"w":187,"h":279},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":0,"w":187,"h":279},
+	"sourceSize": {"w":279,"h":279}
+},
+"817_Drizzile_CA-5.png":
+{
+	"frame": {"x":844,"y":139,"w":187,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":1,"w":187,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"857_Hattrem_CA-1.png":
+{
+	"frame": {"x":2,"y":317,"w":276,"h":201},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":39,"w":276,"h":201},
+	"sourceSize": {"w":279,"h":279}
+},
+"863_Perrserker_CA-5.png":
+{
+	"frame": {"x":1681,"y":1038,"w":247,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":0,"w":247,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"870_Falinks_CA-3.png":
+{
+	"frame": {"x":2,"y":2,"w":279,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":79,"w":279,"h":123},
+	"sourceSize": {"w":279,"h":279}
+},
+"877_Morpeko_Full_Belly_Mode_CA-2-2.png":
+{
+	"frame": {"x":1688,"y":362,"w":203,"h":277},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":1,"w":203,"h":277},
+	"sourceSize": {"w":279,"h":279}
+},
+"877_Morpeko_Hangry_Mode_CA-6.png":
+{
+	"frame": {"x":844,"y":330,"w":201,"h":278},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":0,"w":201,"h":278},
+	"sourceSize": {"w":279,"h":279}
+},
+"885_Dreepy_CA-2.png":
+{
+	"frame": {"x":2,"y":982,"w":275,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":15,"w":275,"h":244},
+	"sourceSize": {"w":279,"h":279}
+},
+"886_Drakloak_CA-1.png":
+{
+	"frame": {"x":561,"y":136,"w":279,"h":187},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":45,"w":279,"h":187},
+	"sourceSize": {"w":279,"h":279}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "pokes-0.png",
+	"format": "RGBA8888",
+	"size": {"w":1973,"h":1824},
+	"scale": "0.6",
+	"related_multi_packs": [ "pokes-1.json", "pokes-2.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f542ef0c1b134fb3eeb13a355cdf4eb3:f8b8af1797dfaff6a813506e5474e776:a928ac08804542088536c8f3bf67fb55$"
+}
+}

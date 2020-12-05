@@ -1,0 +1,1185 @@
+[
+    {
+        "spriteName": "s1_004_Charmander_CA-3.png",
+        "id": "4,",
+        "name": "charmander",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_007_Squirtle_CA-1.png",
+        "id": "7,",
+        "name": "squirtle",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_255_Torchic_CA-2.png",
+        "id": "255,",
+        "name": "torchic",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_258_Mudkip_CA-5.png",
+        "id": "258,",
+        "name": "mudkip",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_387_Turtwig_CA-5.png",
+        "id": "387,",
+        "name": "turtwig",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_390_Chimchar_CA-10.png",
+        "id": "390,",
+        "name": "chimchar",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_393_Piplup_CA-22.png",
+        "id": "393,",
+        "name": "piplup",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_495_Snivy_CA-1.png",
+        "id": "495,",
+        "name": "snivy",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_498_Tepig_CA-4.png",
+        "id": "498,",
+        "name": "tepig",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_501_Oshawott_CA-1.png",
+        "id": "501,",
+        "name": "oshawott",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_650_Chespin_CA-2.png",
+        "id": "650,",
+        "name": "chespin",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_653_Fennekin_CA-4.png",
+        "id": "653,",
+        "name": "fennekin",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_656_Froakie_CA-2 2.png",
+        "id": "656,",
+        "name": "froakie",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_722_Rowlet_CA-1.png",
+        "id": "722,",
+        "name": "rowlet",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_725_Litten_CA-2.png",
+        "id": "725,",
+        "name": "litten",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_728_Popplio_CA-5.png",
+        "id": "728,",
+        "name": "popplio",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_810_Grookey1_CA-3.png",
+        "id": "810,",
+        "name": "grookey",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_813_Scorbunny_CA-2.png",
+        "id": "813,",
+        "name": "scorbunny",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_816_Sobble_CA-5 2.png",
+        "id": "816,",
+        "name": "sobble",
+        "group": "1",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_001_Bulbasaur_CA-2.png",
+        "id": "1,",
+        "name": "bulbasaur",
+        "group": "1",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_152_Chikorita_CA-2.png",
+        "id": "152,",
+        "name": "chikorita",
+        "group": "1",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_155_Cyndaquil_CA-4.png",
+        "id": "155,",
+        "name": "cyndaquil",
+        "group": "1",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_158_Totodile_CA-1 2.png",
+        "id": "158,",
+        "name": "totodile",
+        "group": "1",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_252_Treecko_CA-6.png",
+        "id": "252,",
+        "name": "treecko",
+        "group": "1",
+        "size": "2"
+    },
+    {
+        "spriteName": "s1_302_Sableye_CA-1.png",
+        "id": "302,302,",
+        "name": "sableye",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_371_Bagon_CA.png",
+        "id": "371,",
+        "name": "bagon",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_479_Rotom_CA.png",
+        "id": "479,479,479,479,479,479,",
+        "name": "rotom",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_608_Lampent_CA.png",
+        "id": "608,",
+        "name": "lampent",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_708_Phantump_CA.png",
+        "id": "708,",
+        "name": "phantump",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_714_Noibat_CA-2.png",
+        "id": "714,",
+        "name": "noibat",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_837_Rolycoly1_CA.png",
+        "id": "837,",
+        "name": "rolycoly",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_885_Dreepy_CA-4.png",
+        "id": "885,",
+        "name": "dreepy",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_s3_696_Tyrunt_CA.png",
+        "id": "696,",
+        "name": "tyrunt",
+        "group": "2",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_355_Duskull_CA.png",
+        "id": "355,",
+        "name": "duskull",
+        "group": "2",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_443_Gible_CA.png",
+        "id": "443,",
+        "name": "gible",
+        "group": "2",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_622_Golett_CA.png",
+        "id": "622,",
+        "name": "golett",
+        "group": "2",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_633_Deino_CA.png",
+        "id": "633,",
+        "name": "deino",
+        "group": "2",
+        "size": "2"
+    },
+    {
+        "spriteName": "s1_066_Machop_CA.png",
+        "id": "66,",
+        "name": "machop",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_374_Beldum_CA.png",
+        "id": "374,",
+        "name": "beldum",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_532_Timburr_CA-1.png",
+        "id": "532,",
+        "name": "timburr",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_613_Cubchoo_CA-1.png",
+        "id": "613,",
+        "name": "cubchoo",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_619_Mienfoo_CA.png",
+        "id": "619,",
+        "name": "mienfoo",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_674_Pancham1_CA.png",
+        "id": "674,",
+        "name": "pancham",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_739_Crabrawler_CA.png",
+        "id": "739,",
+        "name": "crabrawler",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_865_Sirfetch'd_CA-1.png",
+        "id": "865",
+        "name": "sirfetchd",
+        "group": "3",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_083_Farfetch'd_CA.png",
+        "id": "83",
+        "name": "farfetchd",
+        "group": "3",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_307_Meditite_CA.png",
+        "id": "307,",
+        "name": "meditite",
+        "group": "3",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_447_Riolu_CA.png",
+        "id": "447,",
+        "name": "riolu",
+        "group": "3",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_852_Clobbopus1_CA-1.png",
+        "id": "852,",
+        "name": "clobbopus",
+        "group": "3",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_286_Breloom_CA.png",
+        "id": "286,",
+        "name": "breloom",
+        "group": "3",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_296_Makuhita_CA.png",
+        "id": "296,",
+        "name": "makuhita",
+        "group": "3",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_615_Cryogonal_CA.png",
+        "id": "615,",
+        "name": "cryogonal",
+        "group": "3",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1_215_Sneasel_CA.png",
+        "id": "215,",
+        "name": "sneasel",
+        "group": "4",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_225_Delibird_CA-1.png",
+        "id": "225,",
+        "name": "delibird",
+        "group": "4",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_451_Skorupi_CA.png",
+        "id": "451,",
+        "name": "skorupi",
+        "group": "4",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_756_Shiinotic_CA.png",
+        "id": "756,",
+        "name": "shiinotic",
+        "group": "4",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_842_Appletun_CA-1.png",
+        "id": "842,842,",
+        "name": "appletun",
+        "group": "4",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_461_Weavile_CA.png",
+        "id": "461,",
+        "name": "weavile",
+        "group": "4",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_873_Frosmoth_CA-1.png",
+        "id": "873,",
+        "name": "frosmoth",
+        "group": "4",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_091_Cloyster_CA.png",
+        "id": "91,",
+        "name": "cloyster",
+        "group": "4",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_124_Jynx_CA.png",
+        "id": "124,",
+        "name": "jynx",
+        "group": "4",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_365_Walrein_CA.png",
+        "id": "365,",
+        "name": "walrein",
+        "group": "4",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_866_Mr._Rime_CA-2.png",
+        "id": "866",
+        "name": "mrrime",
+        "group": "4",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_875_Eiscue_Ice_Face_CA-1.png",
+        "id": "875,",
+        "name": "eiscue",
+        "group": "4",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1_133_Eevee_CA-1.png",
+        "id": "133,133,",
+        "name": "eevee",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_233_Porygon2_CA.png",
+        "id": "137,233,",
+        "name": "porygon2",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_446_Munchlax_CA-3.png",
+        "id": "446,",
+        "name": "munchlax",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_573_Cinccino_CA.png",
+        "id": "573,",
+        "name": "cinccino",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_627_Rufflet_CA.png",
+        "id": "627,",
+        "name": "rufflet",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_732_Trumbeak_CA.png",
+        "id": "732,",
+        "name": "trumbeak",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_775_Komala_CA.png",
+        "id": "775,",
+        "name": "komala",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_831_Wooloo_CA-3.png",
+        "id": "831,",
+        "name": "wooloo",
+        "group": "5",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_037_Vulpix_CA-1.png",
+        "id": "37,37,",
+        "name": "vulpix",
+        "group": "5",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_190_Aipom_CA-3.png",
+        "id": "190,",
+        "name": "aipom",
+        "group": "5",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_294_Loudred_CA-2.png",
+        "id": "294,",
+        "name": "loudred",
+        "group": "5",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_504_Patrat_CA.png",
+        "id": "504,",
+        "name": "patrat",
+        "group": "5",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_819_Skwovet_CA-1 2.png",
+        "id": "819,",
+        "name": "skwovet",
+        "group": "5",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_287_Slakoth_CA.png",
+        "id": "287,",
+        "name": "slakoth",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_400_Bibarel_CA-1.png",
+        "id": "400,",
+        "name": "bibarel",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_440_Happiny_CA-2.png",
+        "id": "440,",
+        "name": "happiny",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_507_Herdier_CA.png",
+        "id": "507,",
+        "name": "herdier",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_676_Furfrou_Normal_Form_CA-1.png",
+        "id": "676,676,676,676,",
+        "name": "furfrou",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_820_Greedent_CA-1.png",
+        "id": "820,",
+        "name": "greedent",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_832_Dubwool_CA-3.png",
+        "id": "832,",
+        "name": "dubwool",
+        "group": "5",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1_025_Pikachu_CA-17.png",
+        "id": "25,25,",
+        "name": "pikachu",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_081_Magnemite_CA-1.png",
+        "id": "81,",
+        "name": "magnemite",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_311_Plusle_CA-4.png",
+        "id": "311,",
+        "name": "plusle",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_312_Minun_CA-4.png",
+        "id": "312,",
+        "name": "minun",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_438_Bonsly_CA-1.png",
+        "id": "438,",
+        "name": "bonsly",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_522_Blitzle_CA.png",
+        "id": "522,",
+        "name": "blitzle",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_587_Emolga_CA-1.png",
+        "id": "587,",
+        "name": "emolga",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_702_Dedenne_CA-2 3.png",
+        "id": "702,",
+        "name": "dedenne",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_777_Togedemaru_CA-1.png",
+        "id": "777,",
+        "name": "togedemaru",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_835_Yamper3_CA.png",
+        "id": "835,",
+        "name": "yamper",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_848_Toxel_CA-1.png",
+        "id": "848,",
+        "name": "toxel",
+        "group": "6",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_026_Raichu_CA-5.png",
+        "id": "26,26,",
+        "name": "raichu",
+        "group": "6",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_180_Flaaffy_CA.png",
+        "id": "180,",
+        "name": "flaaffy",
+        "group": "6",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_246_Larvitar_CA.png",
+        "id": "246,",
+        "name": "larvitar",
+        "group": "6",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_737_Charjabug_CA.png",
+        "id": "737,",
+        "name": "charjabug",
+        "group": "6",
+        "size": "2"
+    },
+    {
+        "spriteName": "s1_032_Nidoran♂_CA.png",
+        "id": "32,",
+        "name": "nidoran♂",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_174_Igglybuff_CA.png",
+        "id": "174,",
+        "name": "igglybuff",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_175_Togepi_CA-1.png",
+        "id": "175,",
+        "name": "togepi",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_183_Marill_CA.png",
+        "id": "183,",
+        "name": "marill",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_194_Wooper_CA.png",
+        "id": "194,",
+        "name": "wooper",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_240_Magby_CA.png",
+        "id": "240,",
+        "name": "magby",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_270_Lotad_CA.png",
+        "id": "270,",
+        "name": "lotad",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_304_Aron_CA.png",
+        "id": "304,",
+        "name": "aron",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_422_Shellos_West_Sea_CA.png",
+        "id": "422,422,",
+        "name": "shellos",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_515_Panpour_CA.png",
+        "id": "515,",
+        "name": "panpour",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_557_Dwebble_CA.png",
+        "id": "557,",
+        "name": "dwebble",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_580_Ducklett_CA.png",
+        "id": "580,",
+        "name": "ducklett",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_747_Mareanie_CA.png",
+        "id": "747,",
+        "name": "mareanie",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_751_Dewpider_CA.png",
+        "id": "751,",
+        "name": "dewpider",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_816_Sobble_CA-5.png",
+        "id": "816",
+        "name": "sobble",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_817_Drizzile_CA-2.png",
+        "id": "817,",
+        "name": "drizzile",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_833_Chewtle_CA-1.png",
+        "id": "833,",
+        "name": "chewtle",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_845_Cramorant_CA-2.png",
+        "id": "845,",
+        "name": "cramorant",
+        "group": "7",
+        "size": "1"
+    },
+    {
+        "spriteName": "s3_060_Poliwag_CA.png",
+        "id": "60,",
+        "name": "poliwag",
+        "group": "7",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1_104_Cubone2_CA.png",
+        "id": "104,",
+        "name": "cubone",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_187_Hoppip_CA.png",
+        "id": "187,",
+        "name": "hoppip",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_238_Smoochum_CA-1.png",
+        "id": "238,",
+        "name": "smoochum",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_441_Chatot_CA-1.png",
+        "id": "441,",
+        "name": "chatot",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_471_Glaceon_CA-3.png",
+        "id": "471,",
+        "name": "glaceon",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_529_Drilbur_CA.png",
+        "id": "529,",
+        "name": "drilbur",
+        "group": "8",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_361_Snorunt_CA-1.png",
+        "id": "361,",
+        "name": "snorunt",
+        "group": "8",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_712_Bergmite_CA.png",
+        "id": "712,",
+        "name": "bergmite",
+        "group": "8",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_061_Poliwhirl_CA.png",
+        "id": "61,",
+        "name": "poliwhirl",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_221_Piloswine_CA.png",
+        "id": "221,",
+        "name": "piloswine",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_267_Beautifly_CA.png",
+        "id": "267,",
+        "name": "beautifly",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_363_Spheal2_CA.png",
+        "id": "363,",
+        "name": "spheal",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_364_Sealeo_CA.png",
+        "id": "364,",
+        "name": "sealeo",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_449_Hippopotas_CA.png",
+        "id": "449,",
+        "name": "hippopotas",
+        "group": "8",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1_016_Pidgey_CA-2.png",
+        "id": "16,",
+        "name": "pidgey",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_052_Meowth_CA-3.png",
+        "id": "52,52,52,52,",
+        "name": "meowth",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_198_Murkrow_CA-2.png",
+        "id": "198,",
+        "name": "murkrow",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_228_Houndour_CA.png",
+        "id": "228,",
+        "name": "houndour",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_239_Elekid_CA.png",
+        "id": "239,",
+        "name": "elekid",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_431_Glameow_CA-1.png",
+        "id": "431,",
+        "name": "glameow",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_436_Bronzor_CA.png",
+        "id": "436,",
+        "name": "bronzor",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_624_Pawniard_CA.png",
+        "id": "624,",
+        "name": "pawniard",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_667_Litleo_CA.png",
+        "id": "667,",
+        "name": "litleo",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_679_Honedge_CA.png",
+        "id": "679,",
+        "name": "honedge",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_734_Yungoos_CA.png",
+        "id": "734,",
+        "name": "yungoos",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_759_Stufful_CA.png",
+        "id": "759,",
+        "name": "stufful",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_859_Impidimp_CA-2.png",
+        "id": "859,",
+        "name": "impidimp",
+        "group": "9",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_020_Raticate_CA-2.png",
+        "id": "20,20,",
+        "name": "raticate",
+        "group": "9",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_274_Nuzleaf_CA.png",
+        "id": "274,",
+        "name": "nuzleaf",
+        "group": "9",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_852_Clobbopus1_CA-1.png",
+        "id": "852",
+        "name": "clobbopus",
+        "group": "9",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_878_Cufant_CA-1.png",
+        "id": "878,",
+        "name": "cufant",
+        "group": "9",
+        "size": "3"
+    },
+    {
+        "spriteName": "s1043_Oddish_CA.png",
+        "id": "43,",
+        "name": "oddish",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_021_Spearow_CA.png",
+        "id": "21,",
+        "name": "spearow",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_046_Paras_CA.png",
+        "id": "46,",
+        "name": "paras",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_050_Diglett_CA.png",
+        "id": "50,50,",
+        "name": "diglett",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_176_Togetic_CA.png",
+        "id": "176,",
+        "name": "togetic",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_273_Seedot_CA.png",
+        "id": "273,",
+        "name": "seedot",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_276_Taillow_CA-2.png",
+        "id": "276,",
+        "name": "taillow",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_293_Whismur_CA.png",
+        "id": "293,",
+        "name": "whismur",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_396_Starly_CA.png",
+        "id": "396,",
+        "name": "starly",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_519_Pidove_CA.png",
+        "id": "519,",
+        "name": "pidove",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_582_Vanillite_CA.png",
+        "id": "582,",
+        "name": "vanillite",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_610_Axew_CA.png",
+        "id": "610,",
+        "name": "axew",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_872_Snom1_CA-1.png",
+        "id": "872,",
+        "name": "snom",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s1_885_Dreepy_CA-4.png",
+        "id": "885",
+        "name": "dreepy",
+        "group": "10",
+        "size": "1"
+    },
+    {
+        "spriteName": "s2_165_Ledyba_CA-1.png",
+        "id": "165,",
+        "name": "ledyba",
+        "group": "10",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_189_Jumpluff_CA.png",
+        "id": "189,",
+        "name": "jumpluff",
+        "group": "10",
+        "size": "2"
+    },
+    {
+        "spriteName": "s2_536_Palpitoad_CA.png",
+        "id": "536,",
+        "name": "palpitoad",
+        "group": "10",
+        "size": "2"
+    },
+    {
+        "spriteName": "s3_041_Zubat_CA.png",
+        "id": "41,",
+        "name": "zubat",
+        "group": "10",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_079_Slowpoke_CA-2.png",
+        "id": "79,79,",
+        "name": "slowpoke",
+        "group": "10",
+        "size": "3"
+    },
+    {
+        "spriteName": "s3_207_Gligar_CA-2.png",
+        "id": "207,",
+        "name": "gligar",
+        "group": "10",
+        "size": "3"
+    }
+]

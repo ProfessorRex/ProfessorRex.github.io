@@ -1,0 +1,90 @@
+{"frames": {
+
+"fire_wind.png":
+{
+	"frame": {"x":1,"y":768,"w":1387,"h":701},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":701},
+	"sourceSize": {"w":1387,"h":701}
+},
+"mud5.png":
+{
+	"frame": {"x":1390,"y":334,"w":384,"h":735},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":384,"h":735},
+	"sourceSize": {"w":384,"h":735}
+},
+"mud6.png":
+{
+	"frame": {"x":1450,"y":1420,"w":342,"h":444},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":342,"h":444},
+	"sourceSize": {"w":342,"h":444}
+},
+"rock1.png":
+{
+	"frame": {"x":1390,"y":1,"w":331,"h":402},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":331,"h":402},
+	"sourceSize": {"w":331,"h":402}
+},
+"rock4.png":
+{
+	"frame": {"x":1390,"y":1071,"w":347,"h":355},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":347,"h":355},
+	"sourceSize": {"w":347,"h":355}
+},
+"smoke1.png":
+{
+	"frame": {"x":1,"y":1471,"w":519,"h":470},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":519,"h":470},
+	"sourceSize": {"w":519,"h":470}
+},
+"smoke5.png":
+{
+	"frame": {"x":473,"y":1471,"w":501,"h":413},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":501,"h":413},
+	"sourceSize": {"w":501,"h":413}
+},
+"smoke6.png":
+{
+	"frame": {"x":888,"y":1471,"w":560,"h":476},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":560,"h":476},
+	"sourceSize": {"w":560,"h":476}
+},
+"wind_loop.png":
+{
+	"frame": {"x":1,"y":1,"w":1387,"h":765},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1387,"h":765},
+	"sourceSize": {"w":1387,"h":765}
+}},
+"animations": {
+	"mud": ["mud5.png","mud6.png"],
+	"rock": ["rock1.png","rock4.png"],
+	"smoke": ["smoke1.png","smoke5.png","smoke6.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "hazards2.png",
+	"format": "RGBA8888",
+	"size": {"w":1793,"h":1991},
+	"scale": "0.5",
+	"related_multi_packs": [ "hazards0.json", "hazards1.json", "hazards3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:f657531bd2a37c36c6aa0576504f6ce6:a784d9f2c457d7998a281e4aeef1662a:03e6c212c87a16b3d0491340487a4220$"
+}
+}

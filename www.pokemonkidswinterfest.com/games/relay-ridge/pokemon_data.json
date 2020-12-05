@@ -1,0 +1,890 @@
+[
+    {
+        "spriteName": "g1/S1_410_Shieldon_CA.png",
+        "id": "410,",
+        "name": "shieldon",
+        "group": "1",
+        "size": "1",
+        "hudAsset": "playablepokes/410_Shieldon_CA.png"
+    },
+    {
+        "spriteName": "g1/S1_566_Archen_CA_1000pixel.png",
+        "id": "566,",
+        "name": "archen",
+        "group": "1",
+        "size": "1",
+        "hudAsset": "playablepokes/566_Archen_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g1/S2_698_Amaura_CA_1000pixel.png",
+        "id": "698,",
+        "name": "amaura",
+        "group": "1",
+        "size": "2",
+        "hudAsset": "playablepokes/698_Amaura_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g1/S3_565_Carracosta_CA_1000pixel.png",
+        "id": "565,",
+        "name": "carracosta",
+        "group": "1",
+        "size": "3",
+        "hudAsset": "playablepokes/565_Carracosta_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g1/S3_619_Mienfoo_CA_wc.png",
+        "id": "619,",
+        "name": "mienfoo",
+        "group": "1",
+        "size": "3",
+        "hudAsset": "playablepokes/619_Mienfoo_CA_wc.png"
+    },
+    {
+        "spriteName": "g2/S1_259_Marshtomp_CA-1_1000pixel.png",
+        "id": "259,",
+        "name": "marshtomp",
+        "group": "2",
+        "size": "1",
+        "hudAsset": "playablepokes/259_Marshtomp_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S1_728_Popplio_CA-6_1000pixel.png",
+        "id": "728,",
+        "name": "popplio",
+        "group": "2",
+        "size": "1",
+        "hudAsset": "playablepokes/728_Popplio_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S1_817_Drizzile_CA-5_1000pixel.png",
+        "id": "817,",
+        "name": "drizzile",
+        "group": "2",
+        "size": "1",
+        "hudAsset": "playablepokes/817_Drizzile_CA-5_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S2_502_Dewott_CA-1_1000pixel.png",
+        "id": "502,",
+        "name": "dewott",
+        "group": "2",
+        "size": "2",
+        "hudAsset": "playablepokes/502_Dewott_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S2_729_Brionne_CA_1000pixel.png",
+        "id": "729,",
+        "name": "brionne",
+        "group": "2",
+        "size": "2",
+        "hudAsset": "playablepokes/729_Brionne_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S3_002_Ivysaur_CA-1_1000pixel.png",
+        "id": "2,",
+        "name": "ivysaur",
+        "group": "2",
+        "size": "3",
+        "hudAsset": "playablepokes/002_Ivysaur_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S3_008_Wartortle_CA-1_1000pixel.png",
+        "id": "8,",
+        "name": "wartortle",
+        "group": "2",
+        "size": "3",
+        "hudAsset": "playablepokes/008_Wartortle_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g2/S3_394_Prinplup_CA-1_1000pixel.png",
+        "id": "394,",
+        "name": "prinplup",
+        "group": "2",
+        "size": "3",
+        "hudAsset": "playablepokes/394_Prinplup_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_132_Ditto_CA_1000pixel.png",
+        "id": "132,",
+        "name": "ditto",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/132_Ditto_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_216_Teddiursa_CA_1000pixel.png",
+        "id": "216,",
+        "name": "teddiursa",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/216_Teddiursa_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_446_Munchlax_CA-1_1000pixel.png",
+        "id": "446,",
+        "name": "munchlax",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/446_Munchlax_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_659_Bunnelby_CA_1000pixel.png",
+        "id": "659,",
+        "name": "bunnelby",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/659_Bunnelby_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_759_Stufful_CA_1000pixel.png",
+        "id": "759,",
+        "name": "stufful",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/759_Stufful_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S1_831_Wooloo_CA-3_1000pixel.png",
+        "id": "831,",
+        "name": "wooloo",
+        "group": "3",
+        "size": "1",
+        "hudAsset": "playablepokes/831_Wooloo_CA-3_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S2_327_Spinda_CA.png",
+        "id": "327,",
+        "name": "spinda",
+        "group": "3",
+        "size": "2",
+        "hudAsset": "playablepokes/327_Spinda_CA.png"
+    },
+    {
+        "spriteName": "g3/S2_820_Greedent_CA-1_1000pixel.png",
+        "id": "820,",
+        "name": "greedent",
+        "group": "3",
+        "size": "2",
+        "hudAsset": "playablepokes/820_Greedent_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S3_335_Zangoose_CA_1000pixel.png",
+        "id": "335,",
+        "name": "zangoose",
+        "group": "3",
+        "size": "3",
+        "hudAsset": "playablepokes/335_Zangoose_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S3_626_Bouffalant_CA_1000pixel.png",
+        "id": "626,",
+        "name": "bouffalant",
+        "group": "3",
+        "size": "3",
+        "hudAsset": "playablepokes/626_Bouffalant_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g3/S3_832_Dubwool_CA-3_1000pixel.png",
+        "id": "832,",
+        "name": "dubwool",
+        "group": "3",
+        "size": "3",
+        "hudAsset": "playablepokes/832_Dubwool_CA-3_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S1_102_Exeggcute_CA-1_1000pixel.png",
+        "id": "102,",
+        "name": "exeggcute",
+        "group": "4",
+        "size": "1",
+        "hudAsset": "playablepokes/102_Exeggcute_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S1_540_Sewaddle_CA_1000pixel.png",
+        "id": "540,",
+        "name": "sewaddle",
+        "group": "4",
+        "size": "1",
+        "hudAsset": "playablepokes/540_Sewaddle_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S2_084_Doduo_CA_1000pixel.png",
+        "id": "84,",
+        "name": "doduo",
+        "group": "4",
+        "size": "2",
+        "hudAsset": "playablepokes/084_Doduo_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S2_204_Pineco_CA_1000pixel.png",
+        "id": "204,",
+        "name": "pineco",
+        "group": "4",
+        "size": "2",
+        "hudAsset": "playablepokes/204_Pineco_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S2_296_Makuhita_CA_1000pixel.png",
+        "id": "296,",
+        "name": "makuhita",
+        "group": "4",
+        "size": "2",
+        "hudAsset": "playablepokes/296_Makuhita_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S3_085_Dodrio_CA_1000pixel.png",
+        "id": "85,",
+        "name": "dodrio",
+        "group": "4",
+        "size": "3",
+        "hudAsset": "playablepokes/085_Dodrio_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S3_114_Tangela_CA_1000pixel.png",
+        "id": "114,",
+        "name": "tangela",
+        "group": "4",
+        "size": "3",
+        "hudAsset": "playablepokes/114_Tangela_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S3_583_Vanillish_CA_1000pixel.png",
+        "id": "583,",
+        "name": "vanillish",
+        "group": "4",
+        "size": "3",
+        "hudAsset": "playablepokes/583_Vanillish_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S3_584_Vanilluxe_CA_1000pixel.png",
+        "id": "584,",
+        "name": "vanilluxe",
+        "group": "4",
+        "size": "3",
+        "hudAsset": "playablepokes/584_Vanilluxe_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g4/S3_634_Zweilous_CA_1000pixel.png",
+        "id": "634,",
+        "name": "zweilous",
+        "group": "4",
+        "size": "3",
+        "hudAsset": "playablepokes/634_Zweilous_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S1_074_Geodude_CA-3_1000pixel.png",
+        "id": "74,74,",
+        "name": "geodude",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/074_Geodude_CA-3_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S1_524_Roggenrola_CA_1000pixel.png",
+        "id": "524,",
+        "name": "roggenrola",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/524_Roggenrola_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S1_557_Dwebble_CA_1000pixel.png",
+        "id": "557,",
+        "name": "dwebble",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/557_Dwebble_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S1_632_Durant_CA_1000pixel.png",
+        "id": "632,",
+        "name": "durant",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/632_Durant_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S1_664_Scatterbug_CA 2.png",
+        "id": "664,",
+        "name": "scatterbug",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/664_Scatterbug_CA-2.png"
+    },
+    {
+        "spriteName": "g5/S1_837_Rolycoly2_CA_1000pixel.png",
+        "id": "837,",
+        "name": "rolycoly",
+        "group": "5",
+        "size": "1",
+        "hudAsset": "playablepokes/837_Rolycoly1_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S3_075_Graveler_CA-2.png",
+        "id": "75,75,",
+        "name": "graveler",
+        "group": "5",
+        "size": "3",
+        "hudAsset": "playablepokes/075_Graveler_CA-2.png"
+    },
+    {
+        "spriteName": "g5/S3_213_Shuckle_CA_1000pixel.png",
+        "id": "213,",
+        "name": "shuckle",
+        "group": "5",
+        "size": "3",
+        "hudAsset": "playablepokes/213_Shuckle_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S3_525_Boldore_CA_1000pixel.png",
+        "id": "525,",
+        "name": "boldore",
+        "group": "5",
+        "size": "3",
+        "hudAsset": "playablepokes/525_Boldore_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g5/S3_838_Carkol_CA-1_1000pixel.png",
+        "id": "838,",
+        "name": "carkol",
+        "group": "5",
+        "size": "3",
+        "hudAsset": "playablepokes/838_Carkol_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1)194_Wooper_CA.png",
+        "id": "194,",
+        "name": "wooper",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/194_Wooper_CA.png"
+    },
+    {
+        "spriteName": "g6/S1_025_Pikachu_CA-17_1000pixel.png",
+        "id": "25,25,",
+        "name": "pikachu",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/025_Pikachu_CA-17_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1_239_Elekid_CA_1000pixel.png",
+        "id": "239,",
+        "name": "elekid",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/239_Elekid_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1_311_Plusle_CA-6.png",
+        "id": "311,",
+        "name": "plusle",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/311_Plusle_CA-6.png"
+    },
+    {
+        "spriteName": "g6/S1_312_Minun_CA-6.png",
+        "id": "312,",
+        "name": "minun",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/312_Minun_CA-6.png"
+    },
+    {
+        "spriteName": "g6/S1_403_Shinx_CA_1000pixel.png",
+        "id": "403,",
+        "name": "shinx",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/403_Shinx_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1_548_Petilil_CA_1000pixel.png",
+        "id": "548,",
+        "name": "petilil",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/548_Petilil_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1_587_Emolga_CA-1_1000pixel.png",
+        "id": "587,",
+        "name": "emolga",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/587_Emolga_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S1_777_Togedemaru_CA-1_1000pixel.png",
+        "id": "777,",
+        "name": "togedemaru",
+        "group": "6",
+        "size": "1",
+        "hudAsset": "playablepokes/777_Togedemaru_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g6/S2_100_Voltorb_CA_1000pixel.png",
+        "id": "100,",
+        "name": "voltorb",
+        "group": "6",
+        "size": "2",
+        "hudAsset": "playablepokes/voltorb_hud.png"
+    },
+    {
+        "spriteName": "g7/S1_228_Houndour_CA_1000pixel.png",
+        "id": "228,",
+        "name": "houndour",
+        "group": "7",
+        "size": "1",
+        "hudAsset": "playablepokes/228_Houndour_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g7/S1_309_Electrike_CA_1000pixel.png",
+        "id": "309,",
+        "name": "electrike",
+        "group": "7",
+        "size": "1",
+        "hudAsset": "playablepokes/309_Electrike_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g7/S1_417_Pachirisu_CA-4_1000pixel.png",
+        "id": "417,",
+        "name": "pachirisu",
+        "group": "7",
+        "size": "1",
+        "hudAsset": "playablepokes/417_Pachirisu_CA-4_1000pixel.png"
+    },
+    {
+        "spriteName": "g7/S2_026_Raichu_CA-1_1000pixel.png",
+        "id": "26,26,",
+        "name": "raichu",
+        "group": "7",
+        "size": "2",
+        "hudAsset": "playablepokes/026_Raichu_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g7/S2_135_Jolteon_CA-1_1000pixel.png",
+        "id": "135,",
+        "name": "jolteon",
+        "group": "7",
+        "size": "2",
+        "hudAsset": "playablepokes/135_Jolteon_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g7/S3_404_Luxio_CA.png",
+        "id": "404,",
+        "name": "luxio",
+        "group": "7",
+        "size": "3",
+        "hudAsset": "playablepokes/404_Luxio_CA.png"
+    },
+    {
+        "spriteName": "g7/S3_596_Galvantula_CA_1000pixel.png",
+        "id": "596,",
+        "name": "galvantula",
+        "group": "7",
+        "size": "3",
+        "hudAsset": "playablepokes/596_Galvantula_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S1_220_Swinub_CA-1_1000pixel.png",
+        "id": "220,",
+        "name": "swinub",
+        "group": "8",
+        "size": "1",
+        "hudAsset": "playablepokes/220_Swinub_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S1_421_Cherrim_Overcast_Form_CA-1_1000pixel.png",
+        "id": "421,421,",
+        "name": "cherrim",
+        "group": "8",
+        "size": "1",
+        "hudAsset": "playablepokes/421_Cherrim_Overcast_Form_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S1_438_Bonsly_CA-1_1000pixel.png",
+        "id": "438,",
+        "name": "bonsly",
+        "group": "8",
+        "size": "1",
+        "hudAsset": "playablepokes/438_Bonsly_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S1_471_Glaceon_CA-1.png",
+        "id": "471,",
+        "name": "glaceon",
+        "group": "8",
+        "size": "1",
+        "hudAsset": "playablepokes/471_Glaceon_CA-1.png"
+    },
+    {
+        "spriteName": "g8/S1_875_Eiscue_CA-1_1000pixel.png",
+        "id": "875,",
+        "name": "eiscue",
+        "group": "8",
+        "size": "1",
+        "hudAsset": "playablepokes/875_Eiscue_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S2_361_Snorunt_CA-1_1000pixel.png",
+        "id": "361,",
+        "name": "snorunt",
+        "group": "8",
+        "size": "2",
+        "hudAsset": "playablepokes/361_Snorunt_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S2_685_Slurpuff_CA_1000pixel.png",
+        "id": "685,",
+        "name": "slurpuff",
+        "group": "8",
+        "size": "2",
+        "hudAsset": "playablepokes/685_Slurpuff_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S3_363_Spheal2_CA_1000pixel.png",
+        "id": "363,",
+        "name": "spheal",
+        "group": "8",
+        "size": "3",
+        "hudAsset": "playablepokes/363_Spheal1_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g8/S3_459_Snover_CA-1.png",
+        "id": "459,",
+        "name": "snover",
+        "group": "8",
+        "size": "3",
+        "hudAsset": "playablepokes/459_Snover_CA-1.png"
+    },
+    {
+        "spriteName": "g8/S3_712_Bergmite_CA_1000pixel.png",
+        "id": "712,",
+        "name": "bergmite",
+        "group": "8",
+        "size": "3",
+        "hudAsset": "playablepokes/712_Bergmite_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S1_515_Panpour_CA_1000pixel.png",
+        "id": "515,",
+        "name": "panpour",
+        "group": "9",
+        "size": "1",
+        "hudAsset": "playablepokes/515_Panpour_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S2_054_Psyduck_CA-1_1000pixel.png",
+        "id": "54,",
+        "name": "psyduck",
+        "group": "9",
+        "size": "2",
+        "hudAsset": "playablepokes/054_Psyduck_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S2_096_Drowzee_CA_1000pixel.png",
+        "id": "96,",
+        "name": "drowzee",
+        "group": "9",
+        "size": "2",
+        "hudAsset": "playablepokes/096_Drowzee_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S2_622_Golett_CA_1000pixel.png",
+        "id": "622,",
+        "name": "golett",
+        "group": "9",
+        "size": "2",
+        "hudAsset": "playablepokes/622_Golett_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S3_048_Venonat_CA_1000pixel.png",
+        "id": "48,",
+        "name": "venonat",
+        "group": "9",
+        "size": "3",
+        "hudAsset": "playablepokes/048_Venonat_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S3_086_Seel_CA_1000pixel.png",
+        "id": "86,",
+        "name": "seel",
+        "group": "9",
+        "size": "3",
+        "hudAsset": "playablepokes/086_Seel_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S3_391_Monferno_CA-1_1000pixel.png",
+        "id": "391,",
+        "name": "monferno",
+        "group": "9",
+        "size": "3",
+        "hudAsset": "playablepokes/391_Monferno_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S3_581_Swanna_CA_1000pixel.png",
+        "id": "581,",
+        "name": "swanna",
+        "group": "9",
+        "size": "3",
+        "hudAsset": "playablepokes/581_Swanna_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g9/S3_863_Perrserker_CA-5_1000pixel.png",
+        "id": "863,",
+        "name": "perrserker",
+        "group": "9",
+        "size": "3",
+        "hudAsset": "playablepokes/863_Perrserker_CA-5_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_004_Charmander_CA-2_1000pixel.png",
+        "id": "4,",
+        "name": "charmander",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/004_Charmander_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_007_Squirtle_CA-2_1000pixel.png",
+        "id": "7,",
+        "name": "squirtle",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/007_Squirtle_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_136_Flareon_CA-1_1000pixel.png",
+        "id": "136,",
+        "name": "flareon",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/136_Flareon_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_155_Cyndaquil_CA-2_1000pixel.png",
+        "id": "155,",
+        "name": "cyndaquil",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/155_Cyndaquil_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_158_Totodile_CA-2_1000pixel.png",
+        "id": "158,",
+        "name": "totodile",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/158_Totodile_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_182_Bellossom_CA_1000pixel.png",
+        "id": "182,",
+        "name": "bellossom",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/182_Bellossom_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_252_Treecko_CA-6_1000pixel.png",
+        "id": "252,",
+        "name": "treecko",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/252_Treecko_CA-6_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_255_Torchic_CA-2.png",
+        "id": "255,",
+        "name": "torchic",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/255_Torchic_CA-2.png"
+    },
+    {
+        "spriteName": "g10/S1_258_Mudkip_CA-5_1000pixel.png",
+        "id": "258,",
+        "name": "mudkip",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/258_Mudkip_CA-5_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_302_Sableye_CA-2_1000pixel.png",
+        "id": "302,302,",
+        "name": "sableye",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/302_Sableye_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_387_Turtwig_CA-2_1000pixel.png",
+        "id": "387,",
+        "name": "turtwig",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/387_Turtwig_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_390_Chimchar_CA-12.png",
+        "id": "390,",
+        "name": "chimchar",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/390_Chimchar_CA-12.png"
+    },
+    {
+        "spriteName": "g10/S1_393_Piplup_CA-3_1000pixel.png",
+        "id": "393,",
+        "name": "piplup",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/393_Piplup_CA-3_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_495_Snivy_CA-3.png",
+        "id": "495,",
+        "name": "snivy",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/495_Snivy_CA-3.png"
+    },
+    {
+        "spriteName": "g10/S1_498_Tepig_CA-1.png",
+        "id": "498,",
+        "name": "tepig",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/498_Tepig_CA-1.png"
+    },
+    {
+        "spriteName": "g10/S1_501_Oshawott_CA-1_1000pixel.png",
+        "id": "501,",
+        "name": "oshawott",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/501_Oshawott_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_580_Ducklett_CA_1000pixel.png",
+        "id": "580,",
+        "name": "ducklett",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/580_Ducklett_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_650_Chespin_CA-4_1000pixel.png",
+        "id": "650,",
+        "name": "chespin",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/650_Chespin_CA-4_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_653_Fennekin_CA-4_1000pixel.png",
+        "id": "653,",
+        "name": "fennekin",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/653_Fennekin_CA-4_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_656_Froakie_CA-5_1000pixel.png",
+        "id": "656,",
+        "name": "froakie",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/656_Froakie_CA-5_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_722_Rowlet_CA-6_1000pixel.png",
+        "id": "722,",
+        "name": "rowlet",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/722_Rowlet_CA-6_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S1_810_Grookey1_CA-3_1000pixel.png",
+        "id": "810,",
+        "name": "grookey",
+        "group": "10",
+        "size": "1",
+        "hudAsset": "playablepokes/810_Grookey1_CA-3_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S2_056_Mankey_CA_1000pixel.png",
+        "id": "56,",
+        "name": "mankey",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/056_Mankey_CA_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S2_134_Vaporeon_CA-4.png",
+        "id": "134,",
+        "name": "vaporeon",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/134_Vaporeon_CA-4.png"
+    },
+    {
+        "spriteName": "g10/S2_152_Chikorita_CA-1.png",
+        "id": "152,",
+        "name": "chikorita",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/152_Chikorita_CA-1.png"
+    },
+    {
+        "spriteName": "g10/S2_197_Umbreon_CA-1.png",
+        "id": "197,",
+        "name": "umbreon",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/197_Umbreon_CA-1.png"
+    },
+    {
+        "spriteName": "g10/S2_554_Darumaka_CA-1_1000pixel.png",
+        "id": "554,554,",
+        "name": "darumaka",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/554_Darumaka_CA-1_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S2_725_Litten_CA-2_1000pixel.png",
+        "id": "725,",
+        "name": "litten",
+        "group": "10",
+        "size": "2",
+        "hudAsset": "playablepokes/725_Litten_CA-2_1000pixel.png"
+    },
+    {
+        "spriteName": "g10/S3_001_Bulbasaur_CA-4_1000pixel.png",
+        "id": "1,",
+        "name": "bulbasaur",
+        "group": "10",
+        "size": "3",
+        "hudAsset": "playablepokes/001_Bulbasaur_CA-4_1000pixel-2.png"
+    },
+    {
+        "spriteName": "g10/S3_196_Espeon_CA-1.png",
+        "id": "196,",
+        "name": "espeon",
+        "group": "10",
+        "size": "3",
+        "hudAsset": "playablepokes/196_Espeon_CA-1.png"
+    },
+    {
+        "spriteName": "g10/S3_470_Leafeon_CA-1_1000pixel.png",
+        "id": "470,",
+        "name": "leafeon",
+        "group": "10",
+        "size": "3",
+        "hudAsset": "playablepokes/470_Leafeon_CA-1_1000pixel.png"
+    }
+]

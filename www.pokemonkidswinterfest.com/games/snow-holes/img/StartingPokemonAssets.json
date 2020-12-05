@@ -1,0 +1,102 @@
+{"frames": {
+
+"104_Cubone1_CA.png":
+{
+	"frame": {"x":135,"y":1,"w":129,"h":103},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":23,"w":129,"h":103},
+	"sourceSize": {"w":150,"h":150}
+},
+"637_Volcarona_CA.png":
+{
+	"frame": {"x":1,"y":252,"w":130,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":21,"w":130,"h":107},
+	"sourceSize": {"w":150,"h":150}
+},
+"727_Incineroar_CA-1.png":
+{
+	"frame": {"x":133,"y":264,"w":110,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":10,"w":110,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"811_Thwackey_CA-4.png":
+{
+	"frame": {"x":1,"y":472,"w":110,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":9,"w":110,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"830_Eldegoss1_CA-1-2.png":
+{
+	"frame": {"x":1,"y":361,"w":109,"h":130},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":10,"w":109,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"845_Cramorant_CA-2-2.png":
+{
+	"frame": {"x":113,"y":528,"w":112,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":9,"w":112,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"849_Toxtricity(Amped_Form)_CA-2.png":
+{
+	"frame": {"x":1,"y":1,"w":73,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":9,"w":73,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"849_Toxtricity(Low_Key_Form)_CA-1.png":
+{
+	"frame": {"x":135,"y":132,"w":107,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":10,"w":107,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"853_Grapploct_CA-3.png":
+{
+	"frame": {"x":133,"y":396,"w":109,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":9,"w":109,"h":130},
+	"sourceSize": {"w":150,"h":150}
+},
+"865_Sirfetch'd_CA-1.png":
+{
+	"frame": {"x":1,"y":76,"w":76,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":9,"w":76,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"869_Alcremie(Vanilla_Cream)_CA-1.png":
+{
+	"frame": {"x":1,"y":154,"w":96,"h":131},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":9,"w":96,"h":131},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "StartingPokemonAssets.png",
+	"format": "RGBA8888",
+	"size": {"w":245,"h":641},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ebd78bfab85b109f134b134bfec37846:df0ce52b481a7709634079345c7405b8:9bf5ca6f1c6604f73b0fff2e940eaebd$"
+}
+}

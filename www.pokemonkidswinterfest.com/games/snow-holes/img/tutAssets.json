@@ -1,0 +1,36 @@
+{"frames": {
+
+"circle_inner.png":
+{
+	"frame": {"x":426,"y":2,"w":103,"h":104},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":103,"h":104},
+	"sourceSize": {"w":103,"h":104}
+},
+"circle_outer.png":
+{
+	"frame": {"x":224,"y":2,"w":198,"h":198},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":198},
+	"sourceSize": {"w":198,"h":198}
+},
+"hand.png":
+{
+	"frame": {"x":2,"y":2,"w":218,"h":207},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":218,"h":207},
+	"sourceSize": {"w":218,"h":207}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tutAssets.png",
+	"format": "RGBA8888",
+	"size": {"w":531,"h":211},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:20014b7471b519414dde7b2ebaaa97c7:00bf88d002a6f0fa3f58394271d7ccb4:a308a42307666b0465541b185404e667$"
+}
+}

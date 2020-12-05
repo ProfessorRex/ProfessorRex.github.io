@@ -1,0 +1,159 @@
+{"frames": {
+
+"Crate_Explode_0001.png":
+{
+	"frame": {"x":699,"y":310,"w":70,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":44,"w":70,"h":61},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0002.png":
+{
+	"frame": {"x":83,"y":2,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0003.png":
+{
+	"frame": {"x":83,"y":191,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0004.png":
+{
+	"frame": {"x":237,"y":2,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0005.png":
+{
+	"frame": {"x":237,"y":191,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0006.png":
+{
+	"frame": {"x":391,"y":2,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0007.png":
+{
+	"frame": {"x":391,"y":191,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0008.png":
+{
+	"frame": {"x":702,"y":2,"w":185,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0009.png":
+{
+	"frame": {"x":545,"y":2,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0010.png":
+{
+	"frame": {"x":545,"y":191,"w":185,"h":150},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0011.png":
+{
+	"frame": {"x":702,"y":156,"w":185,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0012.png":
+{
+	"frame": {"x":702,"y":375,"w":185,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":150},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0013.png":
+{
+	"frame": {"x":2,"y":380,"w":170,"h":149},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":0,"w":170,"h":149},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0014.png":
+{
+	"frame": {"x":176,"y":380,"w":170,"h":149},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":0,"w":170,"h":149},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0015.png":
+{
+	"frame": {"x":350,"y":380,"w":172,"h":148},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":0,"w":172,"h":148},
+	"sourceSize": {"w":185,"h":150}
+},
+"Crate_Explode_0016.png":
+{
+	"frame": {"x":526,"y":380,"w":172,"h":145},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":0,"w":172,"h":145},
+	"sourceSize": {"w":185,"h":150}
+},
+"fence.png":
+{
+	"frame": {"x":2,"y":2,"w":374,"h":77},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":7,"w":374,"h":77},
+	"sourceSize": {"w":378,"h":84}
+},
+"log.png":
+{
+	"frame": {"x":773,"y":310,"w":104,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":34,"w":104,"h":50},
+	"sourceSize": {"w":126,"h":84}
+}},
+"animations": {
+	"Crate_Explode": ["Crate_Explode_0001.png","Crate_Explode_0002.png","Crate_Explode_0003.png","Crate_Explode_0004.png","Crate_Explode_0005.png","Crate_Explode_0006.png","Crate_Explode_0007.png","Crate_Explode_0008.png","Crate_Explode_0009.png","Crate_Explode_0010.png","Crate_Explode_0011.png","Crate_Explode_0012.png","Crate_Explode_0013.png","Crate_Explode_0014.png","Crate_Explode_0015.png","Crate_Explode_0016.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "brown_tiles.png",
+	"format": "RGBA8888",
+	"size": {"w":889,"h":531},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:664885c38c385efe3ffae77d7714abdb:50e90e94db3d3ffb16eb5ceac1faab86:6f7cdade95fce63efb0d68dd5a041aad$"
+}
+}

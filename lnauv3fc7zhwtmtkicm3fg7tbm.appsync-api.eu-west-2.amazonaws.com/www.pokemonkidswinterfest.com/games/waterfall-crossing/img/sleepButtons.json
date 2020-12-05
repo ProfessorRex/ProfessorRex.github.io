@@ -1,0 +1,79 @@
+{"frames": {
+
+"sleepButtonFail.png":
+{
+	"frame": {"x":2,"y":2,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonNo1.png":
+{
+	"frame": {"x":254,"y":2,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":13,"w":54,"h":54},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonNo2.png":
+{
+	"frame": {"x":254,"y":60,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":13,"w":54,"h":54},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonNo3.png":
+{
+	"frame": {"x":312,"y":2,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":13,"w":54,"h":54},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonNo4.png":
+{
+	"frame": {"x":312,"y":60,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":13,"w":54,"h":54},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonNo5.png":
+{
+	"frame": {"x":370,"y":2,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":13,"w":54,"h":54},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonOutline.png":
+{
+	"frame": {"x":86,"y":2,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+"sleepButtonSuccess.png":
+{
+	"frame": {"x":170,"y":2,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+}},
+"animations": {
+	"sleepButtonNo": ["sleepButtonNo1.png","sleepButtonNo2.png","sleepButtonNo3.png","sleepButtonNo4.png","sleepButtonNo5.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sleepButtons.png",
+	"format": "RGBA8888",
+	"size": {"w":426,"h":116},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:739eb5ce323c4dcedef31c04570f0249:c255012252a6c0db1e89f05101f4be04:f7328634eb1ab37e7c7e8cbcd19b3fc2$"
+}
+}

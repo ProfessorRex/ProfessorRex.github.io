@@ -1,0 +1,47 @@
+{"frames": {
+
+"countdown_1.png":
+{
+	"frame": {"x":447,"y":1572,"w":142,"h":217},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":217},
+	"sourceSize": {"w":146,"h":221}
+},
+"countdown_2.png":
+{
+	"frame": {"x":226,"y":1572,"w":201,"h":217},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":201,"h":217},
+	"sourceSize": {"w":205,"h":221}
+},
+"countdown_3.png":
+{
+	"frame": {"x":2,"y":1572,"w":202,"h":220},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":202,"h":220},
+	"sourceSize": {"w":206,"h":224}
+},
+"countdown_bg.png":
+{
+	"frame": {"x":2,"y":2,"w":1434,"h":1566},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1434,"h":1566},
+	"sourceSize": {"w":1434,"h":1566}
+}},
+"animations": {
+	"countdown": ["countdown_1.png","countdown_2.png","countdown_3.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "countdown.png",
+	"format": "RGBA8888",
+	"size": {"w":1438,"h":1776},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:68b60db92da43cf76b535299c7f48299:d906b6194babde7f8d0cf441b3733933:d7632b2ef722b276a9b266ab897c133e$"
+}
+}

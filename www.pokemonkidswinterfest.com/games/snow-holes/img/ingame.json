@@ -1,0 +1,92 @@
+{"frames": {
+
+"butterfree.png":
+{
+	"frame": {"x":511,"y":1609,"w":271,"h":249},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":11,"w":271,"h":249},
+	"sourceSize": {"w":271,"h":271}
+},
+"diglett.png":
+{
+	"frame": {"x":786,"y":1609,"w":227,"h":180},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":227,"h":180},
+	"sourceSize": {"w":227,"h":180}
+},
+"dugtrio.png":
+{
+	"frame": {"x":511,"y":1306,"w":354,"h":299},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":354,"h":299},
+	"sourceSize": {"w":354,"h":299}
+},
+"goldenRazz_collectable.png":
+{
+	"frame": {"x":511,"y":1862,"w":97,"h":132},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":6,"w":97,"h":132},
+	"sourceSize": {"w":108,"h":138}
+},
+"holefront-bl.png":
+{
+	"frame": {"x":510,"y":1034,"w":507,"h":268},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":507,"h":268},
+	"sourceSize": {"w":507,"h":268}
+},
+"holefront-bm.png":
+{
+	"frame": {"x":510,"y":736,"w":496,"h":294},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":496,"h":294},
+	"sourceSize": {"w":496,"h":294}
+},
+"holefront-br.png":
+{
+	"frame": {"x":2,"y":1509,"w":505,"h":464},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":505,"h":464},
+	"sourceSize": {"w":505,"h":464}
+},
+"holefront-tl.png":
+{
+	"frame": {"x":2,"y":814,"w":504,"h":691},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":504,"h":691},
+	"sourceSize": {"w":504,"h":691}
+},
+"holefront-tm.png":
+{
+	"frame": {"x":507,"y":2,"w":517,"h":730},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":517,"h":730},
+	"sourceSize": {"w":517,"h":730}
+},
+"holefront-tr.png":
+{
+	"frame": {"x":2,"y":2,"w":501,"h":808},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":501,"h":808},
+	"sourceSize": {"w":501,"h":808}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ingame.png",
+	"format": "RGBA8888",
+	"size": {"w":1026,"h":1975},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:49e7e8a9e0ddb38c71720ee3072a63f4:8b88e884f54d5f78b96f1b556b666969:a0a7aae19725baf1127883d8cc485c4f$"
+}
+}

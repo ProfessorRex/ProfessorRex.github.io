@@ -1,0 +1,221 @@
+{"frames": {
+
+"100/bug.png":
+{
+	"frame": {"x":1686,"y":1858,"w":117,"h":118},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":117,"h":118},
+	"sourceSize": {"w":117,"h":118}
+},
+"bug_icon.png":
+{
+	"frame": {"x":1239,"y":178,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"card_back.png":
+{
+	"frame": {"x":1462,"y":655,"w":362,"h":473},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":2,"w":362,"h":473},
+	"sourceSize": {"w":377,"h":480}
+},
+"card_pokemonfront.png":
+{
+	"frame": {"x":1462,"y":178,"w":363,"h":473},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":2,"w":363,"h":473},
+	"sourceSize": {"w":378,"h":480}
+},
+"card_type.png":
+{
+	"frame": {"x":1462,"y":1132,"w":362,"h":473},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":2,"w":362,"h":473},
+	"sourceSize": {"w":377,"h":480}
+},
+"dark_icon.png":
+{
+	"frame": {"x":1462,"y":1770,"w":220,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":220},
+	"sourceSize": {"w":220,"h":220}
+},
+"Evolution_mode_br.png":
+{
+	"frame": {"x":723,"y":178,"w":512,"h":770},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":770},
+	"sourceSize": {"w":512,"h":770}
+},
+"Evolution_mode_de.png":
+{
+	"frame": {"x":723,"y":952,"w":512,"h":770},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":770},
+	"sourceSize": {"w":512,"h":770}
+},
+"fire_icon.png":
+{
+	"frame": {"x":1239,"y":402,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"flying_icon.png":
+{
+	"frame": {"x":1811,"y":1770,"w":220,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":220},
+	"sourceSize": {"w":220,"h":220}
+},
+"ghost_icon.png":
+{
+	"frame": {"x":206,"y":1330,"w":220,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":220},
+	"sourceSize": {"w":220,"h":220}
+},
+"goodJob_br.png":
+{
+	"frame": {"x":2,"y":2,"w":1844,"h":172},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":85,"w":1844,"h":172},
+	"sourceSize": {"w":1848,"h":340}
+},
+"goodJob_de.png":
+{
+	"frame": {"x":1850,"y":2,"w":1764,"h":186},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":80,"w":1764,"h":186},
+	"sourceSize": {"w":1848,"h":340}
+},
+"goodJob_en.png":
+{
+	"frame": {"x":2,"y":178,"w":1396,"h":200},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":229,"y":75,"w":1396,"h":200},
+	"sourceSize": {"w":1848,"h":340}
+},
+"goodJob_es.png":
+{
+	"frame": {"x":206,"y":178,"w":1148,"h":244},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":353,"y":73,"w":1148,"h":244},
+	"sourceSize": {"w":1848,"h":340}
+},
+"goodJob_fr.png":
+{
+	"frame": {"x":2,"y":1770,"w":1456,"h":273},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":199,"y":3,"w":1456,"h":273},
+	"sourceSize": {"w":1848,"h":340}
+},
+"goodJob_it.png":
+{
+	"frame": {"x":519,"y":178,"w":1486,"h":200},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":180,"y":73,"w":1486,"h":200},
+	"sourceSize": {"w":1848,"h":340}
+},
+"ice_icon.png":
+{
+	"frame": {"x":1239,"y":626,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"match_icon.png":
+{
+	"frame": {"x":1686,"y":1736,"w":118,"h":121},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":118,"h":121},
+	"sourceSize": {"w":125,"h":129}
+},
+"missing_icon.png":
+{
+	"frame": {"x":1239,"y":850,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"normal_icon.png":
+{
+	"frame": {"x":1239,"y":1074,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"pause_btn.png":
+{
+	"frame": {"x":2,"y":1609,"w":130,"h":112},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":130,"h":112},
+	"sourceSize": {"w":130,"h":112}
+},
+"poison_icon.png":
+{
+	"frame": {"x":1239,"y":1298,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"razzberries_hud.png":
+{
+	"frame": {"x":118,"y":1609,"w":397,"h":125},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":7,"w":397,"h":125},
+	"sourceSize": {"w":397,"h":137}
+},
+"steel_icon.png":
+{
+	"frame": {"x":1239,"y":1522,"w":219,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":219,"h":220},
+	"sourceSize": {"w":219,"h":220}
+},
+"timer_hud.png":
+{
+	"frame": {"x":1462,"y":1609,"w":350,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":123},
+	"sourceSize": {"w":350,"h":123}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cards_hud-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2038,"h":2045},
+	"scale": "1",
+	"related_multi_packs": [ "cards_hud-1.json", "cards_hud-2.json", "cards_hud-3.json", "cards_hud-4.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:8e7c403d7e833c0b437b55936768a444:9f70c8ada009139cdd198c39a5ef3561:0ecae0cbd5042961997cbb11042fe812$"
+}
+}
