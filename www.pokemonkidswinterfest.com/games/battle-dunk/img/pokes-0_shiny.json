@@ -1845,7 +1845,7 @@
 "meta": {
 	"app": "https:/shiny_/shiny_www.codeandweb.com/shiny_texturepacker",
 	"version": "1.0",
-	"image": "pokes-0.png",
+	"image": "pokes-0_shiny.png",
 	"format": "RGBA8888",
 	"size": {"w":2039,"h":2015},
 	"scale": "1",
