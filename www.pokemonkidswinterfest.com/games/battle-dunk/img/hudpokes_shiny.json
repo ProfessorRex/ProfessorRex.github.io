@@ -1,0 +1,110 @@
+{"frames": {
+
+"hudpokes/shiny_363_Spheal2_CA.png":
+{
+	"frame": {"x":136,"y":138,"w":130,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":21,"w":130,"h":107},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_393_Piplup_CA-22.png":
+{
+	"frame": {"x":404,"y":136,"w":93,"h":129},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":11,"w":93,"h":129},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_674_Pancham2_CA.png":
+{
+	"frame": {"x":113,"y":2,"w":99,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":9,"w":99,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_771_Pyukumuku_CA-1.png":
+{
+	"frame": {"x":397,"y":2,"w":130,"h":98},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":26,"w":130,"h":98},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_816_Sobble_CA-6.png":
+{
+	"frame": {"x":216,"y":2,"w":88,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":9,"w":88,"h":132},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_831_Wooloo_CA-3-3.png":
+{
+	"frame": {"x":595,"y":2,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":11,"w":128,"h":128},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_835_Yamper4_CA.png":
+{
+	"frame": {"x":595,"y":134,"w":125,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":15,"w":125,"h":120},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_852_Clobbopus1_CA-1-2.png":
+{
+	"frame": {"x":270,"y":138,"w":130,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":23,"w":130,"h":102},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_871_Pincurchin1_CA-1.png":
+{
+	"frame": {"x":2,"y":2,"w":132,"h":107},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":21,"w":132,"h":107},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_872_Snom1_CA-1.png":
+{
+	"frame": {"x":499,"y":2,"w":130,"h":92},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":29,"w":130,"h":92},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_875_Eiscue_Ice_Face_CA-1-2.png":
+{
+	"frame": {"x":308,"y":2,"w":85,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":9,"w":85,"h":131},
+	"sourceSize": {"w":150,"h":150}
+},
+"hudpokes/shiny_885_Dreepy_CA-2.png":
+{
+	"frame": {"x":2,"y":138,"w":130,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":16,"w":130,"h":115},
+	"sourceSize": {"w":150,"h":150}
+}},
+"animations": {
+},
+"meta": {
+	"app": "https:/shiny_/shiny_www.codeandweb.com/shiny_texturepacker",
+	"version": "1.0",
+	"image": "hudpokes_shiny.png",
+	"format": "RGBA8888",
+	"size": {"w":725,"h":256},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8f460413b0ce1a50c48a257c8f31c63d:7fca0f6805e6829c2c189681636ae4ca:fc11bba611f94e86b313e6c0572fac79$"
+}
+}
