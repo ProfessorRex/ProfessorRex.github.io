@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="black" style="color: white">
+<h2> Rex's UnownTID Calculator</h2>
+
+
+<script>
+function getUID(){
+	var TID = document.getElementById("TID_enter").value;
+	var SID = document.getElementById("SID_enter").value;
+	var bTID = parseInt(TID).toString(2);
+	var bSID = parseInt(SID).toString(2);
+	bTID = "0".repeat(16-bTID.length).concat(bTID)
+	bSID = "0".repeat(16-bSID.length).concat(bSID)
+	bTID_output = bTID.slice(0, 4).concat(" ").concat(bTID.slice(4, 6)).concat('<span style="color: orange">').concat(bTID.slice(6, 8)).concat("</span>").concat(" ").concat(bTID.slice(8, 12)).concat(" ").concat(bTID.slice(12));
+	bSID_output = bSID.slice(0, 4).concat(" ").concat(bSID.slice(4, 6)).concat('<span style="color: DodgerBlue">').concat(bSID.slice(6, 8)).concat("</span>").concat(" ").concat(bSID.slice(8, 12)).concat(" ").concat(bSID.slice(12));
+	document.getElementById("bTID_output").innerHTML = "TID in Binary: ".concat(bTID_output);
+	document.getElementById("bSID_output").innerHTML = "SID in Binary: ".concat(bSID_output);
+	var UID = parseInt(bTID.slice(6, 8), 2) ^ parseInt(bSID.slice(6, 8), 2);
+	var bUID = parseInt(UID).toString(2);
+	bUID = "0".repeat(2-bUID.length).concat(bUID)
+	document.getElementById("UID_output").innerHTML="UnownTID in Binary: ".concat('<span style="color: orange">').concat(bTID.slice(6, 8)).concat("</span>").concat(" XOR ").concat('<span style="color: DodgerBlue">').concat(bSID.slice(6, 8)).concat("</span>").concat(" = ").concat(bUID)
+	document.getElementById("UID_dec").innerHTML="UnownTID in Decimal: <span style='color: MediumSeaGreen'>".concat(UID.toString()).concat("</span>");
+	var sUID = UID.toString()
+	for(const child of document.getElementsByClassName('s0')) {
+		child.style["background-color"] = 'black';
+		child.style["color"] = 'white';
+	}
+	for(const child of document.getElementsByClassName('s1')) {
+		child.style["background-color"] = 'black';
+		child.style["color"] = 'white';
+	}
+	for(const child of document.getElementsByClassName('s2')) {
+		child.style["background-color"] = 'black';
+		child.style["color"] = 'white';
+	}
+	for(const child of document.getElementsByClassName('s3')) {
+		child.style["background-color"] = 'black';
+		child.style["color"] = 'white';
+	}
+	if (UID == 0){
+		for(const child of document.getElementsByClassName('s0')) {
+			child.style["background-color"] = 'yellow';
+			child.style["color"] = 'black';
+		}
+	} else if (UID == 1){
+		for(const child of document.getElementsByClassName('s1')) {
+			child.style["background-color"] = 'yellow';
+			child.style["color"] = 'black';
+		}
+	} else if (UID == 2){
+		for(const child of document.getElementsByClassName('s2')) {
+			child.style["background-color"] = 'yellow';
+			child.style["color"] = 'black';
+		}
+	} else {
+		for(const child of document.getElementsByClassName('s3')) {
+			child.style["background-color"] = 'yellow';
+			child.style["color"] = 'black';
+		}
+	}
+
+}
+
+function showUID(){
+
+}
+</script>
+
+Enter TID in Decimal:<input type="text" id="TID_enter"/>
+<br>
+Enter SID in Decimal:<input type="text" id="SID_enter"/>
+<br>
+<button type="button"
+onclick="getUID()"/>Get UTID</button>
+<br>
+
+<p id="bTID_output"></p>
+<p id="bSID_output"></p>
+<p id="UID_output"></p>
+<p id="UID_dec"></p>
+<p id="bTID_output2"></p>
+</body>
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: black;
+}
+.s0 {
+  background-color: black;
+}
+.s0 {
+  background-color: black;
+}
+.s0 {
+  background-color: black;
+}
+.s0 {
+  background-color: black;
+}
+</style>
+<table class="waffle" cellspacing="0" cellpadding="0" style="text-align:center; vertical-align:middle; border: 1px solid black;">
+  <thead>
+	 <tr>
+		<th style="width:100px;" class="row-header freezebar-origin-ltr"></th>
+		<th id="1084404706C0" style="width:100px;" class="column-headers-background">UnownTID</th>
+		<th id="1084404706C2" style="width:100px;" class="column-headers-background">ABCD</th>
+		<th id="1084404706C3" style="width:100px;" class="column-headers-background">EFGH</th>
+		<th id="1084404706C4" style="width:100px;" class="column-headers-background">IJKL</th>
+		<th id="1084404706C5" style="width:100px;" class="column-headers-background">MNOP</th>
+		<th id="1084404706C6" style="width:100px;" class="column-headers-background">QRST</th>
+		<th id="1084404706C7" style="width:100px;" class="column-headers-background">UVWX</th>
+		<th id="1084404706C8" style="width:100px;" class="column-headers-background">YZ!?</th>
+	 </tr>
+  </thead>
+  <tbody>
+	 <tr style="height: 27px">
+		<td id="s5" dir="ltr" rowspan="4" style="width: 100px; text-align:center">Instances per 256 UIDs<br>(Per Letter)</td>
+		<td class="s0" dir="ltr">UTID = 0</td>
+		<td class="s0" dir="ltr">4</td>
+		<td class="s0" dir="ltr">2</td>
+		<td class="s0" dir="ltr">1</td>
+		<td class="s0" dir="ltr">3</td>
+		<td class="s0" dir="ltr">3</td>
+		<td class="s0" dir="ltr">1</td>
+		<td class="s0" dir="ltr">2</td>
+	 </tr>
+	 <tr style="height: 27px">
+		<td class="s1" dir="ltr">UTID = 1</td>
+		<td class="s1" dir="ltr">2</td>
+		<td class="s1" dir="ltr">3</td>
+		<td class="s1" dir="ltr">3</td>
+		<td class="s1" dir="ltr">1</td>
+		<td class="s1" dir="ltr">1</td>
+		<td class="s1" dir="ltr">3</td>
+		<td class="s1" dir="ltr">3</td>
+	 </tr>
+	 <tr style="height: 27px">
+		<td class="s2" dir="ltr">UTID = 2</td>
+		<td class="s2" dir="ltr">2</td>
+		<td class="s2" dir="ltr">2</td>
+		<td class="s2" dir="ltr">3</td>
+		<td class="s2" dir="ltr">2</td>
+		<td class="s2" dir="ltr">2</td>
+		<td class="s2" dir="ltr">3</td>
+		<td class="s2" dir="ltr">2</td>
+	 </tr>
+	 <tr style="height: 27px">
+		<td class="s3" dir="ltr">UTID = 3</td>
+		<td class="s3" dir="ltr">2</td>
+		<td class="s3" dir="ltr">2</td>
+		<td class="s3" dir="ltr">2</td>
+		<td class="s3" dir="ltr">3</td>
+		<td class="s3" dir="ltr">3</td>
+		<td class="s3" dir="ltr">2</td>
+		<td class="s3" dir="ltr">2</td>
+	 </tr>
+	 <tr style="height: 20px">
+		<td class="s5"></td>
+		<td class="s5"></td>
+		<td class="s5" dir="ltr">ABCD</td>
+		<td class="s5" dir="ltr">EFGH</td>
+		<td class="s5" dir="ltr">IJKL</td>
+		<td class="s5" dir="ltr">MNOP</td>
+		<td class="s5" dir="ltr">QRST</td>
+		<td class="s5" dir="ltr">UVWX</td>
+		<td class="s5" dir="ltr">YZ!?</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s6" dir="ltr" rowspan="4">Ratios<br>(Per Letter)</td>
+		<td class="s0" dir="ltr">UTID = 0</td>
+		<td class="s0" dir="ltr">4/64</td>
+		<td class="s0" dir="ltr">2/64</td>
+		<td class="s0" dir="ltr">1/64</td>
+		<td class="s0" dir="ltr">3/64</td>
+		<td class="s0" dir="ltr">3/64</td>
+		<td class="s0" dir="ltr">1/64</td>
+		<td class="s0" dir="ltr">2/64</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s1" dir="ltr">UTID = 1</td>
+		<td class="s1" dir="ltr">2/64</td>
+		<td class="s1" dir="ltr">3/64</td>
+		<td class="s1" dir="ltr">3/64</td>
+		<td class="s1" dir="ltr">1/64</td>
+		<td class="s1" dir="ltr">1/64</td>
+		<td class="s1" dir="ltr">3/64</td>
+		<td class="s1" dir="ltr">3/64</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s2" dir="ltr">UTID = 2</td>
+		<td class="s2" dir="ltr">2/64</td>
+		<td class="s2" dir="ltr">2/64</td>
+		<td class="s2" dir="ltr">3/64</td>
+		<td class="s2" dir="ltr">2/64</td>
+		<td class="s2" dir="ltr">2/64</td>
+		<td class="s2" dir="ltr">3/64</td>
+		<td class="s2" dir="ltr">2/64</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s3" dir="ltr">UTID = 3</td>
+		<td class="s3" dir="ltr">2/64</td>
+		<td class="s3" dir="ltr">2/64</td>
+		<td class="s3" dir="ltr">2/64</td>
+		<td class="s3" dir="ltr">3/64</td>
+		<td class="s3" dir="ltr">3/64</td>
+		<td class="s3" dir="ltr">2/64</td>
+		<td class="s3" dir="ltr">2/64</td>
+	 </tr>
+	 <tr style="height: 20px">
+		<td class="s5"></td>
+		<td class="s5"></td>
+		<td class="s5" dir="ltr">ABCD</td>
+		<td class="s5" dir="ltr">EFGH</td>
+		<td class="s5" dir="ltr">IJKL</td>
+		<td class="s5" dir="ltr">MNOP</td>
+		<td class="s5" dir="ltr">QRST</td>
+		<td class="s5" dir="ltr">UVWX</td>
+		<td class="s5" dir="ltr">YZ!?</td>
+	 </tr>
+	 <tr style="height: 20px">
+		<td class="s7" dir="ltr" colspan="2">PIDs<br>(Per Letter)<br><br>Total PIDs<br>4,294,967,296</td>
+		<td class="s8" dir="ltr">167,772,160</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+		<td class="s8" dir="ltr">150,994,944</td>
+	 </tr>
+	 <tr style="height: 19px">
+		<td class="s5"></td>
+		<td class="s5"></td>
+		<td class="s5" dir="ltr">ABCD</td>
+		<td class="s5" dir="ltr">EFGH</td>
+		<td class="s5" dir="ltr">IJKL</td>
+		<td class="s5" dir="ltr">MNOP</td>
+		<td class="s5" dir="ltr">QRST</td>
+		<td class="s5" dir="ltr">UVWX</td>
+		<td class="s5" dir="ltr">YZ!?</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s5" dir="ltr" rowspan="4">Shiny Rates<br>(Per Letter)</td>
+		<td class="s0" dir="ltr">UTID = 0</td>
+		<td class="s0" dir="ltr">1/5120</td>
+		<td class="s0" dir="ltr">1/9216</td>
+		<td class="s0" dir="ltr">1/18432</td>
+		<td class="s0" dir="ltr">1/6144</td>
+		<td class="s0" dir="ltr">1/6144</td>
+		<td class="s0" dir="ltr">1/18432</td>
+		<td class="s0" dir="ltr">1/9216</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s1" dir="ltr">UTID = 1</td>
+		<td class="s1" dir="ltr">1/10240</td>
+		<td class="s1" dir="ltr">1/6144</td>
+		<td class="s1" dir="ltr">1/6144</td>
+		<td class="s1" dir="ltr">1/18432</td>
+		<td class="s1" dir="ltr">1/18432</td>
+		<td class="s1" dir="ltr">1/6144</td>
+		<td class="s1" dir="ltr">1/6144</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s2" dir="ltr">UTID = 2</td>
+		<td class="s2" dir="ltr">1/10240</td>
+		<td class="s2" dir="ltr">1/9216</td>
+		<td class="s2" dir="ltr">1/6144</td>
+		<td class="s2" dir="ltr">1/9216</td>
+		<td class="s2" dir="ltr">1/9216</td>
+		<td class="s2" dir="ltr">1/6144</td>
+		<td class="s2" dir="ltr">1/9216</td>
+	 </tr>
+	 <tr style="height: 23px">
+		<td class="s3" dir="ltr">UTID = 3</td>
+		<td class="s3" dir="ltr">1/10240</td>
+		<td class="s3" dir="ltr">1/9216</td>
+		<td class="s3" dir="ltr">1/9216</td>
+		<td class="s3" dir="ltr">1/6144</td>
+		<td class="s3" dir="ltr">1/6144</td>
+		<td class="s3" dir="ltr">1/9216</td>
+		<td class="s3" dir="ltr">1/9216</td>
+	 </tr>
+  </tbody>
+</table>
