@@ -8,6 +8,9 @@
 function getUID(){
 	var TID = document.getElementById("TID_enter").value;
 	var SID = document.getElementById("SID_enter").value;
+	if (SID.length == 0) {
+		SID = 0;
+	}
 	var bTID = parseInt(TID).toString(2);
 	var bSID = parseInt(SID).toString(2);
 	bTID = "0".repeat(16-bTID.length).concat(bTID)
@@ -67,9 +70,9 @@ function showUID(){
 }
 </script>
 
-Enter TID in Decimal: <input type="text" id="TID_enter"/>
+Enter TID in Decimal:<input type="text" id="TID_enter" onchange="getUID()"/>
 <br>
-Enter SID in Decimal: <input type="text" id="SID_enter"/>
+Enter SID in Decimal:<input type="text" id="SID_enter" onchange="getUID()"/>
 <br>
 <button type="button"
 onclick="getUID()"/>Get UTID</button>
