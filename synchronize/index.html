@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="black" style="color: white">
+<h2> Rex's Syncronize Shiny Odds Calculator</h2>
+<br>
+<script>
+function getUID(){
+	var TID = document.getElementById("TID_enter").value;
+	var SID = document.getElementById("SID_enter").value;
+	if (SID.length == 0) {
+		SID = 0;
+	}
+	var bTID = parseInt(TID).toString(2);
+	var bSID = parseInt(SID).toString(2);
+	bTID = "0".repeat(16-bTID.length).concat(bTID)
+	bSID = "0".repeat(16-bSID.length).concat(bSID)
+	bTID_output = '<span style="color: orange">'.concat(bTID.slice(0, 4)).concat(" ").concat(bTID.slice(4, 6)).concat(bTID.slice(6, 8)).concat(" ").concat(bTID.slice(8, 12)).concat(" ").concat(bTID.slice(12)).concat("</span>");
+	bSID_output = '<span style="color: DodgerBlue">'.concat(bSID.slice(0, 4)).concat(" ").concat(bSID.slice(4, 6)).concat(bSID.slice(6, 8)).concat(" ").concat(bSID.slice(8, 12)).concat(" ").concat(bSID.slice(12)).concat("</span>");
+	document.getElementById("bTID_output").innerHTML = "TID in Binary: ".concat(bTID_output);
+	document.getElementById("bSID_output").innerHTML = "SID in Binary: ".concat(bSID_output);
+	var ShTID = TID ^ SID;
+	var bShTID = parseInt(ShTID).toString(2);
+	bShTID = "0".repeat(16-bShTID.length).concat(bShTID)
+	document.getElementById("UID_output").innerHTML="ShTID in Binary: ".concat('<span style="color: yellow">').concat(bShTID.slice(0, 4)).concat(" ").concat(bShTID.slice(4, 6)).concat(bShTID.slice(6, 8)).concat(" ").concat(bShTID.slice(8, 12)).concat(" ").concat(bShTID.slice(12)).concat("</span>");
+	document.getElementById("UID_dec").innerHTML="ShTID in Decimal: <span style='color: yellow'>".concat(ShTID.toString()).concat("</span>");
+	var effectiveShTID = ~~(ShTID / 8);
+	document.getElementById('Chart').innerHTML = '<div><div><iframe src="charts/'.concat(effectiveShTID.toString()).concat('.html" frameborder="0" height="1000px" width="100%"></iframe></div></div>');
+}
+
+function showUID(){
+
+}
+</script>
+
+Enter TID in Decimal: <input type="text" id="TID_enter"/>
+<br>
+Enter SID in Decimal: <input type="text" id="SID_enter"/>
+<br>
+<button type="button"
+onclick="getUID()"/>Get Odds</button>
+<br>
+
+<p id="bTID_output"></p>
+<p id="bSID_output"></p>
+<p id="UID_output"></p>
+<p id="UID_dec"></p>
+<p id="bTID_output2"></p>
+<p id="Chart"></p>
+<h2> <a href="list.html">List of ShTID by Syncronize Shiny Odds</a></h2>
+</body>
