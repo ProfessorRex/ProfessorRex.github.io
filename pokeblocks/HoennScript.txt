@@ -1,0 +1,109 @@
+Hello Pokémon fans and welcome back to the brofessor's lab!
+
+My name is Professor Rex and with Safari Week fast approaching I felt it was time to take another dive into the inner workings of this so called "Safari Game".
+
+Today we'll hop over to the Hoenn Safari zone and take a look at the infamous Pokéblock Glitch.
+
+"But Rex!" you might say, "Everyone knows about the Pokéblock Glitch!"
+
+Well, what if I told you that the guides you've seen, the rumors you've heard, have never been completely accurate? If you're tired of watching Safari Pokémon run away, stay tuned!
+
+THE FLEE FACTOR:
+
+Lets start by discussing the very thing that makes the Safari zone such a dreaded place to hunt - the flee factor. Unlike other safari zones the Hoenn Safari zone has a base flee factor of three for all Pokémon, this translates to a base flee chance of 15% per turn. Much like in Kanto this flee factor is used at the start of each turn to determine if a wild Pokémon will be able to escape at the end of the turn.
+
+So, similar to FURGULL, we will never be able to avoid that nasty 15% chance to watch a Pokémon bolt on the first turn. However, if you've ever heard about the Pokéblock Glitch you'll know that there are ways to drop this flee rate quite a bit lower on subsequent turns.
+
+This is where Pokéblocks come in...
+
+POKEBLOCKS:
+
+In Ruby Sapphire and Emerald - Pokéblocks are used to mess around with Pokémon’s contest stats but they also have uses in the Safari Zone.
+
+One such use is similar to bait in other Safari games. Trainers can toss Pokéblocks at wild Pokémon in the hopes of making them more likely to stick around. However, the effectiveness of these Pokéblocks is dependent upon three factors: the nature of a wild Pokémon, the number of Pokéblocks that have already been thrown, and, of course, the current flee factor.
+
+The first variable to consider is the Wild Pokémon’s nature.
+Whether or not a Pokémon Likes a Pokéblock can be determined by this nature chart:
+As we can see, if we were to encounter a Pokémon with a Careful nature, they would like to eat a Bitter Pokéblock, and they would not enjoy a dry Pokéblock. 
+
+When throwing Pokéblocks the Pokémon will become enthralled by a Pokéblocks they like, ignore Pokéblocks they don't, or become curious about Pokéblocks they neither dislike or like. We will call these curiosity inducing Pokéblocks neutral Pokéblocks.
+
+Hey, that seems easy enough! I bet if I just throw some Pokéblocks that the Pokémon would like then I can attain this 0% flee rate right!? WRONG.
+
+If we take a look at this table, we can see that the second variable comes into play. Each time you throw a Pokéblock the effectiveness of subsequent Pokéblocks thrown in that encounter change. So while our first Liked Pokéblock would drop a Pokémon’s flee factor by 5 the second would only reduce it by 3.
+
+(Normie Trainer Rex)
+Hey, wait a minute! 5 is a whole lot more than 3 isn't it rex!? Shouldn't that reduce the flee factor below 0 for us?
+
+Sure that sounds good on paper but this is where our third variable comes into play. The current flee factor will play a major part in this whole equation. When we reduce a flee factor below zero the game will actually correct the flee rate to be 1. So, despite the fact that throwing a Liked Pokéblock on the first turn should reduce the flee rate to negative 2 the resulting flee factor will be 1. Additionally, if the flee factor is 1 the game will not allow the flee factor to be reduced further.
+
+Because of this throwing a Liked Pokéblock will make it impossible for us to attain this 0% flee rate. If we take a look back at the chart of Pokéblock effects it becomes apparent that throwing a Neutral Pokéblock on the first turn will be the way to go. Unlike flee factor reductions below 0, reducing a flee factor to exactly 0 will not correct to a flee factor of 1. Getting this flee factor reduced to exactly 0 will be the name of the game here as it will make it impossible for Pokemon to run away.
+
+(Normie Trainer Rex)
+Okay... we know how to get this 0% flee rate now but gosh darn... there are 25 different natures in the game. How on earth are we supposed to know which Pokéblocks are the best ones to throw?
+
+
+
+
+*ALIENS MEME* POKEBLOCK FEEDERS
+
+These mysterious blocks in the Hoenn safari zone allow trainers manipulate the natures of the wild pokemon they encounter. With a Pokéblock inserted into the feeder there is an 80% chance that wild Pokémon will have their natures forced to be one that would enjoy the Pokéblock in the feeder. The other 20% of the time the wild Pokémon will have completely random natures. This alone actually wouldn't help much with determining a neutral Pokéblock if it weren't for a very odd design choice.
+
+In early development builds of Pokémon Ruby and Sapphire the nature you would get from Pokéblock feeders was truly random. If you put in a Bitter Pokéblock you would have been just as likely to see a Calm Pokémon as a Careful one. However, at some point in development this was adjusted. We can only speculate that it might have been to change from a function with a possibility of becoming an infinite loop to one with a limited run-time. However, it is still perplexing since Synchronize could just as easily create infinite loops as the original code.
+
+Regardless, this convoluted function has an algorithmic complexity of O n squared which might have been more desirable to the developers. The problem is that while the deprecated code produced random natures that matched the Pokéblock in the feeder; the one used in final builds effectively ends up reversing the list of natures in a semi-random way and then finding the first one in this list that matches the Pokéblock in the feeder.
+
+Okay, that is probably a whole bunch of gibberish to people but the takeaway is this:
+Random natures from Pokéblock feeders are not that good at being random.
+
+With a bitter Pokéblock in the feeder there is a 48% chance for a Careful nature to be selected if the Feeder triggers and only an 8.7% chance to have Calm chosen.
+
+The figures we have here we derived from 10 million simulations of the this "randomization" function and give us insight into how we can try to throw a Neutral Pokéblock nearly every time.
+
+If we know that Calm is the least likely nature to occur when there is a bitter Pokéblock in the feeder we have a very good shot of a Spicy Pokéblock being neither liked nor disliked.
+
+Likewise if we somehow end up with a Pokéblock that is ignored we will know there is a very good chance that throwing a bitter Pokéblock would be a Pokéblock that enthralls the Pokémon.
+
+For reference the odds of throwing a neutral Pokéblock at a random Pokémon is 17/25 which is equal to 68%. if we use the optimal selection of a Bitter Pokéblock in the feeder and throwing a spicy Pokéblock this becomes 86.6%.
+
+
+With all of this information, how do we optimize our selection of Pokéblocks?
+
+When we have Pokéblocks in the Pokéblock feeder we want to throw a Pokéblock that is the least likely to be disliked to snag that -3 modifier to the flee factor giving us that beautiful 0% flee rate. If we somehow end up being unlucky enough for that Pokéblock to be liked, remembering there is always that 20% chance of a completely random nature, we will be stuck with a Flee rate of 1. If the first Pokéblock is ignored we will throw a Pokéblock that matches the colour of the one in the Pokéblock feeder. There is a very high chance this will be a liked Pokéblock and will grant us the -3 modifier from a second turn liked Pokéblock. Otherwise, if we have been very unlucky it will be a neutral Pokéblock and we will end up with a flee rate of 1.
+
+For example if we had a Green Pokéblock in the feeder the natures we would attract would be likely to enjoy bitter flavours. Since Calm is the least likely nature to generate, we would throw a red Pokéblock which is spicy, the Flavour disliked by Calm Pokémon. If the Pokémon becomes curious from this then we have successfully attained a 0% encounter rate and balls are a go. If the Pokémon Is enthralled then we have an unchangeable 5% flee rate and we start hucking balls. If our first Pokéblock was ignored then we throw a Pokéblock that matches the Flavour in the Feeder. We throw a green Pokéblock and then start to throw balls.
+
+
+If we have come across a wild Pokémon and we do not have a Pokéblock in the feeder this pattern is pretty well the same except the Pokéblocks you throw can be any single-flavor Pokéblock so long as the first one you throw and the second one you throw are different flavours.
+
+To learn about how to make single-flavour Pokéblocks please check out the Pokéblock guide made by our resident Pokéblock Aficionado LolLemonz. The link for that video is in the description below and will explain what berries you need to create the Pokéblocks needed to use this strategy effectively.
+
+
+
+Finally we get into the question of when it is worthwhile to use these strategies.
+On nearly all Pokémon using the green Pokéblock feeder pattern gives the best chances of capture. Even on the most difficult to capture Pokémon, your successful capture rate will be nearly 76%. Compared to the usual success rate of just 37% for Pokémon like Heracross that is pretty gosh darn likely.
+
+ Because of the nature of the 15% chance for a Pokémon to flee on the first turn the success rate of the Pokéblock strategy cannot exceed 85%. Therefore, the Pokemon Mareep, Sunkern, Oddish, Geodude, Goldeen, Magikar, Hoothoot, Ledyba, Spinarak, and Wooper will always be best off with a balls only approach.
+
+For the Pokémon Pikachu, Psyduck, Doduo, Natu, Marill, Pineco, Snubbull, Shuckle, and Remoraid you are best to throw Pokeballs if you do not have a Bitter, Dry, Sweet, or Sour Pokéblock in the feeder. 
+
+For everything else you will always have a better chance of catching a Pokémon if you use the Pokéblock strategy. All of these success rates will be available to view in the Hoenn Safari zone research document which is linked in the description below.
+
+  If you are looking at these figures and want to know more about what a Modified Catch Rate is check out our Kanto Safari Zone Video, and if you want to know why the Flee odds are actually listed as 15.01% per turn check out page 14 from our Kanto Safari Zone research paper.
+
+Thank you all for sticking through this video. I know there was a lot to take in so if you have any questions, please drop a comment below or read the Description for the FAQ. Questions can also be asked in our Discord or on our Stream! Check out the links down below for all that fun stuff.
+
+Anyways,  I need to get back to Playing Pokemon Ruby and Sapphire on my Nintendo Wii. See you soon!
+
+
+Record Scratch-----
+
+ so this research was never really supposed to happen but it stemmed from the meme of wanting to know what going near does. For the sake of answering this age old question here goes... (very fast talking)
+In pokemon ruby and sapphire going near a Pokémon is entirely useless, upon first going near a Pokémon the catch factorand the flee factor will both increase by 4. The second and third attempts to go near will increase the catch factor by 3 & 2 respectivelywhile stillincreasing the flee factor by 4 each time. Any attempts to go near past the thirdwill display the message “PLAYERcan’t get any closer!”; despite thisthe Flee Factor will still increase by 4 and the catch factor by 1.For a Pokémon such as Heracross this brings it’s Catch Factor to 7 whichis about 19.75% per ball; up from 8.09%. However, it’s flee rate also increasesby 20%, up to 35% per turn.This risk will never even out andyou are better off chucking balls than attempting to get closer to the Pokémon
+
+
+
+
+
+
+

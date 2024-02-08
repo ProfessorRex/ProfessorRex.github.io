@@ -1,0 +1,1638 @@
+**('Gold', (10, 11, 14, 15, 16, 17, 19)):**
+Timid has a 1.284% occurance
+Hasty has a 2.031% occurance
+Naive has a 6.931% occurance
+Modest has a 10.507% occurance
+Mild has a 14.854999999999999% occurance
+Quiet has a 21.666% occurance
+Rash has a 42.726% occurance
+**('Indigo', (5, 7, 9, 15, 16, 17, 19)):**
+Bold has a 0.18% occurance
+Relaxed has a 0.443% occurance
+Lax has a 0.9820000000000001% occurance
+Modest has a 11.690000000000001% occurance
+Mild has a 16.436999999999998% occurance
+Quiet has a 23.946% occurance
+Rash has a 46.322% occurance
+**('Black', (20, 21, 22, 23)):**
+Calm has a 8.574% occurance
+Gentle has a 15.501999999999999% occurance
+Sassy has a 27.883000000000003% occurance
+Careful has a 48.041% occurance
+**('Grey', (10, 11, 15, 16, 20, 21)):**
+Timid has a 0.447% occurance
+Hasty has a 0.701% occurance
+Modest has a 4.336% occurance
+Mild has a 6.607% occurance
+Calm has a 35.247% occurance
+Gentle has a 52.662% occurance
+**('Grey', (1, 2, 3, 4, 11, 13, 14, 21, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.003% occurance
+Adamant has a 0.003% occurance
+Naughty has a 0.008% occurance
+Hasty has a 0.23500000000000001% occurance
+Jolly has a 0.614% occurance
+Naive has a 0.971% occurance
+Gentle has a 26.528000000000002% occurance
+Careful has a 71.638% occurance
+**('Grey', (3, 4, 8, 9, 13, 14)):**
+Adamant has a 1.83% occurance
+Naughty has a 2.358% occurance
+Impish has a 8.085% occurance
+Lax has a 10.849% occurance
+Jolly has a 33.518% occurance
+Naive has a 43.36% occurance
+**('Grey', (1, 2, 3, 4, 7, 8, 9, 13, 14)):**
+Lonely has a 0.9390000000000001% occurance
+Brave has a 1.122% occurance
+Adamant has a 1.558% occurance
+Naughty has a 2.0389999999999997% occurance
+Relaxed has a 5.489999999999999% occurance
+Impish has a 7.333% occurance
+Lax has a 9.876999999999999% occurance
+Jolly has a 31.080999999999996% occurance
+Naive has a 40.561% occurance
+**('Grey', (3, 4, 5, 7, 8, 9, 13, 14)):**
+Adamant has a 1.524% occurance
+Naughty has a 2.019% occurance
+Bold has a 2.939% occurance
+Relaxed has a 5.447% occurance
+Impish has a 7.256% occurance
+Lax has a 9.746% occurance
+Jolly has a 30.855% occurance
+Naive has a 40.214% occurance
+**('Olive', (5, 7, 8, 9, 20, 22, 23)):**
+Bold has a 0.003% occurance
+Relaxed has a 0.015% occurance
+Impish has a 0.018000000000000002% occurance
+Lax has a 0.021% occurance
+Calm has a 10.870000000000001% occurance
+Sassy has a 32.806000000000004% occurance
+Careful has a 56.267% occurance
+**('Brown', (5, 8, 9, 10, 11, 13, 14)):**
+Bold has a 2.052% occurance
+Impish has a 5.59% occurance
+Lax has a 7.667% occurance
+Timid has a 10.689% occurance
+Hasty has a 14.457% occurance
+Jolly has a 25.833000000000002% occurance
+Naive has a 33.711999999999996% occurance
+**('Grey', (2, 3, 4, 5, 7, 8, 9, 17, 19)):**
+Brave has a 0.13999999999999999% occurance
+Adamant has a 0.218% occurance
+Naughty has a 0.268% occurance
+Bold has a 0.481% occurance
+Relaxed has a 0.9939999999999999% occurance
+Impish has a 1.393% occurance
+Lax has a 2.0469999999999997% occurance
+Quiet has a 33.064% occurance
+Rash has a 61.394999999999996% occurance
+**('Grey', (1, 4, 11, 14, 15, 16, 17, 19)):**
+Lonely has a 0.02% occurance
+Naughty has a 0.073% occurance
+Hasty has a 2.069% occurance
+Naive has a 7.045% occurance
+Modest has a 10.645% occurance
+Mild has a 15.023% occurance
+Quiet has a 21.953% occurance
+Rash has a 43.172% occurance
+**('Grey', (1, 2, 3, 11, 13, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Hasty has a 0.053% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.554% occurance
+Gentle has a 15.468000000000002% occurance
+Sassy has a 27.83% occurance
+Careful has a 47.949999999999996% occurance
+**('Grey', (1, 2, 3, 4, 7, 8, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.001% occurance
+Relaxed has a 0.008% occurance
+Impish has a 0.013% occurance
+Gentle has a 17.133000000000003% occurance
+Sassy has a 30.495% occurance
+Careful has a 52.34799999999999% occurance
+**('Brown', (10, 11, 13, 20, 21, 23)):**
+Timid has a 0.089% occurance
+Hasty has a 0.145% occurance
+Jolly has a 0.385% occurance
+Calm has a 13.623% occurance
+Gentle has a 22.651% occurance
+Careful has a 63.107% occurance
+**('Grey', (1, 4, 10, 11, 14, 15, 16, 19)):**
+Lonely has a 0.044000000000000004% occurance
+Naughty has a 0.154% occurance
+Timid has a 2.018% occurance
+Hasty has a 3.091% occurance
+Naive has a 9.545% occurance
+Modest has a 13.938% occurance
+Mild has a 19.288% occurance
+Rash has a 51.922000000000004% occurance
+**('Grey', (5, 9, 10, 11, 13, 14, 15, 16, 19)):**
+Bold has a 0.192% occurance
+Lax has a 1.145% occurance
+Timid has a 1.7770000000000001% occurance
+Hasty has a 2.7439999999999998% occurance
+Jolly has a 5.933% occurance
+Naive has a 8.717% occurance
+Modest has a 12.783% occurance
+Mild has a 17.796% occurance
+Rash has a 48.913000000000004% occurance
+**('Grey', (1, 2, 3, 4, 11, 14, 16, 19)):**
+Lonely has a 0.089% occurance
+Brave has a 0.124% occurance
+Adamant has a 0.17700000000000002% occurance
+Naughty has a 0.259% occurance
+Hasty has a 4.173% occurance
+Naive has a 11.972% occurance
+Mild has a 23.113% occurance
+Rash has a 60.092999999999996% occurance
+**('Grey', (1, 3, 4, 10, 11, 13, 14, 16, 19)):**
+Lonely has a 0.053% occurance
+Adamant has a 0.121% occurance
+Naughty has a 0.199% occurance
+Timid has a 2.358% occurance
+Hasty has a 3.533% occurance
+Jolly has a 7.306% occurance
+Naive has a 10.507% occurance
+Mild has a 20.752000000000002% occurance
+Rash has a 55.17100000000001% occurance
+**('Grey', (1, 2, 3, 4, 11, 14, 16, 17, 19)):**
+Lonely has a 0.037% occurance
+Brave has a 0.052% occurance
+Adamant has a 0.08099999999999999% occurance
+Naughty has a 0.10300000000000001% occurance
+Hasty has a 2.557% occurance
+Naive has a 8.172% occurance
+Mild has a 16.965% occurance
+Quiet has a 24.515% occurance
+Rash has a 47.518% occurance
+**('Grey', (5, 8, 10, 13, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Impish has a 0.006999999999999999% occurance
+Timid has a 0.021% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.556999999999999% occurance
+Gentle has a 15.473% occurance
+Sassy has a 27.836% occurance
+Careful has a 47.961% occurance
+**('Grey', (5, 7, 8, 9, 15, 17, 19, 20, 22)):**
+Bold has a 0.009000000000000001% occurance
+Relaxed has a 0.056999999999999995% occurance
+Impish has a 0.063% occurance
+Lax has a 0.09% occurance
+Modest has a 2.146% occurance
+Quiet has a 5.586% occurance
+Rash has a 14.350999999999999% occurance
+Calm has a 22.673% occurance
+Sassy has a 55.025% occurance
+**('Grey', (5, 7, 9, 15, 17, 19, 20, 22)):**
+Bold has a 0.009000000000000001% occurance
+Relaxed has a 0.056999999999999995% occurance
+Lax has a 0.09% occurance
+Modest has a 2.149% occurance
+Quiet has a 5.593% occurance
+Rash has a 14.360000000000001% occurance
+Calm has a 22.686% occurance
+Sassy has a 55.056000000000004% occurance
+**('White', (3, 8, 13, 23)):**
+Adamant has a 0.036000000000000004% occurance
+Impish has a 0.244% occurance
+Jolly has a 1.833% occurance
+Careful has a 97.887% occurance
+**('Green', (20, 21, 22, 23)):**
+Calm has a 8.574% occurance
+Gentle has a 15.501999999999999% occurance
+Sassy has a 27.883000000000003% occurance
+Careful has a 48.041% occurance
+**('Gold', (5, 7, 8, 9, 15, 17, 19)):**
+Bold has a 0.306% occurance
+Relaxed has a 0.6910000000000001% occurance
+Impish has a 0.955% occurance
+Lax has a 1.472% occurance
+Modest has a 14.362% occurance
+Quiet has a 28.449999999999996% occurance
+Rash has a 53.764% occurance
+**('Grey', (5, 7, 8, 9, 10, 13, 14, 20, 23)):**
+Bold has a 0.011000000000000001% occurance
+Relaxed has a 0.054% occurance
+Impish has a 0.076% occurance
+Lax has a 0.10200000000000001% occurance
+Timid has a 0.201% occurance
+Jolly has a 0.8240000000000001% occurance
+Naive has a 1.264% occurance
+Calm has a 19.026% occurance
+Careful has a 78.44200000000001% occurance
+**('Grey', (1, 3, 4, 11, 13, 14, 16, 19)):**
+Lonely has a 0.061% occurance
+Adamant has a 0.131% occurance
+Naughty has a 0.207% occurance
+Hasty has a 3.6580000000000004% occurance
+Jolly has a 7.521999999999999% occurance
+Naive has a 10.85% occurance
+Mild has a 21.248% occurance
+Rash has a 56.323% occurance
+**('Grey', (2, 3, 5, 7, 8, 9, 22, 23)):**
+Brave has a 0.001% occurance
+Adamant has a 0.002% occurance
+Bold has a 0.01% occurance
+Relaxed has a 0.025% occurance
+Impish has a 0.036000000000000004% occurance
+Lax has a 0.048% occurance
+Sassy has a 36.964000000000006% occurance
+Careful has a 62.914% occurance
+**('Grey', (1, 2, 3, 4, 16, 17, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.0% occurance
+Mild has a 1.005% occurance
+Quiet has a 1.693% occurance
+Gentle has a 16.616% occurance
+Sassy has a 29.656% occurance
+Careful has a 51.028% occurance
+**('Blue', (15, 16, 17, 19)):**
+Modest has a 11.93% occurance
+Mild has a 16.767000000000003% occurance
+Quiet has a 24.317% occurance
+Rash has a 46.986% occurance
+**('Black', (15, 16, 17, 19)):**
+Modest has a 11.93% occurance
+Mild has a 16.767000000000003% occurance
+Quiet has a 24.317% occurance
+Rash has a 46.986% occurance
+**('Grey', (5, 7, 15, 17, 20, 22)):**
+Bold has a 0.026% occurance
+Relaxed has a 0.091% occurance
+Modest has a 2.984% occurance
+Quiet has a 7.242% occurance
+Calm has a 26.617% occurance
+Sassy has a 63.04% occurance
+**('Grey', (5, 7, 8, 15, 17, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Impish has a 0.006999999999999999% occurance
+Modest has a 0.426% occurance
+Quiet has a 1.398% occurance
+Calm has a 8.419% occurance
+Gentle has a 15.183% occurance
+Sassy has a 27.344% occurance
+Careful has a 47.215% occurance
+**('Grey', (1, 2, 15, 16, 17, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Modest has a 0.424% occurance
+Mild has a 0.796% occurance
+Quiet has a 1.3860000000000001% occurance
+Calm has a 8.357000000000001% occurance
+Gentle has a 15.049000000000001% occurance
+Sassy has a 27.139999999999997% occurance
+Careful has a 46.848% occurance
+**('Grey', (5, 7, 8, 9, 15, 17, 20, 22, 23)):**
+Bold has a 0.003% occurance
+Relaxed has a 0.013% occurance
+Impish has a 0.016% occurance
+Lax has a 0.018000000000000002% occurance
+Modest has a 0.688% occurance
+Quiet has a 2.0820000000000003% occurance
+Calm has a 10.513% occurance
+Sassy has a 31.891000000000002% occurance
+Careful has a 54.776% occurance
+**('Gold', (5, 8, 9, 10, 13, 14)):**
+Bold has a 2.691% occurance
+Impish has a 6.880999999999999% occurance
+Lax has a 9.267% occurance
+Timid has a 12.745000000000001% occurance
+Jolly has a 29.766% occurance
+Naive has a 38.65% occurance
+**('Light Blue', (1, 2, 3, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Calm has a 8.574% occurance
+Gentle has a 15.501999999999999% occurance
+Sassy has a 27.883000000000003% occurance
+Careful has a 48.04% occurance
+**('Gold', (1, 2, 3, 4, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.001% occurance
+Gentle has a 17.138% occurance
+Sassy has a 30.499% occurance
+Careful has a 52.35999999999999% occurance
+**('Gold', (1, 2, 3, 4)):**
+Lonely has a 22.169% occurance
+Brave has a 22.911% occurance
+Adamant has a 25.659% occurance
+Naughty has a 29.261% occurance
+**('Grey', (5, 8, 10, 11, 13, 20, 21, 23)):**
+Bold has a 0.003% occurance
+Impish has a 0.027% occurance
+Timid has a 0.089% occurance
+Hasty has a 0.145% occurance
+Jolly has a 0.385% occurance
+Calm has a 13.616% occurance
+Gentle has a 22.643% occurance
+Careful has a 63.092000000000006% occurance
+**('Grey', (1, 3, 10, 11, 13, 14, 20, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.002% occurance
+Timid has a 0.087% occurance
+Hasty has a 0.14100000000000001% occurance
+Jolly has a 0.38% occurance
+Naive has a 0.613% occurance
+Calm has a 13.507% occurance
+Gentle has a 22.506999999999998% occurance
+Careful has a 62.763000000000005% occurance
+**('Grey', (2, 3, 5, 7, 8, 20, 21, 22, 23)):**
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Impish has a 0.006999999999999999% occurance
+Calm has a 8.573% occurance
+Gentle has a 15.498999999999999% occurance
+Sassy has a 27.88% occurance
+Careful has a 48.032000000000004% occurance
+**('Grey', (10, 11, 13, 14, 15, 16, 20, 21)):**
+Timid has a 0.4% occurance
+Hasty has a 0.627% occurance
+Jolly has a 1.638% occurance
+Naive has a 2.5149999999999997% occurance
+Modest has a 4.0809999999999995% occurance
+Mild has a 6.236% occurance
+Calm has a 33.781% occurance
+Gentle has a 50.722% occurance
+**('Grey', (1, 2, 3, 7, 8, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Relaxed has a 0.008% occurance
+Impish has a 0.013% occurance
+Gentle has a 17.133000000000003% occurance
+Sassy has a 30.496000000000002% occurance
+Careful has a 52.34799999999999% occurance
+**('Grey', (1, 4, 10, 11, 13, 14, 16, 19)):**
+Lonely has a 0.053% occurance
+Naughty has a 0.2% occurance
+Timid has a 2.368% occurance
+Hasty has a 3.5409999999999995% occurance
+Jolly has a 7.321% occurance
+Naive has a 10.522% occurance
+Mild has a 20.771% occurance
+Rash has a 55.224% occurance
+**('Grey', (10, 11, 15, 16, 17, 20, 21, 22)):**
+Timid has a 0.082% occurance
+Hasty has a 0.154% occurance
+Modest has a 1.4040000000000001% occurance
+Mild has a 2.321% occurance
+Quiet has a 3.7830000000000004% occurance
+Calm has a 17.455000000000002% occurance
+Gentle has a 28.785% occurance
+Sassy has a 46.016% occurance
+**('Gold', (15, 16, 17, 19)):**
+Modest has a 11.93% occurance
+Mild has a 16.767000000000003% occurance
+Quiet has a 24.317% occurance
+Rash has a 46.986% occurance
+**('Grey', (5, 8, 10, 11, 13, 14, 20, 21, 23)):**
+Bold has a 0.003% occurance
+Impish has a 0.027% occurance
+Timid has a 0.087% occurance
+Hasty has a 0.14100000000000001% occurance
+Jolly has a 0.38% occurance
+Naive has a 0.613% occurance
+Calm has a 13.501% occurance
+Gentle has a 22.499% occurance
+Careful has a 62.749% occurance
+**('White', (2, 7, 17, 22)):**
+Brave has a 0.037% occurance
+Relaxed has a 0.32299999999999995% occurance
+Quiet has a 13.038% occurance
+Sassy has a 86.602% occurance
+**('Grey', (1, 2, 3, 4, 16, 17, 21, 22)):**
+Lonely has a 0.002% occurance
+Brave has a 0.002% occurance
+Adamant has a 0.008% occurance
+Naughty has a 0.004% occurance
+Mild has a 3.5290000000000004% occurance
+Quiet has a 5.453% occurance
+Gentle has a 35.506% occurance
+Sassy has a 55.496% occurance
+**('Black', (5, 7, 8, 9)):**
+Bold has a 14.152000000000001% occurance
+Relaxed has a 22.570999999999998% occurance
+Impish has a 28.244000000000003% occurance
+Lax has a 35.032999999999994% occurance
+**('Indigo', (15, 16, 17, 19, 20, 21, 22)):**
+Modest has a 1.141% occurance
+Mild has a 1.9619999999999997% occurance
+Quiet has a 3.1719999999999997% occurance
+Rash has a 9.536% occurance
+Calm has a 15.795% occurance
+Gentle has a 26.212999999999997% occurance
+Sassy has a 42.181000000000004% occurance
+**('White', (4, 9, 14, 19)):**
+Naughty has a 0.622% occurance
+Lax has a 3.563% occurance
+Naive has a 17.819% occurance
+Rash has a 77.996% occurance
+**('Grey', (1, 3, 11, 13, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.003% occurance
+Hasty has a 0.245% occurance
+Jolly has a 0.633% occurance
+Gentle has a 26.827% occurance
+Careful has a 72.292% occurance
+**('Grey', (5, 8, 9, 10, 13, 14, 15, 19)):**
+Bold has a 0.346% occurance
+Impish has a 1.194% occurance
+Lax has a 1.7770000000000001% occurance
+Timid has a 2.621% occurance
+Jolly has a 8.057% occurance
+Naive has a 11.442% occurance
+Modest has a 16.326999999999998% occurance
+Rash has a 58.236% occurance
+**('Grey', (1, 3, 4, 8, 9, 11, 13, 14)):**
+Lonely has a 0.762% occurance
+Adamant has a 1.257% occurance
+Naughty has a 1.635% occurance
+Impish has a 6.354% occurance
+Lax has a 8.658000000000001% occurance
+Hasty has a 16.076999999999998% occurance
+Jolly has a 28.343% occurance
+Naive has a 36.914% occurance
+**('Grey', (1, 3, 11, 13, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.001% occurance
+Hasty has a 0.053% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.554% occurance
+Gentle has a 15.468000000000002% occurance
+Sassy has a 27.83% occurance
+Careful has a 47.949999999999996% occurance
+**('Purple', (1, 2, 3, 4, 16, 17, 19)):**
+Lonely has a 0.059000000000000004% occurance
+Brave has a 0.08% occurance
+Adamant has a 0.11199999999999999% occurance
+Naughty has a 0.155% occurance
+Mild has a 19.295% occurance
+Quiet has a 27.682000000000002% occurance
+Rash has a 52.617000000000004% occurance
+**('Brown', (10, 11, 13, 14, 20, 21, 23)):**
+Timid has a 0.087% occurance
+Hasty has a 0.14100000000000001% occurance
+Jolly has a 0.38% occurance
+Naive has a 0.613% occurance
+Calm has a 13.508000000000001% occurance
+Gentle has a 22.506999999999998% occurance
+Careful has a 62.763999999999996% occurance
+**('Grey', (3, 4, 5, 8, 9, 10, 13, 14)):**
+Adamant has a 1.314% occurance
+Naughty has a 1.757% occurance
+Bold has a 2.5839999999999996% occurance
+Impish has a 6.612% occurance
+Lax has a 8.931000000000001% occurance
+Timid has a 12.282% occurance
+Jolly has a 28.898000000000003% occurance
+Naive has a 37.622% occurance
+**('Grey', (10, 11, 13, 15, 16, 20, 21, 23)):**
+Timid has a 0.076% occurance
+Hasty has a 0.133% occurance
+Jolly has a 0.35200000000000004% occurance
+Modest has a 0.991% occurance
+Mild has a 1.693% occurance
+Calm has a 13.170000000000002% occurance
+Gentle has a 21.977% occurance
+Careful has a 61.608% occurance
+**('Grey', (5, 8, 10, 11, 13, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Impish has a 0.006999999999999999% occurance
+Timid has a 0.021% occurance
+Hasty has a 0.053% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.548% occurance
+Gentle has a 15.464% occurance
+Sassy has a 27.823999999999998% occurance
+Careful has a 47.937999999999995% occurance
+**('Gold', (5, 7, 8, 9)):**
+Bold has a 14.152000000000001% occurance
+Relaxed has a 22.570999999999998% occurance
+Impish has a 28.244000000000003% occurance
+Lax has a 35.032999999999994% occurance
+**('Grey', (2, 4, 5, 7, 9, 15, 16, 17, 19)):**
+Brave has a 0.047% occurance
+Naughty has a 0.096% occurance
+Bold has a 0.18% occurance
+Relaxed has a 0.441% occurance
+Lax has a 0.9780000000000001% occurance
+Modest has a 11.667% occurance
+Mild has a 16.418% occurance
+Quiet has a 23.902% occurance
+Rash has a 46.271% occurance
+**('Gold', (20, 21, 22, 23)):**
+Calm has a 8.574% occurance
+Gentle has a 15.501999999999999% occurance
+Sassy has a 27.883000000000003% occurance
+Careful has a 48.041% occurance
+**('Gold', (1, 2, 3, 4, 16, 17, 19)):**
+Lonely has a 0.059000000000000004% occurance
+Brave has a 0.08% occurance
+Adamant has a 0.11199999999999999% occurance
+Naughty has a 0.155% occurance
+Mild has a 19.295% occurance
+Quiet has a 27.682000000000002% occurance
+Rash has a 52.617000000000004% occurance
+**('Grey', (3, 4, 5, 8, 9, 10, 11, 13, 14)):**
+Adamant has a 0.979% occurance
+Naughty has a 1.308% occurance
+Bold has a 1.9789999999999999% occurance
+Impish has a 5.444% occurance
+Lax has a 7.467% occurance
+Timid has a 10.405000000000001% occurance
+Hasty has a 14.11% occurance
+Jolly has a 25.258000000000003% occurance
+Naive has a 33.050000000000004% occurance
+**('Grey', (1, 2, 3, 11, 13, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Hasty has a 0.078% occurance
+Jolly has a 0.212% occurance
+Gentle has a 17.076% occurance
+Sassy has a 30.415999999999997% occurance
+Careful has a 52.217% occurance
+**('Purple', (1, 3, 4, 11, 13, 14)):**
+Lonely has a 1.168% occurance
+Adamant has a 1.735% occurance
+Naughty has a 2.194% occurance
+Hasty has a 19.121% occurance
+Jolly has a 33.182% occurance
+Naive has a 42.6% occurance
+**('Grey', (1, 2, 3, 16, 17, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Mild has a 1.005% occurance
+Quiet has a 1.693% occurance
+Gentle has a 16.616% occurance
+Sassy has a 29.656% occurance
+Careful has a 51.028% occurance
+**('Grey', (1, 3, 10, 11, 13, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.001% occurance
+Timid has a 0.021% occurance
+Hasty has a 0.053% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.549% occurance
+Gentle has a 15.465000000000002% occurance
+Sassy has a 27.826% occurance
+Careful has a 47.941% occurance
+**('White', (3, 8, 10, 11, 13, 14, 23)):**
+Adamant has a 0.025% occurance
+Impish has a 0.198% occurance
+Timid has a 0.45199999999999996% occurance
+Hasty has a 0.6910000000000001% occurance
+Jolly has a 1.5970000000000002% occurance
+Naive has a 2.371% occurance
+Careful has a 94.666% occurance
+**('Red', (1, 2, 3, 4)):**
+Lonely has a 22.169% occurance
+Brave has a 22.911% occurance
+Adamant has a 25.659% occurance
+Naughty has a 29.261% occurance
+**('Grey', (5, 7, 9, 10, 14, 15, 16, 17, 19)):**
+Bold has a 0.135% occurance
+Relaxed has a 0.357% occurance
+Lax has a 0.814% occurance
+Timid has a 1.3010000000000002% occurance
+Naive has a 6.992% occurance
+Modest has a 10.607999999999999% occurance
+Mild has a 14.976999999999999% occurance
+Quiet has a 21.856% occurance
+Rash has a 42.96% occurance
+**('Grey', (1, 2, 3, 4, 16, 17, 19, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.002% occurance
+Adamant has a 0.004% occurance
+Naughty has a 0.002% occurance
+Mild has a 2.8129999999999997% occurance
+Quiet has a 4.388% occurance
+Rash has a 11.912% occurance
+Gentle has a 31.342% occurance
+Sassy has a 49.537% occurance
+**('Grey', (5, 8, 10, 11, 13, 14, 20, 23)):**
+Bold has a 0.011000000000000001% occurance
+Impish has a 0.076% occurance
+Timid has a 0.201% occurance
+Hasty has a 0.32% occurance
+Jolly has a 0.819% occurance
+Naive has a 1.265% occurance
+Calm has a 18.989% occurance
+Careful has a 78.319% occurance
+**('White', (4, 5, 7, 8, 9, 14, 19)):**
+Naughty has a 0.525% occurance
+Bold has a 0.8210000000000001% occurance
+Relaxed has a 1.6480000000000001% occurance
+Impish has a 2.339% occurance
+Lax has a 3.213% occurance
+Naive has a 16.686999999999998% occurance
+Rash has a 74.767% occurance
+**('White', (5, 10, 15, 20)):**
+Bold has a 0.49899999999999994% occurance
+Timid has a 3.0700000000000003% occurance
+Modest has a 16.362% occurance
+Calm has a 80.069% occurance
+**('Grey', (1, 2, 15, 16, 17, 20, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Modest has a 1.413% occurance
+Mild has a 2.334% occurance
+Quiet has a 3.7969999999999997% occurance
+Calm has a 17.492% occurance
+Gentle has a 28.858% occurance
+Sassy has a 46.106% occurance
+**('Purple', (1, 2, 3, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Gentle has a 17.138% occurance
+Sassy has a 30.5% occurance
+Careful has a 52.35999999999999% occurance
+**('Grey', (5, 9, 10, 11, 13, 14, 15, 19)):**
+Bold has a 0.32399999999999995% occurance
+Lax has a 1.696% occurance
+Timid has a 2.521% occurance
+Hasty has a 3.749% occurance
+Jolly has a 7.806% occurance
+Naive has a 11.068999999999999% occurance
+Modest has a 15.814% occurance
+Rash has a 57.021% occurance
+**('Grey', (10, 11, 14, 15, 16, 17, 19, 20, 21)):**
+Timid has a 0.183% occurance
+Hasty has a 0.345% occurance
+Naive has a 1.509% occurance
+Modest has a 2.609% occurance
+Mild has a 4.242% occurance
+Quiet has a 6.628% occurance
+Rash has a 17.126% occurance
+Calm has a 26.627000000000002% occurance
+Gentle has a 40.731% occurance
+**('Grey', (5, 7, 9, 15, 16, 17, 19, 20, 22)):**
+Bold has a 0.006% occurance
+Relaxed has a 0.046% occurance
+Lax has a 0.08099999999999999% occurance
+Modest has a 2.0500000000000003% occurance
+Mild has a 3.304% occurance
+Quiet has a 5.357% occurance
+Rash has a 13.777000000000001% occurance
+Calm has a 21.903% occurance
+Sassy has a 53.476% occurance
+**('Gold', (15, 16, 17, 20, 21, 22)):**
+Modest has a 1.413% occurance
+Mild has a 2.334% occurance
+Quiet has a 3.7969999999999997% occurance
+Calm has a 17.492% occurance
+Gentle has a 28.858% occurance
+Sassy has a 46.106% occurance
+**('White', (5, 10, 15, 16, 17, 19, 20)):**
+Bold has a 0.04% occurance
+Timid has a 0.614% occurance
+Modest has a 5.729% occurance
+Mild has a 8.677% occurance
+Quiet has a 13.139999999999999% occurance
+Rash has a 29.238999999999997% occurance
+Calm has a 42.561% occurance
+**('Gold', (1, 2, 3, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Gentle has a 17.138% occurance
+Sassy has a 30.5% occurance
+Careful has a 52.35999999999999% occurance
+**('Grey', (2, 4, 7, 9, 17, 19)):**
+Brave has a 0.157% occurance
+Naughty has a 0.292% occurance
+Relaxed has a 1.036% occurance
+Lax has a 2.141% occurance
+Quiet has a 33.847% occurance
+Rash has a 62.527% occurance
+**('White', (1, 11, 16, 21)):**
+Lonely has a 0.066% occurance
+Hasty has a 2.474% occurance
+Mild has a 14.761% occurance
+Gentle has a 82.699% occurance
+**('Grey', (5, 7, 8, 10, 13, 20, 22, 23)):**
+Bold has a 0.003% occurance
+Relaxed has a 0.013999999999999999% occurance
+Impish has a 0.018000000000000002% occurance
+Timid has a 0.045% occurance
+Jolly has a 0.246% occurance
+Calm has a 10.831% occurance
+Sassy has a 32.723% occurance
+Careful has a 56.120000000000005% occurance
+**('Grey', (1, 3, 4, 10, 11, 13, 14, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.003% occurance
+Naughty has a 0.006999999999999999% occurance
+Timid has a 0.145% occurance
+Hasty has a 0.233% occurance
+Jolly has a 0.613% occurance
+Naive has a 0.97% occurance
+Gentle has a 26.489% occurance
+Careful has a 71.54% occurance
+**('Grey', (2, 4, 5, 7, 9, 15, 17, 19)):**
+Brave has a 0.083% occurance
+Naughty has a 0.168% occurance
+Bold has a 0.311% occurance
+Relaxed has a 0.698% occurance
+Lax has a 1.489% occurance
+Modest has a 14.48% occurance
+Quiet has a 28.674% occurance
+Rash has a 54.096999999999994% occurance
+**('Grey', (1, 2, 3, 4, 7, 8, 9, 17, 19)):**
+Lonely has a 0.109% occurance
+Brave has a 0.14300000000000002% occurance
+Adamant has a 0.22200000000000003% occurance
+Naughty has a 0.271% occurance
+Relaxed has a 0.997% occurance
+Impish has a 1.4080000000000001% occurance
+Lax has a 2.069% occurance
+Quiet has a 33.189% occurance
+Rash has a 61.592% occurance
+**('White', (2, 5, 7, 8, 9, 17, 22)):**
+Brave has a 0.032% occurance
+Bold has a 0.099% occurance
+Relaxed has a 0.293% occurance
+Impish has a 0.38% occurance
+Lax has a 0.575% occurance
+Quiet has a 12.809999999999999% occurance
+Sassy has a 85.811% occurance
+**('Gold', (5, 7, 9, 15, 17, 19)):**
+Bold has a 0.312% occurance
+Relaxed has a 0.705% occurance
+Lax has a 1.504% occurance
+Modest has a 14.519000000000002% occurance
+Quiet has a 28.749999999999996% occurance
+Rash has a 54.21% occurance
+**('Gold', (15, 16, 17, 20, 21, 22, 23)):**
+Modest has a 0.424% occurance
+Mild has a 0.796% occurance
+Quiet has a 1.3860000000000001% occurance
+Calm has a 8.357000000000001% occurance
+Gentle has a 15.049000000000001% occurance
+Sassy has a 27.139999999999997% occurance
+Careful has a 46.848% occurance
+**('Grey', (2, 4, 7, 9, 15, 16, 17, 19)):**
+Brave has a 0.047% occurance
+Naughty has a 0.096% occurance
+Relaxed has a 0.44200000000000006% occurance
+Lax has a 0.9820000000000001% occurance
+Modest has a 11.690000000000001% occurance
+Mild has a 16.462% occurance
+Quiet has a 23.943% occurance
+Rash has a 46.338% occurance
+**('Grey', (5, 7, 15, 16, 17, 19, 20, 21, 22)):**
+Bold has a 0.005% occurance
+Relaxed has a 0.02% occurance
+Modest has a 1.141% occurance
+Mild has a 1.9609999999999999% occurance
+Quiet has a 3.1719999999999997% occurance
+Rash has a 9.535% occurance
+Calm has a 15.790000000000001% occurance
+Gentle has a 26.203% occurance
+Sassy has a 42.173% occurance
+**('Grey', (5, 9, 10, 11, 14, 15, 16, 19)):**
+Bold has a 0.23700000000000002% occurance
+Lax has a 1.2970000000000002% occurance
+Timid has a 1.968% occurance
+Hasty has a 3.0300000000000002% occurance
+Naive has a 9.386999999999999% occurance
+Modest has a 13.725000000000001% occurance
+Mild has a 19.002% occurance
+Rash has a 51.354% occurance
+**('Gold', (5, 7, 9, 15, 16, 17, 19)):**
+Bold has a 0.18% occurance
+Relaxed has a 0.443% occurance
+Lax has a 0.9820000000000001% occurance
+Modest has a 11.690000000000001% occurance
+Mild has a 16.436999999999998% occurance
+Quiet has a 23.946% occurance
+Rash has a 46.322% occurance
+**('Olive', (2, 3, 4, 5, 7, 8, 9)):**
+Brave has a 5.438% occurance
+Adamant has a 6.715% occurance
+Naughty has a 8.34% occurance
+Bold has a 10.806000000000001% occurance
+Relaxed has a 17.778% occurance
+Impish has a 22.491% occurance
+Lax has a 28.432000000000002% occurance
+**('Grey', (3, 4, 5, 7, 8, 9, 10, 13, 14)):**
+Adamant has a 1.197% occurance
+Naughty has a 1.611% occurance
+Bold has a 2.378% occurance
+Relaxed has a 4.591% occurance
+Impish has a 6.263000000000001% occurance
+Lax has a 8.465% occurance
+Timid has a 11.676% occurance
+Jolly has a 27.656999999999996% occurance
+Naive has a 36.162% occurance
+**('Grey', (5, 8, 9, 10, 13, 14, 20, 23)):**
+Bold has a 0.011000000000000001% occurance
+Impish has a 0.076% occurance
+Lax has a 0.10200000000000001% occurance
+Timid has a 0.202% occurance
+Jolly has a 0.8250000000000001% occurance
+Naive has a 1.265% occurance
+Calm has a 19.041% occurance
+Careful has a 78.47800000000001% occurance
+**('Grey', (1, 2, 4, 7, 9, 16, 17, 19)):**
+Lonely has a 0.047% occurance
+Brave has a 0.075% occurance
+Naughty has a 0.14200000000000002% occurance
+Relaxed has a 0.61% occurance
+Lax has a 1.322% occurance
+Mild has a 18.877% occurance
+Quiet has a 27.163999999999998% occurance
+Rash has a 51.763000000000005% occurance
+**('Grey', (2, 3, 7, 8, 20, 21, 22, 23)):**
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Impish has a 0.006999999999999999% occurance
+Calm has a 8.573% occurance
+Gentle has a 15.498999999999999% occurance
+Sassy has a 27.88% occurance
+Careful has a 48.033% occurance
+**('Light Blue', (10, 11, 13, 20, 21, 22, 23)):**
+Timid has a 0.021% occurance
+Hasty has a 0.053% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.549% occurance
+Gentle has a 15.465000000000002% occurance
+Sassy has a 27.826% occurance
+Careful has a 47.942% occurance
+**('Brown', (5, 8, 9, 10, 13, 14)):**
+Bold has a 2.691% occurance
+Impish has a 6.880999999999999% occurance
+Lax has a 9.267% occurance
+Timid has a 12.745000000000001% occurance
+Jolly has a 29.766% occurance
+Naive has a 38.65% occurance
+**('White', (1, 2, 3, 4, 11, 16, 21)):**
+Lonely has a 0.063% occurance
+Brave has a 0.076% occurance
+Adamant has a 0.13% occurance
+Naughty has a 0.153% occurance
+Hasty has a 2.437% occurance
+Mild has a 14.679% occurance
+Gentle has a 82.462% occurance
+**('Indigo', (10, 11, 14, 15, 16, 17, 19)):**
+Timid has a 1.284% occurance
+Hasty has a 2.031% occurance
+Naive has a 6.931% occurance
+Modest has a 10.507% occurance
+Mild has a 14.854999999999999% occurance
+Quiet has a 21.666% occurance
+Rash has a 42.726% occurance
+**('Grey', (2, 3, 5, 7, 8, 20, 22, 23)):**
+Brave has a 0.001% occurance
+Adamant has a 0.001% occurance
+Bold has a 0.003% occurance
+Relaxed has a 0.015% occurance
+Impish has a 0.018000000000000002% occurance
+Calm has a 10.873% occurance
+Sassy has a 32.811% occurance
+Careful has a 56.27799999999999% occurance
+**('Grey', (1, 3, 4, 11, 13, 14, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.003% occurance
+Naughty has a 0.008% occurance
+Hasty has a 0.23500000000000001% occurance
+Jolly has a 0.614% occurance
+Naive has a 0.971% occurance
+Gentle has a 26.529000000000003% occurance
+Careful has a 71.64% occurance
+**('Grey', (2, 3, 5, 7, 8, 9, 20, 22, 23)):**
+Brave has a 0.001% occurance
+Adamant has a 0.001% occurance
+Bold has a 0.003% occurance
+Relaxed has a 0.015% occurance
+Impish has a 0.018000000000000002% occurance
+Lax has a 0.021% occurance
+Calm has a 10.870000000000001% occurance
+Sassy has a 32.806000000000004% occurance
+Careful has a 56.265% occurance
+**('Grey', (2, 3, 7, 8, 22, 23)):**
+Brave has a 0.001% occurance
+Adamant has a 0.002% occurance
+Relaxed has a 0.025% occurance
+Impish has a 0.036000000000000004% occurance
+Sassy has a 36.985% occurance
+Careful has a 62.951% occurance
+**('Grey', (5, 7, 8, 9, 10, 13, 20, 23)):**
+Bold has a 0.012% occurance
+Relaxed has a 0.06% occurance
+Impish has a 0.082% occurance
+Lax has a 0.109% occurance
+Timid has a 0.212% occurance
+Jolly has a 0.8540000000000001% occurance
+Calm has a 19.362% occurance
+Careful has a 79.309% occurance
+**('Grey', (5, 7, 15, 16, 17, 19, 20, 22)):**
+Bold has a 0.006% occurance
+Relaxed has a 0.046% occurance
+Modest has a 2.053% occurance
+Mild has a 3.308% occurance
+Quiet has a 5.365% occurance
+Rash has a 13.786999999999999% occurance
+Calm has a 21.922% occurance
+Sassy has a 53.513% occurance
+**('Grey', (5, 7, 8, 15, 17, 20, 22, 23)):**
+Bold has a 0.003% occurance
+Relaxed has a 0.013% occurance
+Impish has a 0.016% occurance
+Modest has a 0.688% occurance
+Quiet has a 2.084% occurance
+Calm has a 10.514999999999999% occurance
+Sassy has a 31.895% occurance
+Careful has a 54.786% occurance
+**('Purple', (1, 2, 4, 16, 17, 19)):**
+Lonely has a 0.059000000000000004% occurance
+Brave has a 0.08% occurance
+Naughty has a 0.155% occurance
+Mild has a 19.314% occurance
+Quiet has a 27.72% occurance
+Rash has a 52.672% occurance
+**('Grey', (3, 4, 8, 9, 10, 11, 13, 14)):**
+Adamant has a 1.019% occurance
+Naughty has a 1.344% occurance
+Impish has a 5.572% occurance
+Lax has a 7.635% occurance
+Timid has a 10.636% occurance
+Hasty has a 14.433000000000002% occurance
+Jolly has a 25.763% occurance
+Naive has a 33.598% occurance
+**('Grey', (2, 3, 4, 7, 8, 9, 13, 14)):**
+Brave has a 1.1480000000000001% occurance
+Adamant has a 1.583% occurance
+Naughty has a 2.08% occurance
+Relaxed has a 5.568% occurance
+Impish has a 7.422% occurance
+Lax has a 9.983% occurance
+Jolly has a 31.349% occurance
+Naive has a 40.867% occurance
+**('Grey', (1, 2, 4, 16, 17, 19, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.002% occurance
+Naughty has a 0.002% occurance
+Mild has a 2.814% occurance
+Quiet has a 4.388% occurance
+Rash has a 11.912% occurance
+Gentle has a 31.343% occurance
+Sassy has a 49.539% occurance
+**('White', (3, 8, 13, 20, 21, 22, 23)):**
+Adamant has a 0.001% occurance
+Impish has a 0.006999999999999999% occurance
+Jolly has a 0.14400000000000002% occurance
+Calm has a 8.562% occurance
+Gentle has a 15.476% occurance
+Sassy has a 27.839999999999996% occurance
+Careful has a 47.97% occurance
+**('Grey', (5, 8, 9, 10, 11, 13, 14, 15, 19)):**
+Bold has a 0.318% occurance
+Impish has a 1.093% occurance
+Lax has a 1.657% occurance
+Timid has a 2.478% occurance
+Hasty has a 3.698% occurance
+Jolly has a 7.695% occurance
+Naive has a 10.918% occurance
+Modest has a 15.601999999999999% occurance
+Rash has a 56.541% occurance
+**('Light Blue', (5, 7, 8, 20, 22, 23)):**
+Bold has a 0.003% occurance
+Relaxed has a 0.015% occurance
+Impish has a 0.018000000000000002% occurance
+Calm has a 10.873% occurance
+Sassy has a 32.811% occurance
+Careful has a 56.279999999999994% occurance
+**('Grey', (1, 2, 3, 4, 8, 9, 11, 13, 14)):**
+Lonely has a 0.741% occurance
+Brave has a 0.876% occurance
+Adamant has a 1.234% occurance
+Naughty has a 1.6119999999999999% occurance
+Impish has a 6.2909999999999995% occurance
+Lax has a 8.569% occurance
+Hasty has a 15.928% occurance
+Jolly has a 28.098% occurance
+Naive has a 36.651% occurance
+**('Indigo', (10, 11, 14, 15, 16, 19)):**
+Timid has a 2.023% occurance
+Hasty has a 3.096% occurance
+Naive has a 9.565% occurance
+Modest has a 13.975000000000001% occurance
+Mild has a 19.336000000000002% occurance
+Rash has a 52.005% occurance
+**('White', (1, 11, 15, 16, 17, 19, 21)):**
+Lonely has a 0.003% occurance
+Hasty has a 0.733% occurance
+Modest has a 4.603% occurance
+Mild has a 6.984% occurance
+Quiet has a 10.469000000000001% occurance
+Rash has a 24.035% occurance
+Gentle has a 53.173% occurance
+**('Grey', (5, 7, 15, 16, 17, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Modest has a 0.424% occurance
+Mild has a 0.796% occurance
+Quiet has a 1.3860000000000001% occurance
+Calm has a 8.357000000000001% occurance
+Gentle has a 15.046999999999999% occurance
+Sassy has a 27.139000000000003% occurance
+Careful has a 46.843% occurance
+**('Grey', (2, 3, 4, 5, 7, 8, 9, 13, 14)):**
+Brave has a 1.073% occurance
+Adamant has a 1.4909999999999999% occurance
+Naughty has a 1.991% occurance
+Bold has a 2.88% occurance
+Relaxed has a 5.364% occurance
+Impish has a 7.165000000000001% occurance
+Lax has a 9.633% occurance
+Jolly has a 30.543% occurance
+Naive has a 39.86% occurance
+**('Grey', (1, 3, 4, 8, 9, 10, 11, 13, 14)):**
+Lonely has a 0.585% occurance
+Adamant has a 1.012% occurance
+Naughty has a 1.3299999999999998% occurance
+Impish has a 5.539000000000001% occurance
+Lax has a 7.579% occurance
+Timid has a 10.569% occurance
+Hasty has a 14.335999999999999% occurance
+Jolly has a 25.613000000000003% occurance
+Naive has a 33.437% occurance
+**('White', (1, 2, 3, 4, 9, 14, 19)):**
+Lonely has a 0.267% occurance
+Brave has a 0.326% occurance
+Adamant has a 0.466% occurance
+Naughty has a 0.598% occurance
+Lax has a 3.4750000000000005% occurance
+Naive has a 17.553% occurance
+Rash has a 77.315% occurance
+**('Gold', (1, 3, 4, 11, 13, 14)):**
+Lonely has a 1.168% occurance
+Adamant has a 1.735% occurance
+Naughty has a 2.194% occurance
+Hasty has a 19.121% occurance
+Jolly has a 33.182% occurance
+Naive has a 42.6% occurance
+**('Purple', (1, 2, 3, 4, 11, 13, 14)):**
+Lonely has a 1.117% occurance
+Brave has a 1.2710000000000001% occurance
+Adamant has a 1.6840000000000002% occurance
+Naughty has a 2.146% occurance
+Hasty has a 18.853% occurance
+Jolly has a 32.779% occurance
+Naive has a 42.15% occurance
+**('Olive', (5, 7, 8, 9, 10, 13, 14)):**
+Bold has a 2.4619999999999997% occurance
+Relaxed has a 4.755% occurance
+Impish has a 6.492000000000001% occurance
+Lax has a 8.753% occurance
+Timid has a 12.073% occurance
+Jolly has a 28.416000000000004% occurance
+Naive has a 37.049% occurance
+**('Grey', (1, 2, 15, 16, 17, 19, 20, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Modest has a 1.141% occurance
+Mild has a 1.9619999999999997% occurance
+Quiet has a 3.1719999999999997% occurance
+Rash has a 9.536% occurance
+Calm has a 15.795% occurance
+Gentle has a 26.212999999999997% occurance
+Sassy has a 42.181000000000004% occurance
+**('Gold', (5, 7, 8, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Impish has a 0.006999999999999999% occurance
+Calm has a 8.573% occurance
+Gentle has a 15.498999999999999% occurance
+Sassy has a 27.88% occurance
+Careful has a 48.033% occurance
+**('Grey', (1, 3, 10, 11, 13, 14, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.003% occurance
+Timid has a 0.145% occurance
+Hasty has a 0.233% occurance
+Jolly has a 0.613% occurance
+Naive has a 0.97% occurance
+Gentle has a 26.491999999999997% occurance
+Careful has a 71.544% occurance
+**('Grey', (1, 2, 3, 4, 7, 9, 17, 19)):**
+Lonely has a 0.121% occurance
+Brave has a 0.156% occurance
+Adamant has a 0.234% occurance
+Naughty has a 0.28800000000000003% occurance
+Relaxed has a 1.028% occurance
+Lax has a 2.1270000000000002% occurance
+Quiet has a 33.701% occurance
+Rash has a 62.34499999999999% occurance
+**('Grey', (5, 9, 10, 14, 15, 16, 17, 19)):**
+Bold has a 0.136% occurance
+Lax has a 0.823% occurance
+Timid has a 1.308% occurance
+Naive has a 7.018000000000001% occurance
+Modest has a 10.663% occurance
+Mild has a 15.036% occurance
+Quiet has a 21.923000000000002% occurance
+Rash has a 43.092999999999996% occurance
+**('Light Blue', (15, 16, 17, 20, 21, 22, 23)):**
+Modest has a 0.424% occurance
+Mild has a 0.796% occurance
+Quiet has a 1.3860000000000001% occurance
+Calm has a 8.357000000000001% occurance
+Gentle has a 15.049000000000001% occurance
+Sassy has a 27.139999999999997% occurance
+Careful has a 46.848% occurance
+**('Gold', (2, 3, 4, 5, 7, 8, 9)):**
+Brave has a 5.438% occurance
+Adamant has a 6.715% occurance
+Naughty has a 8.34% occurance
+Bold has a 10.806000000000001% occurance
+Relaxed has a 17.778% occurance
+Impish has a 22.491% occurance
+Lax has a 28.432000000000002% occurance
+**('Grey', (10, 11, 15, 16, 17, 20, 21, 22, 23)):**
+Timid has a 0.02% occurance
+Hasty has a 0.046% occurance
+Modest has a 0.424% occurance
+Mild has a 0.796% occurance
+Quiet has a 1.384% occurance
+Calm has a 8.344% occurance
+Gentle has a 15.038000000000002% occurance
+Sassy has a 27.128000000000004% occurance
+Careful has a 46.82% occurance
+**('Gold', (5, 8, 9, 10, 11, 13, 14)):**
+Bold has a 2.052% occurance
+Impish has a 5.59% occurance
+Lax has a 7.667% occurance
+Timid has a 10.689% occurance
+Hasty has a 14.457% occurance
+Jolly has a 25.833000000000002% occurance
+Naive has a 33.711999999999996% occurance
+**('White', (2, 7, 17, 20, 21, 22, 23)):**
+Brave has a 0.0% occurance
+Relaxed has a 0.006999999999999999% occurance
+Quiet has a 1.407% occurance
+Calm has a 8.455% occurance
+Gentle has a 15.251999999999999% occurance
+Sassy has a 27.465% occurance
+Careful has a 47.414% occurance
+**('Grey', (10, 11, 13, 14, 15, 16, 19, 20, 21)):**
+Timid has a 0.22% occurance
+Hasty has a 0.392% occurance
+Jolly has a 1.0699999999999998% occurance
+Naive has a 1.6820000000000002% occurance
+Modest has a 2.855% occurance
+Mild has a 4.569999999999999% occurance
+Rash has a 18.184% occurance
+Calm has a 28.164% occurance
+Gentle has a 42.863% occurance
+**('Grey', (5, 7, 8, 9, 15, 17, 20, 22)):**
+Bold has a 0.025% occurance
+Relaxed has a 0.089% occurance
+Impish has a 0.121% occurance
+Lax has a 0.163% occurance
+Modest has a 2.9669999999999996% occurance
+Quiet has a 7.21% occurance
+Calm has a 26.541999999999998% occurance
+Sassy has a 62.883% occurance
+**('Gold', (15, 16, 17, 19, 20, 21, 22)):**
+Modest has a 1.141% occurance
+Mild has a 1.9619999999999997% occurance
+Quiet has a 3.1719999999999997% occurance
+Rash has a 9.536% occurance
+Calm has a 15.795% occurance
+Gentle has a 26.212999999999997% occurance
+Sassy has a 42.181000000000004% occurance
+**('Grey', (10, 11, 15, 16, 20, 21, 22, 23)):**
+Timid has a 0.021% occurance
+Hasty has a 0.049% occurance
+Modest has a 0.439% occurance
+Mild has a 0.807% occurance
+Calm has a 8.456% occurance
+Gentle has a 15.274% occurance
+Sassy has a 27.528999999999996% occurance
+Careful has a 47.425% occurance
+**('Grey', (5, 8, 10, 13, 20, 23)):**
+Bold has a 0.012% occurance
+Impish has a 0.082% occurance
+Timid has a 0.213% occurance
+Jolly has a 0.857% occurance
+Calm has a 19.406000000000002% occurance
+Careful has a 79.43% occurance
+**('Grey', (5, 7, 15, 17, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Modest has a 0.426% occurance
+Quiet has a 1.399% occurance
+Calm has a 8.42% occurance
+Gentle has a 15.184000000000001% occurance
+Sassy has a 27.345000000000002% occurance
+Careful has a 47.217999999999996% occurance
+**('Grey', (1, 2, 3, 4, 8, 9, 13, 14)):**
+Lonely has a 1.068% occurance
+Brave has a 1.254% occurance
+Adamant has a 1.744% occurance
+Naughty has a 2.258% occurance
+Impish has a 7.840999999999999% occurance
+Lax has a 10.556000000000001% occurance
+Jolly has a 32.767% occurance
+Naive has a 42.512% occurance
+**('Black', (10, 11, 13, 14)):**
+Timid has a 12.872% occurance
+Hasty has a 17.416% occurance
+Jolly has a 30.55% occurance
+Naive has a 39.162% occurance
+**('Grey', (5, 7, 8, 9, 10, 14, 15, 17, 19)):**
+Bold has a 0.217% occurance
+Relaxed has a 0.516% occurance
+Impish has a 0.748% occurance
+Lax has a 1.16% occurance
+Timid has a 1.7309999999999999% occurance
+Naive has a 8.543000000000001% occurance
+Modest has a 12.687999999999999% occurance
+Quiet has a 25.430999999999997% occurance
+Rash has a 48.966% occurance
+**('Grey', (10, 11, 15, 16, 17, 19, 20, 21, 22)):**
+Timid has a 0.047% occurance
+Hasty has a 0.117% occurance
+Modest has a 1.138% occurance
+Mild has a 1.955% occurance
+Quiet has a 3.1649999999999996% occurance
+Rash has a 9.523% occurance
+Calm has a 15.773000000000001% occurance
+Gentle has a 26.162999999999997% occurance
+Sassy has a 42.119% occurance
+**('Grey', (5, 7, 8, 9, 10, 14, 15, 19)):**
+Bold has a 0.439% occurance
+Relaxed has a 0.964% occurance
+Impish has a 1.403% occurance
+Lax has a 2.0500000000000003% occurance
+Timid has a 2.994% occurance
+Naive has a 12.531% occurance
+Modest has a 17.776% occurance
+Rash has a 61.843% occurance
+**('Grey', (1, 3, 10, 11, 13, 20, 21, 23)):**
+Lonely has a 0.0% occurance
+Adamant has a 0.002% occurance
+Timid has a 0.089% occurance
+Hasty has a 0.145% occurance
+Jolly has a 0.385% occurance
+Calm has a 13.622% occurance
+Gentle has a 22.651% occurance
+Careful has a 63.105999999999995% occurance
+**('Grey', (1, 2, 15, 16, 17, 19, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.002% occurance
+Modest has a 1.6840000000000002% occurance
+Mild has a 2.734% occurance
+Quiet has a 4.3% occurance
+Rash has a 11.699% occurance
+Gentle has a 30.814000000000004% occurance
+Sassy has a 48.766999999999996% occurance
+**('Grey', (1, 2, 3, 4, 7, 8, 22, 23)):**
+Lonely has a 0.001% occurance
+Brave has a 0.001% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.004% occurance
+Relaxed has a 0.025% occurance
+Impish has a 0.036000000000000004% occurance
+Sassy has a 36.982% occurance
+Careful has a 62.949% occurance
+**('Grey', (10, 11, 14, 15, 16, 19, 20, 21)):**
+Timid has a 0.22399999999999998% occurance
+Hasty has a 0.39899999999999997% occurance
+Naive has a 1.706% occurance
+Modest has a 2.8979999999999997% occurance
+Mild has a 4.636% occurance
+Rash has a 18.401% occurance
+Calm has a 28.455000000000002% occurance
+Gentle has a 43.281% occurance
+**('Gold', (10, 11, 13, 14)):**
+Timid has a 12.872% occurance
+Hasty has a 17.416% occurance
+Jolly has a 30.55% occurance
+Naive has a 39.162% occurance
+**('Grey', (2, 3, 4, 7, 8, 9, 22, 23)):**
+Brave has a 0.001% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.004% occurance
+Relaxed has a 0.025% occurance
+Impish has a 0.036000000000000004% occurance
+Lax has a 0.048% occurance
+Sassy has a 36.967% occurance
+Careful has a 62.917% occurance
+**('Grey', (1, 2, 4, 15, 16, 17, 19, 21, 22)):**
+Lonely has a 0.0% occurance
+Brave has a 0.002% occurance
+Naughty has a 0.002% occurance
+Modest has a 1.6840000000000002% occurance
+Mild has a 2.734% occurance
+Quiet has a 4.299% occurance
+Rash has a 11.699% occurance
+Gentle has a 30.814000000000004% occurance
+Sassy has a 48.766% occurance
+**('Grey', (1, 2, 4, 11, 14, 15, 16, 17, 19)):**
+Lonely has a 0.02% occurance
+Brave has a 0.036000000000000004% occurance
+Naughty has a 0.073% occurance
+Hasty has a 2.068% occurance
+Naive has a 7.0440000000000005% occurance
+Modest has a 10.641% occurance
+Mild has a 15.018999999999998% occurance
+Quiet has a 21.941% occurance
+Rash has a 43.158% occurance
+**('Purple', (1, 2, 3, 4, 7, 8, 9)):**
+Lonely has a 5.364% occurance
+Brave has a 5.945% occurance
+Adamant has a 7.260999999999999% occurance
+Naughty has a 8.896999999999998% occurance
+Relaxed has a 18.770999999999997% occurance
+Impish has a 23.829% occurance
+Lax has a 29.933% occurance
+**('Purple', (2, 3, 4, 7, 8, 9)):**
+Brave has a 6.446000000000001% occurance
+Adamant has a 7.797999999999999% occurance
+Naughty has a 9.554% occurance
+Relaxed has a 19.8% occurance
+Impish has a 25.018% occurance
+Lax has a 31.384% occurance
+**('Grey', (1, 4, 11, 14, 16, 19)):**
+Lonely has a 0.09% occurance
+Naughty has a 0.26% occurance
+Hasty has a 4.202% occurance
+Naive has a 12.016% occurance
+Mild has a 23.174% occurance
+Rash has a 60.258% occurance
+**('Gold', (1, 3, 4, 10, 11, 13, 14)):**
+Lonely has a 0.849% occurance
+Adamant has a 1.328% occurance
+Naughty has a 1.73% occurance
+Timid has a 12.281% occurance
+Hasty has a 16.668% occurance
+Jolly has a 29.315% occurance
+Naive has a 37.829% occurance
+**('Grey', (1, 2, 16, 17, 21, 22)):**
+Lonely has a 0.002% occurance
+Brave has a 0.002% occurance
+Mild has a 3.53% occurance
+Quiet has a 5.455% occurance
+Gentle has a 35.508% occurance
+Sassy has a 55.503% occurance
+**('Grey', (1, 2, 16, 17, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Mild has a 0.804% occurance
+Quiet has a 1.393% occurance
+Calm has a 8.392% occurance
+Gentle has a 15.116% occurance
+Sassy has a 27.256000000000004% occurance
+Careful has a 47.038999999999994% occurance
+**('Pink', (10, 11, 13, 14)):**
+Timid has a 12.872% occurance
+Hasty has a 17.416% occurance
+Jolly has a 30.55% occurance
+Naive has a 39.162% occurance
+**('Yellow', (5, 7, 8, 9)):**
+Bold has a 14.152000000000001% occurance
+Relaxed has a 22.570999999999998% occurance
+Impish has a 28.244000000000003% occurance
+Lax has a 35.032999999999994% occurance
+**('Grey', (1, 2, 3, 16, 17, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Mild has a 0.804% occurance
+Quiet has a 1.393% occurance
+Calm has a 8.392% occurance
+Gentle has a 15.116% occurance
+Sassy has a 27.256000000000004% occurance
+Careful has a 47.038000000000004% occurance
+**('Brown', (10, 11, 13, 14, 15, 16, 19)):**
+Timid has a 1.812% occurance
+Hasty has a 2.794% occurance
+Jolly has a 6.046% occurance
+Naive has a 8.866% occurance
+Modest has a 12.994% occurance
+Mild has a 18.063000000000002% occurance
+Rash has a 49.425000000000004% occurance
+**('Gold', (5, 7, 8, 9, 10, 13, 14)):**
+Bold has a 2.4619999999999997% occurance
+Relaxed has a 4.755% occurance
+Impish has a 6.492000000000001% occurance
+Lax has a 8.753% occurance
+Timid has a 12.073% occurance
+Jolly has a 28.416000000000004% occurance
+Naive has a 37.049% occurance
+**('Purple', (1, 2, 3, 4, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.002% occurance
+Naughty has a 0.001% occurance
+Gentle has a 17.138% occurance
+Sassy has a 30.499% occurance
+Careful has a 52.35999999999999% occurance
+**('Grey', (5, 7, 15, 16, 17, 20, 21, 22)):**
+Bold has a 0.006999999999999999% occurance
+Relaxed has a 0.023% occurance
+Modest has a 1.4120000000000001% occurance
+Mild has a 2.333% occurance
+Quiet has a 3.7969999999999997% occurance
+Calm has a 17.485999999999997% occurance
+Gentle has a 28.848000000000003% occurance
+Sassy has a 46.094% occurance
+**('Grey', (10, 11, 15, 16, 17, 19, 20, 21)):**
+Timid has a 0.189% occurance
+Hasty has a 0.35500000000000004% occurance
+Modest has a 2.658% occurance
+Mild has a 4.3180000000000005% occurance
+Quiet has a 6.757000000000001% occurance
+Rash has a 17.398% occurance
+Calm has a 27.052% occurance
+Gentle has a 41.272999999999996% occurance
+**('Grey', (5, 9, 10, 11, 14, 15, 16, 17, 19)):**
+Bold has a 0.124% occurance
+Lax has a 0.791% occurance
+Timid has a 1.268% occurance
+Hasty has a 2.0060000000000002% occurance
+Naive has a 6.8500000000000005% occurance
+Modest has a 10.407% occurance
+Mild has a 14.693999999999999% occurance
+Quiet has a 21.471999999999998% occurance
+Rash has a 42.388% occurance
+**('Black', (1, 2, 3, 4)):**
+Lonely has a 22.169% occurance
+Brave has a 22.911% occurance
+Adamant has a 25.659% occurance
+Naughty has a 29.261% occurance
+**('Grey', (5, 9, 10, 14, 15, 19)):**
+Bold has a 0.469% occurance
+Lax has a 2.149% occurance
+Timid has a 3.1419999999999995% occurance
+Naive has a 12.91% occurance
+Modest has a 18.296% occurance
+Rash has a 63.034% occurance
+**('Grey', (2, 4, 5, 7, 8, 9, 17, 19)):**
+Brave has a 0.14100000000000001% occurance
+Naughty has a 0.27% occurance
+Bold has a 0.483% occurance
+Relaxed has a 0.9979999999999999% occurance
+Impish has a 1.398% occurance
+Lax has a 2.057% occurance
+Quiet has a 33.145% occurance
+Rash has a 61.507999999999996% occurance
+**('Grey', (1, 2, 3, 4, 11, 13, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Naughty has a 0.001% occurance
+Hasty has a 0.078% occurance
+Jolly has a 0.212% occurance
+Gentle has a 17.076% occurance
+Sassy has a 30.415% occurance
+Careful has a 52.217% occurance
+**('Grey', (5, 7, 8, 9, 10, 13, 14, 15, 19)):**
+Bold has a 0.337% occurance
+Relaxed has a 0.796% occurance
+Impish has a 1.176% occurance
+Lax has a 1.7489999999999999% occurance
+Timid has a 2.5829999999999997% occurance
+Jolly has a 7.951% occurance
+Naive has a 11.344% occurance
+Modest has a 16.174% occurance
+Rash has a 57.89% occurance
+**('Brown', (1, 3, 4, 10, 11, 13, 14)):**
+Lonely has a 0.849% occurance
+Adamant has a 1.328% occurance
+Naughty has a 1.73% occurance
+Timid has a 12.281% occurance
+Hasty has a 16.668% occurance
+Jolly has a 29.315% occurance
+Naive has a 37.829% occurance
+**('Indigo', (15, 16, 17, 20, 21, 22)):**
+Modest has a 1.413% occurance
+Mild has a 2.334% occurance
+Quiet has a 3.7969999999999997% occurance
+Calm has a 17.492% occurance
+Gentle has a 28.858% occurance
+Sassy has a 46.106% occurance
+**('Indigo', (1, 2, 4, 15, 16, 17, 19)):**
+Lonely has a 0.025% occurance
+Brave has a 0.05% occurance
+Naughty has a 0.10200000000000001% occurance
+Modest has a 11.901% occurance
+Mild has a 16.74% occurance
+Quiet has a 24.267% occurance
+Rash has a 46.915% occurance
+**('Olive', (5, 7, 8, 9, 15, 17, 19)):**
+Bold has a 0.306% occurance
+Relaxed has a 0.6910000000000001% occurance
+Impish has a 0.955% occurance
+Lax has a 1.472% occurance
+Modest has a 14.362% occurance
+Quiet has a 28.449999999999996% occurance
+Rash has a 53.764% occurance
+**('Gold', (1, 2, 3, 20, 21, 22, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.0% occurance
+Adamant has a 0.001% occurance
+Calm has a 8.574% occurance
+Gentle has a 15.501999999999999% occurance
+Sassy has a 27.883000000000003% occurance
+Careful has a 48.04% occurance
+**('Light Blue', (5, 7, 8, 20, 21, 22, 23)):**
+Bold has a 0.001% occurance
+Relaxed has a 0.006999999999999999% occurance
+Impish has a 0.006999999999999999% occurance
+Calm has a 8.573% occurance
+Gentle has a 15.498999999999999% occurance
+Sassy has a 27.88% occurance
+Careful has a 48.033% occurance
+**('Grey', (1, 2, 3, 4, 11, 13, 21, 23)):**
+Lonely has a 0.0% occurance
+Brave has a 0.003% occurance
+Adamant has a 0.003% occurance
+Naughty has a 0.01% occurance
+Hasty has a 0.245% occurance
+Jolly has a 0.633% occurance
+Gentle has a 26.822000000000003% occurance
+Careful has a 72.284% occurance
+**('Gold', (10, 11, 13, 14, 20, 21, 23)):**
+Timid has a 0.087% occurance
+Hasty has a 0.14100000000000001% occurance
+Jolly has a 0.38% occurance
+Naive has a 0.613% occurance
+Calm has a 13.508000000000001% occurance
+Gentle has a 22.506999999999998% occurance
+Careful has a 62.763999999999996% occurance
+**('Grey', (1, 2, 4, 11, 14, 16, 17, 19)):**
+Lonely has a 0.037% occurance
+Brave has a 0.052% occurance
+Naughty has a 0.10300000000000001% occurance
+Hasty has a 2.56% occurance
+Naive has a 8.178% occurance
+Mild has a 16.974% occurance
+Quiet has a 24.54% occurance
+Rash has a 47.556% occurance
+**('Grey', (5, 7, 9, 10, 14, 15, 17, 19)):**
+Bold has a 0.22100000000000003% occurance
+Relaxed has a 0.525% occurance
+Lax has a 1.1780000000000002% occurance
+Timid has a 1.756% occurance
+Naive has a 8.634% occurance
+Modest has a 12.803999999999998% occurance
+Quiet has a 25.624999999999996% occurance
+Rash has a 49.257% occurance
+**('Indigo', (5, 7, 9, 15, 17, 19)):**
+Bold has a 0.312% occurance
+Relaxed has a 0.705% occurance
+Lax has a 1.504% occurance
+Modest has a 14.519000000000002% occurance
+Quiet has a 28.749999999999996% occurance
+Rash has a 54.21% occurance
+**('Gold', (1, 2, 3, 4, 11, 13, 14)):**
+Lonely has a 1.117% occurance
+Brave has a 1.2710000000000001% occurance
+Adamant has a 1.6840000000000002% occurance
+Naughty has a 2.146% occurance
+Hasty has a 18.853% occurance
+Jolly has a 32.779% occurance
+Naive has a 42.15% occurance
+**('Grey', (2, 3, 4, 7, 8, 9, 17, 19)):**
+Brave has a 0.14300000000000002% occurance
+Adamant has a 0.22200000000000003% occurance
+Naughty has a 0.272% occurance
+Relaxed has a 1.001% occurance
+Impish has a 1.4120000000000001% occurance
+Lax has a 2.072% occurance
+Quiet has a 33.235% occurance
+Rash has a 61.643% occurance
+**('White', (5, 10, 11, 13, 14, 15, 20)):**
+Bold has a 0.23800000000000002% occurance
+Timid has a 1.94% occurance
+Hasty has a 2.894% occurance
+Jolly has a 6.146% occurance
+Naive has a 8.805% occurance
+Modest has a 12.567% occurance
+Calm has a 67.41% occurance
+
+N = 100,000
+DONE

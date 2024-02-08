@@ -1,0 +1,219 @@
+01	
+Cheri Berry
+10, 0, 0, 0, 0, 25
+
+02	
+Chesto Berry
+0, 10, 0, 0, 0, 25
+
+03	
+Pecha Berry
+0, 0, 10, 0, 0, 25
+
+04	
+Rawst Berry
+0, 0, 0, 10, 0, 25
+
+05	
+Aspear Berry
+0, 0, 0, 0, 10, 25
+
+06	
+Leppa Berry
+10, 0, 10, 10, 10, 20
+
+07	
+Oran Berry
+10, 10, 10, 10, 10, 20
+
+08	
+Persim Berry
+10, 10, 10, 10, 10, 20
+
+09	
+Lum Berry
+10, 10, 10, 10, 10, 20
+
+10	
+Sitrus Berry
+10, 10, 10, 10, 10, 20
+
+11	
+Figy Berry
+10, 0, 0, 0, 0, 25
+
+12	
+Wiki Berry
+0, 10, 0, 0, 0, 25
+
+13	
+Mago Berry
+0, 0, 10, 0, 0, 25
+
+14	
+Aguav Berry
+0, 0, 0, 10, 0, 25
+
+15	
+Iapapa Berry
+0, 0, 0, 0, 10, 25
+
+16	
+Razz Berry
+10, 10, 0, 0, 0, 20
+
+17	
+Bluk Berry
+0, 10, 10, 0, 0, 20
+
+18	
+Nanab Berry
+0, 0, 10, 10, 0, 20
+
+19	
+Wepear Berry
+0, 0, 0, 10, 10, 20
+
+20	
+Pinap Berry
+10, 0, 0, 0, 10, 20
+
+21	
+Pomeg Berry
+10, 0, 10, 10, 0, 20
+
+22	
+Kelpsy Berry
+0, 10, 0, 10, 10, 20
+
+23	
+Qualot Berry
+10, 0, 10, 0, 10, 20
+
+24	
+Hondew Berry
+10, 10, 0, 10, 0, 20
+
+25	
+Grepa Berry
+0, 10, 10, 0, 10, 20
+
+26	
+Tamato Berry
+20, 10, 0, 0, 0, 30
+
+27	
+Cornn Berry
+0, 20, 10, 0, 0, 30
+
+28	
+Magost Berry
+0, 0, 20, 10, 0, 30
+
+29	
+Rabuta Berry
+0, 0, 0, 20, 10, 30
+
+30	
+Nomel Berry
+10, 0, 0, 0, 20, 30
+
+31	
+Spelon Berry
+40, 10, 0, 0, 0, 70
+
+32	
+Pamtre Berry
+0, 40, 10, 0, 0, 70
+
+33	
+Watmel Berry
+0, 0, 40, 10, 0, 70
+
+34	
+Durin Berry
+0, 0, 0, 40, 10, 70
+
+35	
+Belue Berry
+10, 0, 0, 0, 40, 70
+
+36	
+Liechi Berry
+40, 0, 40, 0, 10, 80
+
+37	
+Ganlon Berry
+0, 40, 0, 40, 0, 80
+
+38	
+Salac Berry
+0, 0, 40, 0, 40, 80
+
+39	
+Petaya Berry
+40, 0, 0, 40, 0, 80
+
+40	
+Apicot Berry
+0, 40, 0, 0, 40, 80
+
+41	
+Lansat Berry
+10, 10, 10, 10, 10, 30
+
+42	
+Starf Berry
+10, 10, 10, 10, 10, 30
+
+43
+Pumkin Berry
+0, 0, 0, 0, 40, 40
+
+43
+Drash Berry
+0, 0, 40, 0, 0, 40
+
+43
+Eggant Berry
+0, 40, 0, 0, 0, 40
+
+43
+Strib Berry
+30, 0, 0, 30, 0, 40
+
+43
+Chilan Berry
+30, 0, 30, 0, 0, 40
+
+43
+Nutpea Berry
+0, 0, 0, 0, 0, 40
+
+43
+Ginema Berry
+0, 30, 0, 0, 30, 40
+
+43
+Kuo Berry
+0, 0, 0, 0, 0, 40
+
+43
+Yago Berry
+0, 0, 0, 40, 0, 40
+
+43
+Touga Berry
+40, 0, 0, 0, 0, 40
+
+43
+Niniku Berry
+0, 30, 0, 30, 0, 40
+
+43
+Topo Berry
+0, 0, 30, 0, 30, 40
+ 
+43	
+Enigma Berry
+40, 40, 40, 40, 40, 40
