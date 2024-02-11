@@ -170,50 +170,50 @@ Starf Berry
 Pumkin Berry
 0, 0, 0, 0, 40, 40
 
-43
+44
 Drash Berry
 0, 0, 40, 0, 0, 40
 
-43
+45
 Eggant Berry
 0, 40, 0, 0, 0, 40
 
-43
+46
 Strib Berry
 30, 0, 0, 30, 0, 40
 
-43
+47
 Chilan Berry
 30, 0, 30, 0, 0, 40
 
-43
+48
 Nutpea Berry
 0, 0, 0, 0, 0, 40
 
-43
+49
 Ginema Berry
 0, 30, 0, 0, 30, 40
 
-43
+50
 Kuo Berry
 0, 0, 0, 0, 0, 40
 
-43
+51
 Yago Berry
 0, 0, 0, 40, 0, 40
 
-43
+52
 Touga Berry
 40, 0, 0, 0, 0, 40
 
-43
+53
 Niniku Berry
 0, 30, 0, 30, 0, 40
 
-43
+54
 Topo Berry
 0, 0, 30, 0, 30, 40
  
-43	
+55	
 Enigma Berry
 40, 40, 40, 40, 40, 40

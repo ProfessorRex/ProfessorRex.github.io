@@ -4,6 +4,7 @@ import os
 #PROFESSOR REX twitch.tv/BrofessorsLab
 berryParamsFilename = "SEED_PARAMS.txt"
 berryData = [[0, 0, 0, 0, 0, 0]] #SPICY, DRY, SWEET, BITTER, SOUR, SMOOTHNESS
+neutral_berry_list = [7, 8, 9, 10, 41, 42, 48, 50, 55]
 berryNames = ["NONE"]
 natures = ['Hardy', 'Lonely', 'Brave', 'Adamant', 'Naughty', 'Bold', 'Docile', 'Relaxed', 'Impish', 'Lax', 'Timid', 'Hasty', 'Serious', 'Jolly', 'Naive', 'Modest', 'Mild', 'Quiet', 'Bashful', 'Rash', 'Calm', 'Gentle', 'Sassy', 'Careful', 'Quirky']
 
@@ -365,11 +366,21 @@ def html_recepies(block):
     # THREE PLAYER
     line += "<h1> THREE PLAYER RECEPIES </h1><br>"
     for rec in recs[1]:
-        line += html_recepie(rec[0])
+        p = 1
+        for berry in rec[0]:
+            if berry in neutral_berry_list:
+                p=2
+        if p == 1:
+            line += html_recepie(rec[0])
     # FOUR PLAYER
     line += "<h1> FOUR PLAYER RECEPIES </h1><br>"
     for rec in recs[2]:
-        line += html_recepie(rec[0])        
+        p = 1
+        for berry in rec[0]:
+            if berry in neutral_berry_list:
+                p=2
+        if p == 1:
+            line += html_recepie(rec[0])     
     return line
 
 def read_variance_txt():
