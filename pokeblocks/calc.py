@@ -440,11 +440,13 @@ def write_main_page():
     lines = f.readlines()
     f.close()
     output = ""
+    count = 0
     for line in lines:
+        count +=1
         line = line.rstrip()
         color = line[2:line[2:].find("'")+2]
         url = line[line.find("/")+2:line.find(")")].replace("/","_")
-        output += color + " Pokeblock, liked by " + str(line.count("/")) + " natures. Best Neutral Rate: " + line[line.find(",")+1:] + "% <a href='WEBPAGES/BLOCKS/" + url + ".html'>LINK</a><br>"
+        output += "<a href='WEBPAGES/BLOCKS/" + url + ".html'>" + "0"*(3-len(str(count))) + str(count) + ":</a> " + "<font color='" + color + "'>" + color + " Pokéblock, liked by " + str(line.count("/")) + " natures. Best Neutral Rate: " + line[line.find(",")+1:] + "% <a href='WEBPAGES/BLOCKS/" + url + ".html'>LINK</a><br>"
     return output
 
 if __name__ == '__main__':
