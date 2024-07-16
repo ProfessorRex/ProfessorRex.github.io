@@ -26,7 +26,7 @@ function getODDS(){
 	if (NUMS == 0){
 		var Odds = 1/Math.pow(1-(1/NUMO), NUME)
 		document.getElementById("output1").innerHTML="The odds of finding exactly " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(parseFloat(Odds).toFixed(2).toLocaleString());
-		document.getElementById("output2").innerHTML="Only " .concat(parseFloat((1/Odds)*100).toFixed(2).toLocaleString()).concat("% of hunts go that long!")
+		document.getElementById("output2").innerHTML="There is a ".concat(parseFloat(((-1/Odds)+1)*100).toFixed(2).toLocaleString()).concat("% chance to have found a shiny. Only ").concat(parseFloat((1/Odds)*100).toFixed(2).toLocaleString()).concat("% of hunts go that long!")
 	}
 	else{
 		console.log(1/NUMO);
