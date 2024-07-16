@@ -23,13 +23,20 @@ function getODDS(){
 	var NUMS = Number(document.getElementById("NUMS_enter").value);
 	var NUME = Number(document.getElementById("NUME_enter").value);
 	var NUMO = Number(document.getElementById("NUMO_enter").value);
-	console.log(1/NUMO);
-	console.log(NUME);
-	var distribution = stats.binomialCumulativeDistribution(NUME, 1-(1/NUMO))
-	console.log(distribution);
-	var Odds = 1/distribution[NUME-NUMS]
-	console.log(Odds);
-	document.getElementById("output1").innerHTML="The odds of finding at least " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(Math.round(Odds).toLocaleString());
+	if (NUMS == 0){
+		var Odds = 1/Math.pow(1-(1/NUMO), NUME)
+		console.log(1/(Math.pow(1-(1/NUMO), NUME)));
+		document.getElementById("output1").innerHTML="The odds of finding exactly " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(parseFloat(Odds).toFixed(2).toLocaleString());
+	}
+	else{
+		console.log(1/NUMO);
+		console.log(NUME);
+		var distribution = stats.binomialCumulativeDistribution(NUME, 1-(1/NUMO))
+		console.log(distribution);
+		var Odds = 1/distribution[NUME-NUMS]
+		console.log(Odds);
+		document.getElementById("output1").innerHTML="The odds of finding at least " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(Math.round(Odds).toLocaleString());
+	}
 }
 </script>
 
