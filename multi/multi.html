@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="black" style="color: white">
+<h2>Rex's Multi-Shiny Calculator</h2>
+
+<script src="./statistics.min.js" type="text/javascript"></script>
+<script>
+function getODDS(){
+	var data = [
+	{ ID: 1, age: 33 },
+	{ ID: 2, age: 42 },
+	{ ID: 3, age: 27 },
+	];
+
+	var columns = {
+		ID: 'ordinal',
+		age: 'interval'
+	};
+
+	var settings = {};
+
+	var stats = new Statistics(data, columns, settings);
+	var NUMS = Number(document.getElementById("NUMS_enter").value);
+	var NUME = Number(document.getElementById("NUME_enter").value);
+	var NUMO = Number(document.getElementById("NUMO_enter").value);
+	if (NUMS == 0){
+		var Odds = 1/Math.pow(1-(1/NUMO), NUME)
+		console.log(1/(Math.pow(1-(1/NUMO), NUME)));
+		document.getElementById("output1").innerHTML="The odds of finding exactly " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(parseFloat(Odds).toFixed(2).toLocaleString());
+	}
+	else{
+		console.log(1/NUMO);
+		console.log(NUME);
+		var distribution = stats.binomialCumulativeDistribution(NUME, 1-(1/NUMO))
+		console.log(distribution);
+		var Odds = 1/distribution[NUME-NUMS]
+		console.log(Odds);
+		document.getElementById("output1").innerHTML="The odds of finding at least " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(Math.round(Odds).toLocaleString());
+	}
+}
+</script>
+
+I found this many shinys: <input type="text" id="NUMS_enter" value="2"/>
+<br>
+In this many encounters: <input type="text" id="NUME_enter" value ="4"/>
+<br>
+With shiny odds of: 1/<input type="text" id="NUMO_enter" value="100"/>
+<br>
+<button type="button"
+onclick="getODDS()"/>Get Probability</button>
+<br>
+
+<p id="output1"></p>
+<p id="output2"></p>
+</body>
