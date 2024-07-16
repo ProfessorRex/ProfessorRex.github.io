@@ -25,8 +25,8 @@ function getODDS(){
 	var NUMO = Number(document.getElementById("NUMO_enter").value);
 	if (NUMS == 0){
 		var Odds = 1/Math.pow(1-(1/NUMO), NUME)
-		console.log(1/(Math.pow(1-(1/NUMO), NUME)));
 		document.getElementById("output1").innerHTML="The odds of finding exactly " .concat(String(NUMS)) .concat(" shinys in ") .concat(String(NUME)).concat(" encounters is:<br><h1> 1/").concat(parseFloat(Odds).toFixed(2).toLocaleString());
+		document.getElementById("output2").innerHTML="Only " .concat(parseFloat((1/Odds)*100).toFixed(2).toLocaleString()).concat("% of hunts go that long!")
 	}
 	else{
 		console.log(1/NUMO);
@@ -40,11 +40,11 @@ function getODDS(){
 }
 </script>
 
-I Found this many shinys: <input type="text" id="NUMS_enter" value="2"/>
+I found this many shinys: <input type="text" id="NUMS_enter" value="2"/>
 <br>
-In this many encoutners: <input type="text" id="NUME_enter" value ="4"/>
+In this many encounters: <input type="text" id="NUME_enter" value ="4"/>
 <br>
-With Shiny odds of: 1/<input type="text" id="NUMO_enter" value="100"/>
+With shiny odds of: 1/<input type="text" id="NUMO_enter" value="100"/>
 <br>
 <button type="button"
 onclick="getODDS()"/>Get Probability</button>
