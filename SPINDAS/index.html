@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #searchBar {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        #images {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Search Images</h1>
+<input type="text" id="searchBar" placeholder="Enter folder name..." />
+<button onclick="searchImages()">Search</button>
+
+<div id="images"></div>
+
+<script>
+function searchImages() {
+    const query = document.getElementById('searchBar').value.trim();
+    if (!query) {
+        alert('Please enter a folder name.');
+        return;
+    }
+
+    const folderPath = `${query}/files.txt`;
+
+    fetch(folderPath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Folder or files.txt not found.');
+            }
+            return response.text();
+        })
+        .then(text => {
+            const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+            const imagesDiv = document.getElementById('images');
+            imagesDiv.innerHTML = ''; // Clear previous images
+
+            lines.forEach(fileName => {
+                const img = document.createElement('img');
+                img.src = `${query}/${fileName}`;
+                img.alt = fileName;
+                imagesDiv.appendChild(img);
+            });
+        })
+        .catch(error => {
+            alert('Error: ' + error.message);
+            console.error(error);
+        });
+}
+</script>
+
+</body>
+</html>
