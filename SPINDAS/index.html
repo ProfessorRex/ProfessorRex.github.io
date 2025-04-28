@@ -25,7 +25,7 @@
             align-items: center;
         }
         img {
-            max-width: 2120px;
+            max-width: 530px;
             height: auto;
             border: 1px solid #ccc;
             padding: 5px;
@@ -43,7 +43,7 @@
 <body>
 
 <h1>Mirage Spinda Search</h1>
-<input type="text" id="searchBar" placeholder="Enter folder name..." />
+<input type="text" id="searchBar" placeholder="Enter Spinda Label..." />
 <button onclick="searchImages()">Search</button>
 
 <div id="images"></div>
@@ -52,7 +52,7 @@
 function searchImages() {
     const query = document.getElementById('searchBar').value.trim();
     if (!query) {
-        alert('Please enter a folder name.');
+        alert('Please enter a Spinda label.');
         return;
     }
 
