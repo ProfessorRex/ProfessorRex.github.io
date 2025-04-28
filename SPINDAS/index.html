@@ -63,6 +63,7 @@ function searchImages() {
             if (!response.ok) {
 				const imagesDiv = document.getElementById('images');
 				imagesDiv.innerHTML = 'No Spindas Found';
+				throw new Error('Folder or files.txt not found.');
             }
             return response.text();
         })
@@ -90,7 +91,6 @@ function searchImages() {
         })
         .catch(error => {
             alert('Error: ' + error.message);
-            console.error(error);
         });
 }
 
