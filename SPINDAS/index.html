@@ -61,7 +61,7 @@ function searchImages() {
     fetch(folderPath)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Folder or files.txt not found.');
+				const imagesDiv = document.getElementById('images');
 				imagesDiv.innerHTML = 'No Spindas Found';
             }
             return response.text();
