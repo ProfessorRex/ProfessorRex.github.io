@@ -25,7 +25,7 @@
             align-items: center;
         }
         img {
-            max-width: 530px;
+            max-width: 2120px;
             height: auto;
             border: 1px solid #ccc;
             padding: 5px;
@@ -50,7 +50,7 @@
 
 <script>
 function searchImages() {
-    const query = document.getElementById('searchBar').value.trim().toUpperCase();
+    const query = document.getElementById('searchBar').value.trim();
     if (!query) {
         alert('Please enter a folder name.');
         return;
@@ -62,6 +62,7 @@ function searchImages() {
         .then(response => {
             if (!response.ok) {
                 throw new Error('Folder or files.txt not found.');
+				imagesDiv.innerHTML = 'No Spindas Found';
             }
             return response.text();
         })
