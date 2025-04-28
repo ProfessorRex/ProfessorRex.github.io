@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image Search</title>
+    <title>Image Search with Captions</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +17,12 @@
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         img {
             max-width: 200px;
@@ -25,6 +30,13 @@
             border: 1px solid #ccc;
             padding: 5px;
             border-radius: 8px;
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            word-break: break-word;
         }
     </style>
 </head>
@@ -59,16 +71,30 @@ function searchImages() {
             imagesDiv.innerHTML = ''; // Clear previous images
 
             lines.forEach(fileName => {
+                const container = document.createElement('div');
+                container.className = 'image-container';
+
                 const img = document.createElement('img');
                 img.src = `${query}/${fileName}`;
                 img.alt = fileName;
-                imagesDiv.appendChild(img);
+
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                caption.textContent = removeExtension(fileName);
+
+                container.appendChild(img);
+                container.appendChild(caption);
+                imagesDiv.appendChild(container);
             });
         })
         .catch(error => {
             alert('Error: ' + error.message);
             console.error(error);
         });
+}
+
+function removeExtension(filename) {
+    return filename.replace(/\.[^/.]+$/, ""); // removes extension like .jpg, .png, etc
 }
 </script>
 
