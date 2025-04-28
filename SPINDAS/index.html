@@ -50,7 +50,7 @@
 
 <script>
 function searchImages() {
-    const query = document.getElementById('searchBar').value.trim();
+    const query = document.getElementById('searchBar').toUpperCase().value.trim();
     if (!query) {
         alert('Please enter a folder name.');
         return;
