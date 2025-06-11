@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Spinda Search</title>
     <style>
+		h2 {
+			font-size: 0.75em;
+		}
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -11,28 +14,29 @@
         #searchBar {
             padding: 10px;
             width: 300px;
-            font-size: 16px;
+            font-size: 1em;
         }
 		 #Weeks {
-            padding: 10px;
-            width: 250px;
-            font-size: 16px;
+            padding: 3px;
+            width: 200px;
+            font-size: 12px;
         }
 		 #Days {
-            padding: 10px;
-            width: 250px;
-            font-size: 16px;
+            padding: 3px;
+            width: 200px;
+            font-size: 12px;
         }
 		 #Wait {
-            padding: 10px;
+            padding: 3px;
             width: 300px;
-            font-size: 16px;
+            font-size: 12px;
         }
         #images {
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+			image-rendering: pixelated; /* For modern browsers */
         }
         .image-container {
             display: flex;
@@ -41,7 +45,7 @@
         }
         img {
             max-width: 530px;
-            height: auto;
+            height: 10vw;
             border: 1px solid #ccc;
             padding: 5px;
             border-radius: 8px;
@@ -57,11 +61,11 @@
 </head>
 <body>
 
-<h1>Mirage Spinda Search</h1><br>
+<h1>Mirage Spinda Search</h1>
 <h2>Enter Weeks or Days Since Save Creation (Default 0)</h2>
-<input type="number" size="4" id="Weeks" placeholder="Enter Weeks Since Creation..." />
-<br>
-<input type="number" size="5" id="Days" placeholder="Enter Days Since Creation..." />
+Weeks: <input type="number" size="4" id="Weeks" placeholder="Enter Weeks Since Creation..." />
+
+Days:   <input type="number" size="5" id="Days" placeholder="Enter Days Since Creation..." />
 <h2>How many days are you willing to wait? (Default 365)</h2>
 <input type="number" size="5" id="Wait" placeholder="Enter How Many Days You'd Wait..." />
 <h2>Enter Spinda Label</h2>
@@ -98,7 +102,9 @@ function searchImages() {
 	waitq = parseInt(waitq);
 	
 	let mini_days = Math.max(weeksq * 7, daysq);
-	let maxi_days = mini_days + 365;
+	let maxi_days = mini_days + waitq;
+	console.log(mini_days);
+	console.log(maxi_days);
 		
     const folderPath = `M_Spin/${query}/files.txt`;
 
@@ -117,14 +123,15 @@ function searchImages() {
             imagesDiv.innerHTML = ''; // Clear previous images
 
             lines.forEach(fileName => {
-				let match = filename.match(/DAY_(\d+)_/);
-				match = parseInt(match);
+				let match = fileName.match(/DAY_(\d+)_/);
+				console.log(match);
+				match = parseInt(match[1]);
 				if (match >= mini_days && match <= maxi_days){
 					const container = document.createElement('div');
 					container.className = 'image-container';
 
 					const img = document.createElement('img');
-					img.src = `${query}/${fileName}`;
+					img.src = `M_SPIN/${query}/${fileName}`;
 					img.alt = fileName;
 
 					const caption = document.createElement('div');
