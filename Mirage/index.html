@@ -106,7 +106,7 @@ function searchImages() {
 	console.log(mini_days);
 	console.log(maxi_days);
 		
-    const folderPath = `M_Spin/${query}/files.txt`;
+    const folderPath = `M_SPIN/${query}/files.txt`;
 
     fetch(folderPath)
         .then(response => {
@@ -121,12 +121,13 @@ function searchImages() {
             const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
             const imagesDiv = document.getElementById('images');
             imagesDiv.innerHTML = ''; // Clear previous images
-
+			let draw = 0;
             lines.forEach(fileName => {
 				let match = fileName.match(/DAY_(\d+)_/);
 				console.log(match);
 				match = parseInt(match[1]);
 				if (match >= mini_days && match <= maxi_days){
+					draw = draw + 1;
 					const container = document.createElement('div');
 					container.className = 'image-container';
 
@@ -143,6 +144,9 @@ function searchImages() {
 					imagesDiv.appendChild(container);
 				}
             });
+			if(draw == 0){
+				imagesDiv.innerHTML = 'No Spindas Found';
+			}
         })
         .catch(error => {
             console.error(error);
