@@ -4,65 +4,112 @@
     <meta charset="UTF-8">
     <title>Spinda Search</title>
     <style>
-		h2 {
-			font-size: 0.75em;
-		}
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        #searchBar {
-            padding: 10px;
-            width: 300px;
-            font-size: 1em;
-        }
-		 #Weeks {
-            padding: 3px;
-            width: 200px;
-            font-size: 12px;
-        }
-		 #Days {
-            padding: 3px;
-            width: 200px;
-            font-size: 12px;
-        }
-		 #Wait {
-            padding: 3px;
-            width: 300px;
-            font-size: 12px;
-        }
-        #images {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-			image-rendering: pixelated; /* For modern browsers */
-        }
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        img {
-            max-width: 530px;
-            height: 10vw;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 8px;
-        }
-        .caption {
-            margin-top: 10px;
-            font-size: 1vw;
-            color: #555;
-            text-align: center;
-            word-break: break-word;
-        }
+	/* Tooltip container */
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  width: 15vw;
+	  background-color: #555;
+	  color: #fff;
+	  text-align: center;
+	  padding: 8px 0;
+	  border-radius: 15px;
+
+	  /* Position the tooltip text */
+	  position: absolute;
+	  z-index: 1;
+	  bottom: 125%;
+	  left: 50%;
+	  margin-left: -60px;
+
+	  /* Fade in tooltip */
+	  opacity: 0;
+	  transition: opacity 0.6s;
+	}
+
+	/* Tooltip arrow */
+	.tooltip .tooltiptext::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-color: #555 transparent transparent transparent;
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	  opacity: 1;
+	}
+	h2 {
+		font-size: 0.75em;
+	}
+	body {
+		font-family: Arial, sans-serif;
+		margin: 20px;
+	}
+	#searchBar {
+		padding: 10px;
+		width: 300px;
+		font-size: 1em;
+	}
+	 #Weeks {
+		padding: 3px;
+		width: 200px;
+		font-size: 12px;
+	}
+	 #Days {
+		padding: 3px;
+		width: 200px;
+		font-size: 12px;
+	}
+	 #Wait {
+		padding: 3px;
+		width: 300px;
+		font-size: 12px;
+	}
+	#images {
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		image-rendering: pixelated; /* For modern browsers */
+	}
+	.image-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	img {
+		max-width: 530px;
+		height: 10vw;
+		border: 1px solid #ccc;
+		padding: 5px;
+		border-radius: 8px;
+	}
+	.caption {
+		margin-top: 10px;
+		font-size: 1vw;
+		color: #555;
+		text-align: center;
+		word-break: break-word;
+	}
     </style>
 </head>
 <body>
 
 <h1>Mirage Spinda Search</h1>
-<h2>Enter Weeks or Days Since Save Creation (Default 0)</h2>
+<div class="tooltip"><h2>Enter Weeks or Days Since Save Creation (Default 0)</h2>
+  <span class="tooltiptext">Use the Rocket Launches from Mossdeep to calculate how many weeks it has been since the save was created</span>
+</div><br>
 Weeks: <input type="number" size="4" id="Weeks" placeholder="Enter Weeks Since Creation..." />
 
 Days:   <input type="number" size="5" id="Days" placeholder="Enter Days Since Creation..." />
