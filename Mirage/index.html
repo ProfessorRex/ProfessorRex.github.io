@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spinda Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #searchBar {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+		 #Weeks {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+		 #Days {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+		 #Wait {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        #images {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 530px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 30px;
+            color: #555;
+            text-align: center;
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mirage Spinda Search</h1><br>
+<h2>Enter Weeks or Days Since Save Creation (Default 0)</h2>
+<input type="number" size="4" id="Weeks" placeholder="Enter Weeks Since Creation..." />
+<br>
+<input type="number" size="5" id="Days" placeholder="Enter Days Since Creation..." />
+<h2>How many days are you willing to wait? (Default 365)</h2>
+<input type="number" size="5" id="Wait" placeholder="Enter How Many Days You'd Wait..." />
+<h2>Enter Spinda Label</h2>
+<input type="text" id="searchBar" placeholder="Enter Spinda Label..." />
+<button onclick="searchImages()">Search</button>
+
+
+
+<div id="images"></div>
+
+<script>
+function searchImages() {
+    const query = document.getElementById('searchBar').value.trim().toUpperCase();
+    if (!query) {
+        alert('Please enter a Spinda label.');
+        return;
+    }
+	let weeksq = document.getElementById('Weeks').value.trim();
+	if (!weeksq) {
+		weeksq = 0;
+	}
+	weeksq = parseInt(weeksq);
+	
+	let daysq = document.getElementById('Days').value.trim();
+	if (!daysq) {
+		daysq = 0;
+	}
+	daysq = parseInt(daysq);
+	
+	let waitq = document.getElementById('Wait').value.trim();
+	if (!waitq) {
+		waitq = 365;
+	}
+	waitq = parseInt(waitq);
+	
+	let mini_days = Math.max(weeksq * 7, daysq);
+	let maxi_days = mini_days + 365;
+		
+    const folderPath = `M_Spin/${query}/files.txt`;
+
+    fetch(folderPath)
+        .then(response => {
+            if (!response.ok) {
+				const imagesDiv = document.getElementById('images');
+				imagesDiv.innerHTML = 'No Spindas Found';
+				throw new Error('Folder or files.txt not found.');
+            }
+            return response.text();
+        })
+        .then(text => {
+            const lines = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+            const imagesDiv = document.getElementById('images');
+            imagesDiv.innerHTML = ''; // Clear previous images
+
+            lines.forEach(fileName => {
+				let match = filename.match(/DAY_(\d+)_/);
+				match = parseInt(match);
+				if (match >= mini_days && match <= maxi_days){
+					const container = document.createElement('div');
+					container.className = 'image-container';
+
+					const img = document.createElement('img');
+					img.src = `${query}/${fileName}`;
+					img.alt = fileName;
+
+					const caption = document.createElement('div');
+					caption.className = 'caption';
+					caption.textContent = removeExtension(fileName);
+
+					container.appendChild(img);
+					container.appendChild(caption);
+					imagesDiv.appendChild(container);
+				}
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function removeExtension(filename) {
+    return filename.replace(/\.[^/.]+$/, ""); // removes extension like .jpg, .png, etc
+}
+</script>
+
+</body>
+</html>
