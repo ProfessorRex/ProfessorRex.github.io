@@ -124,13 +124,14 @@ def get_effective_rates(num_pids, natureID):
     else:
         sync_rate = total_pids/num_pids
     #print("1/" + str(total_pids/num_pids))
-    total_rate = (sync_rate + 8192)/2
+    total_rate = 1/(1/sync_rate * 0.5 + 1/8192 * 0.5)
     return [sync_rate, total_rate]
 
 import shutil
-def write_charts(gender="shTID"):
+def write_charts(gender="shPID"):
     lst = natures_per_ShTID(gender)
-    for ShTID_index in range(8192):
+    best_blocks = []
+    for ShTID_index in range(0,8192):
         shutil.copy2('template.html', gender+'_charts/'+str(ShTID_index)+'.html')
         f = open(gender+'_charts/'+str(ShTID_index)+'.html', "a")
         maxi = 0
@@ -149,10 +150,28 @@ def write_charts(gender="shTID"):
                 best_natures_str += nature_names[natureid] + ", "
             best_natures_str = best_natures_str[:-2]
         f.write(best_natures_str)
-        f.write("<br>Effective Shiny Rate: 1/" + str(round(get_effective_rates(maxi, best_natures[0])[1], 3)) + "</span><br></h1>")
+        f.write("<br>Effective Shiny Rate: 1/" + str(round(get_effective_rates(maxi, best_natures[0])[1], 3)) + "")
+        
+        #Calculate the Best Pokeblock
+        eff_rates = []
+        for i in range(25):
+            eff_rates.append(get_effective_rates(lst[ShTID_index][i], i)[0])
+        pb_table = do_pokeblock_math(eff_rates)
+        f.write("<br>Best Pokéblock Shiny Rate: 1/" + str(round(min(pb_table[1]),3)) + "</span><br></h1>")
+        best_blocks.append((round(min(pb_table[1]),3), ShTID_index, pb_table[2]))
+        #print(best_blocks)
         f.write("<table><tr><th>Nature</th><th>Nature Exclusive Rate</th><th>Synchronize/Everstone Rate</th></tr>")
         for i in range(25):
             f.write("<tr><td>"+nature_names[i]+"</td><td>1/"+str(round(get_effective_rates(lst[ShTID_index][i], i)[0], 3))+"</td><td>1/"+str(round(get_effective_rates(lst[ShTID_index][i], i)[1], 3))+"</td></tr>")
+        f.write("</table><br><table><tr><th>Pokeblock</th><th>Shiny Rate</th><th>Best Neutral Rate</th><th>Effective Pokeblock Rate</th><th>Effective Pokeblock + Best Sychronize Rate</th></tr>")
+        f.write(pb_table[0])
+    # Make best blocks page
+    shutil.copy2('l_template.html', 'blocks_list.html')
+    f = open("blocks_list.html", "a")
+    f.write("<table><tr><th>TSV</th><th>Pokeblock</th><th>Shiny Rate</th><th>Best Neutral Rate</th><th>Effective Pokeblock Rate</th><th>Effective Pokeblock + Best Sychronize Rate</th></tr>")
+    #print(sorted(best_blocks))
+    for block in sorted(best_blocks):
+        f.write("<tr><td>"+'<a href="charts/' + str(block[1]) +'.html">'+str(block[1])+'</a></td>'+ block[2])
 
 def make_all_nature_lists():
     for nature in nature_names:
@@ -257,8 +276,60 @@ def generate_all_genders():
         make_all_gender_nature_lists(gender)
         make_natures_page(gender)        
 
+def read_variance_txt():
+    f = open("VARIANCE.csv", "r")
+    lines = f.readlines()
+    f.close()
+    blocks = []
+    for block in lines:
+        block = block.rstrip().split(', ')
+        block[0] = block[0].replace("(","").replace(")","").split("/")[1:]
+        block[0] = [int(x) for x in block[0]]
+        blocks.append(block)
+    return blocks
+
+def get_variance(nats):
+    for block in var_list:
+        if block[0] == nats:
+            return block[1:]
+
+def do_pokeblock_math(eff_rates):
+    global var_list
+    line = ''
+    rates = []
+    lines = []
+    for c_block in var_list:
+        b_line = ''
+        pb_var = get_variance(c_block[0])
+        #print(pb_var)
+        block_url = ''
+        block = c_block[0]
+        for nat in block:
+            block_url = block_url + str(nat) + "_"
+        block_url = block_url[:-1]
+        block_name = block_url.replace("_","/")
+        b_line += '<tr><td><a href="../pokeblocks/WEBPAGES/BLOCKS/'+block_url+'.html">' + block_name + "</a></td>"
+        rate = 0
+        for nat in block:
+            rate += eff_rates[nat] * float(pb_var[16+nat])/100
+        rates.append(rate)
+        b_line += '<td>1/'+ str(round(rate, 3)) +'</td>'
+        b_line += '<td>'+ str(round(float(pb_var[0]), 4)) + '%</td>'
+        #Effective Rate
+        er1 = 1/((1/rate * 80.010986328125/100) + (1/8192 * 19.989013671875/100))
+        er2 = 1/((1/rate * 80.010986328125/100) + (1/8192 * 9.9945068359375/100) + (1/min(eff_rates) * 9.9945068359375/100))
+        b_line += '<td>1/'+ str(round(er1, 3)) +'</td>'
+        b_line += '<td>1/'+ str(round(er2, 3)) +'</td></tr>'
+        lines.append((rate, b_line))
+    lines = sorted(lines)
+    for l in lines:
+        line += l[1]
+    return (line, rates, lines[0][1][4:])
+
 if __name__ == "__main__":
-    generate_all_genders()
+    var_list = read_variance_txt()
+    write_charts()
+    #generate_all_genders()
     #get_gShPID_results("1_3","1:3")
     #get_gShPID_results("3_1","3:1")
     #get_gShPID_results("7_1","7:1")
