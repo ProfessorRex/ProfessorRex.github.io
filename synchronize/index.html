@@ -24,6 +24,7 @@ function getUID(){
 	document.getElementById("UID_output").innerHTML="ShTID in Binary: ".concat('<span style="color: yellow">').concat(bShTID.slice(0, 4)).concat(" ").concat(bShTID.slice(4, 6)).concat(bShTID.slice(6, 8)).concat(" ").concat(bShTID.slice(8, 12)).concat(" ").concat(bShTID.slice(12)).concat("</span>");
 	document.getElementById("UID_dec").innerHTML="ShTID in Decimal: <span style='color: yellow'>".concat(ShTID.toString()).concat("</span>");
 	var effectiveShTID = ~~(ShTID / 8);
+	document.getElementById("bTID_output2").innerHTML="TSV in Decimal: <span style='color: yellow'>".concat(effectiveShTID.toString()).concat("</span>");
 	document.getElementById('Chart').innerHTML = '<div><div><iframe src="charts/'.concat(effectiveShTID.toString()).concat('.html" frameborder="0" height="1000px" width="100%"></iframe></div></div>');
 }
 
@@ -46,5 +47,6 @@ onclick="getUID()"/>Get Odds</button>
 <p id="UID_dec"></p>
 <p id="bTID_output2"></p>
 <p id="Chart"></p>
-<h2> <a href="list.html">List of ShTID by Syncronize Shiny Odds</a></h2>
+<h2> <a href="list.html">List of TSV by Synchronize Shiny Odds</a></h2>
+</head><body><h2> <a href="https://professorrex.github.io/synchronize/normal_natures/full_list.html">Best TSV for Each Nature</a>
 </body>
