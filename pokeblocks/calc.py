@@ -405,9 +405,23 @@ def write_var_html(block):
     line += "This Pokeblock is liked by: "
     for nat in block:
         line += natures[nat] + ", "
-    line = line[:-2] + "<br>"
+    line = line[:-2] + "<br><br>"
     variance = get_variance(block)
-    line += "The <font color='green'>BEST</font> odds of a Pokeblock being neutral is: <font color='green'>" + str(variance[0]) +"%</font><br>"
+    
+    for nat in block:
+        if nat <4:
+            line+="<font color='red'>"
+        elif nat<9:
+            line+="<font color='yellow'>"
+        elif nat<14:
+            line+="<font color='pink'>"
+        elif nat<19:
+            line+="<font color='blue'>"
+        else:
+            line+="<font color='green'>"
+        line += natures[nat] + "</font> appears " + str(variance[16+nat]) + "% of the time.<br>" 
+    
+    line += "<br>The <font color='green'>BEST</font> odds of a Pokeblock being neutral is: <font color='green'>" + str(variance[0]) +"%</font><br><br>"
     line += "The odds of a <font color='red'>Spicy</font> Pokeblock being neutral is: " + str(variance[1]) +"%<br>"
     line += "The odds of a <font color='red'>Spicy</font> Pokeblock being liked is: " + str(variance[2]) +"%<br>"
     line += "The odds of a <font color='red'>Spicy</font> Pokeblock being hated is: " + str(variance[3]) +"%<br>"
@@ -466,6 +480,7 @@ if __name__ == '__main__':
     four_list = read_recepie_txt("Four")
     var_list = read_variance_txt()
     read_berry_data()
+    write_pages()
     #test_two_berries()
     #test_three_berries()
     #test_four_berries()
