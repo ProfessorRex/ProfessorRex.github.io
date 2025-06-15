@@ -67,24 +67,26 @@ def get_gShPID_results(fname="shPID",ratio="1:1"):
     f.close()
     print("DONE")
 
-def read_ShPID_results():
-    f = open("ShPID.txt", "r")
+def read_ShPID_results(fname="shPID"):
+    f = open(fname+".txt", "r")
     lines = f.readlines()
     # Strips the newline character
     lines_stripped = []
     for line in lines:
         curr = list(line.strip().strip('][').split(', '))
+        if len(curr) == 26:
+            curr = curr[:-1]
         curr = [ int(x) for x in curr]
         lines_stripped.append(curr)
     return lines_stripped
 
-def natures_per_ShTID():
+def natures_per_ShTID(fname):
     '''
     Returns a list of ShTIDs (grouped into sets of 8) with a breakdown
     of how many PIDs they get of each nature
     '''
     lst = [[0 for _ in range(25)] for _ in range(8192)]
-    ShPID_natures = read_ShPID_results()
+    ShPID_natures = read_ShPID_results(fname)
     for ShTID in range(0, 65536, 8):
         lst[ShTID//8].append(str(ShTID) + " -> " + str(ShTID + 7))
         for ShPID in range(ShTID, ShTID + 8):
@@ -92,13 +94,24 @@ def natures_per_ShTID():
                 lst[ShTID//8][i] += ShPID_natures[ShPID][i]
     return lst
 
-def get_ShTID_results():
-    results = natures_per_ShTID()
-    f = open("ShTID.txt", "a")
+def get_ShTID_results(fname1="shPID", fname2="sh"):
+    results = natures_per_ShTID(fname1)
+    f = open(fname2+"TID.txt", "w")
+    f.write("")
+    f.close()
+    f = open(fname2+"TID.txt", "a")
     for result in results:
         f.write(str(result)+"\n")
     f.close()
     print("DONE")
+
+def get_nature_totals(gender):
+    ShTID_natures = read_ShPID_results(gender+"TID")
+    natureslst = [0 for _ in range(26)]
+    for line in ShTID_natures:
+        for i in range(0, len(line)):
+            natureslst[i] += line[i]
+    return natureslst
 
 total_per_nature = [171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798692, 171798691, 171798691, 171798691, 171798691]
 nature_names=["Hardy", "Lonely", "Brave", "Adamant", "Naughty", "Bold", "Docile", "Relaxed", "Impish", "Lax", "Timid", "Hasty", "Serious", "Jolly", "Naive", "Modest", "Mild", "Quiet", "Bashful", "Rash", "Calm", "Gentle", "Sassy", "Careful", "Quirky"]
@@ -106,17 +119,20 @@ nature_names=["Hardy", "Lonely", "Brave", "Adamant", "Naughty", "Bold", "Docile"
 def get_effective_rates(num_pids, natureID):
     #def total PIDS
     total_pids=total_per_nature[natureID]
-    sync_rate = total_pids/num_pids
+    if num_pids == 0:
+        sync_rate = 0
+    else:
+        sync_rate = total_pids/num_pids
     #print("1/" + str(total_pids/num_pids))
     total_rate = (sync_rate + 8192)/2
     return [sync_rate, total_rate]
 
 import shutil
-def write_charts():
-    lst = natures_per_ShTID()
+def write_charts(gender="shTID"):
+    lst = natures_per_ShTID(gender)
     for ShTID_index in range(8192):
-        shutil.copy2('template.html', 'charts/'+str(ShTID_index)+'.html')
-        f = open('charts/'+str(ShTID_index)+'.html', "a")
+        shutil.copy2('template.html', gender+'_charts/'+str(ShTID_index)+'.html')
+        f = open(gender+'_charts/'+str(ShTID_index)+'.html', "a")
         maxi = 0
         best_natures = []
         for i in range(25):
@@ -141,9 +157,13 @@ def write_charts():
 def make_all_nature_lists():
     for nature in nature_names:
         make_page(nature)
+        
+def make_all_gender_nature_lists(gender):
+    for nature in nature_names:
+        make_gender_list_page(nature, gender)
 
-def group_by_odds(nature="all"):
-    lst = natures_per_ShTID()
+def group_by_odds(nature="all",gender="ShTID"):
+    lst = natures_per_ShTID(gender)
     max_dict = dict()
     for i in range(8192):
         if nature == "all":
@@ -162,30 +182,42 @@ def get_first_num(strr):
     space_ind = strr.index(" ")
     return int(strr[0:space_ind])
 
-def make_page(nature=""):
+def make_page(nature="all"):
     odds_group = group_by_odds(nature)
     keys = list(odds_group.keys())
-    keys.sort(reverse=True)
-    shutil.copy2('l_template.html', "normal_natures/"+nature+'_list.html')
-    f = open("normal_natures/"+nature+'_list.html', "a")
+    keys.sort(reverse=True, key=int)
+    shutil.copy2('l_template.html', 'list.html')
+    f = open('list.html', "a")
     f.write("<table><tr><th>Best Rate</th><th>TSV</th></tr>")
     for key in keys:
         f.write("<tr><td><b>1/"+str(round(get_effective_rates(int(key), 0)[0], 3))+"</b></td><td>")
         for elm in odds_group[key]:
             f.write('<a href="../charts/' + str(get_first_num(elm)//8) +'.html">' + str(get_first_num(elm)//8) + '</a>, ')
+            
+def make_gender_list_page(nature="all", gender=""):
+    odds_group = group_by_odds(nature,gender)
+    keys = list(odds_group.keys())
+    keys.sort(reverse=True, key=int)
+    shutil.copy2('l_template.html', gender+"_lists/"+gender+'_'+nature+'_list.html')
+    f = open(gender+"_lists/"+gender+'_'+nature+'_list.html', "a")
+    f.write("<table><tr><th>Best Rate</th><th>TSV</th></tr>")
+    for key in keys:
+        f.write("<tr><td><b>1/"+str(round(get_effective_rates(int(key), 0)[0], 3))+"</b></td><td>")
+        for elm in odds_group[key]:
+            f.write('<a href="../'+gender+'_charts/' + str(get_first_num(elm)//8) +'.html">' + str(get_first_num(elm)//8) + '</a>, ')
 
-def make_natures_page():
-    shutil.copy2('l_template.html', 'normal_natures/full_list.html')
-    f = open('normal_natures/full_list.html', "a")
+def make_natures_page(gender):
+    shutil.copy2('l_template.html', gender+'_lists/full_list.html')
+    f = open(gender+'_lists/full_list.html', "a")
     f.write("<table><tr><th>Nature</th><th>Best Rate</th><th>TSV</th></tr>")
     for nature in nature_names:
-        odds_group = group_by_odds(nature)
+        odds_group = group_by_odds(nature,gender)
         keys = list(odds_group.keys())
-        keys.sort(reverse=True)
+        keys.sort(reverse=True, key=int)
         key = keys[0]
-        f.write("<tr><td><b>"+'<a href="' + nature +'_list.html">'+nature+'</a>'+"</b></td><td><b>1/"+str(round(get_effective_rates(int(key), 0)[0], 3))+"</b></td><td>")
+        f.write("<tr><td><b>"+'<a href="'+gender+"_" + nature +'_list.html">'+nature+'</a>'+"</b></td><td><b>1/"+str(round(get_effective_rates(int(key), 0)[0], 3))+"</b></td><td>")
         for elm in odds_group[key]:
-            f.write('<a href="../charts/' + str(get_first_num(elm)//8) +'.html">' + str(get_first_num(elm)//8) + '</a>, ')
+            f.write('<a href="../'+gender+'_'+'_charts/' + str(get_first_num(elm)//8) +'.html">' + str(get_first_num(elm)//8) + '</a>, ')
         
 
 import random
@@ -214,8 +246,20 @@ def shiny_test(ShTID, encounters, nature=0, always=True):
 def is_shiny(ShTID, ShPID):
     return (ShTID ^ ShPID) < 8
 
+
+def generate_all_genders():
+    global total_per_nature
+    for gender in ["1_1F", "1_1M", "1_3F", "1_3M", "3_1M", "3_1F", "7_1M", "7_1F"]:
+        get_ShTID_results(gender, gender)
+        total_per_nature = get_nature_totals(gender)
+        write_charts(gender)
+        make_gender_list_page(nature="all", gender=gender)
+        make_all_gender_nature_lists(gender)
+        make_natures_page(gender)        
+
 if __name__ == "__main__":
-    get_gShPID_results("1_3","1:3")
-    get_gShPID_results("3_1","3:1")
-    get_gShPID_results("7_1","7:1")
+    generate_all_genders()
+    #get_gShPID_results("1_3","1:3")
+    #get_gShPID_results("3_1","3:1")
+    #get_gShPID_results("7_1","7:1")
     pass
