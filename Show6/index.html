@@ -2,14 +2,35 @@
 <html lang="en">
 <!-- Add a spooky or impactful font for "SHADOW" Pokémon -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron&family=Press+Start+2P&family=Cabin+Sketch&family=Raleway:ital,wght@1,500&family=Permanent+Marker&family=VT323&family=Bebas+Neue&family=Indie+Flower&family=Major+Mono+Display&family=Zilla+Slab+Highlight&family=Gruppo&family=Rubik+Mono+One&family=Kanit:wght@700&family=Share+Tech+Mono&family=Special+Elite&family=UnifrakturCook:700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
 <style>
   .shadow-link {
     font-family: 'Orbitron', sans-serif;
-    color: #d22;
+    color: #8D71B4;
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
   }
+	.type-fire      { color: #e25822; font-family: 'Orbitron', sans-serif; }
+	.type-water     { color: #1e90ff; font-family: 'Orbitron', sans-serif; }
+	.type-grass     { color: #228b22; font-family: 'Orbitron', sans-serif; }
+	.type-electric  { color: #ffd700; font-family: 'Orbitron', sans-serif; }
+	.type-ice       { color: #00ced1; font-family: 'Orbitron', sans-serif; }
+	.type-fighting  { color: #b22222; font-family: 'Orbitron', sans-serif; }
+	.type-poison    { color: #8a2be2; font-family: 'Orbitron', sans-serif; }
+	.type-ground    { color: #d2b48c; font-family: 'Orbitron', sans-serif; }
+	.type-flying    { color: #87ceeb; font-family: 'Orbitron', sans-serif; }
+	.type-psychic   { color: #ff1493; font-family: 'Orbitron', sans-serif; }
+	.type-bug       { color: #9acd32; font-family: 'Orbitron', sans-serif; }
+	.type-rock      { color: #a0522d; font-family: 'Orbitron', sans-serif; }
+	.type-ghost     { color: #663399; font-family: 'Orbitron', sans-serif; }
+	.type-dragon    { color: #483d8b; font-family: 'Orbitron', sans-serif;  text-shadow: -1px -1px 0 #8D71B4, 1px -1px 0 #8D71B4, 1px 1px 0 #8D71B4,
+    1px 1px 0 #8D71B4;}
+	.type-dark      { color: #333; font-family: 'Orbitron', sans-serif;  text-shadow: -1px -1px 0 white, 1px -1px 0 white, 1px 1px 0 white,
+    1px 1px 0 white;}
+	.type-normal    { color: #f9f4d8; font-family: 'Orbitron', sans-serif; }
+	.type-steel     { color: #708090; font-family: 'Orbitron', sans-serif; }
+	.type-fairy     { color: #ffb6c1; font-family: 'Orbitron', sans-serif; }
 </style>
 <head>
   <meta charset="UTF-8">
@@ -38,10 +59,10 @@
   <button onclick="processCSV()">Randomize Teams</button>
 
   <h2>Team 1:</h2>
-  <pre id="first6"></pre>
+  <pre id="first6" style="background-color:black;"></pre>
 
   <h2>Team 2:</h2>
-  <pre id="fullList"></pre>
+  <pre id="fullList" style="background-color:black;"></pre>
 
   <script>
 	function generateNewSeed() {
@@ -57,7 +78,7 @@
   
     // Load local CSV (same directory)
     let csvData = [];
-
+	let evil = Math.random();
     fetch('data.csv')
       .then(response => response.text())
       .then(text => {
@@ -93,12 +114,29 @@
       const container = document.getElementById(targetId);
 
       const baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
-
-      const linksHtml = list.map(name => {
+      const linksHtml = list.map(pkmn => {
+		const name = pkmn.split(',')[0]
+		const t1 = pkmn.split(',')[3]
+		const t2 = pkmn.split(',')[4]
         const url = baseUrl + encodeURIComponent(name.toLowerCase().replace(/ /g, "_").replace(/[()]/g, '')) + "/";
         const isShadow = name.toUpperCase().includes("SHADOW");
-        const className = isShadow ? "shadow-link" : "";
-        return `<div><a href="${url}" class="${className}" target="_blank">${name}</a></div>`;
+		const types = [t1].filter(e => e !== 'none');
+		console.log(types)
+		const typeClasses = types.map(t => `type-${t}`).join(' ');;
+		if (name.toUpperCase().endsWith("(SHADOW)")) {
+		const parts = name.split(/\s+/); // split by space
+		const restName = parts.shift();; // e.g., "Machamp"
+		const shadowWord =  parts.join(' ')// "Shadow"
+		shadowStyled = `<span class="shadow-link">${shadowWord}</span>`;
+		typeStyled = `<span class="${typeClasses}">${restName}</span>`;
+		displayName = `${typeStyled} ${shadowStyled}`;
+		} else {
+		  displayName = `<span class="${typeClasses}">${name}</span>`;
+		}
+		if(evil>0.9){
+			displayName = displayName.replace("Shadow", "EVIL");
+		}
+        return `<div><a href="${url}" target="_blank">${displayName}</a></div>`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
