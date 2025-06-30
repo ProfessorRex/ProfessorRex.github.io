@@ -79,6 +79,8 @@
   
     // Load local CSV (same directory)
     let csvData = [];
+	let shinyChance = 0.1;
+	let evilChance = 0.1;
 	let evil = Math.random();
     fetch('data.csv')
       .then(response => response.text())
@@ -136,11 +138,11 @@
 		  displayName = `<span class="${typeClasses}">${name}</span>`;
 		}
 		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","");
-		if(evil>0.9){
+		if(evil<evilChance){
 			displayName = displayName.replace("Shadow", "EVIL");
 		}
 		const shiny = Math.random()
-		if(shiny<0.1){
+		if(shiny<shinyChance){
 		var form = "shiny"
 		} else {
 		var form = "regular"
