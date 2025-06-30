@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Add a spooky or impactful font for "SHADOW" Pokémon -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  .shadow-link {
+    font-family: 'Orbitron', sans-serif;
+    color: #d22;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+  }
+</style>
 <head>
   <meta charset="UTF-8">
   <title>Show 6 Team Randomizer</title>
@@ -18,8 +29,11 @@
   <input type="text" id="seed" />
   <button onclick="generateNewSeed()">Generate New Seed</button>
 
-  <label for="rowLimit">Max PVP Poke Rank:</label>
-  <input type="number" id="rowLimit" value="200" min="1" />
+  <label for="rowLimitMin">Min PVP Poke Rank:</label>
+  <input type="number" id="rowLimitMin" value="1" min="1" />
+  <label for="rowLimitMax">Max PVP Poke Rank:</label>
+  <input type="number" id="rowLimitMax" value="200" min="1" />
+  
 
   <button onclick="processCSV()">Randomize Teams</button>
 
@@ -74,26 +88,42 @@
     }
     return arr;
   }
+      // Display CSV line + PvPoke links
+    function displayResults(targetId, list) {
+      const container = document.getElementById(targetId);
+
+      const baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
+
+      const linksHtml = list.map(name => {
+        const url = baseUrl + encodeURIComponent(name.toLowerCase().replace(/ /g, "_").replace(/[()]/g, '')) + "/";
+        const isShadow = name.toUpperCase().includes("SHADOW");
+        const className = isShadow ? "shadow-link" : "";
+        return `<div><a href="${url}" class="${className}" target="_blank">${name}</a></div>`;
+      }).join('');
+
+      container.innerHTML = `${linksHtml}`;
+    }
 
     function processCSV() {
       const seedInput = document.getElementById('seed').value;
-      const limit = parseInt(document.getElementById('rowLimit').value);
+      const limitMin = parseInt(document.getElementById('rowLimitMin').value);
+	  const limitMax = parseInt(document.getElementById('rowLimitMax').value);
 
       if (!csvData.length) {
         alert("CSV not loaded yet!");
         return;
       }
 
-      const subset = csvData.slice(0, limit);
+      const subset = csvData.slice(limitMin-1, limitMax);
       const flatSubset = subset.map(row => row.join(','));
 
       // First shuffle
       const firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
-      document.getElementById('first6').textContent = firstShuffle.slice(0, 6).join('\n');
+      displayResults('first6', firstShuffle.slice(0,6));
 
       // Second shuffle
       const secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
-      document.getElementById('fullList').textContent = secondShuffle.slice(0,6).join('\n');
+      displayResults('fullList', secondShuffle.slice(0,6));
     }
   </script>
 </body>
