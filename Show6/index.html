@@ -50,6 +50,7 @@
         const parsed = Papa.parse(text.trim(), { header: false });
         csvData = parsed.data.filter(row => row.length > 0);
         console.log('CSV Loaded:', csvData);
+		processCSV();
       });
 
   // Better seeded PRNG using a simple LCG (Linear Congruential Generator)
