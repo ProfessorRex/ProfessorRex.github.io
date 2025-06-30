@@ -15,10 +15,10 @@
   <h1>CSV Randomizer</h1>
 
   <label for="seed">Enter Random Seed:</label>
-  <input type="text" id="seed" value="1234" />
+  <input type="text" id="seed" />
 
   <label for="rowLimit">Max Rows to Consider:</label>
-  <input type="number" id="rowLimit" value="10" min="1" />
+  <input type="number" id="rowLimit" value="200" min="1" />
 
   <button onclick="processCSV()">Randomize CSV</button>
 
@@ -29,6 +29,13 @@
   <pre id="fullList"></pre>
 
   <script>
+  
+	 // Generate a random seed string on page load
+	window.addEventListener('DOMContentLoaded', () => {
+	  const randomSeed = Math.random().toString(36).substring(2, 10); // e.g., "k4fj29xm"
+	  document.getElementById('seed').value = randomSeed;
+	});
+  
     // Load local CSV (same directory)
     let csvData = [];
 
@@ -40,23 +47,27 @@
         console.log('CSV Loaded:', csvData);
       });
 
-    function seedRandom(seed) {
-      let x = Math.sin(seed) * 10000;
-      return () => {
-        x = Math.sin(x) * 10000;
-        return x - Math.floor(x);
-      };
+  // Better seeded PRNG using a simple LCG (Linear Congruential Generator)
+  function seedRandom(seedStr) {
+    let seed = 0;
+    for (let i = 0; i < seedStr.length; i++) {
+      seed += seedStr.charCodeAt(i);
     }
+    return function () {
+      seed = (seed * 9301 + 49297) % 233280;
+      return seed / 233280;
+    };
+  }
 
-    function shuffleArray(array, seed) {
-      let rand = seedRandom(seed);
-      let arr = array.slice(); // copy
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(rand() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-      }
-      return arr;
+  function shuffleArray(array, seedStr) {
+    let rand = seedRandom(seedStr);
+    let arr = array.slice(); // clone the array
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(rand() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
+    return arr;
+  }
 
     function processCSV() {
       const seedInput = document.getElementById('seed').value;
@@ -76,7 +87,7 @@
 
       // Second shuffle
       const secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
-      document.getElementById('fullList').textContent = secondShuffle.join('\n');
+      document.getElementById('fullList').textContent = secondShuffle.slice(0,6).join('\n');
     }
   </script>
 </body>
