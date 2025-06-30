@@ -12,15 +12,16 @@
   </style>
 </head>
 <body>
-  <h1>CSV Randomizer</h1>
+  <h1>Show 6 Team Randomizer</h1>
 
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" />
+  <button onclick="generateNewSeed()">Generate New Seed</button>
 
   <label for="rowLimit">Max PVP Poke Rank:</label>
   <input type="number" id="rowLimit" value="200" min="1" />
 
-  <button onclick="processCSV()">Randomize Tea,s</button>
+  <button onclick="processCSV()">Randomize Teams</button>
 
   <h2>Team 1:</h2>
   <pre id="first6"></pre>
@@ -29,7 +30,11 @@
   <pre id="fullList"></pre>
 
   <script>
-  
+	function generateNewSeed() {
+	  const newSeed = Math.random().toString(36).substring(2, 10); // random 8-char seed
+	  document.getElementById('seed').value = newSeed;
+	  processCSV(); // refresh the randomized output
+	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
 	  const randomSeed = Math.random().toString(36).substring(2, 10); // e.g., "k4fj29xm"
