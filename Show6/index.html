@@ -68,6 +68,7 @@
 	function generateNewSeed() {
 	  const newSeed = Math.random().toString(36).substring(2, 10); // random 8-char seed
 	  document.getElementById('seed').value = newSeed;
+	  evil = Math.random();
 	  processCSV(); // refresh the randomized output
 	}
 	 // Generate a random seed string on page load
@@ -115,7 +116,7 @@
 
       const baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
       const linksHtml = list.map(pkmn => {
-		const name = pkmn.split(',')[0]
+		var name = pkmn.split(',')[0]
 		const t1 = pkmn.split(',')[3]
 		const t2 = pkmn.split(',')[4]
         const url = baseUrl + encodeURIComponent(name.toLowerCase().replace(/ /g, "_").replace(/[()]/g, '')) + "/";
@@ -124,19 +125,27 @@
 		console.log(types)
 		const typeClasses = types.map(t => `type-${t}`).join(' ');;
 		if (name.toUpperCase().endsWith("(SHADOW)")) {
-		const parts = name.split(/\s+/); // split by space
-		const restName = parts.shift();; // e.g., "Machamp"
-		const shadowWord =  parts.join(' ')// "Shadow"
+		const restName = name.slice(0,-9); // e.g., "Machamp"
+		const shadowWord = "(Shadow)"
 		shadowStyled = `<span class="shadow-link">${shadowWord}</span>`;
 		typeStyled = `<span class="${typeClasses}">${restName}</span>`;
 		displayName = `${typeStyled} ${shadowStyled}`;
+		name = restName;
+		console.log(name)
 		} else {
 		  displayName = `<span class="${typeClasses}">${name}</span>`;
 		}
+		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","");
 		if(evil>0.9){
 			displayName = displayName.replace("Shadow", "EVIL");
 		}
-        return `<div><a href="${url}" target="_blank">${displayName}</a></div>`;
+		const shiny = Math.random()
+		if(shiny<0.1){
+		var form = "shiny"
+		} else {
+		var form = "regular"
+		}
+        return `<div><img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${form}/${name.replace(' ', '-').replace(/[()]/g, '').toLowerCase()}.png"><a href="${url}" target="_blank">${displayName}</a></div>`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
