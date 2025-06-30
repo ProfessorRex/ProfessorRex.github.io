@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CSV Randomizer</title>
+  <title>Show 6 Team Randomizer</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <style>
     body { font-family: sans-serif; padding: 2rem; }
@@ -17,15 +17,15 @@
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" />
 
-  <label for="rowLimit">Max Rows to Consider:</label>
+  <label for="rowLimit">Max PVP Poke Rank:</label>
   <input type="number" id="rowLimit" value="200" min="1" />
 
-  <button onclick="processCSV()">Randomize CSV</button>
+  <button onclick="processCSV()">Randomize Tea,s</button>
 
-  <h2>First 6 Randomized Entries:</h2>
+  <h2>Team 1:</h2>
   <pre id="first6"></pre>
 
-  <h2>Second Randomized Full List:</h2>
+  <h2>Team 2:</h2>
   <pre id="fullList"></pre>
 
   <script>
