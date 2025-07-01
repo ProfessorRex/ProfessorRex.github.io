@@ -142,12 +142,12 @@
   <input type="text" id="seed" />
   <button onclick="generateNewSeed()">Generate New Seed</button>
 <label>
-  <input type="checkbox" id="uniqueSpeciesCheckbox" checked onchange="onLoad()">
-  Unique Species Per Team
+  <input type="radio" name="species" id="uniqueSpeciesCheckbox" checked onchange="onLoad()">
+  Species Clause Per Team
 </label>
 <label>
-  <input type="checkbox" id="uniqueTeamCheckbox" onchange="onLoad()">
-  Unique Species Across Teams
+  <input type="radio" name="species" id="uniqueTeamCheckbox" onchange="onLoad()">
+  12 Unique Species
 </label>
   <label for="rowLimitMin">Min PVP Poke Rank:
   <input type="number" id="rowLimitMin" value="1" min="1" style="width: 5ch;" onchange="onLoad()"/>
@@ -163,10 +163,7 @@
   <input type="checkbox" id="noShadow" checked onchange="onLoad()">
   Show Shadow Mons
 </label>
-<label>
-  <input type="checkbox" id="noShiny" onchange="onLoad()">
-  Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="1" style="width: 5ch;" onchange="onLoad()"> chance.
-</label>
+
 
 <div class="table-layout">
   <div class="table-wrapper">
@@ -180,9 +177,22 @@
   <h2> Team 2:</h2>
   <font size='3px;'>
   <table id="fullList" style="background-color:black; padding: 15px; table-layout: fixed;  text-align: center; "></table>
- </div></div>
+ </div></div><BR><BR>
+ <label>
+  <input type="checkbox" id="megas" onchange="onLoad()">
+  1 Mega Per Team
+</label>
+ <label>
+  <input type="checkbox" id="noShiny" onchange="onLoad()">
+  Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="0" style="width: 5ch;" onchange="onLoad()"> chance.
+</label>
+ <label>
+  <input type="radio" name="species" id="allowDuplicates" onchange="onLoad()">
+  Allow Duplicates of the Same Form
+</label>
 <br><BR><BR>
 Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>, click a Pokemon's Name to view its ranking page!
+
   <script>
 	 // Declare variables
 	let csvData = [];
@@ -194,7 +204,8 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  const newSeed = await getRandomWordFromCSV(); // random 8-char seed
 	  document.getElementById('seed').value = newSeed;
 	  const loaded = await loadCSV();
-	  processCSV(loaded); // refresh the randomized output
+	  const mega = await loadMega();
+	  processCSV(loaded, mega); // refresh the randomized output
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
@@ -227,7 +238,8 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		evilChance = 10; // 1/evilchance
 		seed = 0;
 		const loaded = await loadCSV();
-		processCSV(loaded);
+		const mega = await loadMega();
+		processCSV(loaded, mega);
 	}
 	function getSelectedLeague() {
 	  const selected = document.querySelector('input[name="league"]:checked');
@@ -236,6 +248,18 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	async function loadCSV(){
 		var csvData = [];
 		var csvName= `${getSelectedLeague()}.csv`;
+		await fetch(csvName)
+		  .then(response => response.text())
+		  .then(text => {
+			const parsed = Papa.parse(text.trim(), { header: false });
+			csvData = parsed.data.filter(row => row.length > 0).slice(1);
+		  });
+		 return csvData;
+		 
+	}
+	async function loadMega(){
+		var csvData = [];
+		var csvName= `${getSelectedLeague()}_mega.csv`;
 		await fetch(csvName)
 		  .then(response => response.text())
 		  .then(text => {
@@ -310,7 +334,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		}
 		seedRandom(seed.toString());
 		var shiny = '';
-		if(seed%shinyChance==0){
+		if(shinyChance!=0 && seed%shinyChance==0){
 		var form = "-shiny"
 		if(document.getElementById('noShiny').checked){
 		shiny = `<span style="font-size: 24px; color: gold;">&#9733;</span> `;
@@ -346,9 +370,15 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
       container.innerHTML = `${linksHtml}`;
     }
 
-	function getUniqueSpecies(pokemonList, len) {
+	function getUniqueSpecies(pokemonList, len, megas) {
 	  var uniqueList = [];
 	  var seenSpecies = new Set();
+	  for (const mega of megas){
+		if(mega !== undefined){
+		  seenSpecies.add(mega.split(",")[0].split(" ")[0]);
+	    }
+		console.log(seenSpecies);
+	  }
 	  for (const mon of pokemonList) {
 		const species = mon.split(",")[0].split(" ")[0] // first word of name
 		if (!seenSpecies.has(species)) {
@@ -360,7 +390,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  return uniqueList;
 	}
 
-    function processCSV(loaded) {
+    function processCSV(loaded, mega) {
 	  seed = 0;
       const seedInput = document.getElementById('seed').value;
 	  shinyChance = parseInt(document.getElementById('shinyChance').value);
@@ -368,29 +398,56 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  const limitMax = parseInt(document.getElementById('rowLimitMax').value);
 	  
       
-
+	  const teamUnique = document.getElementById('uniqueTeamCheckbox').checked;
+	  const enforceUnique = document.getElementById('uniqueSpeciesCheckbox').checked;
+	  const allowDuplicates = document.getElementById('allowDuplicates').checked;
+	  const megas = document.getElementById('megas').checked;
       const subset = loaded.slice(limitMin-1, limitMax);
-      const flatSubset = subset.map(row => row.join(','));
-	
-
+	  var megasList = [];
+      var flatSubset = subset.map(row => row.join(','));
+	  if(allowDuplicates){
+		flatSubset.push(...flatSubset);
+		flatSubset.push(...flatSubset);
+		flatSubset.push(...flatSubset);
+	  }
+	  
+	  if(megas){
+	  const megasubset = mega.slice(limitMin-1, limitMax);
+      var megaflat = megasubset.map(row => row.join(','));
+	  var megaShuffle = shuffleArray(megaflat, seedInput + '_3');
+	  var megaShuffle1 = megaShuffle[0];
+		if(teamUnique){
+			var megaShuffle2 = megaShuffle[1];
+		} else {
+			var megaShuffle2 = shuffleArray(megaflat, seedInput + '_4')[0];
+		}
+		console.log(megaShuffle1, megaShuffle2);
+		megasList = [megaShuffle1, megaShuffle2];
+	  }
       // First shuffle
 	  var firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
-	  const teamUnique = document.getElementById('uniqueTeamCheckbox').checked;
 	  if(teamUnique){
-			firstShuffle = getUniqueSpecies(firstShuffle, 12)
+		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList);
+		if(megas){
+		 firstShuffle[0] = megaShuffle1;
+		 firstShuffle[6] = megaShuffle2;
+		}
 			displayResults('first6', firstShuffle.slice(0,6));
 			displayResults('fullList', firstShuffle.slice(6,12));
 		}
 	  else{
-	  const enforceUnique = document.getElementById('uniqueSpeciesCheckbox').checked;
 		if(enforceUnique){
-			firstShuffle = getUniqueSpecies(firstShuffle, 6)
+			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1]);
 		}
       // Second shuffle
       var secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
 	  	if(enforceUnique){
-			secondShuffle = getUniqueSpecies(secondShuffle, 6)
+		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2]);
 		}
+	if(megas){
+	 firstShuffle[0] = megaShuffle1;
+	 secondShuffle[0] = megaShuffle2;
+	}
 	  displayResults('first6', firstShuffle.slice(0,6));
       displayResults('fullList', secondShuffle.slice(0,6));
 	  }
