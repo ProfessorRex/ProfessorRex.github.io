@@ -1,42 +1,39 @@
-Pokemon,Score,Dex,Type 1,Type 2,Attack,Defense,Stamina,Stat Product,Level,CP,Fast Move,Charged Move 1,Charged Move 2,Charged Move 1 Count,Charged Move 2 Count,Buddy Distance,Charged Move Cost
-Scizor (Mega),100,212,bug,steel,139.4,129.1,89,1601666,13.5,1497,Bullet Punch,Iron Head,Night Slash,8,5,5,75000
-Swampert (Mega),98.7,260,water,ground,135.6,110.1,110,1641091,12.5,1495,Mud Shot,Earthquake,Hydro Cannon,9,5,3,10000
-Mawile (Mega),97.4,303,steel,fairy,125,148.9,96,1787082,23.5,1498,Astonish,Iron Head,Play Rough,5,6,5,75000
-Altaria (Mega),89.7,334,dragon,fairy,126.3,130.2,107,1759578,17.5,1492,Dragon Breath,Dazzling Gleam,Dragon Pulse,19,20,1,10000
-Steelix (Mega),88.8,208,steel,ground,113.3,176.4,99,1979139,15,1500,Dragon Tail,Breaking Swipe,Crunch,4,5,5,75000
-Houndoom (Mega),88.1,229,dark,fire,148,104.5,97,1499353,14,1496,Fire Fang,Crunch,Fire Blast,8,14,3,50000
-Lucario (Mega),85.6,448,fighting,steel,160.7,92.6,94,1398984,14.5,1500,Bullet Punch,Aura Sphere,Blaze Kick,8,6,5,75000
-Sableye (Mega),83.5,302,dark,ghost,112.2,162.6,109,1988838,29,1496,Feint Attack,Dazzling Gleam,Foul Play,10,7,5,75000
-Blaziken (Mega),80.3,257,fire,fighting,160.4,87.7,98,1378059,13,1492,Counter,Blast Burn,Blaze Kick,9,7,3,10000
-Gyarados (Mega),77.9,130,water,dark,135.5,118.2,103,1649910,11.5,1500,Bite,Aqua Tail,Crunch,18,23,1,10000
-Aggron (Mega),77.3,306,steel,none,122.3,165.2,90,1819267,13,1492,Dragon Tail,Heavy Slam,Meteor Beam,6,7,1,10000
-Gallade (Mega),76.3,475,psychic,fighting,153.2,112.9,84,1453051,12,1498,Charm,Close Combat,Leaf Blade,8,6,5,75000
-Medicham (Mega),76.3,308,fighting,psychic,132.8,119.7,106,1685040,22,1499,Counter,Dynamic Punch,Ice Punch,8,7,3,50000
-Venusaur (Mega),76.3,3,grass,poison,127.3,134,103,1756769,15,1498,Razor Leaf,Frenzy Plant,Petal Blizzard,12,17,3,10000
-Latias (Mega),75.4,380,dragon,psychic,132.7,139.1,91,1680191,11.5,1493,Charm,Mist Ball,Outrage,10,10,20,100000
-Lopunny (Mega),74.7,428,normal,fighting,147,115,90,1521161,14.5,1499,Double Kick,Fire Punch,Focus Blast,4,7,3,50000
-Charizard (Mega Y),74.2,6,fire,flying,150.4,105.1,93,1469521,12,1486,Air Slash,Blast Burn,Dragon Claw,6,4,3,10000
-Heracross (Mega),72.9,214,bug,fighting,153.1,106.9,89,1457237,11.5,1495,Counter,Close Combat,Earthquake,8,11,3,50000
-Pinsir (Mega),70.3,127,bug,flying,150.8,116.1,85,1487670,13,1499,Bug Bite,Close Combat,Submission,15,17,5,75000
-Blastoise (Mega),70.1,9,water,none,135.5,123.7,99,1659024,13.5,1500,Bite,Flash Cannon,Hydro Cannon,35,20,3,10000
-Beedrill (Mega),69.5,15,bug,poison,164.6,87.1,94,1347488,16,1493,Bug Bite,Aerial Ace,Drill Run,14,15,1,10000
-Tyranitar (Mega),68.6,248,rock,dark,135.2,121.3,101,1655796,10,1499,Bite,Brutal Swing,Crunch,18,23,5,75000
-Slowbro (Mega),67.9,80,water,psychic,118,141.2,114,1899525,15,1499,Confusion,Ice Beam,Psychic,5,5,3,50000
-Latios (Mega),67,381,dragon,psychic,151.1,113,87,1485361,11,1500,Dragon Breath,Dragon Claw,Luster Purge,12,20,20,100000
-Salamence (Mega),65.8,373,dragon,flying,139.4,115.2,100,1605335,10.5,1495,Bite,Draco Meteor,Fire Blast,33,40,5,75000
-Garchomp (Mega),65.6,445,dragon,ground,145.8,98.4,107,1535367,10,1498,Dragon Tail,Earthquake,Earth Power,8,7,5,75000
-Charizard (Mega X),64.5,6,fire,dragon,141.4,114.5,98,1586280,14.5,1499,Air Slash,Blast Burn,Dragon Claw,6,4,3,10000
-Pidgeot (Mega),64.4,18,normal,flying,148,96.8,106,1517596,15,1499,Air Slash,Aerial Ace,Air Cutter,5,4,1,10000
-Audino (Mega),63,531,normal,fairy,97.1,157.3,151,2306309,22,1496,Pound,Body Slam,Dazzling Gleam,9,14,3,50000
-Aerodactyl (Mega),62.3,142,rock,flying,145.3,108,98,1537618,13.5,1499,Bite,Ancient Power,Earth Power,23,28,5,75000
-Glalie (Mega),61.4,362,ice,none,142.7,100.2,110,1573041,17,1499,Frost Breath,Avalanche,Gyro Ball,9,12,3,50000
-Alakazam (Mega),54.6,65,psychic,none,171.7,101.8,74,1293636,12,1495,Confusion,Dazzling Gleam,Fire Punch,5,4,3,50000
-Gengar (Mega),51.7,94,ghost,poison,168.2,98.7,80,1327971,12.5,1497,Hex,Dark Pulse,Focus Blast,4,6,3,50000
-Ampharos (Mega),50.2,181,electric,dragon,143.5,103.1,105,1553622,13,1500,Charge Beam,Brutal Swing,Dragon Pulse,4,6,5,75000
-Absol (Mega),49.6,359,dark,none,173.6,77.1,96,1284477,16.5,1498,Psycho Cut,Brutal Swing,Dark Pulse,4,6,5,75000
-Abomasnow (Mega),48.7,460,grass,ice,131.5,110.1,117,1692961,16,1495,Leafage,Blizzard,Energy Ball,11,8,3,50000
-Sceptile (Mega),45.6,254,grass,dragon,159.5,96.2,91,1396654,13.5,1499,Bullet Seed,Aerial Ace,Breaking Swipe,4,3,3,10000
-Kangaskhan (Mega),43.2,115,normal,none,127.2,112.4,123,1758587,14.5,1496,Low Kick,Brick Break,Crunch,8,9,3,50000
-Banette (Mega),42.9,354,ghost,none,166.6,89,91,1349175,15,1499,Hex,Dazzling Gleam,Shadow Ball,5,5,3,50000
-Gardevoir (Mega),38.4,282,psychic,fairy,153.6,112.5,84,1451468,12,1495,Charge Beam,Dazzling Gleam,Psychic,5,5,5,75000
-Manectric (Mega),30.4,310,electric,none,152.6,99.9,96,1463165,15,1496,Charge Beam,Flame Burst,Overheat,5,5,3,50000
+Scizor (Mega),80.6,212,bug,steel,139.4,129.1,89,1601666,13.5,1497,Bullet Punch,Iron Head,Night Slash,8,5,5,75000
+Swampert (Mega),75.6,260,water,ground,135.6,110.1,110,1641091,12.5,1495,Mud Shot,Earthquake,Hydro Cannon,9,5,3,10000
+Steelix (Mega),69.1,208,steel,ground,113.3,176.4,99,1979139,15,1500,Dragon Tail,Breaking Swipe,Crunch,4,5,5,75000
+Venusaur (Mega),66.5,3,grass,poison,127.3,134,103,1756769,15,1498,Razor Leaf,Frenzy Plant,Petal Blizzard,12,17,3,10000
+Lucario (Mega),66.1,448,fighting,steel,160.7,92.6,94,1398984,14.5,1500,Bullet Punch,Aura Sphere,Blaze Kick,8,6,5,75000
+Latios (Mega),65.8,381,dragon,psychic,151.1,113,87,1485361,11,1500,Dragon Breath,Dragon Claw,Luster Purge,12,20,20,100000
+Altaria (Mega),65.7,334,dragon,fairy,126.3,130.2,107,1759578,17.5,1492,Dragon Breath,Dazzling Gleam,Dragon Pulse,19,20,1,10000
+Sableye (Mega),65.2,302,dark,ghost,112.2,162.6,109,1988838,29,1496,Feint Attack,Dazzling Gleam,Foul Play,10,7,5,75000
+Gyarados (Mega),65.1,130,water,dark,135.5,118.2,103,1649910,11.5,1500,Bite,Aqua Tail,Crunch,18,23,1,10000
+Mawile (Mega),64.2,303,steel,fairy,125,148.9,96,1787082,23.5,1498,Astonish,Iron Head,Play Rough,5,6,5,75000
+Houndoom (Mega),64.1,229,dark,fire,148,104.5,97,1499353,14,1496,Fire Fang,Crunch,Fire Blast,8,14,3,50000
+Tyranitar (Mega),61,248,rock,dark,135.2,121.3,101,1655796,10,1499,Bite,Brutal Swing,Crunch,18,23,5,75000
+Heracross (Mega),60.5,214,bug,fighting,153.1,106.9,89,1457237,11.5,1495,Counter,Close Combat,Earthquake,8,11,3,50000
+Medicham (Mega),60.5,308,fighting,psychic,132.8,119.7,106,1685040,22,1499,Counter,Dynamic Punch,Ice Punch,8,7,3,50000
+Blaziken (Mega),60.4,257,fire,fighting,160.4,87.7,98,1378059,13,1492,Counter,Blast Burn,Blaze Kick,9,7,3,10000
+Garchomp (Mega),60,445,dragon,ground,145.8,98.4,107,1535367,10,1498,Dragon Tail,Earthquake,Earth Power,8,7,5,75000
+Pinsir (Mega),60,127,bug,flying,150.8,116.1,85,1487670,13,1499,Bug Bite,Close Combat,Submission,15,17,5,75000
+Pidgeot (Mega),59.3,18,normal,flying,148,96.8,106,1517596,15,1499,Air Slash,Aerial Ace,Air Cutter,5,4,1,10000
+Gallade (Mega),59.1,475,psychic,fighting,153.2,112.9,84,1453051,12,1498,Charm,Close Combat,Leaf Blade,8,6,5,75000
+Beedrill (Mega),58.8,15,bug,poison,164.6,87.1,94,1347488,16,1493,Bug Bite,Aerial Ace,Drill Run,14,15,1,10000
+Latias (Mega),58.3,380,dragon,psychic,132.7,139.1,91,1680191,11.5,1493,Charm,Mist Ball,Outrage,10,10,20,100000
+Salamence (Mega),58,373,dragon,flying,139.4,115.2,100,1605335,10.5,1495,Bite,Draco Meteor,Fire Blast,33,40,5,75000
+Slowbro (Mega),55.9,80,water,psychic,118,141.2,114,1899525,15,1499,Confusion,Ice Beam,Psychic,5,5,3,50000
+Aerodactyl (Mega),55.7,142,rock,flying,145.3,108,98,1537618,13.5,1499,Bite,Ancient Power,Earth Power,23,28,5,75000
+Aggron (Mega),55.1,306,steel,none,122.3,165.2,90,1819267,13,1492,Dragon Tail,Heavy Slam,Meteor Beam,6,7,1,10000
+Blastoise (Mega),54.4,9,water,none,135.5,123.7,99,1659024,13.5,1500,Bite,Flash Cannon,Hydro Cannon,35,20,3,10000
+Glalie (Mega),54.3,362,ice,none,142.7,100.2,110,1573041,17,1499,Frost Breath,Avalanche,Gyro Ball,9,12,3,50000
+Alakazam (Mega),53.3,65,psychic,none,171.7,101.8,74,1293636,12,1495,Confusion,Dazzling Gleam,Fire Punch,5,4,3,50000
+Lopunny (Mega),53.2,428,normal,fighting,147,115,90,1521161,14.5,1499,Double Kick,Fire Punch,Focus Blast,4,7,3,50000
+Absol (Mega),52.6,359,dark,none,173.6,77.1,96,1284477,16.5,1498,Psycho Cut,Brutal Swing,Dark Pulse,4,6,5,75000
+Sceptile (Mega),50.6,254,grass,dragon,159.5,96.2,91,1396654,13.5,1499,Bullet Seed,Aerial Ace,Breaking Swipe,4,3,3,10000
+Abomasnow (Mega),44.6,460,grass,ice,131.5,110.1,117,1692961,16,1495,Leafage,Blizzard,Energy Ball,11,8,3,50000
+Gengar (Mega),44,94,ghost,poison,168.2,98.7,80,1327971,12.5,1497,Hex,Dark Pulse,Focus Blast,4,6,3,50000
+Ampharos (Mega),40.5,181,electric,dragon,143.5,103.1,105,1553622,13,1500,Charge Beam,Brutal Swing,Dragon Pulse,4,6,5,75000
+Audino (Mega),40.2,531,normal,fairy,97.1,157.3,151,2306309,22,1496,Pound,Body Slam,Dazzling Gleam,9,14,3,50000
+Banette (Mega),36.6,354,ghost,none,166.6,89,91,1349175,15,1499,Hex,Dazzling Gleam,Shadow Ball,5,5,3,50000
+Kangaskhan (Mega),31.5,115,normal,none,127.2,112.4,123,1758587,14.5,1496,Low Kick,Brick Break,Crunch,8,9,3,50000
+Manectric (Mega),23.6,310,electric,none,152.6,99.9,96,1463165,15,1496,Charge Beam,Flame Burst,Overheat,5,5,3,50000
+Gardevoir (Mega),22.6,282,psychic,fairy,153.6,112.5,84,1451468,12,1495,Charge Beam,Dazzling Gleam,Psychic,5,5,5,75000

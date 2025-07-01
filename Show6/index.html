@@ -182,6 +182,12 @@
   <input type="checkbox" id="megas" onchange="onLoad()">
   1 Mega Per Team
 </label>
+<label for="rowLimitMin">Min Mega Poke Rank:
+  <input type="number" id="megaLimitMin" value="1" min="1" style="width: 5ch;" onchange="onLoad()"/>
+  </label>
+  <label for="rowLimitMax">Max Mega Poke Rank:
+  <input type="number" id="megaLimitMax" value="43" min="1" style="width: 5ch;" onchange="onLoad()"/>
+  </label>
  <label>
   <input type="checkbox" id="noShiny" onchange="onLoad()">
   Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="0" style="width: 5ch;" onchange="onLoad()"> chance.
@@ -189,6 +195,10 @@
  <label>
   <input type="radio" name="species" id="allowDuplicates" onchange="onLoad()">
   Allow Duplicates of the Same Form
+</label>
+ <label>
+  <input type="radio" name="species" id="allowForms" onchange="onLoad()">
+  Enable Form Clause
 </label>
 <br><BR><BR>
 Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>, click a Pokemon's Name to view its ranking page!
@@ -209,6 +219,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
+	setInputsFromUrl();
 	generateNewSeed();
 	  onLoad();
 	});
@@ -240,6 +251,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		const loaded = await loadCSV();
 		const mega = await loadMega();
 		processCSV(loaded, mega);
+		updateUrlWithInputs();
 	}
 	function getSelectedLeague() {
 	  const selected = document.querySelector('input[name="league"]:checked');
@@ -264,7 +276,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		  .then(response => response.text())
 		  .then(text => {
 			const parsed = Papa.parse(text.trim(), { header: false });
-			csvData = parsed.data.filter(row => row.length > 0).slice(1);
+			csvData = parsed.data.filter(row => row.length > 0);
 		  });
 		 return csvData;
 		 
@@ -403,6 +415,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  const allowDuplicates = document.getElementById('allowDuplicates').checked;
 	  const megas = document.getElementById('megas').checked;
       const subset = loaded.slice(limitMin-1, limitMax);
+
 	  var megasList = [];
       var flatSubset = subset.map(row => row.join(','));
 	  if(allowDuplicates){
@@ -410,9 +423,14 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		flatSubset.push(...flatSubset);
 		flatSubset.push(...flatSubset);
 	  }
-	  
+	  // First shuffle
+	  var firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
+	  // Second shuffle
+      var secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
 	  if(megas){
-	  const megasubset = mega.slice(limitMin-1, limitMax);
+	  const megaMin = parseInt(document.getElementById('megaLimitMin').value);
+	  const megaMax = parseInt(document.getElementById('megaLimitMax').value);
+	  const megasubset = mega.slice(megaMin-1, megaMax);
       var megaflat = megasubset.map(row => row.join(','));
 	  var megaShuffle = shuffleArray(megaflat, seedInput + '_3');
 	  var megaShuffle1 = megaShuffle[0];
@@ -424,12 +442,10 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		console.log(megaShuffle1, megaShuffle2);
 		megasList = [megaShuffle1, megaShuffle2];
 	  }
-      // First shuffle
-	  var firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
 	  if(teamUnique){
 		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList);
 		if(megas){
-		 firstShuffle[0] = megaShuffle1;
+		 firstShuffle.unshift(megaShuffle1);
 		 firstShuffle[6] = megaShuffle2;
 		}
 			displayResults('first6', firstShuffle.slice(0,6));
@@ -439,19 +455,75 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		if(enforceUnique){
 			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1]);
 		}
-      // Second shuffle
-      var secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
 	  	if(enforceUnique){
 		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2]);
 		}
 	if(megas){
-	 firstShuffle[0] = megaShuffle1;
-	 secondShuffle[0] = megaShuffle2;
+	 firstShuffle.unshift(megaShuffle1);
+	 secondShuffle.unshift(megaShuffle2);
 	}
 	  displayResults('first6', firstShuffle.slice(0,6));
       displayResults('fullList', secondShuffle.slice(0,6));
 	  }
     }
+  function updateUrlWithInputs() {
+	  const params = new URLSearchParams();
+
+	  // Get all input/select elements
+	  const inputs = document.querySelectorAll('input, select, textarea');
+
+	  inputs.forEach(input => {
+		const name = input.name || input.id;
+		if (!name) return; // skip inputs without name or id
+
+		if (input.type === 'checkbox') {
+		  if (input.checked) params.append(name, input.value);
+		} else if (input.type === 'radio') {
+		  if (input.checked) params.append(name, input.value);
+		} else {
+		  if (input.value) params.append(name, input.value);
+		}
+	  });
+
+	  // Build new URL with updated query string
+	  const newUrl =
+		window.location.protocol +
+		'//' +
+		window.location.host +
+		window.location.pathname +
+		'?' +
+		params.toString();
+
+	  // Update URL without reloading page
+	  history.replaceState(null, '', newUrl);
+  }
+  function setInputsFromUrl() {
+	  const params = new URLSearchParams(window.location.search);
+
+	  const inputs = document.querySelectorAll('input, select, textarea');
+
+	  inputs.forEach(input => {
+		const name = input.name || input.id;
+		if (!name) return;
+
+		if (!params.has(name)) return;
+
+		const value = params.getAll(name); // getAll for multiple values (checkbox groups)
+
+		if (input.type === 'checkbox') {
+		  // For checkboxes: check if this input's value is among the URL values
+		  input.checked = value.includes(input.value);
+		} else if (input.type === 'radio') {
+		  input.checked = value.includes(input.value);
+		} else {
+		  // For other inputs/selects, just set first value
+		  input.value = value[0];
+		}
+	  });
+  }
+
+
+
   </script>
 </body>
 </html>
