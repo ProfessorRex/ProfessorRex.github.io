@@ -142,11 +142,11 @@
   <input type="text" id="seed" onchange="onLoad()"/>
   <button onclick="generateNewSeed()">Generate New Seed</button>
 <label>
-  <input type="radio" name="species" id="uniqueSpeciesCheckbox" checked onchange="onLoad()">
+  <input type="radio" name="species" id="uniqueSpeciesCheckbox" value="6" checked onchange="onLoad()">
   Species Clause Per Team
 </label>
 <label>
-  <input type="radio" name="species" id="uniqueTeamCheckbox" onchange="onLoad()">
+  <input type="radio" name="species" id="uniqueTeamCheckbox" value="12" onchange="onLoad()">
   12 Unique Species
 </label>
   <label for="rowLimitMin">Min PVP Poke Rank:
@@ -193,11 +193,11 @@
   Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="0" style="width: 5ch;" onchange="onLoad()"> chance.
 </label>
  <label>
-  <input type="radio" name="species" id="allowDuplicates" onchange="onLoad()">
+  <input type="radio" name="species" id="allowDuplicates" value="allowDuplicates" onchange="onLoad()">
   Allow Duplicates of the Same Form
 </label>
  <label>
-  <input type="radio" name="species" id="allowForms" onchange="onLoad()">
+  <input type="radio" name="species" id="allowForms" value="allowForms" onchange="onLoad()">
   Enable Form Clause
 </label>
 <br><BR><BR>
