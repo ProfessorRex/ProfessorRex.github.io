@@ -69,7 +69,7 @@
     max-width: 120px;
     aspect-ratio: 1 / 1;
     margin: 0 auto 8px;
-	image-rendering: pixelated;
+	/*image-rendering: pixelated;*/
   }
 
   .image-stack img {
@@ -84,6 +84,7 @@
 
     .image-stack img.back {
       z-index: 0;
+	  image-rendering: pixelated;
     }
 
     .image-stack img.front {
@@ -116,14 +117,23 @@
   <input type="checkbox" id="uniqueTeamCheckbox">
   Unique Species Across Teams
 </label>
-  <label for="rowLimitMin">Min PVP Poke Rank:</label>
-  <input type="number" id="rowLimitMin" value="1" min="1" />
-  <label for="rowLimitMax">Max PVP Poke Rank:</label>
-  <input type="number" id="rowLimitMax" value="200" min="1" />
-  
+  <label for="rowLimitMin">Min PVP Poke Rank:
+  <input type="number" id="rowLimitMin" value="1" min="1" style="width: 5ch;"/>
+  </label>
+  <label for="rowLimitMax">Max PVP Poke Rank:
+  <input type="number" id="rowLimitMax" value="200" min="1" style="width: 5ch;"/>
+  </label>
 <label>
   <input type="checkbox" id="showMoves">
   Show Movesets
+</label>
+<label>
+  <input type="checkbox" id="noShadow" checked>
+  Show Shadow Mons
+</label>
+<label>
+  <input type="checkbox" id="noShiny" checked>
+  Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="1" style="width: 5ch;"> chance.
 </label>
   <button onclick="processCSV()">Randomize Teams</button>
 <div class="table-layout">
@@ -156,7 +166,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
   
     // Load local CSV (same directory)
     let csvData = [];
-	let shinyChance = 10; // = 1/shinychance
+	let shinyChance = parseInt(document.getElementById('shinyChance').value);
 	let evilChance = 10; // 1/evilchance
 	let evil = Math.random();
 	let seed = 0;
@@ -203,27 +213,37 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		const types = [t1].filter(e => e !== 'none');
 		const typeClasses = types.map(t => `type-${t}`).join(' ');;
 		var shadow = '<img src="shadowN.png" class="back">';
+		var shadowWord = ''
+		const showShadow = document.getElementById('noShadow').checked;
 		if (name.toUpperCase().endsWith("(SHADOW)")) {
-		shadow = '<img src="shadow.gif" class="back">';
 		const restName = name.slice(0,-9); // e.g., "Machamp"
-		const shadowWord = "(Shadow)"
+		if(showShadow){
+		shadow = '<img src="shadow.gif" class="back">';
+		shadowWord = "(Shadow)"
+		typeStyled = `<span class="${typeClasses}">${restName}</span> `;
+		} else {
+		 typeStyled = `<span class="${typeClasses}">${restName}</span>`;
+		}
 		shadowStyled = `<span class="shadow-link">${shadowWord}</span>`;
-		typeStyled = `<span class="${typeClasses}">${restName}</span>`;
-		displayName = `${typeStyled} ${shadowStyled}`;
+		displayName = `${typeStyled}${shadowStyled}`;
 		name = restName;
 		} else {
 		  displayName = `<span class="${typeClasses}">${name}</span>`;
 		}
-		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","");
+		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","").replace("Paldean", "Paldea").replace(" (Full Belly)", "").replace("Female",'f').replace(" (Male)","").replace(" (Standard)",'').replace(" (Baile)",'').replace("10% Forme",'10').replace(" (Midday)",'').replace("Tauros (",'Tauros (Paldea').replace(" (Average)",'');
 		seedRandom(seed.toString());
 		if(seed%evilChance==0){
 			displayName = displayName.replace("Shadow", "EVIL");
 		}
 		seedRandom(seed.toString());
+		var shiny = '';
 		if(seed%shinyChance==0){
-		var form = "shiny"
+		var form = "-shiny"
+		if(document.getElementById('noShiny').checked){
+		shiny = `<span style="font-size: 24px; color: gold;">&#9733;</span> `;
+		}
 		} else {
-		var form = "regular"
+		var form = ""
 		}
 		var beginning = "";
 		var end = "";
@@ -242,7 +262,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		if(showMoves){
 			moves = `<br>${pkmn.split(',')[11]}<br>${pkmn.split(',')[12]}<br>${pkmn.split(',')[13]}<br>`;
 		}
-        return `${beginning}<td><div class="image-stack">${shadow}<img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${form}/${name.replace(' ', '-').replace(/[()]/g, '').toLowerCase()}.png" class="front"></div><div><a href="${url}" target="_blank">${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
+        return `${beginning}<td><div class="image-stack">${shadow}<img src="https://play.pokemonshowdown.com/sprites/home-centered${form}/${name.replace('-','').replace(' (', '-').replace(/[()]/g, '').toLowerCase().replace('-single strike','').replace('-incarnate','').replace('rapid strike','rapidstrike').replace('-overcast','').replace('-50% forme','').replace('-land','').replace('.','').replace(' ', '')}.png" class="front"></div><div><a href="${url}" target="_blank">${shiny}${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
@@ -265,6 +285,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
     function processCSV() {
 	  seed = 0;
       const seedInput = document.getElementById('seed').value;
+	  shinyChance = parseInt(document.getElementById('shinyChance').value);
       const limitMin = parseInt(document.getElementById('rowLimitMin').value);
 	  const limitMax = parseInt(document.getElementById('rowLimitMax').value);
 
@@ -290,13 +311,12 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		if(enforceUnique){
 			firstShuffle = getUniqueSpecies(firstShuffle, 6)
 		}
-      displayResults('first6', firstShuffle.slice(0,6));
-
       // Second shuffle
       var secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
 	  	if(enforceUnique){
 			secondShuffle = getUniqueSpecies(secondShuffle, 6)
 		}
+	  displayResults('first6', firstShuffle.slice(0,6));
       displayResults('fullList', secondShuffle.slice(0,6));
 	  }
     }
