@@ -90,7 +90,23 @@
     .image-stack img.front {
       z-index: 1;
     }
+  .league-selector {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; /* spacing between columns */
+    margin: 0px 0;
+  }
 
+  .league-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .league-option label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 </style>
 <head>
   <meta charset="UTF-8">
@@ -104,38 +120,54 @@
   </style>
 </head>
 <body>
-  <h1>Show 6 Team Randomizer</h1>
+  <b>Show 6 Team Randomizer</b>
+<fieldset style="border: none; margin: 0px 0;">
+<div class="league-selector">
+  <div class="league-option">
+    <label for="league-g">Great</label>
+    <input type="radio" id="league-g" name="league" value="great" checked onchange="onLoad()">
+  </div>
 
+  <div class="league-option">
+    <label for="league-u">Ultra</label>
+    <input type="radio" id="league-u" name="league" value="ultra" onchange="onLoad()">
+  </div>
+
+  <div class="league-option">
+    <label for="league-m">Master</label>
+    <input type="radio" id="league-m" name="league" value="master" onchange="onLoad()">
+  </div>
+</div>
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" />
   <button onclick="generateNewSeed()">Generate New Seed</button>
 <label>
-  <input type="checkbox" id="uniqueSpeciesCheckbox" checked>
+  <input type="checkbox" id="uniqueSpeciesCheckbox" checked onchange="onLoad()">
   Unique Species Per Team
 </label>
 <label>
-  <input type="checkbox" id="uniqueTeamCheckbox">
+  <input type="checkbox" id="uniqueTeamCheckbox" onchange="onLoad()">
   Unique Species Across Teams
 </label>
   <label for="rowLimitMin">Min PVP Poke Rank:
-  <input type="number" id="rowLimitMin" value="1" min="1" style="width: 5ch;"/>
+  <input type="number" id="rowLimitMin" value="1" min="1" style="width: 5ch;" onchange="onLoad()"/>
   </label>
   <label for="rowLimitMax">Max PVP Poke Rank:
-  <input type="number" id="rowLimitMax" value="200" min="1" style="width: 5ch;"/>
+  <input type="number" id="rowLimitMax" value="200" min="1" style="width: 5ch;" onchange="onLoad()"/>
   </label>
 <label>
-  <input type="checkbox" id="showMoves">
+  <input type="checkbox" id="showMoves" onchange="onLoad()">
   Show Movesets
 </label>
 <label>
-  <input type="checkbox" id="noShadow" checked>
+  <input type="checkbox" id="noShadow" checked onchange="onLoad()">
   Show Shadow Mons
 </label>
 <label>
-  <input type="checkbox" id="noShiny" checked>
-  Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="1" style="width: 5ch;"> chance.
+  <input type="checkbox" id="noShiny" checked onchange="onLoad()">
+  Show Shiny Star at 1/<input type="number" id="shinyChance" value="10" min="1" style="width: 5ch;" onchange="onLoad()"> chance.
 </label>
-  <button onclick="processCSV()">Randomize Teams</button>
+  <button onclick="onLoad()">Randomize Teams</button>
 <div class="table-layout">
   <div class="table-wrapper">
   <h2> Team 1:</h2>
@@ -152,33 +184,52 @@
 <br><BR><BR>
 Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>
   <script>
-	function generateNewSeed() {
+	 // Declare variables
+	let csvData = [];
+	let shinyChance = parseInt(document.getElementById('shinyChance').value);
+	let evilChance = 10; // 1/evilchance
+	let seed = 0;
+	
+	async function generateNewSeed() {
 	  const newSeed = Math.random().toString(36).substring(2, 10); // random 8-char seed
 	  document.getElementById('seed').value = newSeed;
-	  evil = Math.random();
-	  processCSV(); // refresh the randomized output
+	  const loaded = await loadCSV();
+	  processCSV(loaded); // refresh the randomized output
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
 	  const randomSeed = Math.random().toString(36).substring(2, 10); // e.g., "k4fj29xm"
 	  document.getElementById('seed').value = randomSeed;
+	  onLoad();
 	});
-  
-    // Load local CSV (same directory)
-    let csvData = [];
-	let shinyChance = parseInt(document.getElementById('shinyChance').value);
-	let evilChance = 10; // 1/evilchance
-	let evil = Math.random();
-	let seed = 0;
-    fetch('data.csv')
-      .then(response => response.text())
-      .then(text => {
-        const parsed = Papa.parse(text.trim(), { header: false });
-        csvData = parsed.data.filter(row => row.length > 0).slice(1);
-        console.log('CSV Loaded:', csvData);
-		processCSV();
-      });
-
+	async function onLoad(){
+	     // Declare variables
+		csvData = [];
+		shinyChance = parseInt(document.getElementById('shinyChance').value);
+		evilChance = 10; // 1/evilchance
+		seed = 0;
+		const loaded = await loadCSV();
+		console.log(csvData);
+		processCSV(loaded);
+	}
+	function getSelectedLeague() {
+	  const selected = document.querySelector('input[name="league"]:checked');
+	  return selected ? selected.value : null;
+	}
+	async function loadCSV(){
+		var csvData = [];
+		var csvName= `${getSelectedLeague()}.csv`;
+		await fetch(csvName)
+		  .then(response => response.text())
+		  .then(text => {
+			const parsed = Papa.parse(text.trim(), { header: false });
+			csvData = parsed.data.filter(row => row.length > 0).slice(1);
+			console.log('CSV Loaded:', csvName, csvData);
+		  });
+		 return csvData;
+		 
+	}
+	
   // Better seeded PRNG using a simple LCG (Linear Congruential Generator)
   function seedRandom(seedStr) {
     for (let i = 0; i < seedStr.length; i++) {
@@ -230,7 +281,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		} else {
 		  displayName = `<span class="${typeClasses}">${name}</span>`;
 		}
-		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","").replace("Paldean", "Paldea").replace(" (Full Belly)", "").replace("Female",'f').replace(" (Male)","").replace(" (Standard)",'').replace(" (Baile)",'').replace("10% Forme",'10').replace(" (Midday)",'').replace("Tauros (",'Tauros (Paldea').replace(" (Average)",'');
+		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","").replace("Paldean", "Paldea").replace(" (Full Belly)", "").replace("Female",'f').replace(" (Male)","").replace(" (Standard)",'').replace(" (Baile)",'').replace("10% Forme",'10').replace("Complete Forme",'Complete').replace(" (Midday)",'').replace(" (Ordinary)",'').replace(" (Hero)",'').replace("Tauros (",'Tauros (Paldea').replace(" (Average)",'').replace(" (Altered)",'').replace(" (Aria)",'').replace("Crowned Shield",'Crowned').replace("Crowned Sword",'Crowned');
 		seedRandom(seed.toString());
 		if(seed%evilChance==0){
 			displayName = displayName.replace("Shadow", "EVIL");
@@ -262,7 +313,12 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		if(showMoves){
 			moves = `<br>${pkmn.split(',')[11]}<br>${pkmn.split(',')[12]}<br>${pkmn.split(',')[13]}<br>`;
 		}
-        return `${beginning}<td><div class="image-stack">${shadow}<img src="https://play.pokemonshowdown.com/sprites/home-centered${form}/${name.replace('-','').replace(' (', '-').replace(/[()]/g, '').toLowerCase().replace('-single strike','').replace('-incarnate','').replace('rapid strike','rapidstrike').replace('-overcast','').replace('-50% forme','').replace('-land','').replace('.','').replace(' ', '')}.png" class="front"></div><div><a href="${url}" target="_blank">${shiny}${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
+		var imgurl = `https://play.pokemonshowdown.com/sprites/home-centered${form}/${name.replace('-','').replace(' (', '-').replace(/[()]/g, '').toLowerCase().replace('-single strike','').replace('-incarnate','').replace('rapid strike','rapidstrike').replace('-overcast','').replace('-50% forme','').replace('-land','').replace('.','').replace(' ', '')}.png`;
+        if(name=="Mewtwo (Armored)"){
+			shiny = '';
+			imgurl='https://images.gameinfo.io/pokemon/256/p150f85.png';
+		}
+		return `${beginning}<td><div class="image-stack">${shadow}<img src="${imgurl}" class="front"></div><div><a href="${url}" target="_blank">${shiny}${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
@@ -282,19 +338,16 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  return uniqueList;
 	}
 
-    function processCSV() {
+    function processCSV(loaded) {
 	  seed = 0;
       const seedInput = document.getElementById('seed').value;
 	  shinyChance = parseInt(document.getElementById('shinyChance').value);
       const limitMin = parseInt(document.getElementById('rowLimitMin').value);
 	  const limitMax = parseInt(document.getElementById('rowLimitMax').value);
+	  
+      
 
-      if (!csvData.length) {
-        alert("CSV not loaded yet!");
-        return;
-      }
-
-      const subset = csvData.slice(limitMin-1, limitMax);
+      const subset = loaded.slice(limitMin-1, limitMax);
       const flatSubset = subset.map(row => row.join(','));
 	
 
