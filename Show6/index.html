@@ -121,7 +121,10 @@
   <label for="rowLimitMax">Max PVP Poke Rank:</label>
   <input type="number" id="rowLimitMax" value="200" min="1" />
   
-
+<label>
+  <input type="checkbox" id="showMoves">
+  Show Movesets
+</label>
   <button onclick="processCSV()">Randomize Teams</button>
 <div class="table-layout">
   <div class="table-wrapper">
@@ -137,6 +140,7 @@
   <table id="fullList" style="background-color:black; padding: 15px; table-layout: fixed;  text-align: center; "></table>
  </div></div>
 <br><BR><BR>
+Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>
   <script>
 	function generateNewSeed() {
 	  const newSeed = Math.random().toString(36).substring(2, 10); // random 8-char seed
@@ -235,7 +239,12 @@
 			beginning = "<tr>";
 		}
 		count = count + 1;
-        return `${beginning}<td><div class="image-stack">${shadow}<img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${form}/${name.replace(' ', '-').replace(/[()]/g, '').toLowerCase()}.png" class="front"></div><div><a href="${url}" target="_blank">${displayName}</a></div></td>${end}`;
+		 const showMoves = document.getElementById('showMoves').checked;
+		var moves = '';
+		if(showMoves){
+			moves = `<br>${pkmn.split(',')[11]}<br>${pkmn.split(',')[12]}<br>${pkmn.split(',')[13]}<br>`;
+		}
+        return `${beginning}<td><div class="image-stack">${shadow}<img src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/${form}/${name.replace(' ', '-').replace(/[()]/g, '').toLowerCase()}.png" class="front"></div><div><a href="${url}" target="_blank">${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
