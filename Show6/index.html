@@ -182,7 +182,7 @@
   <table id="fullList" style="background-color:black; padding: 15px; table-layout: fixed;  text-align: center; "></table>
  </div></div>
 <br><BR><BR>
-Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>
+Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>, click a Pokemon's Name to view its ranking page!
   <script>
 	 // Declare variables
 	let csvData = [];
@@ -269,7 +269,13 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
       // Display CSV line + PvPoke links
     function displayResults(targetId, list) {
       const container = document.getElementById(targetId);
-      const baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
+	  const league = getSelectedLeague();
+	  var baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
+	  if(league=="ultra"){
+		baseUrl = "https://pvpoke.com/rankings/all/2500/overall/";
+	  } if(league=="master"){
+		baseUrl = "https://pvpoke.com/rankings/all/10000/overall/";
+	  }
 	  var count = 0;
       const linksHtml = list.map(pkmn => {
 		var name = pkmn.split(',')[0]
