@@ -209,7 +209,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		evilChance = 10; // 1/evilchance
 		seed = 0;
 		const loaded = await loadCSV();
-		console.log(csvData);
 		processCSV(loaded);
 	}
 	function getSelectedLeague() {
@@ -224,7 +223,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		  .then(text => {
 			const parsed = Papa.parse(text.trim(), { header: false });
 			csvData = parsed.data.filter(row => row.length > 0).slice(1);
-			console.log('CSV Loaded:', csvName, csvData);
 		  });
 		 return csvData;
 		 
