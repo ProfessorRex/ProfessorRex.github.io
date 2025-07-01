@@ -108,7 +108,14 @@
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" />
   <button onclick="generateNewSeed()">Generate New Seed</button>
-
+<label>
+  <input type="checkbox" id="uniqueSpeciesCheckbox" checked>
+  Unique Species Per Team
+</label>
+<label>
+  <input type="checkbox" id="uniqueTeamCheckbox">
+  Unique Species Across Teams
+</label>
   <label for="rowLimitMin">Min PVP Poke Rank:</label>
   <input type="number" id="rowLimitMin" value="1" min="1" />
   <label for="rowLimitMax">Max PVP Poke Rank:</label>
@@ -152,7 +159,7 @@
       .then(response => response.text())
       .then(text => {
         const parsed = Papa.parse(text.trim(), { header: false });
-        csvData = parsed.data.filter(row => row.length > 0);
+        csvData = parsed.data.filter(row => row.length > 0).slice(1);
         console.log('CSV Loaded:', csvData);
 		processCSV();
       });
@@ -176,7 +183,7 @@
       const j = Math.floor(rand() * (i + 1));
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-    return arr.slice(1);
+    return arr;
   }
       // Display CSV line + PvPoke links
     function displayResults(targetId, list) {
@@ -234,6 +241,23 @@
       container.innerHTML = `${linksHtml}`;
     }
 
+	function getUniqueSpecies(pokemonList, len) {
+	  var uniqueList = [];
+	  var seenSpecies = new Set();
+		console.log(pokemonList)
+	  for (const mon of pokemonList) {
+		const species = mon.split(",")[0].split(" ")[0] // first word of name
+		if (!seenSpecies.has(species)) {
+		  uniqueList.push(mon);
+		  seenSpecies.add(species);
+		  console.log(seenSpecies)
+		}
+		if (uniqueList.length === len) break;
+	  }
+		console.log(uniqueList)
+	  return uniqueList;
+	}
+
     function processCSV() {
       const seedInput = document.getElementById('seed').value;
       const limitMin = parseInt(document.getElementById('rowLimitMin').value);
@@ -246,14 +270,31 @@
 
       const subset = csvData.slice(limitMin-1, limitMax);
       const flatSubset = subset.map(row => row.join(','));
+	
 
       // First shuffle
-      const firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
+	  var firstShuffle = shuffleArray(flatSubset, seedInput + '_1');
+	  const teamUnique = document.getElementById('uniqueTeamCheckbox').checked;
+	  if(teamUnique){
+			firstShuffle = getUniqueSpecies(firstShuffle, 12)
+			displayResults('first6', firstShuffle.slice(0,6));
+			displayResults('fullList', firstShuffle.slice(6,12));
+		}
+	  else{
+	  const enforceUnique = document.getElementById('uniqueSpeciesCheckbox').checked;
+	  console.log(enforceUnique)
+		if(enforceUnique){
+			firstShuffle = getUniqueSpecies(firstShuffle, 6)
+		}
       displayResults('first6', firstShuffle.slice(0,6));
 
       // Second shuffle
-      const secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
+      var secondShuffle = shuffleArray(flatSubset, seedInput + '_2');
+	  	if(enforceUnique){
+			secondShuffle = getUniqueSpecies(secondShuffle, 6)
+		}
       displayResults('fullList', secondShuffle.slice(0,6));
+	  }
     }
   </script>
 </body>
