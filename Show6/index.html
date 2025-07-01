@@ -191,17 +191,35 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	let seed = 0;
 	
 	async function generateNewSeed() {
-	  const newSeed = Math.random().toString(36).substring(2, 10); // random 8-char seed
+	  const newSeed = await getRandomWordFromCSV(); // random 8-char seed
 	  document.getElementById('seed').value = newSeed;
 	  const loaded = await loadCSV();
 	  processCSV(loaded); // refresh the randomized output
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
-	  const randomSeed = Math.random().toString(36).substring(2, 10); // e.g., "k4fj29xm"
-	  document.getElementById('seed').value = randomSeed;
+	generateNewSeed();
 	  onLoad();
 	});
+	
+	async function getRandomWordFromCSV() {
+	  try {
+		const response = await fetch('words.csv');
+		const text = await response.text();
+
+		// Split by line and filter out any empty lines
+		const words = text.trim().split(',').filter(line => line.length > 0);
+
+		// Pick a random word
+		const randomWord = words[Math.floor(Math.random() * words.length)];
+
+		return randomWord;
+
+	  } catch (err) {
+		console.error("Failed to load CSV:", err);
+		return null;
+	}
+	}
 	async function onLoad(){
 	     // Declare variables
 		csvData = [];
@@ -231,7 +249,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
   // Better seeded PRNG using a simple LCG (Linear Congruential Generator)
   function seedRandom(seedStr) {
     for (let i = 0; i < seedStr.length; i++) {
-      seed += seedStr.charCodeAt(i);
+      seed += seedStr.toLowerCase().charCodeAt(i);
     }
     return function () {
       seed = (seed * 9301 + 49297) % 233280;
