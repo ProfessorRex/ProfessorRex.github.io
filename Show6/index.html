@@ -219,9 +219,12 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
-	setInputsFromUrl();
-	generateNewSeed();
-	  onLoad();
+		if (window.location.search) {
+			setInputsFromUrl();
+		} else {
+			generateNewSeed();
+		}
+		onLoad();
 	});
 	
 	async function getRandomWordFromCSV() {
