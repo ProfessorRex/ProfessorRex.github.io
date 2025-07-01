@@ -156,9 +156,10 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
   
     // Load local CSV (same directory)
     let csvData = [];
-	let shinyChance = 0.1;
-	let evilChance = 0.1;
+	let shinyChance = 10; // = 1/shinychance
+	let evilChance = 10; // 1/evilchance
 	let evil = Math.random();
+	let seed = 0;
     fetch('data.csv')
       .then(response => response.text())
       .then(text => {
@@ -170,7 +171,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 
   // Better seeded PRNG using a simple LCG (Linear Congruential Generator)
   function seedRandom(seedStr) {
-    let seed = 0;
     for (let i = 0; i < seedStr.length; i++) {
       seed += seedStr.charCodeAt(i);
     }
@@ -192,7 +192,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
       // Display CSV line + PvPoke links
     function displayResults(targetId, list) {
       const container = document.getElementById(targetId);
-
       const baseUrl = "https://pvpoke.com/rankings/all/1500/overall/";
 	  var count = 0;
       const linksHtml = list.map(pkmn => {
@@ -202,7 +201,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
         const url = baseUrl + encodeURIComponent(name.toLowerCase().replace(/ /g, "_").replace(/[()]/g, '')) + "/";
         const isShadow = name.toUpperCase().includes("SHADOW");
 		const types = [t1].filter(e => e !== 'none');
-		console.log(types)
 		const typeClasses = types.map(t => `type-${t}`).join(' ');;
 		var shadow = '<img src="shadowN.png" class="back">';
 		if (name.toUpperCase().endsWith("(SHADOW)")) {
@@ -213,16 +211,16 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		typeStyled = `<span class="${typeClasses}">${restName}</span>`;
 		displayName = `${typeStyled} ${shadowStyled}`;
 		name = restName;
-		console.log(name)
 		} else {
 		  displayName = `<span class="${typeClasses}">${name}</span>`;
 		}
 		name = name.replace("Alolan", "Alola").replace("Galarian", "Galar").replace("Unovan", "Unova").replace("Hisuian", "Hisui").replace("'","");
-		if(evil<evilChance){
+		seedRandom(seed.toString());
+		if(seed%evilChance==0){
 			displayName = displayName.replace("Shadow", "EVIL");
 		}
-		const shiny = Math.random()
-		if(shiny<shinyChance){
+		seedRandom(seed.toString());
+		if(seed%shinyChance==0){
 		var form = "shiny"
 		} else {
 		var form = "regular"
@@ -253,21 +251,19 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	function getUniqueSpecies(pokemonList, len) {
 	  var uniqueList = [];
 	  var seenSpecies = new Set();
-		console.log(pokemonList)
 	  for (const mon of pokemonList) {
 		const species = mon.split(",")[0].split(" ")[0] // first word of name
 		if (!seenSpecies.has(species)) {
 		  uniqueList.push(mon);
 		  seenSpecies.add(species);
-		  console.log(seenSpecies)
 		}
 		if (uniqueList.length === len) break;
 	  }
-		console.log(uniqueList)
 	  return uniqueList;
 	}
 
     function processCSV() {
+	  seed = 0;
       const seedInput = document.getElementById('seed').value;
       const limitMin = parseInt(document.getElementById('rowLimitMin').value);
 	  const limitMax = parseInt(document.getElementById('rowLimitMax').value);
@@ -291,7 +287,6 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		}
 	  else{
 	  const enforceUnique = document.getElementById('uniqueSpeciesCheckbox').checked;
-	  console.log(enforceUnique)
 		if(enforceUnique){
 			firstShuffle = getUniqueSpecies(firstShuffle, 6)
 		}
