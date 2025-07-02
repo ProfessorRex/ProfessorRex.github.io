@@ -433,8 +433,24 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
       const subset = loaded.slice(limitMin-1, limitMax);
 	  const t1hold = document.getElementById('t1hold').value;
 	  const t2hold = document.getElementById('t2hold').value;
-	  const t1holdmon = loaded.find(row => row[0] === t1hold).join(',');
-	  const t2holdmon = loaded.find(row => row[0] === t2hold).join(',');
+	  var t1holdmon = [];
+	  var t2holdmon = [];
+	  if (t1hold != ''){
+		t1holdmon = loaded.find(row => row[0] === t1hold);
+		if (t1holdmon !== undefined){
+		  t1holdmon = t1holdmon.join(',');
+		} else {
+		  t1holdmon = `${t1hold}, , , , '`
+		}
+	  }
+	  if (t2hold != ''){
+		t2holdmon = loaded.find(row => row[0] === t2hold);
+		if (t2holdmon !== undefined){
+		  t2holdmon = t2holdmon.join(',');
+		} else {
+		  t2holdmon = `${t2hold}, , , , `;
+		}
+	  }
 	  var megasList = [];
       var flatSubset = subset.map(row => row.join(','));
 	  if(allowDuplicates){
