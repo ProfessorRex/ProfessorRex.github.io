@@ -110,7 +110,7 @@
 </style>
 <head>
   <meta charset="UTF-8">
-  <title>Show 6 Team Randomizer</title>
+  <title>Professor Rex's Show 6 GO Team Randomizer</title>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <style>
     body { font-family: sans-serif; padding: 2rem; }
@@ -120,7 +120,7 @@
   </style>
 </head>
 <body>
-  <b>Show 6 Team Randomizer</b>
+  <b>Professor Rex's Show 6 GO Team Randomizer</b>
 <fieldset style="border: none; margin: 0px 0;">
 <div class="league-selector">
   <div class="league-option">
@@ -150,10 +150,10 @@
   12 Unique Species
 </label>
   <label for="rowLimitMin">Min PVP Poke Rank:
-  <input type="number" id="rowLimitMin" value="1" min="1" style="width: 5ch;" onchange="onLoad()"/>
+  <input type="number" id="rowLimitMin" value="1" min="1" style="width: 8ch;" onchange="onLoad()"/>
   </label>
   <label for="rowLimitMax">Max PVP Poke Rank:
-  <input type="number" id="rowLimitMax" value="200" min="1" style="width: 5ch;" onchange="onLoad()"/>
+  <input type="number" id="rowLimitMax" value="200" min="1" style="width: 8ch;" onchange="onLoad()"/>
   </label>
 <label>
   <input type="checkbox" id="showMoves" onchange="onLoad()">
@@ -200,6 +200,14 @@
   <input type="radio" name="species" id="allowForms" value="allowForms" onchange="onLoad()">
   Enable Form Clause
 </label>
+  <label for="t1hold">Held Pokemon for Team 1:
+  <input type="text" id="t1hold" onchange="onLoad()"/>
+  </label>
+   <label for="t2hold">Held Pokemon for Team 2:
+  <input type="text" id="t2hold" onchange="onLoad()"/>
+  </label>
+<br>
+<a href="https://www.youtube.com/@ProfessorRex"><img src="rex.png" height="155vh"></a>
 <br><BR><BR>
 Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">pvppoke.com</a>, click a Pokemon's Name to view its ranking page!
 
@@ -317,6 +325,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  }
 	  var count = 0;
       const linksHtml = list.map(pkmn => {
+	    console.log(pkmn);
 		var name = pkmn.split(',')[0]
 		const t1 = pkmn.split(',')[3]
 		const t2 = pkmn.split(',')[4]
@@ -371,7 +380,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		count = count + 1;
 		 const showMoves = document.getElementById('showMoves').checked;
 		var moves = '';
-		if(showMoves){
+		if(showMoves && pkmn.split(',').length >= 14){
 			moves = `<br>${pkmn.split(',')[11]}<br>${pkmn.split(',')[12]}<br>${pkmn.split(',')[13]}<br>`;
 		}
 		var imgurl = `https://play.pokemonshowdown.com/sprites/home-centered${form}/${name.replace('-','').replace(' (', '-').replace(/[()]/g, '').toLowerCase().replace('-single strike','').replace('-incarnate','').replace('rapid strike','rapidstrike').replace('-overcast','').replace('-50% forme','').replace('-land','').replace('.','').replace(' ', '')}.png`;
@@ -379,15 +388,17 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 			shiny = '';
 			imgurl='https://images.gameinfo.io/pokemon/256/p150f85.png';
 		}
-		return `${beginning}<td><div class="image-stack">${shadow}<img src="${imgurl}" class="front"></div><div><a href="${url}" target="_blank">${shiny}${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
+		return `${beginning}<td><div class="image-stack"><img src="${imgurl}" class="front">${shadow}</div><div><a href="${url}" target="_blank">${shiny}${displayName}</a><font color="white">${moves}</font></div></td>${end}`;
       }).join('');
 
       container.innerHTML = `${linksHtml}`;
     }
 
-	function getUniqueSpecies(pokemonList, len, megas) {
+	function getUniqueSpecies(pokemonList, len, megas, t1hold, t2hold) {
 	  var uniqueList = [];
 	  var seenSpecies = new Set();
+	  seenSpecies.add(t2hold.split(" ")[0]);
+	  seenSpecies.add(t1hold.split(" ")[0]);
 	  for (const mega of megas){
 		if(mega !== undefined){
 		  seenSpecies.add(mega.split(",")[0].split(" ")[0]);
@@ -418,7 +429,10 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  const allowDuplicates = document.getElementById('allowDuplicates').checked;
 	  const megas = document.getElementById('megas').checked;
       const subset = loaded.slice(limitMin-1, limitMax);
-
+	  const t1hold = document.getElementById('t1hold').value;
+	  const t2hold = document.getElementById('t2hold').value;
+	  const t1holdmon = loaded.find(row => row[0] === t1hold).join(',');
+	  const t2holdmon = loaded.find(row => row[0] === t2hold).join(',');
 	  var megasList = [];
       var flatSubset = subset.map(row => row.join(','));
 	  if(allowDuplicates){
@@ -446,7 +460,16 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		megasList = [megaShuffle1, megaShuffle2];
 	  }
 	  if(teamUnique){
-		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList);
+		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList, t1hold, t2hold);
+		if(t1hold != ''){
+			firstShuffle.unshift(t1holdmon);
+			if(t2hold != ''){
+				firstShuffle[6] = (t2holdmon);
+			}
+		}
+		if(t1hold == '' && t2hold != ''){
+			firstShuffle.splice(6, 0, t2holdmon);
+		}
 		if(megas){
 		 firstShuffle.unshift(megaShuffle1);
 		 firstShuffle[6] = megaShuffle2;
@@ -456,10 +479,10 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		}
 	  else{
 		if(enforceUnique){
-			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1]);
+			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1], t1hold, '');
 		}
 	  	if(enforceUnique){
-		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2]);
+		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2], '', t2hold);
 		}
 	if(megas){
 	 firstShuffle.unshift(megaShuffle1);
