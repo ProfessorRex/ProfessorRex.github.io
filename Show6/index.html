@@ -223,6 +223,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  document.getElementById('seed').value = newSeed;
 	  const loaded = await loadCSV();
 	  const mega = await loadMega();
+	  updateUrlWithInputs();
 	  processCSV(loaded, mega); // refresh the randomized output
 	}
 	 // Generate a random seed string on page load
@@ -427,6 +428,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  const teamUnique = document.getElementById('uniqueTeamCheckbox').checked;
 	  const enforceUnique = document.getElementById('uniqueSpeciesCheckbox').checked;
 	  const allowDuplicates = document.getElementById('allowDuplicates').checked;
+	  const allowForms = document.getElementById('allowForms').checked;
 	  const megas = document.getElementById('megas').checked;
       const subset = loaded.slice(limitMin-1, limitMax);
 	  const t1hold = document.getElementById('t1hold').value;
@@ -484,9 +486,19 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	  	if(enforceUnique){
 		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2], '', t2hold);
 		}
+		if(t1hold != ''){
+			firstShuffle.unshift(t1holdmon);
+	  }
+	  if(t2hold != ''){
+		secondShuffle.unshift(t2holdmon);
+	  }
 	if(megas){
 	 firstShuffle.unshift(megaShuffle1);
 	 secondShuffle.unshift(megaShuffle2);
+	}
+	if(allowForms && (t1hold != '' || t2hold != '')){
+	  firstShuffle = [...new Set(firstShuffle)];
+	  secondShuffle = [...new Set(secondShuffle)];
 	}
 	  displayResults('first6', firstShuffle.slice(0,6));
       displayResults('fullList', secondShuffle.slice(0,6));
