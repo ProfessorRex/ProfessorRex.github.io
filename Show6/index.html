@@ -203,9 +203,13 @@
 </label>
   <label for="t1hold">Held Pokemon for Team 1:
   <input type="text" id="t1hold" onchange="onLoad()"/>
+  <input type="text" id="t1hold2" onchange="onLoad()"/>
+  <input type="text" id="t1hold3" onchange="onLoad()"/>
   </label>
    <label for="t2hold">Held Pokemon for Team 2:
   <input type="text" id="t2hold" onchange="onLoad()"/>
+  <input type="text" id="t2hold2" onchange="onLoad()"/>
+  <input type="text" id="t2hold3" onchange="onLoad()"/>
   </label>
 <br>
 <a href="https://www.youtube.com/@ProfessorRex"><img src="rex.png" height="155vh"></a>
@@ -399,9 +403,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	function getUniqueSpecies(pokemonList, len, megas, t1hold, t2hold) {
 	  var uniqueList = [];
 	  var seenSpecies = new Set();
-	  seenSpecies.add(t2hold.split(" ")[0]);
-	  seenSpecies.add(t1hold.split(" ")[0]);
-	  for (const mega of megas){
+	  for (const mega of [...megas, ...t1hold, ...t2hold]){
 		if(mega !== undefined){
 		  seenSpecies.add(mega.split(",")[0].split(" ")[0]);
 	    }
@@ -452,6 +454,48 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		  t2holdmon = `${t2hold}, , , , `;
 		}
 	  }
+	  const t1hold2 = document.getElementById('t1hold2').value;
+	  const t2hold2 = document.getElementById('t2hold2').value;
+	  var t1holdmon2 = [];
+	  var t2holdmon2 = [];
+	  if (t1hold2 != ''){
+		t1holdmon2 = loaded.find(row => row[0] === t1hold2);
+		if (t1holdmon2 !== undefined){
+		  t1holdmon2 = t1holdmon2.join(',');
+		} else {
+		  t1holdmon2 = `${t1hold2}, , , , '`
+		}
+	  }
+	  if (t2hold2 != ''){
+		t2holdmon2 = loaded.find(row => row[0] === t2hold2);
+		if (t2holdmon2 !== undefined){
+		  t2holdmon2 = t2holdmon2.join(',');
+		} else {
+		  t2holdmon2 = `${t2hold2}, , , , `;
+		}
+	  }
+	  const t1hold3 = document.getElementById('t1hold3').value;
+	  const t2hold3 = document.getElementById('t2hold3').value;
+	  var t1holdmon3 = [];
+	  var t2holdmon3 = [];
+	  if (t1hold3 != ''){
+		t1holdmon3 = loaded.find(row => row[0] === t1hold3);
+		if (t1holdmon3 !== undefined){
+		  t1holdmon3 = t1holdmon3.join(',');
+		} else {
+		  t1holdmon3 = `${t1hold3}, , , , '`
+		}
+	  }
+	  if (t2hold3 != ''){
+		t2holdmon3 = loaded.find(row => row[0] === t2hold3);
+		if (t2holdmon3 !== undefined){
+		  t2holdmon3 = t2holdmon.join(',');
+		} else {
+		  t2holdmon3 = `${t2hold3}, , , , `;
+		}
+	  }
+	  var t1holdlst = [t1hold, t1hold2, t1hold3];
+	  var t2holdlst = [t2hold, t2hold2, t2hold3];
 	  var megasList = [];
       var flatSubset = subset.map(row => row.join(','));
 	  if(allowDuplicates){
@@ -479,14 +523,23 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		megasList = [megaShuffle1, megaShuffle2];
 	  }
 	  if(teamUnique){
-		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList, t1hold, t2hold);
+		firstShuffle = getUniqueSpecies(firstShuffle, 12, megasList, t1holdlst, t2holdlst);
+		if(t1hold3 != ''){
+			firstShuffle.unshift(t1holdmon3);
+		}
+		if(t1hold2 != ''){
+			firstShuffle.unshift(t1holdmon2);
+		}
 		if(t1hold != ''){
 			firstShuffle.unshift(t1holdmon);
-			if(t2hold != ''){
-				firstShuffle[6] = (t2holdmon);
-			}
 		}
-		if(t1hold == '' && t2hold != ''){
+		if(t2hold3 != ''){
+			firstShuffle.splice(6, 0, t2holdmon3);
+		}
+		if(t2hold2 != ''){
+			firstShuffle.splice(6, 0, t2holdmon2);
+		}
+		if(t2hold != ''){
 			firstShuffle.splice(6, 0, t2holdmon);
 		}
 		if(megas){
@@ -498,13 +551,25 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		}
 	  else{
 		if(enforceUnique){
-			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1], t1hold, '');
+			firstShuffle = getUniqueSpecies(firstShuffle, 12, [megaShuffle1], t1holdlst, []);
 		}
 	  	if(enforceUnique){
-		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2], '', t2hold);
+		secondShuffle  = getUniqueSpecies(secondShuffle, 12, [megaShuffle2], [], t2holdlst);
+		}
+		if(t1hold3 != ''){
+			firstShuffle.unshift(t1holdmon3);
+		}
+		if(t1hold2 != ''){
+			firstShuffle.unshift(t1holdmon2);
 		}
 		if(t1hold != ''){
 			firstShuffle.unshift(t1holdmon);
+		}
+	  if(t2hold3 != ''){
+		secondShuffle.unshift(t2holdmon3);
+	  }
+	  if(t2hold2 != ''){
+		secondShuffle.unshift(t2holdmon2);
 	  }
 	  if(t2hold != ''){
 		secondShuffle.unshift(t2holdmon);
@@ -513,7 +578,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	 firstShuffle.unshift(megaShuffle1);
 	 secondShuffle.unshift(megaShuffle2);
 	}
-	if(allowForms && (t1hold != '' || t2hold != '')){
+	if(allowForms && (t1hold != '' || t2hold != '' || t1hold2 != '' || t2hold2 != '' || t1hold3 != '' || t2hold3 != '')){
 	  firstShuffle = [...new Set(firstShuffle)];
 	  secondShuffle = [...new Set(secondShuffle)];
 	}
