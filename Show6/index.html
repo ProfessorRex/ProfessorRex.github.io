@@ -211,6 +211,7 @@
   <input type="text" id="t2hold2" onchange="onLoad()"/>
   <input type="text" id="t2hold3" onchange="onLoad()"/>
   </label>
+  <button onclick="clearInputs()">Clear Held Pokemon</button>
 <br>
 <a href="https://www.youtube.com/@ProfessorRex"><img src="rex.png" height="155vh"></a>
 <br><BR><BR>
@@ -240,7 +241,15 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		}
 		onLoad();
 	});
-	
+	function clearInputs() {
+		document.getElementById("t1hold").value = "";
+		document.getElementById("t1hold2").value = "";
+		document.getElementById("t1hold3").value = "";
+		document.getElementById("t2hold").value = "";
+		document.getElementById("t2hold2").value = "";
+		document.getElementById("t2hold3").value = "";
+		onLoad();
+	}
 	async function getRandomWordFromCSV() {
 	  try {
 		const response = await fetch('words.csv');
