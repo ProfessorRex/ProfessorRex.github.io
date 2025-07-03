@@ -40,7 +40,7 @@ Steelix,84.2,208,steel,ground,57,105.8,72,434543,8,497,Dragon Tail,Breaking Swip
 Pidgey (Shadow),83.8,16,normal,flying,64.6,63.1,94,383180,29.5,498,Quick Attack,Aerial Ace,Air Cutter,5,5,1,10000
 Tentacool (Shadow),83.8,72,water,poison,58.6,93.1,77,420040,18.5,497,Poison Sting,Wrap,Water Pulse,5,7,3,50000
 Steelix (Shadow),83.4,208,steel,ground,57,105.8,72,434543,8,497,Dragon Tail,Breaking Swipe,Crunch,4,5,5,75000
-Wobbuffet,83.4,202,psychic,none,38.1,73.2,235,655317,20.5,500,Charm,Mirror Coat,,10,0,3,50000
+Wobbuffet,83.4,202,psychic,none,38.1,73.2,235,655317,20.5,500,Charm,Mirror Coat,Mirror Coat,10,0,3,50000
 Quagsire,83.3,195,water,ground,64.1,63.7,94,384306,9.5,498,Mud Shot,Acid Spray,Aqua Tail,6,5,3,50000
 Stunky,83.1,434,poison,dark,69.5,57,91,360128,16.5,500,Bite,Crunch,Flamethrower,23,28,3,50000
 Grimer (Alolan),82.9,88,poison,dark,70,51.5,99,356693,14,500,Bite,Crunch,Gunk Shot,23,38,3,50000
@@ -127,6 +127,7 @@ Spheal (Shadow),76.4,363,ice,water,60.3,62.7,109,412541,20,499,Water Gun,Body Sl
 Swinub,76.3,220,ice,ground,65.3,57.1,102,380348,26.5,499,Powder Snow,Body Slam,Icy Wind,5,6,3,50000
 Caterpie (Shadow),76.1,10,bug,none,58.8,58.8,120,415189,50,494,Bug Bite,Frustration,Struggle,24,34,1,10000
 Scizor,76.1,212,bug,steel,80.8,64.7,59,308794,6.5,499,Bullet Punch,Iron Head,Night Slash,8,5,5,75000
+Kleavor,77,900,bug,rock,144.2,105.1,102,1545034,17.5,1498,Fury Cutter,X-Scissor,Stone Edge,10,14,5,75000
 Scizor (Shadow),76.1,212,bug,steel,80.8,64.7,59,308794,6.5,499,Bullet Punch,Iron Head,Night Slash,8,5,5,75000
 Shelgon,76.1,372,dragon,none,72.4,65.8,72,342813,9.5,500,Dragon Breath,Dragon Pulse,Flamethrower,20,19,5,75000
 Venipede (Shadow),76.1,543,bug,poison,62.6,77.7,82,398746,29,499,Bug Bite,Frustration,Gyro Ball,24,20,1,10000
@@ -272,6 +273,7 @@ Arcanine (Hisuian),69.8,59,fire,rock,76.4,57.8,73,322418,6,499,Fire Fang,Crunch,
 Monferno (Shadow),69.8,391,fire,fighting,75.9,54.1,80,328778,12,499,Ember,Flamethrower,Flame Wheel,8,8,3,10000
 Primeape,69.8,57,fighting,none,81.4,56.7,66,304501,8,500,Counter,Close Combat,Cross Chop,8,6,3,50000
 Registeel,69.8,379,steel,none,55.2,109.9,74,448771,8,499,Lock On,Flash Cannon,Focus Blast,14,15,20,100000
+Registeel (Shadow),69.8,379,steel,none,55.2,109.9,74,448771,8,499,Lock On,Flash Cannon,Focus Blast,14,15,20,100000
 Shieldon (Shadow),69.8,410,rock,steel,50.7,133.1,72,485668,22.5,499,Iron Tail,Ancient Power,Frustration,7,10,5,75000
 Amoonguss,69.6,591,grass,poison,63.5,59.1,104,390726,9,499,Astonish,Foul Play,Grass Knot,4,5,3,50000
 Panpour,69.6,515,water,none,66.1,64.3,89,378071,19.5,499,Water Gun,Crunch,Surf,15,15,3,50000
@@ -311,7 +313,7 @@ Hypno (Shadow),68.3,97,psychic,none,59.1,82.3,85,413740,9,494,Confusion,Fire Pun
 Patrat,68.3,504,normal,none,68.8,56.9,93,363669,24.5,500,Bite,Dig,Grass Knot,25,25,1,10000
 Slowbro (Galarian),68.3,80,poison,psychic,69.2,62,83,356141,7.5,496,Confusion,Brutal Swing,Focus Blast,3,7,3,50000
 Crobat,68.1,169,poison,flying,71.6,66,74,349645,7,500,Air Slash,Air Cutter,Cross Poison,4,4,1,10000
-Crobat(Shadow),68.1,169,poison,flying,71.6,66,74,349645,7,500,Air Slash,Air Cutter,Cross Poison,4,4,1,10000
+Crobat (Shadow),68.1,169,poison,flying,71.6,66,74,349645,7,500,Air Slash,Air Cutter,Cross Poison,4,4,1,10000
 Drowzee,68.1,96,psychic,none,54.9,85.5,97,455157,19.5,500,Confusion,Psybeam,Psychic,5,5,3,50000
 Emboar,68.1,500,fire,fighting,80.5,44.6,86,308890,6.5,499,Ember,Blast Burn,Flame Charge,8,8,3,10000
 Meowth,68.1,52,normal,none,66.6,61.1,92,374490,27,500,Bite,Body Slam,Dark Pulse,18,25,3,50000
@@ -430,7 +432,6 @@ Moltres,64.3,146,fire,flying,79,59.4,67,314125,5.5,500,Fire Spin,Ancient Power,F
 Mr. Mime,64.3,122,psychic,fairy,76.4,83.3,51,324508,8.5,498,Confusion,Psybeam,Psychic,5,5,5,75000
 Scolipede,64.3,545,bug,poison,77.9,68.5,60,320307,7.5,500,Bug Bite,Gyro Ball,Megahorn,20,19,1,10000
 Camerupt (Shadow),64.1,323,fire,ground,77.5,58.1,71,319985,8.5,500,Ember,Earthquake,Earth Power,10,8,3,50000
-Lugia,64.1,249,psychic,flying,60.1,93.8,72,405555,5,494,Dragon Tail,Aeroblast,Fly,9,5,20,100000
 Raticate,64.1,20,normal,none,73.1,66,70,337899,11,498,Bite,Dig,Hyper Beam,25,40,1,10000
 Glalie,63.9,362,ice,none,67.1,68.3,81,371510,9,500,Frost Breath,Avalanche,Gyro Ball,9,12,3,50000
 Amaura,63.7,698,rock,ice,64.5,62,96,383687,14,499,Frost Breath,Ancient Power,Aurora Beam,9,12,5,75000
@@ -789,7 +790,7 @@ Delibird (Shadow),29.4,225,ice,flying,73.8,58.7,77,333284,17.5,496,Present,Aeria
 Grumpig (Shadow),29,326,psychic,none,66,75.8,75,375434,8,500,Charge Beam,Dynamic Punch,Frustration,5,7,1,10000
 Manectric,28.9,310,electric,none,82.2,52.9,69,299999,8,496,Charge Beam,Flame Burst,Overheat,5,5,3,50000
 Drizzile,28.7,817,water,none,80.3,54.1,71,308230,10,498,Pound,Surf,Water Pulse,12,14,3,10000
-Beldum,28.2,374,steel,psychic,59.1,87.8,80,415502,20,495,Take Down,Iron Head,,7,0,5,75000
+Beldum,28.2,374,steel,psychic,59.1,87.8,80,415502,20,495,Take Down,Iron Head,Iron Head,7,0,5,75000
 Beldum (Shadow),28,374,steel,psychic,60.5,84.1,81,411867,20.5,499,Take Down,Frustration,Iron Head,9,7,5,75000
 Inteleon,26.5,818,water,none,90.2,51.3,60,277867,6.5,500,Pound,Shadow Ball,Surf,14,12,3,10000
 Porygon2,26.5,233,normal,none,70.5,67,74,349997,7,498,Charge Beam,Hyper Beam,Solar Beam,8,8,3,50000
