@@ -330,7 +330,6 @@ Ninetales (Shadow),67.7,38,fire,none,67.1,75.6,73,369959,8.5,498,Ember,Fire Blas
 Chimchar,67.6,390,fire,none,70.5,59.1,84,350209,20,497,Ember,Flame Charge,Flamethrower,8,8,3,10000
 Machamp,67.6,68,fighting,none,80,55.5,70,310878,6,499,Bullet Punch,Close Combat,Cross Chop,7,5,3,50000
 Rillaboom,67.6,812,grass,none,77.1,56,73,315341,5.5,494,Razor Leaf,Earth Power,Energy Ball,14,14,3,10000
-Tauros (Aqua),67.6,128,fighting,water,73.5,69.8,65,333168,6.5,496,Double Kick,Aqua Jet,Earthquake,4,6,3,50000
 Watchog (Shadow),67.6,505,normal,none,73.2,63.2,73,337591,10.5,497,Bite,Crunch,Frustration,23,35,1,10000
 Charmander,67.4,4,fire,none,72.3,62.1,77,345812,20,500,Ember,Flame Charge,Flamethrower,8,8,3,10000
 Bagon (Shadow),67.3,371,dragon,none,75.9,57.7,75,328422,16,500,Bite,Crunch,Flamethrower,23,28,5,75000
@@ -505,7 +504,6 @@ Lunatone,61.4,337,rock,psychic,69.4,62.7,82,356706,8,499,Confusion,Moonblast,Psy
 Camerupt,61.2,323,fire,ground,77.5,58.1,71,319985,8.5,500,Ember,Earthquake,Earth Power,10,8,3,50000
 Gible (Shadow),61.2,443,dragon,ground,70.5,54,91,346301,17,495,Mud Shot,Body Slam,Dig,5,7,5,75000
 Karrablast,61.2,588,bug,none,76.4,54,79,325794,16,499,Fury Cutter,Aerial Ace,Drill Run,10,12,3,50000
-Tauros (Blaze),61.2,128,fighting,fire,73.5,69.8,65,333168,6.5,496,Double Kick,Earthquake,Flame Charge,6,5,3,50000
 Magmortar,61.1,467,fire,none,82.8,59.7,61,301793,6,500,Fire Spin,Brick Break,Fire Blast,4,8,5,75000
 Magmortar (Shadow),61.1,467,fire,none,82.8,59.7,61,301793,6,500,Fire Spin,Brick Break,Fire Blast,4,8,5,75000
 Whismur (Shadow),61.1,293,normal,none,69.8,41,124,354820,29,498,Astonish,Disarming Voice,Flamethrower,5,6,1,10000
@@ -596,7 +594,6 @@ Cacnea (Shadow),54.6,331,grass,none,84.3,46,76,295144,15,499,Sucker Punch,Trailb
 Dusclops (Shadow),54.5,356,ghost,none,59.7,114.3,61,416294,12,498,Feint Attack,Fire Punch,Frustration,7,12,3,50000
 Poochyena,54.5,261,dark,none,72.6,53.7,88,342831,29.5,500,Snarl,Crunch,Dig,4,4,1,10000
 Shellder (Shadow),54.5,90,water,none,68.2,83.3,64,363318,17.5,498,Tackle,Icy Wind,Razor Shell,15,12,3,50000
-Tauros (Combat),54.5,128,fighting,none,73.5,69.8,65,333168,6.5,496,Double Kick,Close Combat,Earthquake,4,6,3,50000
 Xatu,54.5,178,psychic,flying,77.9,61.6,67,321676,8.5,500,Air Slash,Aerial Ace,Future Sight,5,8,3,50000
 Metang (Shadow),54.4,375,steel,psychic,63.8,81.5,75,390175,11,500,Fury Cutter,Frustration,Gyro Ball,18,15,5,75000
 Natu,54.2,177,psychic,flying,77.7,58.1,71,320529,17.5,500,Peck,Drill Peck,Night Shade,8,9,3,50000
