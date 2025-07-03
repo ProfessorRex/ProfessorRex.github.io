@@ -163,24 +163,24 @@
   Show Counts
 </label>
 <label>
-  <input type="checkbox" id="noShadow" checked onchange="onLoad()">
-  Show Shadow Mons
+  <input type="checkbox" id="noShadow" onchange="onLoad()">
+  Hide Shadow Mons
 </label>
 
 
 <div class="table-layout">
   <div class="table-wrapper">
-  <h2> Team 1:</h2>
+  <h2>&nbsp;Team 1:</h2>
   <font size='3px;'>
   <table id="first6" style="background-color:black; padding: 15px; table-layout: fixed; text-align: center;"></table>
 </font>
   </div>
 
   <div class="table-wrapper">
-  <h2> Team 2:</h2>
+  <h2>&nbsp;Team 2:</h2>
   <font size='3px;'>
-  <table id="fullList" style="background-color:black; padding: 15px; table-layout: fixed;  text-align: center; "></table>
- </div></div><BR><BR>
+  <table id="fullList" style="background-color:black; padding: 15px; table-layout: fixed;  text-align: center; "><td></td></table>
+ </div></div> <div id="rules"></div>
  <label>
   <input type="checkbox" id="megas" onchange="onLoad()">
   1 Mega Per Team
@@ -230,8 +230,8 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	async function generateNewSeed() {
 	  const newSeed = await getRandomWordFromCSV(); // random 8-char seed
 	  document.getElementById('seed').value = newSeed;
-	  onLoad();
 	  updateUrlWithInputs();
+	  onLoad();
 	}
 	 // Generate a random seed string on page load
 	window.addEventListener('DOMContentLoaded', () => {
@@ -280,6 +280,26 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		gamemaster_list = await loadJSON("master");
 		const mega = await loadMega();
 		processCSV(rankings_list, mega, gamemaster_list);
+		const showShadow = !document.getElementById('noShadow').checked;
+		const showMoves = document.getElementById('showMoves').checked;
+		const noShiny= document.getElementById('noShiny').checked;
+		var rules = '<b>';
+		if(showShadow){
+			rules = rules + "&nbsp;<span style='font-size: 18px; color: red;'>Must</span> match Shadow/Non-Shadow forms.";
+		} else {
+			rules = rules + "&nbsp;May use either Shadow/Non-Shadow forms.";
+		}
+		if(showMoves){
+			rules = rules + "<br>&nbsp;<span style='font-size: 18px; color: red;'>Must</span> match given movesets.";
+		} else {
+			rules = rules + "<br>&nbsp;May use any moveset each battle.";
+		}
+		if(noShiny){
+			rules = rules + '<br>&nbsp;<span style="font-size: 18px; color: red;">Must</span> use shiny if Pokemon has <span style="font-size: 18px; color: gold;">&#9733;</span>.';
+		} else {
+			rules = rules + "<br>&nbsp;May use shiny or non-shiny forms.";
+		}
+		document.getElementById('rules').innerHTML = rules + '</b>';
 		updateUrlWithInputs();
 	}
 	function getSelectedLeague() {
@@ -392,7 +412,7 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		var shadow = '<img src="shadowN.png" class="back">';
 		var shadowWord = ''
 		var restName = '';
-		const showShadow = document.getElementById('noShadow').checked;
+		const showShadow = !document.getElementById('noShadow').checked;
 		if (name.toUpperCase().endsWith("(SHADOW)")) {
 			restName = name.slice(0,-9); // e.g., "Machamp"
 			if(showShadow){
@@ -441,8 +461,10 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 			for(let i = 0; i < 3; i++){
 				typeClasses = '';
 				energy = '';
-				//typeClasses = "type-" + moves[i].type;
-				//typeClasses = `<span class="${typeClasses}">`;
+				if(!showMoveInfo){
+					//typeClasses = "type-" + moves[i].type;
+					//typeClasses = `<span class="${typeClasses}">`;
+				}
 				if (i == 0 && showMoveInfo){
 					energy = ": " + moves[i].energyGain.toString() + " E, " + moves[i].turns.toString() + " T";
 				} else if (showMoveInfo) {
