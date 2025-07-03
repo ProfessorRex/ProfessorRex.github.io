@@ -138,13 +138,17 @@
     <label for="league-m">Master</label>
     <input type="radio" id="league-m" name="league" value="master" onchange="onLoad()">
   </div>
+   <div class="league-option">
+    <label for="league-l">Little</label>
+    <input type="radio" id="league-l" name="league" value="little" onchange="onLoad()">
+  </div>
 <!--    <div class="league-option">
     <label for="league-p">Play!Pokemon</label>
     <input type="radio" id="league-p" name="league" value="pp" onchange="onLoad()">
   </div> -->
      <div class="league-option">
-    <label for="league-l">Little Element</label>
-    <input type="radio" id="league-l" name="league" value="little" onchange="onLoad()">
+    <label for="league-le">Little Element</label>
+    <input type="radio" id="league-le" name="league" value="littleE" onchange="onLoad()">
   </div>
 </div>
   <label for="seed">Enter Random Seed:</label>
@@ -162,7 +166,7 @@
   <input type="number" id="rowLimitMin" value="1" min="1" style="width: 8ch;" onchange="onLoad()"/>
   </label>
   <label for="rowLimitMax">Max PVP Poke Rank:
-  <input type="number" id="rowLimitMax" value="300" min="1" style="width: 8ch;" onchange="onLoad()"/>
+  <input type="number" id="rowLimitMax" value="1099" min="1" style="width: 8ch;" onchange="onLoad()"/>
   </label>
 <label>
   <input type="checkbox" id="showMoves" onchange="onLoad()">
@@ -346,8 +350,17 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/championshipseries/overall/rankings-1500.json";
 				//LOCAL
 				//jsonUrl = "rankings-10000.json";
-			}if(league=="little"){
+			}if(league=="littleE"){
 				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-500.json";
+				//LOCAL
+				//jsonUrl = "rankings-10000.json";
+			} if(league=="little"){
+				var retData = [];
+				csvData = await loadCSV();
+				for (const mon of csvData){
+					retData.push({speciesName: mon[0], moveset: [mon[11],mon[12],mon[13]]});
+				}
+				return retData;
 				//LOCAL
 				//jsonUrl = "rankings-10000.json";
 			}
