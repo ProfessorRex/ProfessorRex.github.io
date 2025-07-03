@@ -322,22 +322,22 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 		var csvData = [];
 		if(type=="rankings"){
 			var league= getSelectedLeague();
-			//var jsonUrl = "https://pvpoke.com/data/rankings/all/overall/rankings-1500.json";
+			var jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-1500.json";
 			//LOCAL
-			var jsonUrl = "rankings-1500.json";
+			//var jsonUrl = "rankings-1500.json";
 			if(league=="ultra"){
-				//jsonUrl = "https://pvpoke.com/data/rankings/all/overall/rankings-2500.json";
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-2500.json";
 				//LOCAL
-				jsonUrl = "rankings-2500.json";
+				//jsonUrl = "rankings-2500.json";
 			} if(league=="master"){
-				//jsonUrl = "https://pvpoke.com/data/rankings/all/overall/rankings-10000.json";
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-10000.json";
 				//LOCAL
-				jsonUrl = "rankings-10000.json";
+				//jsonUrl = "rankings-10000.json";
 			}
 		} if(type=="master"){
-			//jsonUrl = "https://pvpoke.com/data/gamemaster.min.json";
+			jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/gamemaster.min.json";
 			//LOCAL
-			jsonUrl = "gamemaster.min.json";
+			//jsonUrl = "gamemaster.min.json";
 		}
 		const response = await fetch(jsonUrl);
 		const jsonData = await response.json();
