@@ -138,6 +138,14 @@
     <label for="league-m">Master</label>
     <input type="radio" id="league-m" name="league" value="master" onchange="onLoad()">
   </div>
+   <div class="league-option">
+    <label for="league-p">Play!Pokemon</label>
+    <input type="radio" id="league-p" name="league" value="pp" onchange="onLoad()">
+  </div>
+     <div class="league-option">
+    <label for="league-l">Little Element</label>
+    <input type="radio" id="league-l" name="league" value="little" onchange="onLoad()">
+  </div>
 </div>
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" onchange="onLoad()"/>
@@ -334,6 +342,15 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 				//LOCAL
 				//jsonUrl = "rankings-10000.json";
 			}
+			if(league=="pp"){
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/championshipseries/overall/rankings-1500.json";
+				//LOCAL
+				//jsonUrl = "rankings-10000.json";
+			}if(league=="little"){
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-500.json";
+				//LOCAL
+				//jsonUrl = "rankings-10000.json";
+			}
 		} if(type=="master"){
 			jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/gamemaster.min.json";
 			//LOCAL
@@ -345,7 +362,9 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 	}
 	async function loadMega(){
 		var csvData = [];
-		var csvName= `${getSelectedLeague()}_mega.csv`;
+		league = getSelectedLeague()
+		if (!"mastergreatultra".includes(league)){league="great";}
+		var csvName= `${league}_mega.csv`;
 		await fetch(csvName)
 		  .then(response => response.text())
 		  .then(text => {
