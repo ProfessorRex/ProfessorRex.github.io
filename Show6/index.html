@@ -150,6 +150,10 @@
     <label for="league-le">Little Element</label>
     <input type="radio" id="league-le" name="league" value="littleE" onchange="onLoad()">
   </div>
+       <div class="league-option">
+    <label for="league-le">Hisui</label>
+    <input type="radio" id="league-h" name="league" value="hisui" onchange="onLoad()">
+  </div>
 </div>
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" onchange="onLoad()"/>
@@ -354,7 +358,13 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/all/overall/rankings-500.json";
 				//LOCAL
 				//jsonUrl = "rankings-10000.json";
-			} if(league=="little"){
+			} 
+			if(league=="hisui"){
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/hisui/overall/rankings-1500.json";
+				//LOCAL
+				//jsonUrl = "rankings-10000.json";
+			}
+			if(league=="little"){
 				var retData = [];
 				csvData = await loadCSV();
 				for (const mon of csvData){
