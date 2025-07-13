@@ -7,8 +7,9 @@ def generate_files_txt_for_subfolders(root_folder):
             continue
 
         # Filter out only files (ignore subfolders inside subfolder)
-        only_files = [f for f in filenames if os.path.isfile(os.path.join(foldername, f))]
-
+        o_files = list(set([f for f in filenames if os.path.isfile(os.path.join(foldername, f))]) - set(["files.txt"]))
+        only_files = sorted(o_files, key=lambda s: int(s.split('_')[1]))
+        
         # Write to files.txt in this folder
         txt_path = os.path.join(foldername, 'files.txt')
         with open(txt_path, 'w') as f:
