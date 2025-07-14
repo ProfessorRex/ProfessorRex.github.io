@@ -154,6 +154,11 @@
     <label for="league-le">Hisui</label>
     <input type="radio" id="league-h" name="league" value="hisui" onchange="onLoad()">
   </div>
+   </div>
+       <div class="league-option">
+    <label for="league-le">Hisui</label>
+    <input type="radio" id="league-sun" name="league" value="sunshine" onchange="onLoad()">
+  </div>
 </div>
   <label for="seed">Enter Random Seed:</label>
   <input type="text" id="seed" onchange="onLoad()"/>
@@ -361,6 +366,11 @@ Rankings obtained from <a href="https://pvpoke.com/rankings/all/1500/overall/">p
 			} 
 			if(league=="hisui"){
 				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/hisui/overall/rankings-1500.json";
+				//LOCAL
+				//jsonUrl = "rankings-10000.json";
+			}
+			if(league=="sunshine"){
+				jsonUrl = "https://raw.githubusercontent.com/pvpoke/pvpoke/refs/heads/master/src/data/rankings/sunshine/overall/rankings-1500.json";
 				//LOCAL
 				//jsonUrl = "rankings-10000.json";
 			}
