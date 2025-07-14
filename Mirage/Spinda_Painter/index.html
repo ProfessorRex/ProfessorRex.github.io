@@ -38,8 +38,8 @@
       z-index: 2;
       cursor: grab;
 	  opacity: 0;
-      outline: 2px dashed blue;
-      outline-offset: -4px;
+	  user-select: none;
+	  -webkit-user-drag: none;
     }
 
     .dragging {
@@ -59,7 +59,7 @@
 </div>
 
 <a href="../index.html"  style="position: fixed; top: 500px;"> Go to Code Search</a>
-<div id="mask-controls" style="position: fixed; top: 380px; left: 10px; background: #f8f8f8; padding: 10px; border: 1px solid #ccc;">
+<div id="mask-controls" style="position: fixed; top: 380px; left: 100px; background: #f8f8f8; padding: 10px; border: 1px solid #ccc;">
   <strong>Move Left:</strong><br>
   <div style="margin-top: 5px; flex-direction: column; align-items: center;">
   <div style="text-align: center;">
@@ -72,7 +72,7 @@
 	</div>
   </div>
 </div>
-<div id="mask-controls" style="position: fixed; top: 380px; left: 130px; background: #f8f8f8; padding: 10px; border: 1px solid #ccc;">
+<div id="mask-controls" style="position: fixed; top: 380px; left: 280px; background: #f8f8f8; padding: 10px; border: 1px solid #ccc;">
   <strong>Move Right:</strong><br>
   <div style="margin-top: 5px; flex-direction: column; align-items: center;">
    <div style="text-align: center;">
@@ -94,12 +94,12 @@
   <strong>PID:</strong>
   <pre id="PID" style="margin: 0; font-family: monospace;"></pre>
 </div>
-<div style="position: fixed; top: 10px; left: 200px; background: #f0f0f0; padding: 8px; border: 1px solid #ccc;">
+<div style="position: fixed; top: 10px; left: 220px; background: #f0f0f0; padding: 8px; border: 1px solid #ccc;">
   <strong>DAY:</strong>
   <pre id="DAY" style="margin: 0; font-family: monospace;"></pre>
 </div>
 <br>
-<a href="https://www.youtube.com/@ProfessorRex"><img src="../../Show6/rex.png" style="position: fixed; top: 600px;" height="155vh"></a>
+<a href="https://www.youtube.com/@ProfessorRex"><img src="../../Show6/rex.png" style="position: fixed; top: 550px;" height="155vh"></a>
 <br><BR><BR>
 <script>
 //window.onload = () => {
