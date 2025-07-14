@@ -104,7 +104,6 @@
 <script>
 //window.onload = () => {
 	const canvas = document.getElementById('reveal-canvas');
-	console.log(canvas);
 	const ctx = canvas.getContext('2d');
 	const bgImage = new Image();
 	bgImage.src = '../Spinda_Base_Top_Crop.png';
@@ -220,8 +219,6 @@
 		case 'left': left -= step; break;
 		case 'right': left += step; break;
 	  }
-		console.log(bounds[ear].maxX)
-		console.log(ear)
 	  // Optional: clamp position inside boundaries
 	  left = Math.max(bounds[ear].minX, Math.min(left, bounds[ear].maxX));
 	  top = Math.max(bounds[ear].minY, Math.min(top, bounds[ear].maxY));
@@ -245,15 +242,12 @@
 	  
 	  var PID2 = Math.round(masks[1].offsetTop/10-1).toString(16).toUpperCase();
 	  PID2 = PID2 + Math.round(masks[1].offsetLeft/10-24).toString(16).toUpperCase();
-	  console.log(PID1.toString(16));
-	  console.log(PID2.toString(16));
 	  var PID = PID2 + PID1;
 	  //let output = 'PID: ' + PID + '\n';
 	  //output += `Left Spot: x=${Math.round(masks[0].offsetLeft/10)}, y=${Math.round(masks[0].offsetTop/10)}\n`;
 	  //output += `Right Spot: x=${Math.round(masks[1].offsetLeft/10-24)}, y=${Math.round(masks[1].offsetTop/10-1)}\n`;
 	  //document.getElementById('mask-positions').textContent = output;
 	  var g = "Female";
-	  console.log(parseInt(PID.slice(-2), 16));
 	  if (parseInt(PID.slice(-2), 16) >= 127){
         g = "Male";
 	  }
