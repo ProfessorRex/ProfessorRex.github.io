@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>How Many Rolls?</title>
+	<style>
+		body {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+			background: #f6f7fb;
+			margin: 0;
+			padding: 2rem;
+			color: #1f2937;
+		}
+		.container {
+			max-width: 760px;
+			margin: auto;
+			background: white;
+			padding: 2rem 2.5rem;
+			border-radius: 18px;
+			box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+		}
+		h1 {
+			font-size: 1.9rem;
+			margin-bottom: 0.25rem;
+		}
+		.subtitle {
+			color: #6b7280;
+			margin-bottom: 2rem;
+		}
+		.field {
+			margin-bottom: 1.4rem;
+		}
+		label {
+			display: block;
+			font-weight: 600;
+			margin-bottom: 0.3rem;
+		}
+		input[type="number"] {
+			width: 100%;
+			padding: 0.65rem;
+			font-size: 1rem;
+			border-radius: 10px;
+			border: 1px solid #d1d5db;
+		}
+		.helper {
+			font-size: 0.85rem;
+			color: #6b7280;
+			margin-top: 0.25rem;
+		}
+		button {
+			width: 100%;
+			padding: 0.85rem;
+			font-size: 1rem;
+			border: none;
+			border-radius: 12px;
+			background: #4f46e5;
+			color: white;
+			cursor: pointer;
+			margin-top: 0.5rem;
+		}
+		button:hover {
+			background: #4338ca;
+		}
+		.results {
+			margin-top: 2.5rem;
+			display: none;
+		}
+		.headline {
+			font-size: 1.3rem;
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+		}
+		.explain {
+			color: #6b7280;
+			font-size: 0.9rem;
+			margin-bottom: 1.2rem;
+		}
+		.row {
+			display: flex;
+			align-items: center;
+			margin-bottom: 0.55rem;
+		}
+		.row-label {
+			width: 90px;
+			font-size: 0.9rem;
+		}
+		.track {
+			flex: 1;
+			background: #e5e7eb;
+			border-radius: 999px;
+			overflow: hidden;
+			margin-right: 0.5rem;
+		}
+		.fill {
+			height: 14px;
+			background: #6366f1;
+		}
+		.fill.best {
+			background: #16a34a;
+		}
+		.value {
+			width: 55px;
+			text-align: right;
+			font-size: 0.85rem;
+		}
+		.math {
+			font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+			font-size: 0.8rem;
+			color: #374151;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>How Many Rolls Calculator</h1>
+		<div class="subtitle">
+			Determine how many Shiny Rolls best explain your data.
+		</div>
+
+		<div class="field">
+			<label>Base odds denominator (x)</label>
+			<input id="xInput" type="number" min="2" step="1" value="4096" />
+			<div class="helper">Base odds are interpreted as 1/x (x must be greater than 1).</div>
+		</div>
+
+		<div class="field">
+			<label>Number of shinys found</label>
+			<input id="shinys" type="number" min="0" value="1" />
+		</div>
+
+		<div class="field">
+			<label>Number of Pokémon Seen</label>
+			<input id="trials" type="number" min="1" value="1000" />
+		</div>
+
+		<button onclick="analyze()">Analyze Odds</button>
+
+		<div class="results" id="results">
+			<div class="headline" id="best"></div>
+			<div class="explain">
+				Each model assumes odds of <span class="math">1 - (1 - 1/x)<sup>i</sup></span> for i = 1 to 10.
+			</div>
+			<div id="rows"></div>
+		</div>
+	<br>
+	<a href="https://www.youtube.com/@ProfessorRex"><img src="rex.png" height="155vh"></a>
+	</div>
+
+	<script>
+	// probability of at least one success per i rolls: 1 - ((1-(1/x)^i)
+		function modelProbability(x, i) {
+			return 1 - Math.pow(1 - 1 / x, i)
+		}
+	
+	// Calculate the probability of n successes in k trials with p chance of success
+	// Using natual log to avoid underflow
+		function logLikelihood(k, n, p) {
+			if (p <= 0 || p >= 1) return -Infinity
+			return k * Math.log(p) + (n - k) * Math.log(1 - p)
+		}
+
+	// rescale results to a sum of 1 (normalize results)
+		function normalize(logs) {
+			const maxLog = Math.max(...logs)
+			const exps = logs.map(l => Math.exp(l - maxLog))
+			const sum = exps.reduce((a, b) => a + b, 0)
+			return exps.map(v => v / sum)
+		}
+
+		function analyze() {
+			const x = Number(document.getElementById('xInput').value)
+			const k = Number(document.getElementById('shinys').value)
+			const n = Number(document.getElementById('trials').value)
+
+			if (x <= 1) {
+				alert('x must be greater than 1')
+				return
+			}
+
+			if (k > n) {
+				alert('shinys cannot exceed trials')
+				return
+			}
+
+			const probs = []
+			const logLs = []
+	
+			for (let i = 1; i <= 15; i++) {
+				const p = modelProbability(x, i)
+				probs.push(p)
+				logLs.push(logLikelihood(k, n, p))
+			}
+
+			const post = normalize(logLs)
+			const bestIndex = post.indexOf(Math.max(...post))
+
+			document.getElementById('best').textContent =
+				`Most likely model: ${bestIndex + 1} rolls per trial`
+
+			const rows = document.getElementById('rows')
+			rows.innerHTML = ''
+
+			for (let i = 0; i < 15; i++) {
+				const row = document.createElement('div')
+				row.className = 'row'
+
+				const label = document.createElement('div')
+				label.className = 'row-label'
+				label.innerHTML = `${i + 1} ${i === 1 ? 'Roll' : 'Rolls'}<br><span class="math">1/${parseFloat((1/probs[i]).toFixed(3))}</span>`
+
+				const track = document.createElement('div')
+				track.className = 'track'
+
+				const fill = document.createElement('div')
+				fill.className = 'fill' + (i === bestIndex ? ' best' : '')
+				fill.style.width = `${(post[i] * 100).toFixed(1)}%`
+
+				track.appendChild(fill)
+
+				const value = document.createElement('div')
+				value.className = 'value'
+				value.textContent = `${(post[i] * 100).toFixed(1)}%`
+
+				row.append(label, track, value)
+				rows.appendChild(row)
+			}
+
+			document.getElementById('results').style.display = 'block'
+		}
+	</script>
+</body>
+</html>
