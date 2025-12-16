@@ -207,7 +207,7 @@
 
 				const label = document.createElement('div')
 				label.className = 'row-label'
-				label.innerHTML = `${i + 1} ${i === 1 ? 'Roll' : 'Rolls'}<br><span class="math">1/${parseFloat((1/probs[i]).toFixed(3))}</span>`
+				label.innerHTML = `${i + 1} ${i === 0 ? 'Roll' : 'Rolls'}<br><span class="math">1/${parseFloat((1/probs[i]).toFixed(3))}</span>`
 
 				const track = document.createElement('div')
 				track.className = 'track'
