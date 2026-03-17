@@ -24,6 +24,12 @@
     img.locked {
       opacity: 0.3;
       pointer-events: none;
+	}
+	.extra-image {
+      display: block;
+      margin-top: 20px;
+      width: 50%;
+      height: auto;
     }
   </style>
 </head>
@@ -43,6 +49,27 @@
 <select id="fileSelect">
   <option value="Chansey.txt">Chansey</option>
   <option value="Dratini.txt">Dratini</option>
+  <option value="Dragonair.txt">Dragonair</option>
+  <option value="Tauros.txt">Tauros</option>
+  <option value="Kangaskhan.txt">Kangaskhan</option>
+  <option value="Scyther.txt">Scyther</option>
+  <option value="Pinsir.txt">Pinsir</option>
+  <option value="Seaking.txt">Seaking</option>
+  <option value="Parasect.txt">Parasect</option>
+  <option value="Venomoth.txt">Venomoth</option>
+  <option value="Exeggcute.txt">Exeggcute</option>
+  <option value="Rhyhorn.txt">Rhyhorn</option>
+  <option value="Nidorina.txt">Nidorina</option>
+  <option value="Nidorino.txt">Nidorino</option>
+  <option value="Nidoran.txt">Nidoran</option>
+  <option value="Poliwag.txt">Poliwag</option>
+  <option value="Goldeen.txt">Goldeen</option>
+  <option value="Doduo.txt">Doduo</option>
+  <option value="Venonat.txt">Venonat</option>
+  <option value="Psyduck.txt">Psyduck</option>
+  <option value="Paras.txt">Paras</option>
+  <option value="Slowpoke.txt">Slowpoke</option>
+  <option value="Magikarp.txt">Magikarp</option>
 </select>
 
 <br><br>
@@ -62,16 +89,31 @@
 
 
 <div class="container" id="imageContainer"></div>
-
+<a href="https://www.youtube.com/@ProfessorRex"><img id="extraImage" class="extra-image" src="rex.png" alt="Extra Image"></a>
 <script>
 let currentIndex = 0;
-
-const images = {
-  T: "T.png",
-  L: "L.png",
-  R: "R.png"
-};
+const images = { T: "T.png", L: "L.png", R: "R.png" };
 let sequenceLoaded = false;
+
+async function fetchWithFallback(path, fallbackPath) {
+  try {
+    const response = await fetch(path);
+    if (!response.ok) throw new Error("No Bait Differences");
+    return await response.text();
+  } catch (err) {
+    if (fallbackPath) {
+      try {
+        const fallbackResponse = await fetch(fallbackPath);
+        if (!fallbackResponse.ok) throw new Error("Fallback file not found");
+        return await fallbackResponse.text();
+      } catch (fallbackErr) {
+        throw fallbackErr;
+      }
+    } else {
+      throw err;
+    }
+  }
+}
 
 async function loadSequence() {
   const language = document.getElementById('languageSelect').value;
@@ -84,15 +126,17 @@ async function loadSequence() {
     return;
   }
 
-  // Determine folder path
   let folder = language;
-  if (baited) folder += "/Baited";
+  let path = `${folder}/${file}`;
+  let fallbackPath = null;
 
-  const path = `${folder}/${file}`;
-  // try to load the Baited document if it exists (is different than non-baited)
+  if (baited) {
+    path = `${folder}/Baited/${file}`;
+    fallbackPath = `${folder}/${file}`;
+  }
+
   try {
-    const response = await fetch(path);
-    const text = await response.text();
+    const text = await fetchWithFallback(path, fallbackPath);
     const lines = text.split(/\r?\n/);
 
     if (!lines[lineNum]) {
@@ -111,11 +155,12 @@ async function loadSequence() {
     sequenceLoaded = true;
     document.getElementById('watchButton').style.display = 'inline-block';
     document.getElementById('fledButton').style.display = 'inline-block';
+
   } catch (err) {
     console.error("Error loading file:", err);
+    alert("Unable to load the sequence file.");
   }
 }
-
 function displayOdds(odds) {
   const oddsDiv = document.getElementById('oddsDisplay');
   if (odds) {
@@ -139,6 +184,7 @@ function renderImages(sequence) {
   sequence.split("").forEach((char, index) => {
     const img = document.createElement("img");
     img.src = images[char];
+    img.classList.add('sequence');
 
     if (index !== 0) img.classList.add("locked");
 
@@ -149,6 +195,7 @@ function renderImages(sequence) {
 
 function handleClick(img, index) {
   if (index !== currentIndex) return;
+
   img.classList.add("disabled");
   img.classList.remove("locked");
 
@@ -180,6 +227,7 @@ function itFled() {
   document.getElementById('fledButton').style.display = 'none';
   document.getElementById('imageContainer').innerHTML = "";
   document.getElementById('oddsDisplay').textContent = "";
+  document.getElementById('extraImage').style.display = 'none';
   sequenceLoaded = false;
 }
 </script>
