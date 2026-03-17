@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professor Rex's Safari Zone Webtool</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .container { margin-top: 20px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; }
+    .odds { font-weight: bold; margin-top: 15px; }
+    img {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      width: 80px;
+      height: 80px;
+      margin: 5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    img.disabled {
+      filter: grayscale(100%);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+    img.locked {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Professor Rex's Safari Zone Webtool</h2>
+
+<label>Language:</label>
+<select id="languageSelect">
+  <option value="international">International</option>
+  <option value="japanese">Japanese</option>
+</select>
+
+<br><br>
+
+<label>Select Species:</label>
+<select id="fileSelect">
+  <option value="Chansey.txt">Chansey</option>
+  <option value="Dratini.txt">Dratini</option>
+</select>
+
+<br><br>
+
+<label>Balls Remaining:</label>
+<input type="number" id="lineInput" min="1" max="30" value="30">
+<br>
+<label>Bait Thrown?</label>
+<input type="checkbox" id="baitRadio" name="bait">
+<br>
+<button onclick="loadSequence()">Load</button>
+
+<div class="odds" id="oddsDisplay"></div>
+
+<button id="watchButton" onclick="reloadPattern()" style="display:none;">ITS WATCHING CAREFULLY</button>
+<button id="fledButton" onclick="itFled()" style="display:none;">It Fled</button>
+
+
+<div class="container" id="imageContainer"></div>
+
+<script>
+let currentIndex = 0;
+
+const images = {
+  T: "T.png",
+  L: "L.png",
+  R: "R.png"
+};
+let sequenceLoaded = false;
+
+async function loadSequence() {
+  const language = document.getElementById('languageSelect').value;
+  const file = document.getElementById('fileSelect').value;
+  const lineNum = parseInt(document.getElementById('lineInput').value) - 1;
+  const baited = document.getElementById('baitRadio').checked;
+
+  if (isNaN(lineNum) || lineNum < 0 || lineNum >= 30) {
+    alert("Enter a valid line number (1-30)");
+    return;
+  }
+
+  // Determine folder path
+  let folder = language;
+  if (baited) folder += "/Baited";
+
+  const path = `${folder}/${file}`;
+  // try to load the Baited document if it exists (is different than non-baited)
+  try {
+    const response = await fetch(path);
+    const text = await response.text();
+    const lines = text.split(/\r?\n/);
+
+    if (!lines[lineNum]) {
+      alert("Line not found in file.");
+      return;
+    }
+
+    const line = lines[lineNum].trim();
+    const parts = line.split(/\s+/);
+    const sequence = parts[0];
+    const odds = parts[1] || "";
+
+    displayOdds(odds);
+    renderImages(sequence);
+
+    sequenceLoaded = true;
+    document.getElementById('watchButton').style.display = 'inline-block';
+    document.getElementById('fledButton').style.display = 'inline-block';
+  } catch (err) {
+    console.error("Error loading file:", err);
+  }
+}
+
+function displayOdds(odds) {
+  const oddsDiv = document.getElementById('oddsDisplay');
+  if (odds) {
+    const num = parseFloat(odds);
+    if (!isNaN(num)) {
+      const percent = (num * 100).toFixed(2);
+      oddsDiv.textContent = `Odds of Successful Capture: ${percent}%`;
+    } else {
+      oddsDiv.textContent = "";
+    }
+  } else {
+    oddsDiv.textContent = "";
+  }
+}
+
+function renderImages(sequence) {
+  const container = document.getElementById('imageContainer');
+  container.innerHTML = "";
+  currentIndex = 0;
+
+  sequence.split("").forEach((char, index) => {
+    const img = document.createElement("img");
+    img.src = images[char];
+
+    if (index !== 0) img.classList.add("locked");
+
+    img.addEventListener("click", () => handleClick(img, index));
+    container.appendChild(img);
+  });
+}
+
+function handleClick(img, index) {
+  if (index !== currentIndex) return;
+  img.classList.add("disabled");
+  img.classList.remove("locked");
+
+  const sequenceChar = img.src.includes(images.L) ? 'L' : img.src.includes(images.R) ? 'R' : 'T';
+  const baitRadio = document.getElementById('baitRadio');
+
+  if (sequenceChar === 'L') {
+    const input = document.getElementById('lineInput');
+    let value = parseInt(input.value);
+    if (!isNaN(value) && value > 1) input.value = value - 1;
+  }
+
+  if (sequenceChar === 'T') {
+    baitRadio.checked = true;
+  }
+
+  currentIndex++;
+  const container = document.getElementById('imageContainer');
+  if (container.children[currentIndex]) container.children[currentIndex].classList.remove("locked");
+}
+
+function reloadPattern() {
+  if (sequenceLoaded) loadSequence();
+}
+
+function itFled() {
+  document.getElementById('baitRadio').checked = false;
+  document.getElementById('watchButton').style.display = 'none';
+  document.getElementById('fledButton').style.display = 'none';
+  document.getElementById('imageContainer').innerHTML = "";
+  document.getElementById('oddsDisplay').textContent = "";
+  sequenceLoaded = false;
+}
+</script>
+
+</body>
+</html>
