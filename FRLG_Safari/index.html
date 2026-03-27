@@ -40,66 +40,141 @@
       width: 50%;
       height: auto;
     }
+	.grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0px;
+      max-width: 500px;
+      margin: 0;
+    }
+
+    .item {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.2s;
+      aspect-ratio: 1 / 1;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+	  object-position: center;
+      display: block;
+      background: #fff;
+	  image-rendering: pixelated;
+    }
+
+    .item.selected {
+      border-color: #007bff;
+      transform: scale(1.05);
+    }
+
+    .selected-output {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+	.selected-image {
+	}
+}
   </style>
 </head>
 <body>
 
 <h2>Professor Rex's Safari Zone Webtool</h2>
+<div id="selector">
+	<label>Language:</label>
+	<select id="languageSelect">
+	  <option value="International">International</option>
+	  <option value="Japanese">Japanese</option>
+	</select>
 
-<label>Language:</label>
-<select id="languageSelect">
-  <option value="International">International</option>
-  <option value="Japanese">Japanese</option>
-</select>
+	<br><br>
 
-<br><br>
-
-<label>Select Species:</label>
-<select id="fileSelect">
-  <option value="Chansey.txt">Chansey</option>
-  <option value="Dratini.txt">Dratini</option>
-  <option value="Dragonair.txt">Dragonair</option>
-  <option value="Tauros.txt">Tauros</option>
-  <option value="Kangaskhan.txt">Kangaskhan</option>
-  <option value="Scyther.txt">Scyther</option>
-  <option value="Pinsir.txt">Pinsir</option>
-  <option value="Seaking.txt">Seaking</option>
-  <option value="Parasect.txt">Parasect</option>
-  <option value="Venomoth.txt">Venomoth</option>
-  <option value="Exeggcute.txt">Exeggcute</option>
-  <option value="Rhyhorn.txt">Rhyhorn</option>
-  <option value="Nidorina.txt">Nidorina</option>
-  <option value="Nidorino.txt">Nidorino</option>
-  <option value="Nidoran.txt">Nidoran</option>
-  <option value="Poliwag.txt">Poliwag</option>
-  <option value="Goldeen.txt">Goldeen</option>
-  <option value="Doduo.txt">Doduo</option>
-  <option value="Venonat.txt">Venonat</option>
-  <option value="Psyduck.txt">Psyduck</option>
-  <option value="Paras.txt">Paras</option>
-  <option value="Slowpoke.txt">Slowpoke</option>
-  <option value="Magikarp.txt">Magikarp</option>
-</select>
-
-<br><br>
-
+	<label>Select Species:</label>
+	<div class="grid" id="imageGrid"></div>
+</div>
+<img id="selectedImage" class="selected-image" src="" alt="Selected Image" style="display:none;">
+<br>
 <label>Balls Remaining:</label>
 <input type="number" id="lineInput" min="1" max="30" value="30">
 <br>
 <label>Bait Thrown?</label>
 <input type="checkbox" id="baitRadio" name="bait">
+
 <br>
-<button onclick="loadSequence()">Load</button>
+<button onclick="loadSequence()", id="loadbutton">Load</button>
 
 <div class="odds" id="oddsDisplay"></div>
 
 <button id="watchButton" onclick="reloadPattern()" style="display:none;">ITS WATCHING CAREFULLY</button>
 <button id="fledButton" onclick="itFled()" style="display:none;">It Fled</button>
 
-
 <div class="container" id="imageContainer"></div>
 <a href="https://www.youtube.com/@ProfessorRex"><img id="extraImage" class="extra-image" src="rex.png" alt="Extra Image"></a>
+
 <script>
+let currentMon = "Chansey";
+    const imageUrls = [
+      "sprites/Chansey.png",
+	  "sprites/Dratini.png",
+	  "sprites/Dragonair.png",
+	  "sprites/Tauros.png",
+	  "sprites/Kangaskhan.png",
+	  "sprites/Scyther.png",
+	  "sprites/Pinsir.png",
+	  "sprites/Parasect.png",
+	  "sprites/Venomoth.png",
+	  "sprites/Seaking.png",
+	  "sprites/Exeggcute.png",
+	  "sprites/Nidorina.png",
+	  "sprites/Nidorino.png",
+	  "sprites/Rhyhorn.png",
+	  "sprites/Paras.png",
+	  "sprites/Venonat.png",
+	  "sprites/Psyduck.png",
+	  "sprites/Slowpoke.png",
+	  "sprites/Doduo.png",
+	  "sprites/Goldeen.png",
+	  "sprites/Nidoran.png",
+	  "sprites/Poliwag.png",
+	  "sprites/Magikarp.png",
+    ];
+
+    const grid = document.getElementById('imageGrid');
+    const output = document.getElementById('output');
+
+    let selectedIndex = 0;
+
+    imageUrls.forEach((url, index) => {
+      const div = document.createElement('div');
+      div.className = 'item';
+
+      const img = document.createElement('img');
+      img.src = url;
+
+      div.appendChild(img);
+
+      div.addEventListener('click', () => {
+        // Remove previous selection
+        document.querySelectorAll('.item').forEach(el => el.classList.remove('selected'));
+
+        // Select new one
+        div.classList.add('selected');
+        selectedIndex = index;
+
+        currentMon = url.split('/').pop().split('.')[0];
+      });
+
+      grid.appendChild(div);
+    });
+	
 let currentIndex = 0;
 const images = { T: "T.png", L: "L.png", R: "R.png" };
 let sequenceLoaded = false;
@@ -126,9 +201,12 @@ async function fetchWithFallback(path, fallbackPath) {
 
 async function loadSequence() {
   const language = document.getElementById('languageSelect').value;
-  const file = document.getElementById('fileSelect').value;
+  const file = currentMon + ".txt";
   const lineNum = parseInt(document.getElementById('lineInput').value) - 1;
   const baited = document.getElementById('baitRadio').checked;
+  document.getElementById('selector').style.display = 'none';
+  document.getElementById('loadbutton').style.display = 'none';
+  document.getElementById('selectedImage').style.display = 'inline-block';
 
   if (isNaN(lineNum) || lineNum < 0 || lineNum >= 30) {
     alert("Enter a valid line number (1-30)");
@@ -162,6 +240,7 @@ async function loadSequence() {
     renderImages(sequence);
 
     sequenceLoaded = true;
+	document.getElementById('selectedImage').src = 'sprites/'+currentMon+".png";
     document.getElementById('watchButton').style.display = 'inline-block';
     document.getElementById('fledButton').style.display = 'inline-block';
 
@@ -236,11 +315,14 @@ function reloadPattern() {
 
 function itFled() {
   document.getElementById('baitRadio').checked = false;
+  document.getElementById('selector').style.display = 'block';
+  document.getElementById('loadbutton').style.display = 'block';
   document.getElementById('watchButton').style.display = 'none';
   document.getElementById('fledButton').style.display = 'none';
   document.getElementById('imageContainer').innerHTML = "";
   document.getElementById('oddsDisplay').textContent = "";
   document.getElementById('extraImage').style.display = 'none';
+  document.getElementById('selectedImage').style.display = 'none';
   sequenceLoaded = false;
 }
 </script>

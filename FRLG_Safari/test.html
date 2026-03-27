@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Option Selector</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .item {
+      border: 2px solid transparent;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.2s;
+      aspect-ratio: 1 / 1;
+      padding: 5px;
+      background: #fff;
+    }
+
+    .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #fff;
+    }
+
+    .item.selected {
+      border-color: #007bff;
+      transform: scale(1.05);
+    }
+
+    .selected-output {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Select an Image</h1>
+
+  <div class="grid" id="imageGrid"></div>
+
+  <div class="selected-output" id="output">No selection</div>
+
+  <script>
+    const imageUrls = [
+      "sprites/Chansey.png",
+	  "sprites/Dratini.png",
+	  "sprites/Dragonair.png",
+	  "sprites/Tauros.png",
+	  "sprites/Kangaskhan.png",
+	  "sprites/Scyther.png",
+	  "sprites/Pinsir.png",
+	  "sprites/Parasect.png",
+	  "sprites/Venomoth.png",
+	  "sprites/Seaking.png",
+	  "sprites/Exeggcute.png",
+	  "sprites/Nidorina.png",
+	  "sprites/Nidorino.png",
+	  "sprites/Rhyhorn.png",
+	  "sprites/Paras.png",
+	  "sprites/Venonat.png",
+	  "sprites/Psyduck.png",
+	  "sprites/Slowpoke.png",
+	  "sprites/Doduo.png",
+	  "sprites/Goldeen.png",
+	  "sprites/Nidoran.png",
+	  "sprites/Poliwag.png",
+	  "sprites/Magikarp.png",
+    ];
+
+    const grid = document.getElementById('imageGrid');
+    const output = document.getElementById('output');
+
+    let selectedIndex = null;
+
+    imageUrls.forEach((url, index) => {
+      const div = document.createElement('div');
+      div.className = 'item';
+
+      const img = document.createElement('img');
+      img.src = url;
+
+      div.appendChild(img);
+
+      div.addEventListener('click', () => {
+        // Remove previous selection
+        document.querySelectorAll('.item').forEach(el => el.classList.remove('selected'));
+
+        // Select new one
+        div.classList.add('selected');
+        selectedIndex = index;
+
+        const fileName = url.split('/').pop().split('.')[0];
+        output.textContent = `Selected: ${fileName}`;;
+      });
+
+      grid.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>
