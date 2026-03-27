@@ -220,6 +220,10 @@ function handleClick(img, index) {
   if (sequenceChar === 'T') {
     baitRadio.checked = true;
   }
+  
+  if (sequenceChar === 'R') {
+    baitRadio.checked = false;
+  }
 
   currentIndex++;
   const container = document.getElementById('imageContainer');
