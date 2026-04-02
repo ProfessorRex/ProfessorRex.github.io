@@ -92,29 +92,30 @@
 	<label>Language:</label>
 	<select id="languageSelect">
 	  <option value="International">International</option>
-	  <option value="Japanese">Japanese</option>
+	  <option value="Japanese">日本語</option>
 	</select>
 
 	<br><br>
 
-	<label>Select Species:</label>
+	<label id="speciesText">Select Species:</label>
 	<div class="grid" id="imageGrid"></div>
 </div>
 <img id="selectedImage" class="selected-image" src="" alt="Selected Image" style="display:none;">
 <br>
-<label>Balls Remaining:</label>
+<label id="ballsText">Balls Remaining:</label>
 <input type="number" id="lineInput" min="1" max="30" value="30">
 <br>
-<label>Bait Thrown?</label>
+<label id="baitText">Bait Thrown?</label>
 <input type="checkbox" id="baitRadio" name="bait">
 
 <br>
-<button onclick="loadSequence()", id="loadbutton">Load</button>
+<button onclick="loadSequence()", id="loadButton">Load Pattern</button>
 
 <div class="odds" id="oddsDisplay"></div>
 
 <button id="watchButton" onclick="reloadPattern()" style="display:none;">ITS WATCHING CAREFULLY</button>
 <button id="fledButton" onclick="itFled()" style="display:none;">It Fled</button>
+<button id="caughtButton" onclick="itFled()" style="display:none;">CAUGHT!</button>
 
 <div class="container" id="imageContainer"></div>
 <a href="https://www.youtube.com/@ProfessorRex"><img id="extraImage" class="extra-image" src="rex.png" alt="Extra Image"></a>
@@ -179,6 +180,55 @@ let currentIndex = 0;
 const images = { T: "T.png", L: "L.png", R: "R.png" };
 let sequenceLoaded = false;
 
+const translations = {
+  International: {
+    speciesText: "Select Species:",
+    ballsText: "Safari Balls Remaining:",
+	watchingText: "Watching Carefully!",
+	fledText: "Fled",
+	caughtText: "Caught!",
+	loadText: "Load Pattern"
+  },
+  Japanese: {
+    speciesText: "種類を選択してください:",
+    ballsText: "残りのサファリボール数:",
+	watchingText: "こちらのようすをうかがっている!",
+	fledText: "にげだした",
+	caughtText: "つかまえた!",
+	loadText: "ロード"
+  }
+};
+
+const languageSelect = document.getElementById("languageSelect");
+
+languageSelect.addEventListener("change", () => {
+  const lang = languageSelect.value;
+
+  document.getElementById("speciesText").textContent =
+    translations[lang].speciesText;
+
+  document.getElementById("ballsText").textContent =
+    translations[lang].ballsText;
+  document.getElementById("watchButton").textContent =
+    translations[lang].watchingText;
+  document.getElementById("fledButton").textContent =
+    translations[lang].fledText;
+  document.getElementById("caughtButton").textContent =
+    translations[lang].caughtText;
+  document.getElementById("loadButton").textContent =
+    translations[lang].loadText;
+	
+
+  if (lang == "Japanese"){
+	document.getElementById('baitText').style.display = 'none';
+	document.getElementById('baitRadio').style.display = 'none';
+  } else{
+  	document.getElementById('baitText').style.display = 'inline-block';
+	document.getElementById('baitRadio').style.display = 'inline-block';
+  }
+});
+
+
 async function fetchWithFallback(path, fallbackPath) {
   try {
     const response = await fetch(path);
@@ -205,7 +255,7 @@ async function loadSequence() {
   const lineNum = parseInt(document.getElementById('lineInput').value) - 1;
   const baited = document.getElementById('baitRadio').checked;
   document.getElementById('selector').style.display = 'none';
-  document.getElementById('loadbutton').style.display = 'none';
+  document.getElementById('loadButton').style.display = 'none';
   document.getElementById('selectedImage').style.display = 'inline-block';
 
   if (isNaN(lineNum) || lineNum < 0 || lineNum >= 30) {
@@ -243,6 +293,7 @@ async function loadSequence() {
 	document.getElementById('selectedImage').src = 'sprites/'+currentMon+".png";
     document.getElementById('watchButton').style.display = 'inline-block';
     document.getElementById('fledButton').style.display = 'inline-block';
+	document.getElementById('caughtButton').style.display = 'inline-block';
 
   } catch (err) {
     console.error("Error loading file:", err);
@@ -316,9 +367,10 @@ function reloadPattern() {
 function itFled() {
   document.getElementById('baitRadio').checked = false;
   document.getElementById('selector').style.display = 'block';
-  document.getElementById('loadbutton').style.display = 'block';
+  document.getElementById('loadButton').style.display = 'block';
   document.getElementById('watchButton').style.display = 'none';
   document.getElementById('fledButton').style.display = 'none';
+  document.getElementById('caughtButton').style.display = 'none';
   document.getElementById('imageContainer').innerHTML = "";
   document.getElementById('oddsDisplay').textContent = "";
   document.getElementById('selectedImage').style.display = 'none';
