@@ -14,12 +14,12 @@
 
 <h2>Professor Rex's Safari Zone Webtool</h2>
 <div id="selector">
+	<label id="languageText">Select Language:</label>
 	<select id="languageSelect">
 	  <option value="International">International</option>
 	  <option value="Japanese">日本語</option>
 	</select>
-
-	<label id="speciesText">Select Species:</label>
+	<label id="speciesText" style="display:none;">Select Species:</label>
 	<div class="grid" id="imageGrid"></div>
 </div>
 <img id="selectedImage" class="selected-image" src="" alt="Selected Image" style="display:none;">
@@ -41,13 +41,13 @@
 </div>
 
 <br>
-<button onclick="loadSequence()", id="loadButton">Load</button>
+<button onclick="loadSequence()", id="loadButton">Load Pattern</button>
 
 <div class="odds" id="oddsDisplay"></div>
 <div class="buttonRow">
-<button id="watchButton" onclick="reloadPattern()" style="display:none;">ITS WATCHING CAREFULLY</button>
-<button id="fledButton" onclick="itFled()" style="display:none;">It Fled</button>
-<button id="caughtButton" onclick="itFled()" style="display:none;">CAUGHT!</button>
+<button id="watchButton" onclick="reloadPattern()" style="display:none;">Watching Carefully!</button>
+<button id="fledButton" onclick="itFled()" style="display:none;">Fled</button>
+<button id="caughtButton" onclick="itFled()" style="display:none;">Caught!</button>
 </div>
 
 <div class="container" id="imageContainer"></div>
@@ -304,7 +304,7 @@ function reloadPattern() {
 
 function itFled() {
   document.getElementById('baitRadio').checked = false;
-  document.getElementById('selector').style.display = 'flex';
+  document.getElementById('selector').style.display = 'inline-block';
   document.getElementById('loadButton').style.display = 'block';
   document.getElementById('watchButton').style.display = 'none';
   document.getElementById('fledButton').style.display = 'none';
