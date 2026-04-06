@@ -232,7 +232,7 @@ img#selectedImage {
 	width:128px;
 	height: 128px;
     image-rendering: pixelated;
-	margin: 0 auto 36px;
+	margin: 0 auto 15px;
 }
 
 #imageContainer {
