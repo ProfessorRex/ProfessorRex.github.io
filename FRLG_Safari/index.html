@@ -6,116 +6,48 @@
   <meta charset="UTF-8">
   <meta charset="UTF-8">
   <title>Professor Rex's Safari Zone Webtool</title>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    .container {
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      gap: 5px;
-      width: max-content;
-    }
-    .odds { font-weight: bold; margin-top: 15px; }
-    img {
-      image-rendering: pixelated;
-      image-rendering: crisp-edges;
-      width: 80px;
-      height: 80px;
-      margin: 5px;
-      cursor: pointer;
-      border: 2px solid transparent;
-    }
-    img.disabled {
-      filter: grayscale(100%);
-      opacity: 0.5;
-      pointer-events: none;
-    }
-    img.locked {
-      opacity: 0.3;
-      pointer-events: none;
-	}
-	.extra-image {
-      display: block;
-      margin-top: 20px;
-      width: 50%;
-      height: auto;
-    }
-	.grid {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 0px;
-      max-width: 500px;
-      margin: 0;
-    }
-
-    .item {
-      border: 2px solid transparent;
-      border-radius: 10px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: 0.2s;
-      aspect-ratio: 1 / 1;
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-	  object-position: center;
-      display: block;
-      background: #fff;
-	  image-rendering: pixelated;
-    }
-
-    .item.selected {
-      border-color: #007bff;
-      transform: scale(1.05);
-    }
-
-    .selected-output {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-	.selected-image {
-	}
-}
-  </style>
+  <link rel="stylesheet" href="index.css">
+  
 </head>
 <body>
 
 <h2>Professor Rex's Safari Zone Webtool</h2>
 <div id="selector">
-	<label>Language:</label>
 	<select id="languageSelect">
 	  <option value="International">International</option>
 	  <option value="Japanese">日本語</option>
 	</select>
-
-	<br><br>
 
 	<label id="speciesText">Select Species:</label>
 	<div class="grid" id="imageGrid"></div>
 </div>
 <img id="selectedImage" class="selected-image" src="" alt="Selected Image" style="display:none;">
 <br>
-<label id="ballsText">Balls Remaining:</label>
-<input type="number" id="lineInput" min="1" max="30" value="30">
-<br>
-<label id="baitText">Bait Thrown?</label>
-<input type="checkbox" id="baitRadio" name="bait">
+<div class="settings">
+  <div class="setting">
+    <label id="ballsText">Balls Remaining:</label>
+    <div class="stepper">
+      <button type="button" id="decrement" onclick="const i=this.nextElementSibling;let v=parseInt(i.value)||i.min;if(v>i.min)i.value=v-1;">−</button>
+      <input type="number" id="lineInput" value="30" min="1" max="30" oninput="this.value=Math.min(this.max,Math.max(this.min,this.value))">
+      <button type="button" id="increment" onclick="const i=this.previousElementSibling;let v=parseInt(i.value)||i.min;if(v<i.max)i.value=v+1;">+</button>
+    </div>
+  </div>
+
+  <div class="setting">
+    <label id="baitText">Bait Thrown?</label>
+    <input type="checkbox" id="baitRadio" name="bait">
+  </div>
+</div>
 
 <br>
-<button onclick="loadSequence()", id="loadButton">Load Pattern</button>
+<button onclick="loadSequence()", id="loadButton">Load</button>
 
 <div class="odds" id="oddsDisplay"></div>
-
+<div class="buttonRow">
 <button id="watchButton" onclick="reloadPattern()" style="display:none;">ITS WATCHING CAREFULLY</button>
 <button id="fledButton" onclick="itFled()" style="display:none;">It Fled</button>
 <button id="caughtButton" onclick="itFled()" style="display:none;">CAUGHT!</button>
+</div>
 
 <div class="container" id="imageContainer"></div>
 <a href="https://www.youtube.com/@ProfessorRex"><img id="extraImage" class="extra-image" src="rex.png" alt="Extra Image"></a>
@@ -161,6 +93,12 @@ let currentMon = "Chansey";
       img.src = url;
 
       div.appendChild(img);
+	  
+	  const shinyImg = document.createElement('img');
+	  shinyImg.src = url.replace('sprites/', 'sprites/shiny/');
+	  
+	  div.appendChild(shinyImg);
+
 
       div.addEventListener('click', () => {
         // Remove previous selection
@@ -228,7 +166,6 @@ languageSelect.addEventListener("change", () => {
   }
 });
 
-
 async function fetchWithFallback(path, fallbackPath) {
   try {
     const response = await fetch(path);
@@ -290,7 +227,7 @@ async function loadSequence() {
     renderImages(sequence);
 
     sequenceLoaded = true;
-	document.getElementById('selectedImage').src = 'sprites/'+currentMon+".png";
+	document.getElementById('selectedImage').src = 'sprites/shiny/'+currentMon+".png";
     document.getElementById('watchButton').style.display = 'inline-block';
     document.getElementById('fledButton').style.display = 'inline-block';
 	document.getElementById('caughtButton').style.display = 'inline-block';
