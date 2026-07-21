@@ -17,7 +17,9 @@ body {
     align-items: center;
     box-sizing: border-box;
 }
-
+.patternStats br {
+    display: block;
+}
 .page-header {
     width: 100%;
     max-width: 976px;

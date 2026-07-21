@@ -1,0 +1,5 @@
+Odds of fleeing per turn: 10.01%
+Odds of capture per ball: 50.28%
+Odds of capture per ball after rock: 50.28%
+Odds of capture per ball after 2 rocks: 50.28%
+Odds of capture per ball after 3 rocks: 50.28%

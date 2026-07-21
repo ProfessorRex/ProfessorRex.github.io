@@ -1,0 +1,7 @@
+Odds of fleeing per turn while watching carefully: 10.01%
+Odds of fleeing while Eating: 5.00%
+Odds of fleeing while angry: 20.02%
+Odds of capture per ball: 50.28%
+Odds of capture per ball after bait: 27.97%
+Odds of capture per ball after rock: 50.28%
+Odds of capture per ball after bait & rock: 50.28%

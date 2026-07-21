@@ -28,6 +28,9 @@
 			<div class="grid" id="imageGrid"></div>
 		</div>
 		<img id="selectedImage" class="selected-image" src="" alt="Selected Image" style="display:none;">
+		<div id="patternStats" class="patternStats">
+		
+		</div>
 		<br>
 		<div class="settings">
 		  <div class="setting">
@@ -66,6 +69,10 @@
     </div>
 </div>
 <script>
+let watching = true;
+let baited = false;
+let rock = false;
+let rockcount = 0;
 let currentMon = "Chansey";
     const imageUrls = [
       "sprites/Chansey.png",
@@ -207,9 +214,11 @@ async function loadSequence() {
   document.getElementById('selector').style.display = 'none';
   document.getElementById('loadButton').style.display = 'none';
   document.getElementById('selectedImage').style.display = 'inline-block';
+  document.getElementById('patternStats').style.display = 'block';
+  displayStats(false, true);
 
   if (isNaN(lineNum) || lineNum < 0 || lineNum >= 30) {
-    alert("Enter a valid line number (1-30)");
+    itFled();
     return;
   }
 
@@ -256,13 +265,58 @@ function displayOdds(odds) {
     const num = parseFloat(odds);
     if (!isNaN(num)) {
       const percent = (num * 100).toFixed(2);
-      oddsDiv.textContent = `Odds of Successful Capture: ${percent}%`;
+      oddsDiv.textContent = `Odds of Successful Capture with Full Pattern: ${percent}%`;
     } else {
       oddsDiv.textContent = "";
     }
   } else {
     oddsDiv.textContent = "";
   }
+}
+
+async function displayStats() {
+  const language = document.getElementById('languageSelect').value;
+  const file = currentMon + ".txt";
+ 
+  let folder = language;
+  let path = `${folder}/Stats/${file}`;
+  let fallbackPath = null;
+  const text = await fetchWithFallback(path, fallbackPath);
+  const lines = text.split(/\r?\n/);
+  var flee = '';
+  var catchr = '';
+  if (language == 'Japanese'){
+    flee = lines[0];
+  } else if (watching) {
+	flee = lines[0];
+  } else if (baited && !rock) {
+	flee = lines[1];
+  } else if (rock) {
+    flee = lines[2];
+  }
+  if (language == "International") {
+    if (!baited && !rock){
+	  catchr = lines[3];
+	} else if (baited && !rock) {
+	  catchr = lines[4]
+	} else if (!baited & rock) {
+	  catchr = lines[5]
+	} else if (baited & rock) {
+	  catchr = lines[6]
+	}
+  } else {
+    if (!rock){
+	  catchr = lines[1];
+	} else if (rockcount == 1) {
+	  catchr = lines[2];
+	} else if (rockcount == 2) {
+	  catchr = lines[3];
+	} else {
+	  catchr = lines[4];
+	}
+  }
+  const oddsDiv = document.getElementById('patternStats');
+  oddsDiv.innerHTML = flee + "<br>" + catchr;
 }
 
 function renderImages(sequence) {
@@ -294,14 +348,22 @@ function handleClick(img, index) {
   if (sequenceChar === 'L') {
     const input = document.getElementById('lineInput');
     let value = parseInt(input.value);
-    if (!isNaN(value) && value > 1) input.value = value - 1;
+    if (!isNaN(value) && value > 0) input.value = value - 1;
+	if (sequenceLoaded) displayStats(false, false);
   }
 
   if (sequenceChar === 'T') {
     baitRadio.checked = true;
+	watching = false;
+	baited = true;
+	if (sequenceLoaded) displayStats(false);
   }
   
   if (sequenceChar === 'R') {
+	watching = false;
+	rock = true;
+	rockcount += 1;
+  	if (sequenceLoaded) displayStats(true);
     baitRadio.checked = false;
   }
 
@@ -311,6 +373,12 @@ function handleClick(img, index) {
 }
 
 function reloadPattern() {
+  watching = true;
+  rockcount = 0;
+  if (rock){
+    baited = false;
+	rock = false;
+  }
   if (sequenceLoaded) loadSequence();
 }
 
@@ -324,7 +392,15 @@ function itFled() {
   document.getElementById('imageContainer').innerHTML = "";
   document.getElementById('oddsDisplay').textContent = "";
   document.getElementById('selectedImage').style.display = 'none';
+  document.getElementById('patternStats').style.display = 'none';
+  if (parseInt(document.getElementById('lineInput').value) == 0) {
+    document.getElementById('lineInput').value = '30';
+  }
+  watching = true;
+  rock = false;
+  baited = false;
   sequenceLoaded = false;
+  rockcount = 0;
 }
 </script>
 
