@@ -42,7 +42,7 @@
 			</div>
 		  </div>
 
-		  <div class="setting">
+		  <div class="setting" id="baitbox">
 			<label id="baitText">Bait Thrown?</label>
 			<input type="checkbox" id="baitRadio" name="bait">
 		  </div>
@@ -178,11 +178,9 @@ languageSelect.addEventListener("change", () => {
 	
 
   if (lang == "Japanese"){
-	document.getElementById('baitText').style.display = 'none';
-	document.getElementById('baitRadio').style.display = 'none';
+	document.getElementById('baitbox').style.display = 'none';
   } else{
-  	document.getElementById('baitText').style.display = 'inline-block';
-	document.getElementById('baitRadio').style.display = 'inline-block';
+	document.getElementById('baitbox').style.display = 'inline-block';
   }
 });
 
