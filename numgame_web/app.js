@@ -13,6 +13,7 @@
     hintCount: byId("hint-count"), toast: byId("points-toast"), footerSeed: byId("footer-seed"),
     settingsDialog: byId("settings-dialog"), definitionDialog: byId("definition-dialog"),
     continueDialog: byId("continue-dialog"), gameoverDialog: byId("gameover-dialog"),
+    runTimesDialog: byId("run-times-dialog"),
   };
   let started = false;
   let transitionPending = false;
@@ -34,11 +35,21 @@
   });
 
   function updateStatus() {
+    if (!game.gameOver && !elements.hintCount.isConnected) restoreHintButton();
     elements.level.textContent = started ? String(game.level).padStart(2, "0") : "—";
     elements.points.textContent = game.points.toLocaleString("en-US");
     elements.lives.textContent = started ? String(game.lives) : "3";
     elements.hintCount.textContent = started ? String(game.hintsAvailable) : "3";
-    elements.footerSeed.textContent = `SEED · ${started ? game.seed.toString() : "—"}`;
+    elements.footerSeed.textContent = `SEED · ${started && game.randomSeed
+      ? "—" : started || game.gameOver ? game.seed.toString() : "—"}`;
+  }
+
+  function restoreHintButton() {
+    const hintCount = document.createElement("span");
+    hintCount.id = "hint-count";
+    hintCount.textContent = String(game.hintsAvailable);
+    elements.hint.replaceChildren(document.createTextNode("HINT "), hintCount);
+    elements.hintCount = hintCount;
   }
 
   function renderQuestion(question) {
@@ -85,7 +96,9 @@
 
   function updateSettings() {
     byId("settings-question").textContent = started ? String(game.questionNumber) : "—";
-    byId("settings-seed").textContent = started ? game.seed.toString() : (elements.input.value || "—");
+    byId("settings-seed").textContent = started && game.randomSeed
+      ? "Hidden while playing"
+      : started || game.gameOver ? game.seed.toString() : (elements.input.value || "—");
     byId("settings-high-score").textContent = Number(localStorage.getItem(HIGH_SCORE_KEY) || 0).toLocaleString("en-US");
     byId("save-game").disabled = !started;
     byId("skip-level").hidden = !(started && game.debugMode && game.level < 6);
@@ -107,7 +120,8 @@
     try {
       game.start(seed);
       started = true;
-      elements.seedCaption.textContent = game.randomSeed ? "RANDOM SEED" : `SEED ${game.seed}`;
+      restoreHintButton();
+      elements.seedCaption.textContent = game.randomSeed ? "" : `SEED ${game.seed}`;
       elements.message.textContent = "Hold a rule definition with the info button.";
       renderQuestion(game.current);
       saveGame();
@@ -146,8 +160,20 @@
     if (result.status === "GAME_OVER") {
       started = false;
       clearInterval(timerId);
+      elements.input.value = "";
+      elements.input.disabled = true;
+      elements.hint.disabled = true;
+      elements.action.textContent = "Restart game";
+      elements.action.disabled = true;
+      if (game.randomSeed) {
+        elements.seedCaption.textContent = `SEED ${game.seed}`;
+        elements.footerSeed.textContent = `SEED · ${game.seed}`;
+      }
       elements.gameoverDialog.showModal();
       byId("gameover-copy").textContent = `One correct answer was ${result.correctAnswer}. You scored ${result.totalPoints.toLocaleString("en-US")} points across ${game.questionsAnswered} questions.`;
+      byId("gameover-timer").textContent = `RUN TIME · ${formatDuration(result.runDurationMs)} · VIEW TIMES`;
+      byId("gameover-timer").dataset.startedAt = String(result.runStartedAt);
+      byId("gameover-timer").dataset.endedAt = String(result.runEndedAt);
       byId("return-home").addEventListener("click", resetHome, { once: true });
       localStorage.removeItem(SAVE_KEY);
       return;
@@ -161,6 +187,7 @@
     elements.hint.disabled = true;
     elements.input.disabled = true;
     showAnswerBonus(result);
+    if (result.levelUp) animateLevelUp(result.level);
     playTone(true);
     showClueFeedback([], true);
     animateSpecialAnswer(Number(answer));
@@ -175,6 +202,10 @@
   }
 
   function requestHint() {
+    if (game.gameOver) {
+      elements.gameoverDialog.showModal();
+      return;
+    }
     if (!started || transitionPending) return;
     const result = game.requestHint();
     if (result.alreadyUsed) {
@@ -212,6 +243,22 @@
     showToast(`${labels.length ? `${labels.join(" · ")}\n` : ""}+${result.pointsEarned.toLocaleString("en-US")} points`);
   }
 
+  function animateLevelUp(level) {
+    [...document.querySelectorAll(".key")].forEach((key, index) => {
+      key.style.setProperty("--wave-index", index);
+      key.classList.remove("is-level-wave");
+      void key.offsetWidth;
+      key.classList.add("is-level-wave");
+      window.setTimeout(() => key.classList.remove("is-level-wave"), 1100);
+    });
+    const bubble = byId("level-up-bubble");
+    bubble.textContent = `LEVEL UP · ${String(level).padStart(2, "0")}`;
+    bubble.classList.remove("is-rising");
+    void bubble.offsetWidth;
+    bubble.classList.add("is-rising");
+    window.setTimeout(() => bubble.classList.remove("is-rising"), 1700);
+  }
+
   function showToast(text) {
     elements.toast.textContent = text;
     elements.toast.classList.remove("is-visible");
@@ -236,6 +283,49 @@
     const highScore = Number(localStorage.getItem(HIGH_SCORE_KEY) || 0);
     if (points > highScore) localStorage.setItem(HIGH_SCORE_KEY, String(points));
   }
+
+  function formatDuration(milliseconds) {
+    const totalSeconds = Math.floor(Math.max(0, milliseconds) / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    return [hours, minutes, seconds].map((value) => String(value).padStart(2, "0")).join(":");
+  }
+
+  byId("gameover-timer").addEventListener("click", () => {
+    byId("run-start-time").textContent = new Date(
+      Number(byId("gameover-timer").dataset.startedAt),
+    ).toLocaleString();
+    byId("run-end-time").textContent = new Date(
+      Number(byId("gameover-timer").dataset.endedAt),
+    ).toLocaleString();
+    const levelList = byId("run-level-ups");
+    levelList.replaceChildren();
+    if (game.levelUpEvents.length === 0) {
+      const emptyItem = document.createElement("li");
+      emptyItem.textContent = "No level-ups in this run";
+      levelList.append(emptyItem);
+    } else {
+      for (const event of game.levelUpEvents) {
+        const item = document.createElement("li");
+        const label = document.createElement("span");
+        const timestamp = document.createElement("time");
+        label.textContent = `Level ${event.level}`;
+        timestamp.textContent = new Date(event.timestamp).toLocaleString();
+        timestamp.dateTime = new Date(event.timestamp).toISOString();
+        item.append(label, timestamp);
+        levelList.append(item);
+      }
+    }
+    elements.runTimesDialog.showModal();
+  });
+  byId("hide-gameover").addEventListener("click", () => {
+    elements.gameoverDialog.close();
+    elements.action.textContent = "Return home";
+    elements.action.disabled = false;
+    elements.hint.textContent = "SHOW RESULTS";
+    elements.hint.disabled = false;
+  });
 
   function saveGame() {
     if (!started) return;
@@ -276,6 +366,7 @@
     elements.message.textContent = "Three lives. Three starting hints.";
     elements.action.textContent = "Start game";
     elements.action.disabled = false;
+    restoreHintButton();
     elements.hint.disabled = true;
     updateStatus();
   }
@@ -316,7 +407,11 @@
     if (action === "clear") elements.input.value = "";
     if (action === "hint") requestHint();
   });
-  elements.action.addEventListener("click", () => started ? submitAnswer() : startGame());
+  elements.action.addEventListener("click", () => {
+    if (game.gameOver) resetHome();
+    else if (started) submitAnswer();
+    else startGame();
+  });
   elements.input.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
@@ -341,6 +436,7 @@
   byId("skip-level").addEventListener("click", () => {
     if (!game.skipToNextLevel()) return;
     elements.settingsDialog.close();
+    animateLevelUp(game.level);
     renderQuestion(game.nextQuestion());
     elements.message.textContent = `Skipped to level ${game.level}.`;
     saveGame();

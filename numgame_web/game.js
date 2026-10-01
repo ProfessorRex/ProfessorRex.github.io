@@ -2,7 +2,7 @@
   const FUTURE_QUESTION_LIMIT = 10;
   const MAXIMUMS = [100, 100, 1000, 1000, 10000, 10000, 10000];
   const MINIMUMS = [0, 0, 10, 10, 100, 1000, 1000];
-  const LEVEL_THRESHOLDS = [0, 50, 200, 600, 1500, 3000];
+  const QUESTIONS_PER_LEVEL = 8;
   const BAN_LETTERS = ["a", "e", "i", "o", "t", "u"];
   const SMALL_NUMBERS = [
     "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
@@ -356,6 +356,7 @@
       const signature = `${level}:${minimum}:${maximum}${clues.map(({ text }) => `|${text}`).join("")}`;
       if (history.has(signature)) continue;
       return {
+        level,
         clues,
         minimum,
         maximum,
@@ -378,8 +379,10 @@
       this.lives = 3;
       this.points = 0;
       this.questionsAnswered = 0;
+      this.questionsAnsweredThisLevel = 0;
       this.questionNumber = 0;
       this.generatedQuestionCount = 0;
+      this.levelUpEvents = [];
       this.hintsAvailable = 3;
       this.hintUsed = false;
       this.debugMode = false;
@@ -390,6 +393,8 @@
       this.seen = new Set();
       this.current = null;
       this.questionStartedAt = 0;
+      this.runStartedAt = 0;
+      this.runEndedAt = 0;
       this.running = false;
       this.gameOver = false;
     }
@@ -407,6 +412,7 @@
       }
       this.debugMode = seed === "0118999";
       this.random = new JavaRandom(this.seed);
+      this.runStartedAt = Date.now();
       this.running = true;
       this.current = this.generateUniqueQuestion();
       this.deliver(this.current);
@@ -415,7 +421,10 @@
 
     generateUniqueQuestion() {
       while (true) {
-        const question = createQuestion(this.level, this.seen, this.random,
+        const questionsAhead = (this.current ? 1 : 0) + this.queue.length;
+        const targetLevel = Math.min(6, this.level + Math.floor(
+          (this.questionsAnsweredThisLevel + questionsAhead) / QUESTIONS_PER_LEVEL));
+        const question = createQuestion(targetLevel, this.seen, this.random,
           this.generatedQuestionCount % 2 === 0);
         if (this.seen.has(question.signature)) continue;
         this.seen.add(question.signature);
@@ -431,6 +440,9 @@
     }
 
     deliver(question) {
+      if (question.level !== this.level) {
+        throw new Error(`Question level mismatch: expected ${this.level}, got ${question.level}`);
+      }
       this.current = question;
       this.questionNumber += 1;
       this.hintUsed = false;
@@ -490,6 +502,8 @@
     skipToNextLevel() {
       if (!this.running || !this.debugMode || this.level >= 6) return false;
       this.level += 1;
+      this.levelUpEvents.push({ level: this.level, timestamp: Date.now() });
+      this.questionsAnsweredThisLevel = 0;
       this.lives += 1;
       this.hintsAvailable += 1;
       this.current = null;
@@ -508,6 +522,7 @@
         this.lives -= 1;
         if (this.lives <= 0) {
           const correctAnswer = this.current.solutions[0];
+          this.runEndedAt = Date.now();
           this.running = false;
           this.gameOver = true;
           this.current = null;
@@ -515,6 +530,9 @@
           return {
             status: "GAME_OVER", pointsEarned: 0, totalPoints: this.points,
             correctAnswer, clueMatches,
+            runDurationMs: this.totalRunTime(),
+            runStartedAt: this.runStartedAt,
+            runEndedAt: this.runEndedAt,
           };
         }
         return { status: "WRONG", pointsEarned: 0, clueMatches };
@@ -532,14 +550,16 @@
       earned += specialBonusPoints;
       this.points += earned;
       this.questionsAnswered += 1;
+      this.questionsAnsweredThisLevel += 1;
       this.current = null;
-      const levelUp = this.level < 6 && this.points >= LEVEL_THRESHOLDS[this.level];
+      const levelUp = this.level < 6
+        && this.questionsAnsweredThisLevel >= QUESTIONS_PER_LEVEL;
       if (levelUp) {
         this.level += 1;
+        this.levelUpEvents.push({ level: this.level, timestamp: Date.now() });
+        this.questionsAnsweredThisLevel = 0;
         this.lives += 1;
         this.hintsAvailable += 1;
-        this.generatedQuestionCount -= this.queue.length;
-        this.queue = [];
       }
       return {
         status: "CORRECT", pointsEarned: earned, totalPoints: this.points,
@@ -563,13 +583,21 @@
       return 2 * Math.ceil(answerModifier * ruleValue * timeModifier * solutionsModifier);
     }
 
+    totalRunTime() {
+      const endTime = this.runEndedAt || Date.now();
+      return Math.max(0, endTime - this.runStartedAt);
+    }
+
     snapshot() {
       return {
         level: this.level, lives: this.lives, points: this.points,
         questionsAnswered: this.questionsAnswered, questionNumber: this.questionNumber,
+        questionsAnsweredThisLevel: this.questionsAnsweredThisLevel,
+        levelUpEvents: this.levelUpEvents,
         generatedQuestionCount: this.generatedQuestionCount, hintsAvailable: this.hintsAvailable,
         hintUsed: this.hintUsed, debugMode: this.debugMode, randomSeed: this.randomSeed,
         seed: this.seed.toString(), randomState: this.random.state.toString(),
+        runElapsedMs: this.totalRunTime(),
         queue: this.queue, seen: [...this.seen], current: this.current,
         running: this.running, gameOver: this.gameOver,
         elapsed: this.current ? Date.now() - this.questionStartedAt : 0,
@@ -578,11 +606,16 @@
 
     restore(snapshot) {
       Object.assign(this, snapshot);
+      this.questionsAnsweredThisLevel = snapshot.questionsAnsweredThisLevel
+        ?? snapshot.questionsAnswered % QUESTIONS_PER_LEVEL;
+      this.levelUpEvents = snapshot.levelUpEvents || [];
       this.seed = BigInt(snapshot.seed);
       this.random = new JavaRandom(this.seed);
       this.random.state = BigInt(snapshot.randomState);
       this.seen = new Set(snapshot.seen);
       this.questionStartedAt = Date.now() - snapshot.elapsed;
+      this.runStartedAt = Date.now() - (snapshot.runElapsedMs || 0);
+      this.runEndedAt = 0;
       this.running = snapshot.running;
       this.gameOver = snapshot.gameOver;
     }

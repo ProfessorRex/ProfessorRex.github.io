@@ -68,6 +68,7 @@
         </aside>
       </main>
       <div class="points-toast" id="points-toast" role="status" aria-live="polite"></div>
+      <div class="level-up-bubble" id="level-up-bubble" aria-live="polite"></div>
       <footer class="footer-line"><span>LOGIC IN NUMBERS</span><span id="footer-seed">SEED · —</span></footer>
     </div>
 
@@ -102,7 +103,17 @@
       <form method="dialog" class="modal-content">
         <div class="modal-heading"><div><span class="eyebrow">RUN COMPLETE</span><h2 id="gameover-title">Game over</h2></div></div>
         <p class="definition-copy" id="gameover-copy"></p>
-        <button class="primary-button modal-done" id="return-home" value="home">Return home</button>
+        <button class="run-timer-button" id="gameover-timer" type="button"></button>
+        <div class="modal-actions end-actions"><button class="text-button" id="hide-gameover" type="button">Hide results</button><button class="primary-button modal-done" id="return-home" type="button">Return home</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal compact-modal" id="run-times-dialog" aria-labelledby="run-times-title">
+      <form method="dialog" class="modal-content">
+        <div class="modal-heading"><div><span class="eyebrow">RUN TIMESTAMPS</span><h2 id="run-times-title">Run details</h2></div><button class="icon-button close-button" value="close" aria-label="Close run details">×</button></div>
+        <dl class="settings-stats"><div><dt>Started</dt><dd id="run-start-time"></dd></div><div><dt>Ended</dt><dd id="run-end-time"></dd></div></dl>
+        <div class="run-level-ups"><span class="setting-label">LEVEL-UPS</span><ol class="run-level-list" id="run-level-ups"></ol></div>
+        <button class="primary-button modal-done" value="close">Done</button>
       </form>
     </dialog>
   </body>
