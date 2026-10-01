@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14211f">
+    <title>Solve For X</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="game.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Solve For X home">
+          <span class="brand-mark" aria-hidden="true">X</span>
+          <span class="brand-copy"><strong>SOLVE FOR X</strong><small>NUMBER GAME</small></span>
+        </a>
+        <button class="icon-button" id="settings-open" type="button" aria-label="Settings" title="Settings">
+          <span aria-hidden="true">⚙</span>
+        </button>
+      </header>
+
+      <section class="status-strip" aria-label="Game status">
+        <div class="status-cell"><span class="status-label">LEVEL</span><strong id="stat-level">—</strong></div>
+        <div class="status-cell"><span class="status-label">POINTS</span><strong id="stat-points">0</strong></div>
+        <div class="status-cell"><span class="status-label">LIVES</span><strong id="stat-lives">3</strong></div>
+        <div class="status-cell timer-cell"><span class="status-label">TIME</span><strong id="stat-time">0.0s</strong></div>
+      </section>
+
+      <main class="game-layout">
+        <section class="question-panel" aria-labelledby="question-title">
+          <div class="question-meta">
+            <span class="eyebrow" id="question-number">READY</span>
+            <span class="seed-caption" id="seed-caption"></span>
+          </div>
+          <h1 id="question-title">Solve for a number.</h1>
+          <p class="range-line" id="range-line">Choose a seed or start a random game.</p>
+          <p class="answer-count" id="answer-count"></p>
+          <ol class="clue-list" id="clue-list" aria-label="Number rules"></ol>
+          <p class="message" id="message" aria-live="polite">Three lives. Three starting hints.</p>
+        </section>
+
+        <aside class="input-panel" aria-label="Answer keypad">
+          <label class="entry-label" for="answer-input" id="entry-label">SEED (OPTIONAL)</label>
+          <div class="entry-wrap">
+            <input id="answer-input" type="text" inputmode="none" autocomplete="off" spellcheck="false" placeholder="Random game" aria-label="Seed or answer">
+            <span class="entry-cursor" aria-hidden="true"></span>
+          </div>
+          <div class="keypad" id="keypad">
+            <button class="key" type="button" data-digit="1">1</button>
+            <button class="key" type="button" data-digit="2">2</button>
+            <button class="key" type="button" data-digit="3">3</button>
+            <button class="key" type="button" data-digit="4">4</button>
+            <button class="key" type="button" data-digit="5">5</button>
+            <button class="key" type="button" data-digit="6">6</button>
+            <button class="key" type="button" data-digit="7">7</button>
+            <button class="key" type="button" data-digit="8">8</button>
+            <button class="key" type="button" data-digit="9">9</button>
+            <button class="key key-command" id="hint-button" type="button" data-action="hint">HINT <span id="hint-count">3</span></button>
+            <button class="key" type="button" data-digit="0">0</button>
+            <button class="key key-command" type="button" data-action="clear">CLEAR</button>
+          </div>
+          <button class="primary-button" id="action-button" type="button">Start game</button>
+        </aside>
+      </main>
+      <div class="points-toast" id="points-toast" role="status" aria-live="polite"></div>
+      <footer class="footer-line"><span>LOGIC IN NUMBERS</span><span id="footer-seed">SEED · —</span></footer>
+    </div>
+
+    <dialog class="modal" id="settings-dialog" aria-labelledby="settings-title">
+      <form method="dialog" class="modal-content">
+        <div class="modal-heading"><div><span class="eyebrow">GAME MENU</span><h2 id="settings-title">Settings</h2></div><button class="icon-button close-button" value="close" aria-label="Close settings">×</button></div>
+        <dl class="settings-stats"><div><dt>Question</dt><dd id="settings-question">—</dd></div><div><dt>Seed</dt><dd id="settings-seed">—</dd></div><div><dt>Random-play high score</dt><dd id="settings-high-score">0</dd></div></dl>
+        <button class="secondary-button" id="save-game" type="button">Save game</button>
+        <div class="theme-setting"><span class="setting-label">COLOR SCHEME</span><div class="segmented" role="group" aria-label="Color scheme"><button type="button" data-theme="light">Light</button><button type="button" data-theme="dark">Dark</button><button type="button" data-theme="classic">Classic</button></div></div>
+        <button class="secondary-button debug-only" id="skip-level" type="button" hidden>Skip to next level</button>
+        <div class="modal-actions"><button class="text-button" id="restart-game" type="button">Restart game</button><button class="primary-button modal-done" value="close">Done</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal compact-modal" id="definition-dialog" aria-labelledby="definition-title">
+      <form method="dialog" class="modal-content">
+        <div class="modal-heading"><div><span class="eyebrow">RULE DEFINITION</span><h2 id="definition-title"></h2></div><button class="icon-button close-button" value="close" aria-label="Close definition">×</button></div>
+        <p class="definition-copy" id="definition-copy"></p>
+        <button class="primary-button modal-done" value="close">Done</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal compact-modal" id="continue-dialog" aria-labelledby="continue-title">
+      <form method="dialog" class="modal-content">
+        <div class="modal-heading"><div><span class="eyebrow">SAVED GAME</span><h2 id="continue-title">Continue playing?</h2></div></div>
+        <p class="definition-copy">A saved game is ready to resume.</p>
+        <div class="modal-actions"><button class="text-button" id="new-game" value="new">New game</button><button class="primary-button modal-done" id="continue-game" value="continue">Continue</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="modal compact-modal" id="gameover-dialog" aria-labelledby="gameover-title">
+      <form method="dialog" class="modal-content">
+        <div class="modal-heading"><div><span class="eyebrow">RUN COMPLETE</span><h2 id="gameover-title">Game over</h2></div></div>
+        <p class="definition-copy" id="gameover-copy"></p>
+        <button class="primary-button modal-done" id="return-home" value="home">Return home</button>
+      </form>
+    </dialog>
+  </body>
+</html>
